@@ -16,6 +16,7 @@ import { ProductReveal, ProductRevealProps } from "./components/ProductReveal";
 import { CaptionOverlay, WordCaption } from "./components/CaptionOverlay";
 import { CollageBurst, CollageBurstProps } from "./CollageBurst";
 import { LyricOverlay, LyricOverlayProps } from "./LyricOverlay";
+import { ExpeditieMJ, ExpeditieProps } from "./expeditie/ExpeditieMJ";
 
 // ---------------------------------------------------------------------------
 // Theme System — prevents every video from looking like dark fintech
@@ -119,6 +120,16 @@ export function resolveTheme(props: Record<string, unknown>): ThemeConfig {
   }
   return DEFAULT_THEME;
 }
+
+// De duur van de film volgt uit de montage: de som van de shotlengtes.
+// Zo hoeft de compositie niet aangepast te worden per film.
+const calculateExpeditieMetadata: CalculateMetadataFunction<ExpeditieProps> = async ({
+  props,
+}) => {
+  const total = (props.shots ?? []).reduce((sum, s) => sum + (s.frames ?? 0), 0);
+  // de eindkaart loopt achter het laatste shot door
+  return { durationInFrames: Math.max(1, total + (props.outroFrames ?? 0)) };
+};
 
 const calculateMetadata: CalculateMetadataFunction<ExplainerProps> = async ({
   props,
@@ -329,6 +340,28 @@ export const Root: React.FC = () => {
           fadeOutSeconds: 1.5,
           overlay: true,
         } as EndTagProps}
+      />
+      <Composition
+        id="ExpeditieMJ"
+        component={ExpeditieMJ}
+        calculateMetadata={calculateExpeditieMetadata}
+        // Atelier-compositie voor Expeditie Mediajungle animatie 2.
+        // Alle timings komen uit de montage; de CLI overschrijft ze via --props.
+        durationInFrames={1400}
+        fps={24}
+        width={1280}
+        height={720}
+        defaultProps={{
+          shots: [],
+          music: null,
+          musicVolume: 0.16,
+          musicEnvelope: [],
+          titleWindow: [0, 0],
+          errorWindow: [0, 0],
+          rewardWindow: [0, 0],
+          fadeStart: 0,
+          outroFrames: 0,
+        } as ExpeditieProps}
       />
     </>
   );
