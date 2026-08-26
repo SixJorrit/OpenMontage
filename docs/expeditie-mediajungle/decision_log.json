@@ -1,0 +1,1220 @@
+{
+  "version": "1.0",
+  "project_id": "expeditie-mediajungle-animaties",
+  "decisions": [
+    {
+      "decision_id": "d-001",
+      "stage": "proposal",
+      "category": "pipeline_selection",
+      "subject": "Pipeline voor de 4 animaties en de stijltest",
+      "options_considered": [
+        {
+          "option_id": "animation",
+          "label": "animation (motion-graphics en animation-first)",
+          "score": 0.9,
+          "reason": "Production-stabiel, heeft een research-first pre-productiefase met proposal-gate, en de assets-stage routeert naar video_selector/image_selector. Door Jorrit in de briefing aangewezen."
+        },
+        {
+          "option_id": "character-animation",
+          "label": "character-animation (lokale gerigde cartoonkarakters)",
+          "score": 0.4,
+          "reason": "Precies gemaakt voor herbruikbaar karakteracteren met rigs, en het project bezit echte rigs.",
+          "rejected_because": "Beta, en gebouwd voor lokale SVG-rigs; deze route is generatieve video met referentiebeelden. Wel de juiste pipeline als c3 (gelaagd vectortheater) alsnog de route wordt."
+        },
+        {
+          "option_id": "cinematic",
+          "label": "cinematic (trailer, teaser, mood-led)",
+          "score": 0.3,
+          "reason": "Production-stabiel en werkt met gegenereerde clips.",
+          "rejected_because": "Gebouwd voor trailerpacing en mood-montage; dit is dialoog-gedreven verhaal met een vaste VO-timing."
+        }
+      ],
+      "selected": "animation",
+      "reason": "Door Jorrit aangewezen in de briefing en inhoudelijk juist: animation-first, clip_video als mode, met stage-gates voor budgetbeheersing.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-002",
+      "stage": "proposal",
+      "category": "playbook_override",
+      "subject": "Generatieve herinterpretatie van art die het project al bezit (overrulet het staande verdict)",
+      "options_considered": [
+        {
+          "option_id": "generative_reinterpretation",
+          "label": "Generatieve herinterpretatie met de bestaande art als referentie-anker",
+          "score": 0.9,
+          "reason": "Expliciet door Jorrit gesanctioneerd in de briefing. De bestaande art dient als anker, niet als bouwmateriaal; dat is precies de andere kant van de fout uit de intro-run."
+        },
+        {
+          "option_id": "no_generation_of_owned_art",
+          "label": "Staand verdict handhaven: genereer geen art die het project al bezit",
+          "score": 0.3,
+          "reason": "Verdedigde de intro-run tegen platte gegenereerde platen en blijft geldig voor het reproduceren van de vectorart.",
+          "rejected_because": "Dat verdict ging over het reproduceren van de vectorart als platte platen. Deze route is een stijl-herinterpretatie in beweging, waarvoor Jorrit expliciet toestemming heeft gegeven."
+        }
+      ],
+      "selected": "generative_reinterpretation",
+      "reason": "Jorrit sanctioneert de herinterpretatie voor deze route. De bestaande art gaat als referentiebeeld mee in elke generatie (promptles 4: een goedgekeurde plaat is een betrouwbaar stijlanker), en er wordt geen platte plaat als eindbeeld geleverd. LET OP: AGENT_GUIDE schrijft voor deze vastlegging category 'approval_policy' voor. Die waarde staat nog niet in de enum van schemas/artifacts/decision_log.schema.json, waardoor het hele decision_log niet valideert en er geen checkpoint geschreven kan worden. Een parallelle sessie heeft de fix klaarstaan in de worktree .claude/worktrees/gracious-kirch-6f5227 (enum-waarde plus contracttest). Zodra die is gemerged moet deze entry terug naar category 'approval_policy'; tot dan staat hij op 'playbook_override' zodat de run niet blokkeert.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-003",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "Videoprovider en model voor de testshots en de films",
+      "options_considered": [
+        {
+          "option_id": "atlas_seedance_25_ref",
+          "label": "atlas_video — bytedance/seedance-2.5/reference-to-video (Atlas Cloud)",
+          "score": 0.86,
+          "reason": "Tot 30 referentiebeelden, 10 video's en 10 audio's per generatie, 4 tot 30s, native audio en lipsync, 0,134 dollar per seconde. Enige geconfigureerde videoprovider (video_generation 1/26) en tegelijk inhoudelijk de juiste route voor karakterconsistentie via referenties."
+        },
+        {
+          "option_id": "atlas_seedance_20_ref",
+          "label": "atlas_video — bytedance/seedance-2.0/reference-to-video",
+          "score": 0.5,
+          "reason": "Goedkoper (0,112 dollar per seconde) en ook reference-to-video.",
+          "rejected_because": "Kleinere referentieset en 4 tot 15s; 2.5 is de nieuwere generatie met een grotere referentieset en betere audio-integratie. Het prijsverschil van 0,11 dollar per testshot weegt niet op tegen het consistentierisico."
+        },
+        {
+          "option_id": "atlas_gemini_omni_ref",
+          "label": "atlas_video — google/gemini-omni-flash/reference-to-video",
+          "score": 0.45,
+          "reason": "Beschikbaar via dezelfde key, 0,135 dollar per seconde, sterk in conversationele edits.",
+          "rejected_because": "Maximaal 10s en 720p, en geen gedocumenteerde referentie-audio-lipsync-route zoals Seedance 2.5. Blijft in beeld als achtervang voor korte edits."
+        },
+        {
+          "option_id": "fal_seedance_kling",
+          "label": "seedance_video / kling_video via fal.ai",
+          "score": 0.0,
+          "reason": "Zou een tweede route plus een dedicated lipsync-fallback ontsluiten.",
+          "rejected_because": "Niet geconfigureerd: vereist FAL_KEY. Aangeboden aan Jorrit als 1-minuut-upgrade, geen stille omweg."
+        }
+      ],
+      "selected": "atlas_seedance_25_ref",
+      "reason": "Enige geconfigureerde videoprovider en de enige route met native lipsync op een meegeleverde audioreferentie, wat deze productie nodig heeft omdat de opname de bron van waarheid is.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-004",
+      "stage": "proposal",
+      "category": "provider_selection",
+      "subject": "Beeldprovider en model voor character sheets en style frames",
+      "options_considered": [
+        {
+          "option_id": "nano_banana_2_edit",
+          "label": "atlas_image — google/nano-banana-2/edit",
+          "score": 0.88,
+          "reason": "Edit-mode met tot 14 referentiebeelden: de bestaande karakterart gaat als beeld mee, dus identiteit komt uit het frame en niet uit de prompt. 0,08 dollar per plaat."
+        },
+        {
+          "option_id": "seedream_pro_edit",
+          "label": "atlas_image — bytedance/seedream-v5.0-pro/edit",
+          "score": 0.7,
+          "reason": "0,045 dollar per plaat, tot 10 referentiebeelden.",
+          "rejected_because": "Achtervang. Wordt ingezet als nano-banana-2 de vilttextuur of de leeftijd niet overtuigend haalt."
+        },
+        {
+          "option_id": "gpt_image_2_t2i",
+          "label": "atlas_image — openai/gpt-image-2/text-to-image",
+          "score": 0.3,
+          "reason": "Zeer goedkoop, 0,009 dollar per plaat.",
+          "rejected_because": "Text-to-image zonder karakterreferentie; dat is precies de fout die leeftijds- en identiteitsdrift veroorzaakt."
+        }
+      ],
+      "selected": "nano_banana_2_edit",
+      "reason": "Identiteitsbehoud via referentiebeeld is de kern van fase 0; de 0,035 dollar extra per plaat is verwaarloosbaar naast de videokosten. output_format wordt expliciet op png gezet (atlas_image levert anders JPEG, promptles 5).",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-005",
+      "stage": "proposal",
+      "category": "render_runtime_selection",
+      "subject": "Compositie-runtime",
+      "options_considered": [
+        {
+          "option_id": "remotion",
+          "label": "Remotion (React/TS)",
+          "score": 0.9,
+          "reason": "Beschikbaar op deze machine. De reeks leeft hier al: animatie 2 staat in Remotion met dezelfde assets en woordtiming, en titelwerk, grading en de SNERTFLIX-interface zijn directe Remotion-lagen boven de gegenereerde clips."
+        },
+        {
+          "option_id": "hyperframes",
+          "label": "HyperFrames (HTML/CSS/GSAP)",
+          "score": 0.0,
+          "reason": "Zou sterk zijn voor kinetische typografie en registry-blokken.",
+          "rejected_because": "Runtime niet beschikbaar op deze machine: node major version 20 < required 22 (runtime_warning uit de registry). Installeer node 22 als je deze route wilt vergelijken."
+        },
+        {
+          "option_id": "ffmpeg",
+          "label": "FFmpeg (concat, trim, subtitle burn)",
+          "score": 0.4,
+          "reason": "Altijd beschikbaar en precies genoeg voor fase 0, waar alleen VO-regels geknipt worden en er geen montage is.",
+          "rejected_because": "Voor de films te weinig: geen tekstlagen, geen grading, geen interface-animatie."
+        }
+      ],
+      "selected": "remotion",
+      "reason": "Voor de films is Remotion de runtime waar de reeks al woont. Fase 0 zelf heeft geen compositie nodig: daar is alleen ffmpeg in het spel voor het knippen van de VO-regel. HyperFrames is niet beschikbaar op deze machine en is daarom niet vergeleken op inhoud maar afgewezen op beschikbaarheid.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-006",
+      "stage": "proposal",
+      "category": "composition_mode",
+      "subject": "Authoring-modus van de compositie",
+      "options_considered": [
+        {
+          "option_id": "atelier",
+          "label": "Atelier (hand-geschreven compositie, eigen scenes en thema)",
+          "score": 0.85,
+          "reason": "Dit is hero-werk voor een bestaande leerlijn met een eigen huisstijl; de stock scene-types (text_card, stat_card, charts) hebben hier geen enkele rol. De compositie is cuts van gegenereerde clips plus een eigen SNERTFLIX-interface en titelwerk."
+        },
+        {
+          "option_id": "templated",
+          "label": "Templated (stock cut.type scenes in Explainer/CinematicRenderer)",
+          "score": 0.2,
+          "reason": "Sneller en goedkoper in tokens.",
+          "rejected_because": "De stock scene-catalogus is een dataviz/explainer-taal; dit is een verhaalfilm met dialoog. Templated zou hier een vreemde visuele laag boven de animatie leggen."
+        }
+      ],
+      "selected": "atelier",
+      "reason": "De films vragen een eigen visuele taal boven de gegenereerde clips. Atelier kost meer iteratie en tokens; dat is hier expliciet de bedoeling en wordt bij de fase 1-gate opnieuw begroot.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.8
+    },
+    {
+      "decision_id": "d-007",
+      "stage": "proposal",
+      "category": "motion_commitment",
+      "subject": "Bewegingsbelofte: echte animatie versus stills met camerabeweging",
+      "options_considered": [
+        {
+          "option_id": "true_motion",
+          "label": "Echte gegenereerde beweging met lipsync (clip_video)",
+          "score": 0.95,
+          "reason": "De briefing vraagt vloeiende animatie met dialoog. Stills met camerabeweging was exact de verkeerde afslag van de intro-run."
+        },
+        {
+          "option_id": "still_led_animatic",
+          "label": "Stills met Ken Burns als animatic",
+          "score": 0.05,
+          "reason": "Goedkoop en voorspelbaar.",
+          "rejected_because": "Verboden downgrade voor deze belofte. Als de generatieve route faalt, is de juiste uitweg c3 (gelaagd vectortheater met de bestaande rigs), niet platte platen met camerabeweging."
+        }
+      ],
+      "selected": "true_motion",
+      "reason": "motion_required is true. Er is geen goedgekeurde still-led fallback; approved_fallback staat expliciet op null. Bij een blocker volgt escalatie, geen stille downgrade.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-008",
+      "stage": "proposal",
+      "category": "voice_selection",
+      "subject": "Stem en dialoogbron",
+      "options_considered": [
+        {
+          "option_id": "existing_recording",
+          "label": "Bestaande ingesproken opname (complete(2).mp3 en losse regel-mp3s)",
+          "score": 1.0,
+          "reason": "Jorrit heeft de opname aangewezen als bron van waarheid; de stemmen zijn echte tienerstemmen en de timing is gemeten."
+        },
+        {
+          "option_id": "scratch_tts",
+          "label": "Scratch-TTS",
+          "score": 0.0,
+          "reason": "Zou animaties 3 en 4 kunnen ontgrendelen.",
+          "rejected_because": "Niet nodig voor fase 0 en 1, en technisch nu ook niet mogelijk: tts 0/10 geconfigureerd. Blijft een open besluit voor animaties 3 en 4."
+        }
+      ],
+      "selected": "existing_recording",
+      "reason": "Fase 0 test met Femke's 'Wat doet er niet?' (0,64s) als reference audio en zo nodig Boaz' 'Help, hij doet het niet!' (1,48s), lokaal uit complete(2).mp3 geknipt met ffmpeg.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-009",
+      "stage": "proposal",
+      "category": "music_source",
+      "subject": "Muziek voor fase 0 en voor de films",
+      "options_considered": [
+        {
+          "option_id": "none_phase0",
+          "label": "Geen muziek in fase 0",
+          "score": 0.9,
+          "reason": "De testshots moeten op stem en lipsync te beoordelen zijn, en de Seedance-methode schrijft voor stem en muziek nooit in dezelfde referentieclip te stoppen."
+        },
+        {
+          "option_id": "pixabay_search",
+          "label": "pixabay_music (royalty-free search)",
+          "score": 0.6,
+          "reason": "Enige geconfigureerde muziekroute (music_search 1/2).",
+          "rejected_because": "Niet in fase 0. Dit is de te bespreken optie bij de fase 1-gate."
+        },
+        {
+          "option_id": "music_generation",
+          "label": "Muziekgeneratie via API",
+          "score": 0.0,
+          "reason": "Zou een eigen thema opleveren.",
+          "rejected_because": "music_generation 0/5 geconfigureerd en music_library/ is leeg. Niet beschikbaar zonder nieuwe key."
+        }
+      ],
+      "selected": "none_phase0",
+      "reason": "Fase 0 heeft geen muziek. Het muziekplan voor de films is een agendapunt voor de fase 1-gate, met pixabay_music als enige beschikbare route en 'zelf een track aanleveren in music_library/' als alternatief.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-010",
+      "stage": "proposal",
+      "category": "concept_selection",
+      "subject": "Kandidaat-stijlen voor de stijltest",
+      "options_considered": [
+        {
+          "option_id": "c1",
+          "label": "Wolvilt-stopmotion",
+          "score": 0.85,
+          "reason": "Textuur en stop-motion-cadans absorberen gezichtsdrift en temporele flikkering; matte materialen met leesbare silhouetten passen bij de SO/SBO-eisen; visueel onderscheidend."
+        },
+        {
+          "option_id": "c2",
+          "label": "Pixar-achtige 3D",
+          "score": 0.7,
+          "reason": "Grootste expressiebereik in gezichten en hoogste ervaren productiewaarde, maar de meest verzadigde preset en de hoogste lat op close-ups."
+        },
+        {
+          "option_id": "c3",
+          "label": "Gelaagd vectortheater met de bestaande rigs",
+          "score": 0.5,
+          "reason": "Gegarandeerde identiteit, hoogste leesbaarheid, nul generatiekosten.",
+          "rejected_because": "Geen herinterpretatie en dus niet de opdracht. Blijft staan als achtervang en als nulpunt waartegen c1 en c2 zich moeten bewijzen."
+        }
+      ],
+      "selected": "c1",
+      "reason": "c1 is de aanbeveling voor de uiteindelijke lock, maar fase 0 test c1 en c2 parallel met exact dezelfde regel en framing. De echte keuze maakt Jorrit bij gate B; deze entry legt alleen de aanbeveling en de overwogen alternatieven vast.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.6
+    },
+    {
+      "decision_id": "d-011",
+      "stage": "proposal",
+      "category": "visual_accuracy_check",
+      "subject": "Wereldlogica: mist/Ruis in de style bible",
+      "options_considered": [
+        {
+          "option_id": "no_mist",
+          "label": "Geen mist, geen Ruis, geen lichtjes — niets uit de oude Verhaalbijbel",
+          "score": 1.0,
+          "reason": "Jorrit heeft op 2026-08-20 vastgesteld dat die wereldlogica 100 procent achterhaald is. Het canonieke script is 02 - storyline/2026.08.14/2.animatie.md en dat noemt geen mist."
+        },
+        {
+          "option_id": "mist_as_world_mechanic",
+          "label": "Mist/Ruis als zichtbare en hoorbare wereldmechaniek",
+          "score": 0.0,
+          "reason": "Stond in Opdracht_vervolg-animaties.md als SO/SBO-eis en verwees naar een Verhaalbijbel.",
+          "rejected_because": "Achterhaald verklaard door Jorrit. Was in het research_brief terechtgekomen via dat document en is daar nu uit verwijderd."
+        }
+      ],
+      "selected": "no_mist",
+      "reason": "Correctie van Jorrit. Mist, Ruis, lichtjes en de personages uit de oude Verhaalbijbel komen in geen enkele prompt, style bible of scene plan terug. De leesbaarheidseisen uit hetzelfde document (korte letterlijke zinnen, beeld en VO zeggen hetzelfde) zijn behouden maar onder voorbehoud tot Jorrit ze bevestigt.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-012",
+      "stage": "proposal",
+      "category": "fallback_decision",
+      "subject": "Tweede videoprovider en lipsync-fallback (FAL_KEY)",
+      "options_considered": [
+        {
+          "option_id": "proceed_without_fal",
+          "label": "Doorgaan met alleen AtlasCloud",
+          "score": 0.7,
+          "reason": "Jorrit gaf groen licht voor stap 1 zonder op het FAL_KEY-aanbod in te gaan. Fase 0 kan volledig met AtlasCloud."
+        },
+        {
+          "option_id": "add_fal_key",
+          "label": "FAL_KEY toevoegen voor Kling/Seedance direct plus dedicated lipsync",
+          "score": 0.6,
+          "reason": "Zou het scherpste risico (Nederlandse lipsync) van een achtervang voorzien.",
+          "rejected_because": "Niet aangevraagd door Jorrit. Blijft open: als de Nederlandse lipsync-test in stap 2 faalt, is dit het eerste voorstel voor de blocker."
+        }
+      ],
+      "selected": "proceed_without_fal",
+      "reason": "Fase 0 draait op de geconfigureerde provider. Als lipsync faalt, wordt dit als blocker met opties gepresenteerd in plaats van stil omzeild.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.8
+    },
+    {
+      "decision_id": "d-013",
+      "stage": "proposal",
+      "category": "concept_selection",
+      "subject": "Kandidaat-stijlen voor de stijltest",
+      "options_considered": [
+        {
+          "option_id": "c2",
+          "label": "Pixar-achtige 3D",
+          "score": 1.0,
+          "reason": "Door Jorrit gekozen bij GATE A (2026-08-20): 'Ik wil door met de Pixar style.' Grootste expressiebereik in gezichten en hoogste ervaren productiewaarde."
+        },
+        {
+          "option_id": "c1",
+          "label": "Wolvilt-stopmotion",
+          "score": 0.85,
+          "reason": "Haalde ronde 1 met 3 van 3: alle karakterankers hielden, wereld en karakters in dezelfde stijltaal, palet op huisstijl.",
+          "rejected_because": "Vervangt de eerdere aanbeveling uit d-010. Jorrit kiest c2. c1 blijft gearchiveerd onder assets/images/style-test/round-1/ en is zonder nieuwe kosten weer op te pakken."
+        },
+        {
+          "option_id": "c3",
+          "label": "Gelaagd vectortheater met de bestaande rigs",
+          "score": 0.5,
+          "reason": "Gegarandeerde identiteit, nul generatiekosten.",
+          "rejected_because": "Geen herinterpretatie; blijft achtervang."
+        }
+      ],
+      "selected": "c2",
+      "reason": "Keuze van Jorrit bij GATE A. Dit vervangt de aanbeveling c1 uit d-010. Bekend risico dat hiermee wordt aanvaard: in ronde 1 dreef bij c2 de huidtoon van Boaz lichter dan de canon-art, liep zijn leeftijd naar begin twintig, verzon het model een horloge, en week de hut-still af naar fotorealisme in plaats van geanimeerde film. Ronde 2 repareert die vier punten voor er video wordt gegenereerd; houdt de reparatie geen stand, dan is dat een blocker die opnieuw aan Jorrit wordt voorgelegd en geen stille downgrade.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-014",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "learned technique: ondergrens van 1,8s op referentie-audio bij Seedance 2.5 reference-to-video",
+      "options_considered": [
+        {
+          "option_id": "pad_with_silence",
+          "label": "Korte VO-regel padden met stilte tot boven 1,8s",
+          "score": 0.95,
+          "reason": "De spraak blijft even kort, dus de driftwinst van een korte regel blijft intact, en de submit wordt geaccepteerd. Femke naar 2,51s, Boaz opnieuw geknipt naar 2,15s (Femke begint op 2,24s, dus verder knippen zou in haar regel lopen)."
+        },
+        {
+          "option_id": "longer_line",
+          "label": "Een langere VO-regel als testregel kiezen",
+          "score": 0.3,
+          "reason": "Zou de ondergrens vanzelf halen.",
+          "rejected_because": "Langere regels vergroten juist de lipsync-drift; de hele reden voor deze twee regels was hun lengte."
+        },
+        {
+          "option_id": "no_reference_audio",
+          "label": "Zonder referentie-audio genereren en later lipsyncen",
+          "score": 0.1,
+          "reason": "Omzeilt de constraint volledig.",
+          "rejected_because": "Er is geen dedicated lipsync-tool geconfigureerd (avatar 0/4) en native lipsync op de echte opname is precies wat fase 0 moet meten."
+        }
+      ],
+      "selected": "pad_with_silence",
+      "reason": "Atlas weigerde de submit met HTTP 400 'InvalidParameter.DurationTooShort: Duration must be between 1.8s and 30.2s'. De melding leest als een klacht over de clipduur, maar gold de referentie-audio van 1,41s; de clip stond op 5s. Niet gedocumenteerd in de Layer 3-skills. Vastgelegd in projects/expeditie-mediajungle-animaties/skills/seedance-reference-audio-limits.md. Geen kosten: een geweigerde submit wordt niet gefactureerd.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-015",
+      "stage": "assets",
+      "category": "voice_selection",
+      "subject": "Stem en dialoogbron",
+      "options_considered": [
+        {
+          "option_id": "generated_clone",
+          "label": "De door Seedance gekloonde stem accepteren (optie A)",
+          "score": 0.8,
+          "reason": "Gekozen door Jorrit bij GATE B (2026-08-20): 'A voor nu. Klinkt best goed.' Het stemkarakter komt vrijwel exact overeen met de opname (mediaan f0 216 versus 222 Hz, p10/p90 binnen enkele Hz) en Jorrit heeft de clip beluisterd en goedgekeurd. Kost niets extra en houdt beeld en mond automatisch synchroon."
+        },
+        {
+          "option_id": "existing_recording_verbatim",
+          "label": "De ingesproken opname letterlijk gebruiken",
+          "score": 0.5,
+          "reason": "Was de oorspronkelijke eis uit de briefing: de opname is de bron van waarheid.",
+          "rejected_because": "Vervangt d-008. Technisch niet haalbaar op deze provider: het model rendert de stem opnieuw (gesproken regel 0,68s wordt 1,02s, cross-correlatie 0,52 sluit pass-through uit). De originele audio eroverheen leggen loopt uit de pas met de gemonteerde mond. Jorrit kiest voor nu de kloon; de eis is daarmee versoepeld, niet vergeten."
+        },
+        {
+          "option_id": "fal_lipsync_route",
+          "label": "FAL_KEY erbij: video zonder dialoog, daarna de echte opname erop lipsyncen (optie D)",
+          "score": 0.7,
+          "reason": "Enige route met de garantie dat de echte kinderstemmen letterlijk in de films staan.",
+          "rejected_because": "Niet nu gekozen. Blijft de aanbevolen upgrade als de gekloonde stem in een langere film alsnog gaat storen; kost alleen een key en een extra stap per shot."
+        },
+        {
+          "option_id": "timecode_retry",
+          "label": "Nog een poging met expliciete tijdcodes in het AUDIO-blok (optie C)",
+          "score": 0.4,
+          "reason": "Zou de brontiming kunnen afdwingen voor 0,67 dollar.",
+          "rejected_because": "Overgeslagen: Jorrit is tevreden met de gekloonde stem, dus de timing-trouw is geen blocker meer."
+        }
+      ],
+      "selected": "generated_clone",
+      "reason": "Keuze van Jorrit bij GATE B. Dit vervangt d-008 ('de ingesproken opname is de bron van waarheid') voor de audioroute: de ingesproken regels blijven de bron voor stemkarakter en bewoording en gaan als reference audio mee in elke generatie, maar de audio in de film is de door het model gerenderde versie. Gevolg voor de planning: de shotduur volgt de gegenereerde clip, niet meer de gemeten tijdcodes van complete(2).mp3. Optie D blijft de upgrade als dit in een volledige film van 60s alsnog gaat storen.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-016",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Het MediaJungle-logo op Femke's shirt",
+      "options_considered": [
+        {
+          "option_id": "logo_as_reference_image",
+          "label": "De schone logoplaat als extra referentiebeeld meegeven",
+          "score": 0.6,
+          "reason": "De Atlas-richtlijn voor productshots: geef een schoon referentiebeeld mee zodat het echte label exact blijft. Kost 0,08 dollar per test en is de enige manier om 'of het moet goed' feitelijk te beantwoorden."
+        },
+        {
+          "option_id": "plain_shirt",
+          "label": "Effen donkerblauw shirt, logo alleen in post (Remotion)",
+          "score": 0.7,
+          "reason": "Volledig robuust: geen enkel driftrisico over vier films. Het logo komt terug waar het exact kan zijn, namelijk in titelkaarten en de SNERTFLIX-interface. Femke's anker is volgens de briefing haar bril, niet de shirtprint."
+        },
+        {
+          "option_id": "keep_distorted",
+          "label": "Het vervormde logo laten staan",
+          "score": 0.0,
+          "reason": "Kost niets.",
+          "rejected_because": "Afgewezen door Jorrit: aapje en diamant zijn sterk vervormd. Een merkteken dat per shot van vorm verandert is erger dan geen merkteken."
+        }
+      ],
+      "selected": "logo_as_reference_image",
+      "reason": "Eerst testen, dan beslissen. Feitelijke aanwijzing vooraf: Boaz' '07' komt in elke generatie foutloos door, dus simpele dikke typografie houdt stand; het MJ-logo combineert een mascottekop, een edelsteen en twee lettertypes en dat is de klasse die verhaspelt. Twee testplaten van 0,08 dollar: een met de schone logoplaat als referentie, een met een effen shirt als achtervang. Jorrit kiest daarna.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.7
+    },
+    {
+      "decision_id": "d-017",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Het MediaJungle-logo op Femke's shirt",
+      "options_considered": [
+        {
+          "option_id": "logo_as_reference_image",
+          "label": "Logo behouden, met de schone presskit-plaat in elke referentieset",
+          "score": 1.0,
+          "reason": "Gekozen door Jorrit (2026-08-20): 'Het gegenereerde logo gaat hier heel goed.' Hij is de merkeigenaar en beoordeelt de merktrouw. Bindend gevolg: de schone logoplaat (assets/references/mj-logo-clean.png) gaat vanaf nu mee als referentiebeeld in ELKE generatie waarin Femke's shirtvoorkant in beeld komt, beeld en video. Het eerdere testshot had die plaat niet in de set en leverde daarom de vervormde versie."
+        },
+        {
+          "option_id": "plain_shirt",
+          "label": "Effen donkerblauw shirt, logo alleen in Remotion",
+          "score": 0.7,
+          "reason": "Nul driftrisico over vier films; Femke's ankers zijn haar bril en paardenstaart, niet de shirtprint.",
+          "rejected_because": "Vervangt de aanbeveling uit d-016. Jorrit vindt het gegenereerde logo goed genoeg. Blijft de achtervang als het in beweging alsnog gaat wobbelen."
+        },
+        {
+          "option_id": "simplified_mark",
+          "label": "Vereenvoudigd teken in de geest van Boaz' 07 (alleen JUNGLE, of een gele zigzag)",
+          "score": 0.5,
+          "reason": "Simpele dikke typografie houdt in deze modellen aantoonbaar stand.",
+          "rejected_because": "Niet nodig nu het volledige logo met referentieplaat acceptabel is. Zou ook een huisstijlbesluit zijn, niet een productiebesluit."
+        }
+      ],
+      "selected": "logo_as_reference_image",
+      "reason": "Besluit van Jorrit. Restrisico dat hij hiermee aanvaardt en dat ik nu ga meten: op shotformaat wordt het logo per frame opnieuw gerenderd, dus het kan wobbelen binnen een shot en verschillen tussen shots. Verificatie: twee platen opnieuw met de logoplaat in de set, plus een tweede testshot met de logoplaat als vijfde referentiebeeld. Houdt het in beweging niet, dan is plain_shirt de achtervang en komt dat opnieuw bij hem terug.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.8
+    },
+    {
+      "decision_id": "d-018",
+      "stage": "assets",
+      "category": "playbook_selection",
+      "subject": "Tijdstip en grading van animatie 2",
+      "options_considered": [
+        {
+          "option_id": "day_overcast_rain",
+          "label": "Dag, bewolkt, regen buiten",
+          "score": 0.95,
+          "reason": "Volgt uit het script zelf. 'Het regent keihard' maakt regen een scriptfeit en Femke's 'Naar buiten of zo?' veronderstelt daglicht. Direct daarna begint een reis door de jungle naar de mast, en daar begin je bij daglicht aan. Bewolkt regenlicht rechtvaardigt bovendien een wat donkerder interieur met warme lantaarn, zodat gezichten helder blijven voor de klas, en het zet de regengrap op (regen zet exact in op 'het regent keihard')."
+        },
+        {
+          "option_id": "evening",
+          "label": "Avond of schemer",
+          "score": 0.4,
+          "reason": "De hut-still uit ronde 2 was al avond en die look werkt visueel goed.",
+          "rejected_because": "Botst met de verhaallogica: een reis door de jungle die in de avond begint, en het haalt de betekenis weg uit de nacht die animatie 4 introduceert (camping, tentjes met blauw licht, dieren aan schermen). Die avondplaat blijft bewaard als nachtreferentie voor animatie 4."
+        }
+      ],
+      "selected": "day_overcast_rain",
+      "reason": "Jorrit (2026-08-20): 'dag of avond maakt mij niet heel veel uit. Als het maar wel kloppend blijft in het verhaal.' Het script beslist dan: regen is expliciet, de reis begint erna, en de nacht is voor animatie 4. Dag over de reeks naar nacht toe is de kloppende boog. De avondversie van de hut wordt gearchiveerd als nachtreferentie, niet weggegooid.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-019",
+      "stage": "proposal",
+      "category": "budget_tradeoff",
+      "subject": "Generatiepad en budget voor de pilot (animatie 2)",
+      "options_considered": [
+        {
+          "option_id": "p3",
+          "label": "Hybride: 11 dialoogshots los, 5 niet-gesproken clips gegroepeerd",
+          "score": 0.9,
+          "reason": "72s betaald, $9,65 schone pass. Legt de goedkope retries (0,54 dollar) precies op de dialoogshots waar de meeste mislukkingen vallen, en groepeert alleen waar geen twee sprekers met een cut ertussen zitten."
+        },
+        {
+          "option_id": "p2",
+          "label": "Per scene, harde cuts binnen de generatie",
+          "score": 0.6,
+          "reason": "62s betaald, $8,31: goedkoopste schone pass en de beste continuïteit binnen een scene.",
+          "rejected_because": "Dialoog over harde cuts is volgens de Seedance-methode de zwakste categorie van het model (verkeerde spreker, drift naar generieke gezichten), en een mislukte generatie kost 0,94 tot 1,88 dollar."
+        },
+        {
+          "option_id": "p1",
+          "label": "Alles per shot, 18 generaties",
+          "score": 0.7,
+          "reason": "Maximale controle en de laagste reparatiekosten per shot.",
+          "rejected_because": "78s betaald voor 60s film. De 4s-ondergrens maakt twaalf korte shots onnodig duur zonder dat daar controlewinst tegenover staat bij shots zonder dialoog."
+        }
+      ],
+      "selected": "p3",
+      "reason": "Raming $13,70 inclusief 30 procent retry-marge, de geometrie-referentieclip en zes nieuwe locatieplaten. Gevraagd plafond $20,00. Correctie op de briefing: die rekende op circa $8 voor een schone pass, maar dat getal gaat uit van 60s betaalde generatie. De ondergrens van 4s per generatie maakt het 72s, dus $9,65.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-020",
+      "stage": "proposal",
+      "category": "music_source",
+      "subject": "Muziek voor fase 0 en voor de films",
+      "options_considered": [
+        {
+          "option_id": "pixabay_bed",
+          "label": "Royalty-free bed via pixabay_music",
+          "score": 1.0,
+          "reason": "Gekozen door Jorrit (2026-08-20): 'pixabay bed'. Enige geconfigureerde muziekroute. Licht avontuurlijk, zacht onder de VO, korte opleving op het beloningsmoment. Licentie en herkomst per track vastleggen in het asset_manifest."
+        },
+        {
+          "option_id": "bring_your_own",
+          "label": "Jorrit levert zelf een track in music_library/",
+          "score": 0.6,
+          "reason": "Volledige controle over de muzikale identiteit van de reeks.",
+          "rejected_because": "Niet gekozen nu. Blijft open: een eigen track kan later het pixabay-bed vervangen zonder dat er iets aan de montage verandert."
+        },
+        {
+          "option_id": "none",
+          "label": "Geen muziek, alleen jungle-sfeer en regen",
+          "score": 0.3,
+          "reason": "Legt alle nadruk op de dialoog en de regen.",
+          "rejected_because": "Niet gekozen. Voor groep 7/8 draagt een bed het tempo en dekt het de naden tussen gegenereerde shots."
+        }
+      ],
+      "selected": "pixabay_bed",
+      "reason": "Vervangt d-009, waarin muziek voor fase 0 op 'geen' stond en het besluit voor de films werd uitgesteld tot deze gate. Fase 0 had inderdaad geen muziek; vanaf de pilot komt er een pixabay-bed onder.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-021",
+      "stage": "proposal",
+      "category": "concept_selection",
+      "subject": "Creatieve keuzes pilot animatie 2",
+      "options_considered": [
+        {
+          "option_id": "all_three_kept",
+          "label": "Vogelvlucht houden, beloning game-achtig, regengrap houden",
+          "score": 1.0,
+          "reason": "Alle drie gekozen door Jorrit (2026-08-20). Dit sluit de open vragen 4, 5 en 6 uit shotlist v0.1. Shot 5B krijgt de eiland-vogelvlucht bij de toonwissel naar 'dat geldt ook voor online'; shot 6A wordt een game-achtig beloningsmoment met gouden stralenkrans en het label BELONING — De Jeep; shot 3B laat de regen exact inzetten op 'het regent keihard'."
+        },
+        {
+          "option_id": "restrained",
+          "label": "Bij de karakters blijven, ingetogen beloning, grap laten vallen",
+          "score": 0.0,
+          "reason": "Rustiger en dichter bij een klassieke verteltoon.",
+          "rejected_because": "Niet gekozen. De game-achtige beloning sluit ook beter aan op het lichtjes- en beloningsmechanisme van de leerlijn."
+        }
+      ],
+      "selected": "all_three_kept",
+      "reason": "Drie open vragen uit shotlist v0.1 hiermee gesloten. Gevolg voor de assets: shot 5B vraagt een eiland-vogelvlucht-locatieplaat, shot 6A een jeep-plaat plus stralenkrans en typografie in Remotion, en shot 3B regen die in de compositie op de VO-tijdcode inzet.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-022",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Licht in de hut als het internet uitvalt",
+      "options_considered": [
+        {
+          "option_id": "lights_stay_on",
+          "label": "Lantaarn blijft aan; maximaal een korte flikkering",
+          "score": 1.0,
+          "reason": "Besluit van Jorrit (2026-08-20): 'De stroom werkt gewoon nog.' Alleen het internet is stuk. De TV blijft aan met een vastgelopen scherm, en in de opvolgende shots 2A, 2B en 2C staat de lantaarn ook aan. Een donkere kamer zou het beeld iets anders laten zeggen dan de VO, en juist dat verbiedt de SBO-eis uit het opdrachtdocument."
+        },
+        {
+          "option_id": "warm_to_cold_blackout",
+          "label": "De warme gloed slaat om naar koud blauwgrijs en de kamer wordt donker",
+          "score": 0.0,
+          "reason": "Stond zo in shotlist v0.1 bij shot 1B: 'De warme gloed slaat om naar koud blauwgrijs.'",
+          "rejected_because": "Die regel ging over het schermlicht, niet over de kamerverlichting; het model heeft de hele kamer verduisterd. Inhoudelijk fout: stroomuitval is een ander probleem dan internetuitval, en het breekt de continuïteit met de volgende drie shots."
+        }
+      ],
+      "selected": "lights_stay_on",
+      "reason": "g_scene1 wordt opnieuw gegenereerd. De papieren lantaarn blijft de hele scene branden, mag eenmaal kort flikkeren op het moment dat het beeld vastloopt en staat daarna weer normaal aan. De TV blijft aan met het vastgelopen SNERTFLIX-scherm en de laadcirkel. Wat verandert is uitsluitend het schermbeeld, niet de kamerverlichting.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-023",
+      "stage": "assets",
+      "category": "voice_selection",
+      "subject": "Stem en dialoogbron",
+      "options_considered": [
+        {
+          "option_id": "modeB_plus_original_audio",
+          "label": "Mode B beeld + hertimen + originele opname als filmaudio",
+          "score": 1.0,
+          "reason": "Gekozen door Jorrit (2026-08-20) na een bewezen proefclip. Per dialoogshot: de opname gaat mee als referentie-audio maar de regeltekst staat NIET in de prompt, de gegenereerde stem wordt weggegooid, de clip wordt hertimed met de gemeten factor en de opname komt eronder. Bewijs op shot_5A2: factor 0,9455 (5,4% sneller, visueel onzichtbaar), afwijking mond versus woorden 20 ms. De woorden zijn correct van constructie, want het is Jorrits eigen bestand — er valt niets na te luisteren. Stappen 2 tot 4 zijn meetwerk plus ffmpeg: deterministisch en automatiseerbaar."
+        },
+        {
+          "option_id": "generated_clone",
+          "label": "De door Seedance gekloonde stem gebruiken (optie A uit d-015)",
+          "score": 0.0,
+          "reason": "Perfecte sync zonder extra werk, en het was de route sinds GATE B.",
+          "rejected_because": "Vervangt d-015. Bewezen onbetrouwbaar op woorden: Seedance leest de tekst uit de prompt in plaats van de audio te kopieren, dus elke fout is een Nederlandse TTS-fout. Jorrit betrapte 'natulet' voor 'natuurlijk' en 'reize' voor 'reis'; whisper normaliseert die weg en kan ze dus niet detecteren. Over vier films is dat circa vijftig regels die een mens moet naluisteren, met het risico een film met een verkeerd woord bij scholen te laten landen."
+        },
+        {
+          "option_id": "modeB_generated_audio",
+          "label": "Mode B en de gegenereerde stem gebruiken",
+          "score": 0.3,
+          "reason": "Mode B haalde de uitspraak op de korte regel wel goed (door Jorrit bevestigd) en zit met 6% veel dichter op de brontiming.",
+          "rejected_because": "Houdt geen stand op lange regels: op shot_5A2 verhaspelt mode B nog steeds en het laat woorden weg ('tijdens de reis een beetje' verdwijnt). Blijft generatief en dus niet van constructie te vertrouwen."
+        },
+        {
+          "option_id": "kling_lipsync",
+          "label": "kling_lip_sync achteraf op de bestaande clips",
+          "score": 0.4,
+          "reason": "Zou de mond opnieuw animeren op de echte audio, $0,32 per shot vast tarief.",
+          "rejected_because": "Jorrit geeft expliciet de voorkeur aan een oplossing zonder lipsync achteraf. Extra provider, extra key, extra stap per shot, en onbewezen op een gestileerd 3D-gezicht. Blijft laatste redmiddel als de hertimingsroute op een shot niet houdt."
+        },
+        {
+          "option_id": "remotion_rigs",
+          "label": "De bestaande Remotion-rigs met visemen",
+          "score": 0.5,
+          "reason": "Absolute zekerheid: echte audio plus code-gestuurde mondvormen op de gemeten woordtiming.",
+          "rejected_because": "Achtervang, niet de hoofdroute: geen generatieve herinterpretatie en alle animatie met de hand. Blijft staan voor shots die langs de hertimingsroute heen komen."
+        }
+      ],
+      "selected": "modeB_plus_original_audio",
+      "reason": "Duurzaamheidseis van Jorrit: geen lipsync achteraf, en erop kunnen vertrouwen dat de gesproken tekst goed is. Dat is alleen van constructie te halen als de opname zelf de filmaudio is. Aanvullende verdedigingslinie die blijft gelden: lange regels zo veel mogelijk over beeld zonder spreker in kader plaatsen (4B en 5B doen dat al, en animatie 1 is volledig verteller-gedreven), want zo'n regel kan per definitie niet fout gaan en kost geen hertiming.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-024",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Weerverloop over de film",
+      "options_considered": [
+        {
+          "option_id": "three_states",
+          "label": "Droog-bewolkt tot 3B, stortbui in 3C, daarna nat maar zonder vallende regen",
+          "score": 1.0,
+          "reason": "Besluit van Jorrit (2026-08-20): 'alle shots zijn nu regenachtig, dat was eigenlijk alleen nodig voor die ene scene'. Verhaallogisch klopt het ook beter: als het al regende voordat Boaz 'het regent keihard' zegt, valt de grap niet samen met zijn woorden. En na de bui opklaren maakt de tweede helft, met de reis en de beloning, lichter in plaats van veertig seconden grijs."
+        },
+        {
+          "option_id": "rain_throughout",
+          "label": "Regen in de hele film",
+          "score": 0.0,
+          "reason": "Consistent, en een jungle in het regenseizoen is plausibel.",
+          "rejected_because": "Sloopt de regengrap en maakt de hele film grijs. Kwam per ongeluk in alle shots doordat ik 'overcast rainy daylight' in de globale stijlregel had gezet die elke generatie meekrijgt; een fout in de opzet, geen keuze."
+        }
+      ],
+      "selected": "three_states",
+      "reason": "Drie weerstanden in de generator: dry_overcast voor 0A tot en met 3B, downpour voor 3C, after_rain voor 4A tot en met 6B. Vraagt drie nieuwe locatieplaten, want de bestaande platen hebben regen ingebakken en het inputframe verslaat de prompt (promptles 1 uit de intro-run).",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-025",
+      "stage": "assets",
+      "category": "budget_tradeoff",
+      "subject": "Budgetplafond fase 1",
+      "options_considered": [
+        {
+          "option_id": "cap_30",
+          "label": "Plafond naar 30 dollar",
+          "score": 1.0,
+          "reason": "Goedgekeurd door Jorrit (2026-08-20): 'plafond mag naar 30'. Nodig omdat alle dialoogshots opnieuw moeten in mode B (de bestaande zitten 23 tot 34% van de brontiming af, te veel om onzichtbaar weg te rekenen) en de weercorrectie in dezelfde generatie mee kan. Herhaling 86s = $11,52 plus drie locatieplaten $0,24. Stand voor de herhaling: $16,16."
+        },
+        {
+          "option_id": "cap_20",
+          "label": "Plafond op 20 dollar houden",
+          "score": 0.0,
+          "reason": "Vervangt de goedkeuring uit d-019.",
+          "rejected_because": "Er staat $3,84 op; niet genoeg voor de herhaling. Zonder herhaling blijft de film op de onbetrouwbare stemroute."
+        }
+      ],
+      "selected": "cap_30",
+      "reason": "Raming na herhaling circa $27,90, dus ongeveer $2 marge voor retries. Dat is dun; bij meer dan drie of vier mislukte shots kom ik terug in plaats van het plafond stil te overschrijden. Blijft binnen de $20 tot $40 per film waar de briefing van uitging.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-026",
+      "stage": "edit",
+      "category": "voice_selection",
+      "subject": "Stem en dialoogbron",
+      "options_considered": [
+        {
+          "option_id": "modeB_original_audio_plus_ducked_clip",
+          "score": 1.0,
+          "label": "Mode B beeld + hertimen + originele opname, met de clipaudio eronder geduckt",
+          "reason": "De route van d-023 blijft ongewijzigd; wat verandert is dat de clipaudio niet langer wordt weggegooid. In die weggegooide audio zat alle ambiance: de TV-glitch in scene 1, de kamertoon, de regen die losbarst in 3C, de jungle. Gemeten: shot_0A en g_scene1 stonden op -91 dB, dus digitale stilte. Nu staat de clipaudio eronder, op vol niveau in de vier shots zonder referentie-audio (daar zit geen gekloonde stem in) en op 0,60/0,09 met een duck onder de gesproken regel in de rest. Er is geen SFX-generator geconfigureerd, dus dit is de enige bron."
+        },
+        {
+          "option_id": "voice_only_mix",
+          "score": 0.0,
+          "label": "Alleen de opname als filmaudio (de implementatie van d-023)",
+          "reason": "Sluit elke kans op een dubbele stem uit.",
+          "rejected_because": "Vervangt de mix uit d-023. Jorrits punt 1: de geluidseffecten zijn weg. Ze waren niet zacht maar verwijderd, doordat assemble.py de volledige clipaudio verving in plaats van hem bij te mengen."
+        }
+      ],
+      "selected": "modeB_original_audio_plus_ducked_clip",
+      "reason": "Herstelt de geluidseffecten zonder de bewezen woordtrouw op te geven. De gekloonde stem staat tijdens de regel 21 dB onder de opname en is daar geen tweede stem meer.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-027",
+      "stage": "edit",
+      "category": "music_source",
+      "subject": "Muziekniveau in de mix",
+      "options_considered": [
+        {
+          "option_id": "per_shot_envelope",
+          "score": 1.0,
+          "label": "Volume-envelope per shotgrens",
+          "reason": "Jorrits punt 1: muziek mag ondersteunend zijn, warmer in de intro, en de SFX moeten de overhand hebben waar iets gebeurt. Envelope: 0,26 in de titel, 0,05 van scene 1 tot en met de mast, 0,14 in de reismontage, 0,30 op het beloningsmoment, uitfade over 1,2s."
+        },
+        {
+          "option_id": "constant_014",
+          "score": 0.0,
+          "label": "Constante 0,14 met in- en uitfade",
+          "reason": "Eenvoudig en voorspelbaar; was de eerste montage.",
+          "rejected_because": "Vervangt het niveau uit d-020. Een constant bed maakt de intro te koel en dekt in scene 1 de enige SFX die er zijn."
+        }
+      ],
+      "selected": "per_shot_envelope",
+      "reason": "Kost niets en is per shot bij te stellen zonder opnieuw te genereren.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-028",
+      "stage": "edit",
+      "category": "capability_extension",
+      "subject": "learned technique: referentie-audio conditioneert de mondanimatie",
+      "options_considered": [
+        {
+          "option_id": "recut_heads_only",
+          "score": 1.0,
+          "label": "Alleen de kop van een regel herknippen, nooit de staart",
+          "reason": "Drie regels waren in de bron midden in een woord geknipt (s05a op 9,85 in 'Nee', s05b op 14,45 in 'school', s06a op 17,20 in het fragment voor 'Oke'). Herknippen van een kop is veilig, maar de staart van s05a en de kop van s05b vormen een paar: shot_3C is met de oude s05b als referentie-audio gegenereerd, dus de mondanimatie articuleert die staart mee. Die grens verschuiven zette shot_3C van ratio 0,99 naar 0,76, buiten de hertimingsband. Gemeten en teruggedraaid."
+        },
+        {
+          "option_id": "recut_all_boundaries",
+          "score": 0.0,
+          "label": "Alle woordgrenzen netjes in een stiltegat leggen",
+          "reason": "Levert de schoonste woorden op.",
+          "rejected_because": "Maakt de generatie waarop de regel als referentie diende deels ongeldig. Een regel is na generatie geen vrij te knippen bestand meer."
+        }
+      ],
+      "selected": "recut_heads_only",
+      "reason": "Bijeffect: de herknipte kop van s05a bracht shot_3B van ratio 0,81 (buiten de band, een van de twee bekende defecten) naar 1,02, dus dat shot is nu wel hertimed. Dat defect is gratis verdwenen.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-029",
+      "stage": "edit",
+      "category": "visual_accuracy_check",
+      "subject": "Timing van de grafische laag op een gegroepeerde generatie",
+      "options_considered": [
+        {
+          "option_id": "measured_window",
+          "score": 1.0,
+          "label": "Het insertshot opmeten met scenedetectie",
+          "reason": "g_scene1 is een generatie met twee interne cuts die het model zelf plaatst. Gemeten op 1,750s en 3,958s, dus het TV-insert loopt van frame 150 tot 203. De foutmelding stond op 160-212 en liep dus 9 frames het volgende shot in. Nieuw venster 158-201: binnen het insert, 1,79s in plaats van 2,17s."
+        },
+        {
+          "option_id": "estimated_window",
+          "score": 0.0,
+          "label": "Het venster schatten op een percentage van de scene",
+          "reason": "Kostte geen meetwerk.",
+          "rejected_because": "Vervangt het geschatte venster uit de eerste montage. Jorrits punt 2: de melding staat te lang en loopt door in een ander shot."
+        }
+      ],
+      "selected": "measured_window",
+      "reason": "Scenedetectie op de cut is gratis en deterministisch. Geldt voor elke gegroepeerde generatie: nooit schatten waar het model de cut legt.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-030",
+      "stage": "assets",
+      "category": "provider_selection",
+      "subject": "Lipsync-provider voor dialoogshots",
+      "options_considered": [
+        {
+          "option_id": "kling_official_lipsync",
+          "score": 1.0,
+          "label": "kling_lip_sync via KLING_API_KEY",
+          "reason": "Jorrit zette de key erin en koos deze route. Getest op shot_2B: identify_face vindt een gestileerd 3D-gezicht (1 gezicht over 0-4300ms) en de lipsync levert echte articulatie met tanden en tong, on-model, geen vervorming. Daarmee is de hertimingsband 0,86-1,16 geen beperking meer: shot_2B (0,79), shot_2C (0,77) en shot_5C (0,80) lagen er allemaal buiten en zijn nu correct. Loopt op een trial resource pack, dus 2,7 van 100 units en geen cash."
+        },
+        {
+          "option_id": "kling_via_atlas",
+          "score": 0.0,
+          "label": "Kling via de Atlas Cloud-gateway",
+          "reason": "Zou geen nieuwe credential vragen.",
+          "rejected_because": "Bestaat niet. De Atlas-videogateway draagt vier families (seedance 2.0, seedance 2.5, gemini-omni-flash, minimax h3) en in de hele catalogus van 16 modellen staat geen enkele lipsync-operatie."
+        },
+        {
+          "option_id": "cut_on_last_word",
+          "score": 0.4,
+          "label": "Afsnijden op het laatste woord",
+          "reason": "Gratis, en werkt: toegepast op shot_4A in fixronde 1.",
+          "rejected_because": "Maakt shots korter en een regel kan niet uitademen. Jorrit wees dit af voor shot_2B: 'B maar dan wel met goede timing'."
+        }
+      ],
+      "selected": "kling_official_lipsync",
+      "reason": "Beeld van Seedance, mond van Kling, ambiance uit de pre-Kling clip, dialoog uit de opname. Kosten nul cash. Beperking: Kling weigert lokale bestanden en vraagt een publieke url, dus alleen nieuw gegenereerde shots zijn te repareren.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-031",
+      "stage": "assets",
+      "category": "visual_accuracy_check",
+      "subject": "Ankerplaat voor de kapotte mast",
+      "options_considered": [
+        {
+          "option_id": "nano_banana_attempt2_with_manual_lamp",
+          "score": 0.6,
+          "label": "Nano Banana lokale edit, lamp na de generatie handmatig gedoofd",
+          "reason": "Schade leest onmiskenbaar: geknakte toren, scheve schotel, afgebroken antenne, losse kabels, gebarsten panelen. 16:9 behouden. Het rode lampje bleef in twee generaties branden ondanks een expliciete instructie, dus die 482 pixels zijn deterministisch vervangen door een dood grijs lampenhuis met numpy."
+        },
+        {
+          "option_id": "seedream_edit",
+          "score": 0.2,
+          "label": "Seedream v5.0 pro edit",
+          "reason": "Compositie kwam juist goed: tempel klein en ver weg, twee bomen als voorgrondkader.",
+          "rejected_because": "Volledig fotorealistisch en vierkant in plaats van 16:9. Lampje brandde ook."
+        },
+        {
+          "option_id": "geometric_tilt",
+          "score": 0.0,
+          "label": "De mast in de gelockte plaat meetkundig kantelen",
+          "reason": "Zou stijl, kadering en tempel honderd procent behouden, en kost niets.",
+          "rejected_because": "Uitvoering mislukt: de affine-keten roteerde om de canvashoek in plaats van om de voet, het luminantiemasker pakte de wolken mee, en de rode gloed liet ringen achter. Correct doen vraagt een echte matte-tool."
+        }
+      ],
+      "selected": "nano_banana_attempt2_with_manual_lamp",
+      "reason": "Door Jorrit gekozen nadat hem de vergelijking met de gelockte plaat was voorgelegd, inclusief de vaststelling dat het een ANDERE TEMPEL toont en niet alleen een grijzere stijl. Bewuste afweging: de VO klopt nu met het beeld, ten koste van continuiteit op een shot van 2,9s. De gelockte plaat blijft ongewijzigd bestaan voor de rest van de reeks.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.5
+    },
+    {
+      "decision_id": "d-032",
+      "stage": "assets",
+      "category": "capability_extension",
+      "subject": "learned technique: een gelockte plaat is een bron, geen canvas",
+      "options_considered": [
+        {
+          "option_id": "single_ref_local_edit",
+          "score": 1.0,
+          "label": "Een referentie plus een lokale-edit-formulering, en accepteren dat de stijl drift",
+          "reason": "Vier pogingen, drie routes. 'Redraw ... the one thing that changes is X' geeft licentie om alles te hertekenen; 'change only X, everything else identical' helpt, maar beide modellen hertekenden op een 2k-plaat alsnog stijl en kadering. Een tweede referentie maakt het erger: canon-tempel.png (stenen piramide, gloeiend lampje) trok de eerste poging volledig weg van de gelockte plaat."
+        },
+        {
+          "option_id": "expect_faithful_edit",
+          "score": 0.0,
+          "label": "Verwachten dat een edit de plaat behoudt",
+          "reason": "Is wat de modelnaam belooft.",
+          "rejected_because": "Kost geld. Twee generatieve pogingen en een handmatige route, 0,29 dollar plus een uur, en de uitkomst blijft een compromis."
+        }
+      ],
+      "selected": "single_ref_local_edit",
+      "reason": "Praktijkregel voor de andere drie films: een gelockte plaat werkt als BRON voor een generatie, maar niet als CANVAS voor een zware structurele wijziging. Wil je een variant met echt behoud van stijl en kadering, laat die dan door een mens tekenen.",
+      "user_visible": true,
+      "user_approved": false,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-033",
+      "stage": "assets",
+      "category": "budget_tradeoff",
+      "subject": "Budgetplafond fixronde 2",
+      "options_considered": [
+        {
+          "option_id": "cap_12_real",
+          "score": 1.0,
+          "label": "Plafond 12 dollar in ECHTE dollars",
+          "reason": "Goedgekeurd door Jorrit (2026-08-21) nadat de eerste raming 2,5x te laag bleek. Werkelijk besteed: 11,48 dollar volgens Atlas /public/v1/model-costs, plus 2,7 trial-units op Kling zonder cash. Onder het plafond met 0,52 over."
+        },
+        {
+          "option_id": "cap_6_estimated",
+          "score": 0.0,
+          "label": "Plafond 6 dollar op de tracker-tarieven",
+          "reason": "Was de eerste goedkeuring.",
+          "rejected_because": "Gebaseerd op cost_per_second uit model_catalog (0,134/s), terwijl Seedance 2.5 op output-tokens factureert. Gemeten op 2026-08-21: 0,373 dollar per seconde en circa 39.800 tokens per seconde op 720p24."
+        }
+      ],
+      "selected": "cap_12_real",
+      "reason": "Van deze ronde is circa 2,98 dollar aan agentfouten opgegaan: twee afgekeurde generaties en twee afgekeurde platen. Daarnaast is een getimeoute submit gefactureerd die ik als niet-gefactureerd had gerapporteerd, omdat saldo en kostenbucket achterlopen.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 1.0
+    },
+    {
+      "decision_id": "d-034",
+      "stage": "troubleshoot",
+      "category": "voice_selection",
+      "subject": "Stem en dialoogbron",
+      "options_considered": [
+        {
+          "option_id": "elevenlabs_v3_tags",
+          "label": "ElevenLabs eleven_v3 met emotietags als bron van alle gesproken regels",
+          "score": 1.0,
+          "reason": "Keuze Jorrit 2026-08-21: v3 klinkt veel beter; tags geven acteerrichting. Gemeten: korte regel zonder tag jaagt (0,64s, 'niet' verloren, meter 56-85); met [nervous] 1,76s en meter 98. Woordtrouwrisico afgedekt door verplichte meter per take (d-035) plus naluisteren."
+        },
+        {
+          "option_id": "elevenlabs_v2",
+          "label": "eleven_multilingual_v2",
+          "score": 0.6,
+          "reason": "Consistenter per take (97-99 zonder retake).",
+          "rejected_because": "Jorrit: v3 klinkt veel beter; het consistentieverschil wordt door de meter plus goedkope retakes opgevangen."
+        },
+        {
+          "option_id": "azure_deterministic",
+          "label": "Azure neurale nl-NL-stemmen (woordtrouw per constructie)",
+          "score": 0.5,
+          "reason": "Enige klasse die woorden per constructie garandeert.",
+          "rejected_because": "Klank en karakter onder de maat voor deze productie; Azure blijft wel de verificatiemeter."
+        },
+        {
+          "option_id": "kling_tts",
+          "label": "kling_tts (enige eerder geconfigureerde TTS)",
+          "score": 0.0,
+          "reason": "Was al beschikbaar.",
+          "rejected_because": "Ondersteunt alleen zh/en, geen Nederlands (tools/_kling/schemas.py TTS_LANGUAGES)."
+        },
+        {
+          "option_id": "modeB_plus_original_audio",
+          "label": "De route van d-023 (opname als filmaudio plus hertimen)",
+          "score": 0.3,
+          "reason": "Bewees woordtrouw in de pilot.",
+          "rejected_because": "Vervangt d-023 als bron van regels: de 'eigen opname' was zelf al ElevenLabs-uitvoer, en de route veroorzaakte de hertimings- en Kling-machinerie. Casting nu: verteller Matanga = Hans Claesen (FpLGR2n1CcG1v7SHJFsa), Femke = Ruth (YUdpWWny7k5yb4QCeweX), Boaz = Bram (2GJZCZIWrWiGFDntCFaz); Dave vervalt."
+        }
+      ],
+      "selected": "elevenlabs_v3_tags",
+      "reason": "Regels worden per stuk gegenereerd met eleven_v3 plus emotietag, geverifieerd met de meter (d-035), retake onder drempel. Voor dialoogshots met spreker in beeld is de mechaniek (R1 hertimen versus R2 kloonstem met meter) nog open: Jorrit wil R2 eerst testen in de betaalde testronde; tot die tijd is R1 de terugvaloptie. Zie TROUBLESHOOT-FINDINGS.md.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-035",
+      "stage": "troubleshoot",
+      "category": "capability_extension",
+      "subject": "Woordtrouwverificatie van gegenereerde spraak",
+      "options_considered": [
+        {
+          "option_id": "azure_pronunciation_assessment",
+          "label": "Azure Pronunciation Assessment tegen de letterlijke scriptregel",
+          "score": 1.0,
+          "reason": "Toetst audio tegen bekende referentietekst, per woord. Gemeten: correcte regels 96-99; zelfde audio tegen fout script 83 met dips op de gemanipuleerde woorden. Drempel: regel < 90 of woord < 60 = naluisteren. Gratis F0-tier (resource openmontage-speech, northeurope)."
+        },
+        {
+          "option_id": "whisper",
+          "label": "Whisper-transcriptie vergelijken met het script",
+          "score": 0.0,
+          "reason": "Was de bestaande controle.",
+          "rejected_because": "Normaliseert fouten weg en verzint fouten; in beide richtingen onbetrouwbaar (pilotmetingen)."
+        },
+        {
+          "option_id": "human_only",
+          "label": "Alles door een mens laten naluisteren",
+          "score": 0.5,
+          "reason": "Betrouwbaarst.",
+          "rejected_because": "Blijft als sluitstuk (gevlagde regels plus een eindronde), maar schaalt niet als enige controle over vier films."
+        }
+      ],
+      "selected": "azure_pronunciation_assessment",
+      "reason": "Meter is een grove-fouten-detector, geen bewijs: ErrorType-labels blijven leeg, het signaal zit in scoredips. Daarom meter plus gericht naluisteren. Keuze Jorrit: optie 1 mits gratis; F0-tier bevestigd gratis voor dit volume.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-036",
+      "stage": "troubleshoot",
+      "category": "provider_selection",
+      "subject": "Ambiance- en SFX-bron",
+      "options_considered": [
+        {
+          "option_id": "generated_sfx",
+          "label": "SFX en ambiance apart genereren via music_gen (ElevenLabs, operatie generate_sfx)",
+          "score": 1.0,
+          "reason": "Ontgrendeld door de ElevenLabs-key. Clipaudio is niet langer de enige SFX-bron; de mix heeft geen kloonstem meer nodig."
+        },
+        {
+          "option_id": "ducked_clip_audio",
+          "label": "Clipaudio geduckt bijmengen (d-026)",
+          "score": 0.2,
+          "reason": "Was de enige optie zonder SFX-generator.",
+          "rejected_because": "Vervangt d-026: de kloonstem blijft op -44 dB hoorbaar in stiltes (Jorrits punt). Met een echte SFX-bron vervalt de noodzaak."
+        }
+      ],
+      "selected": "generated_sfx",
+      "reason": "Lost de tweede stem structureel op: clipaudio gaat volledig uit de mix; jungle, regen en TV-glitch worden per scene gegenereerd. Kost ElevenLabs-credits, verwaarloosbaar naast video.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    },
+    {
+      "decision_id": "d-037",
+      "stage": "troubleshoot",
+      "category": "music_source",
+      "subject": "Muziek in animatie 1, 3 en 4",
+      "options_considered": [
+        {
+          "option_id": "defer_music",
+          "label": "Zonder muziek produceren; muziek pas op het allerlaatst toevoegen",
+          "score": 1.0,
+          "reason": "Expliciete wens Jorrit. music: null wordt al ondersteund door ExpeditieMJ.tsx; envelope-werk blijft in de code staan."
+        },
+        {
+          "option_id": "music_from_start",
+          "label": "Muziekbed vanaf de eerste montage",
+          "score": 0.2,
+          "reason": "Was de pilotaanpak.",
+          "rejected_because": "Jorrit wil eerst de rest beoordelen; zonder muziek is de SFX-band bovendien beter te beoordelen."
+        }
+      ],
+      "selected": "defer_music",
+      "reason": "Bijeffect bewust geaccepteerd: zonder muziek zou een tweede stem beter hoorbaar zijn, maar die is met d-036 aan de bron weg.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.95
+    },
+    {
+      "decision_id": "d-038",
+      "stage": "troubleshoot",
+      "category": "provider_selection",
+      "subject": "Videomodel voor animatie 1, 3 en 4",
+      "options_considered": [
+        {
+          "option_id": "seedance_25",
+          "label": "bytedance/seedance-2.5/reference-to-video (720p24)",
+          "score": 0.9,
+          "reason": "Testronde 2026-08-21: trouwste kadering, exacte logo's en stijltrouw; Jorrit: 'Seedance is wel echt beter'. Gemeten $0,373/s."
+        },
+        {
+          "option_id": "minimax_h3",
+          "label": "minimax/h3/reference-to-video",
+          "score": 0.6,
+          "reason": "3,5-4x goedkoper, stem-meter 94-99 (enige die de lange regel naspreekt), maar kaderdrift en verhaspelde logo's.",
+          "rejected_because": "Zichtbaar kwaliteitsverschil; Jorrit wil geen modellenmix binnen een film."
+        },
+        {
+          "option_id": "seedance_20",
+          "label": "bytedance/seedance-2.0",
+          "score": 0.4,
+          "reason": "Visueel sterk.",
+          "rejected_because": "Liet een woord vallen (meter 62); geen prijsvoordeel groot genoeg."
+        },
+        {
+          "option_id": "gemini_omni_flash",
+          "label": "google/gemini-omni-flash",
+          "score": 0.2,
+          "reason": "Snelst (76s).",
+          "rejected_because": "Spraak grotendeels afwezig, props uit geometrieclip genegeerd."
+        },
+        {
+          "option_id": "kling_v3_omni",
+          "label": "kling-v3-omni",
+          "score": 0.3,
+          "reason": "Sterk beeld, 1080p, trial-units.",
+          "rejected_because": "Geen referentie-audio, promptlimiet 2500 tekens, acting week af."
+        }
+      ],
+      "selected": "seedance_25",
+      "reason": "Eén model voor de hele reeks (geen mixen, keuze Jorrit na beluistering/bekijken van de testclips). De dialoogzwakte wordt afgevangen in d-039.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.9
+    },
+    {
+      "decision_id": "d-039",
+      "stage": "troubleshoot",
+      "category": "voice_selection",
+      "subject": "Dialoogshot-mechaniek",
+      "options_considered": [
+        {
+          "option_id": "r1_plus_elastische_audio",
+          "label": "R1-plus: mode B met v3-regel als referentie, kloonstem weggooien, v3-regel als filmaudio; bij ratio buiten 0,86-1,16 eérst een andere/versnelde v3-take genereren i.p.v. het beeld te hertimen",
+          "score": 0.9,
+          "reason": "Bewezen basis uit de pilot, nu met elastische audio: v3-takes variëren in tempo en elevenlabs_tts heeft een speed-parameter (0,7-1,2), dus de audio kan naar de mond toe worden gegenereerd. Woorden per constructie goed."
+        },
+        {
+          "option_id": "r2_kloonstem",
+          "label": "R2: Seedance-kloonstem houden, bewaakt door meter",
+          "score": 0.2,
+          "reason": "Zou hertimen overbodig maken.",
+          "rejected_because": "Verworpen door Jorrit na beluistering: 'de dialoog is echt niet goed' (meter 75 op de lange regel, woordsalade; pilotbaseline dreef zelfs naar Engels/Duits accent)."
+        },
+        {
+          "option_id": "r3_kling_lipsync",
+          "label": "R3: Kling-lipsync achteraf",
+          "score": 0.1,
+          "reason": "Redmiddel per shot.",
+          "rejected_because": "30fps zonder fps-knop (31-34% dubbelframes) en eerdere afwijzing van lipsync-achteraf; blijft alleen als gedocumenteerde noodgreep."
+        },
+        {
+          "option_id": "r4_kaderdiscipline",
+          "label": "R4: sprekers buiten beeld waar gemotiveerd",
+          "score": 0.7,
+          "reason": "Blijft de goedkoopste verdediging; combineert met R1-plus."
+        }
+      ],
+      "selected": "r1_plus_elastische_audio",
+      "reason": "Seedance-2.5 is het model (d-038) en zijn kloonstem is verworpen, dus de mond wordt geconditioneerd door de v3-regel en de v3-regel zelf is de filmaudio. Nieuw t.o.v. de pilot: de audio is elastisch (retakes/speed/tags), de tweede stem is weg (SFX los, d-036), en spraakspannen worden gemeten met Azure word-timestamps i.p.v. whisper.",
+      "user_visible": true,
+      "user_approved": true,
+      "confidence": 0.85
+    }
+  ]
+}
