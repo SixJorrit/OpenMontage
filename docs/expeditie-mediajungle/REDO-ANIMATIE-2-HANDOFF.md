@@ -66,11 +66,16 @@ animatie 2 (de pilot) opnieuw produceren op de nieuwe route.** De bestaande pilo
 - **`apng/` — 16 geanimeerde sprites (APNG, 36 frames, transparante achtergrond).** Twee
   families: de gebouwstappen (tent, camera, greenscreen, lanparty, fishing, kraan, tempel
   1251x1169) en zeven boom-assets (losse palm, drie palmen, palm-met-schermen,
-  palm-met-camera, groep schermen, rij schermen, jungle-camera). Dit is **eigen,
-  kant-en-klaar geanimeerde vectorart voor de compositielaag** (Remotion/atelier) — NIET
-  als generatie-referentie gebruiken en NIET nagenereren (vaste regel: genereer geen art
-  die het project al bezit). **Vraag Jorrit bij het proposal waar hij ze ingezet wil zien**
-  (intro/kaart/beloningsmomenten/overlays).
+  palm-met-camera, groep schermen, rij schermen, jungle-camera). **Doel (bevestigd door
+  Jorrit, 2026-08-26): dit is canon-materiaal waarváán gegenereerd wordt** — dezelfde
+  route als de karakters en de jeep in de pilot (canon-plaat → evt. promotie naar de style
+  bible → `reference_images` in de generatie), zodat de gegenereerde wereld deze
+  elementen bevat (schermen in de jungle, de gebouwstappen als locaties). Praktisch:
+  Seedance eet stilstaande referenties, dus trek per APNG een representatief frame
+  (`ffmpeg -i asset.png -frames:v 1 still.png`); de animatieframes zelf blijven daarnaast
+  beschikbaar voor de compositielaag waar dat direct past. De vaste regel "genereer geen
+  art die het project al bezit" betekent hier: verzin geen éigen schermen-bomen of
+  gebouwen — gebruik déze als anker.
 - **`icon--check.svg`, `icon--expeditie.svg`** — vectoriconen voor overlays/UI-momenten.
 - Verder aanwezig: canon-platen (Femke, Boaz, tempel, jeep, eiland, bomen),
   `mj-logo-clean.png`, de statische vectorart-set (platforms, rewards, deco,
