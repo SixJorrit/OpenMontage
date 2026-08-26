@@ -38,6 +38,14 @@ elk hun eigen tegoed vast en worden geweigerd terwijl er saldo staat. Bij een 40
 echte saldo lezen (`GET /public/v1/balance`), dan **de gelijktijdigheid verlagen** en opnieuw
 proberen; pas daarna aan bijvullen denken.
 
+**HTTP 401 op de `model/*`-endpoints betekent niet "key ongeldig":** op 2026-08-26 gaven
+`generateImage`/`prediction` ~25 minuten lang 401 unauthorized terwijl dezelfde key op
+`/public/v1/balance` gewoon werkte en er saldo stond. Storing aan Atlas-kant; herstelde
+vanzelf. Diagnose bij een 401: eerst balance-endpoint proberen — werkt die, dan is het een
+storing en is een retry-loop (interval ~2 min) de juiste reactie, geen key-rotatie. Let op:
+een submit die vlak vóór de storing wegging kan wél zijn aangenomen (poll gaf 401 op een
+bestaand prediction-id); check achteraf `model-costs` op spookkosten.
+
 ## 2. Seedance 2.5 reference-to-video — gedrag
 
 ### Referentie-audio: 1,8–30,2s per entry
@@ -190,3 +198,22 @@ met header `Pronunciation-Assessment` = base64 van
   logbestand — eerder een verkeerd "resterend" gerapporteerd.
 - Controleer generatiescripts met `ast.parse` vóór het draaien; een tekstvervanging laat
   makkelijk een oud fragment staan.
+
+## 6. Nano Banana 2 (Atlas) — chirurgische beeldedits
+
+`google/nano-banana-2/edit` (max 14 referenties, tot 4k; toolschatting $0,08/beeld maar de
+échte prijs is per resolutietier — zie §1: 2k mat $0,12, de 4k-tier ligt vermoedelijk hoger;
+alleen `model-costs` telt) is het gelockte style-bible-model. Bij de postersessie
+(2026-08-26, 4 beelden op 4k) geleerd:
+
+- **Een "verander alleen X"-edit hergenereert stilletjes ook tekst elders in het beeld.**
+  De lens-fix op poster 3 repareerde het vergrootglas correct, maar verminkte en passant
+  het MEDIA JUNGLE-logo op Femke's shirt tot wartaal — ondanks een expliciete
+  keep-everything-lock in de prompt. Grote bordteksten overleefden wél; klein logotype niet.
+- **Remedie: lokaal terugpatchen, niet opnieuw genereren.** Edit-output is vrijwel
+  pixel-uitgelijnd met de input (basisdiff ~2%), dus een gefeatherde PIL-patch van het
+  intacte gebied uit de vorige versie is gratis, deterministisch en onzichtbaar.
+  Controleer na élke edit alle tekstdragende gebieden op ware grootte.
+- Nederlandse in-scene tekst (bordje, tassen, gevelnaam) genereert het model foutloos mee
+  als de exacte string in de prompt staat; poster-slogans en het merk-logo horen als échte
+  typografielaag bovenop (Baloo 2 staat lokaal geïnstalleerd; MJ-kleuren #F5C518/#4A2C17/#2FB8A8).

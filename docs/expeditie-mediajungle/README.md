@@ -16,6 +16,7 @@ nooit naar upstream pushen.
 | `scripts/` | de herbruikbare testscripts: modelvergelijking, beoordeling (meter + frames), en `atlascost.py` (echte Atlas-factuur uitlezen) |
 | `style-bible/` | **de gelockte referentieset** (karakter- en locatieplaten, geometrieclip, generatielogs) — identiek in alle vier films; wijzigt alleen na expliciete promotie |
 | `references/` | onvervangbaar eigen materiaal: canon-platen, MJ-logo en de complete vectorart-set (platforms, rewards, deco, gebouwstappen) |
+| `posters/` | de drie A4-campagneposters (missie 1–3): artwork-masters, generatielog en de herbruikbare generator-/opmaakscripts |
 
 **Nieuwe assets aanleveren:** lokaal in
 `projects/expeditie-mediajungle-animaties/assets/references/` (de werkmap die de agent

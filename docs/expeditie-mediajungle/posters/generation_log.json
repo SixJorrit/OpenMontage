@@ -1,0 +1,120 @@
+[
+  {
+    "id": "poster-1-jeep",
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "2:3",
+    "resolution": "4k",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz proudly pose with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, black roll cage and trim) on a jungle trail. The jeep stands in three-quarter front view. Femke sits behind the steering wheel with her head and one arm out of the open side window, laughing brightly at the camera. Boaz sits relaxed and confident on the hood of the jeep, his feet resting on the front bumper, arms loosely crossed, a proud grin at the camera. Both look straight into the camera radiating confidence — they are clearly thrilled with the jeep.\n\nSETTING: a lush dense jungle exactly in the leaf language of the supplied jungle plate: big sculpted banana and monstera leaves, ferns and mossy stones framing the scene left and right, a warm sunny break of golden daylight on the jeep and the kids, deep green jungle behind them.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text, no letters, no labels, no watermarks, no border, exactly two people.",
+    "success": true,
+    "cost_usd": null,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/poster-1-jeep.png",
+    "error": null
+  },
+  {
+    "id": "poster-2-tent",
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "2:3",
+    "resolution": "4k",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/references/reward--2--tent.png",
+      "docs/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-day-rain.png"
+    ],
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nNight in the jungle. A cosy dark-green wedge camping tent from the supplied tent plate stands on a small clearing. Femke and Boaz both poke their heads out of the open tent entrance side by side, lying on their bellies, each resting their chin on their hands with elbows propped on the ground, smiling calmly at the camera. Only their heads and hands are visible in the tent opening; a warm faint lantern glow comes from inside the tent.\n\nSETTING: it is dark; a big stylized moon glows between the clouds and a light drizzle of rain falls, leaving soft drips on the tent canvas. In the dark bushes around the clearing several pairs of colourful cartoon animal eyes peek out — pairs of glowing eyes in different colours, curious not scary. Big sculpted jungle leaves in the leaf language of the supplied jungle plates frame the scene, wet and glossy in the moonlight.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text, no letters, no labels, no watermarks, no border, exactly two people.",
+    "success": true,
+    "cost_usd": null,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/poster-2-tent.png",
+    "error": null
+  },
+  {
+    "id": "poster-3-cocos",
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "2:3",
+    "resolution": "4k",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/references/building--step4--mall.png",
+      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz stand in front of the jungle shop from the supplied shop plate: the same boxy shop with a red central tower, big teal glass windows and a cream sign band reading \"COCO'S KOOPJES\" in playful red letters, remade in the same stylized 3D CG language. Next to the shop entrance stands a small wooden sign that reads exactly: \"KOOP JE LOCO, ZO HELP JE COCO!\". Boaz stands closest to the shop, leaning forward and inspecting the shop through a large magnifying glass, one eye comically enlarged behind the lens, a sceptical investigative look on his face. Femke stands beside him beaming with joy, carrying two big overfull paper shopping bags with \"COCO'S KOOPJES\" printed on them, colourful gadgets and rolled-up goodies sticking out of the bags. In the background on the jungle road their chunky yellow expedition jeep from the supplied jeep plate is parked.\n\nSETTING: dense jungle surrounds the shop in the leaf language of the supplied jungle plate, warm daylight, a few mossy stones by the path.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text anywhere except the shop sign \"COCO'S KOOPJES\", the wooden sign \"KOOP JE LOCO, ZO HELP JE COCO!\" and the bag print \"COCO'S KOOPJES\". No watermarks, no border, exactly two people.",
+    "success": true,
+    "cost_usd": null,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/poster-3-cocos.png",
+    "error": null
+  },
+  {
+    "id": "poster-3-cocos-v2-lens-fix",
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Fix one prop error in this image and change nothing else.\n\nBoaz (the boy) is inspecting through a magnifying glass. Right now the magnifying glass wrongly has TWO lens rings: one ring sits around his enlarged eye and a second, empty lens hangs below it on the same handle. Correct it so he holds ONE ordinary magnifying glass with a SINGLE round lens and a single handle, held directly in front of his eye, and through that one lens his eye appears comically enlarged. Remove the duplicate empty lens completely.\n\nKeep everything else in the image exactly the same: both characters, poses, faces, wardrobe, the shop, all signs and their text, the shopping bags, the jeep, the jungle, colours and lighting.",
+    "reference_images": [
+      "assets/images/poster-3-cocos.png (v1)"
+    ],
+    "success": false,
+    "cost_usd": null,
+    "output": null,
+    "error": "Atlas Cloud image generation failed: Atlas Cloud upload failed with HTTP 503: upstream connect error or disconnect/reset before headers. reset reason: connection termination"
+  },
+  {
+    "id": "poster-3-cocos-v2-lens-fix",
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Fix one prop error in this image and change nothing else.\n\nBoaz (the boy) is inspecting through a magnifying glass. Right now the magnifying glass wrongly has TWO lens rings: one ring sits around his enlarged eye and a second, empty lens hangs below it on the same handle. Correct it so he holds ONE ordinary magnifying glass with a SINGLE round lens and a single handle, held directly in front of his eye, and through that one lens his eye appears comically enlarged. Remove the duplicate empty lens completely.\n\nKeep everything else in the image exactly the same: both characters, poses, faces, wardrobe, the shop, all signs and their text, the shopping bags, the jeep, the jungle, colours and lighting.",
+    "reference_images": [
+      "assets/images/poster-3-cocos.png (v1)"
+    ],
+    "success": false,
+    "cost_usd": null,
+    "output": null,
+    "error": "Atlas Cloud image generation failed: Atlas Cloud submission failed with HTTP 401: {\"code\":401,\"msg\":\"unauthorized\"}"
+  },
+  {
+    "id": "poster-3-cocos-v2-lens-fix",
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Fix one prop error in this image and change nothing else.\n\nBoaz (the boy) is inspecting through a magnifying glass. Right now the magnifying glass wrongly has TWO lens rings: one ring sits around his enlarged eye and a second, empty lens hangs below it on the same handle. Correct it so he holds ONE ordinary magnifying glass with a SINGLE round lens and a single handle, held directly in front of his eye, and through that one lens his eye appears comically enlarged. Remove the duplicate empty lens completely.\n\nKeep everything else in the image exactly the same: both characters, poses, faces, wardrobe, the shop, all signs and their text, the shopping bags, the jeep, the jungle, colours and lighting.",
+    "reference_images": [
+      "assets/images/poster-3-cocos.png (v1)"
+    ],
+    "success": false,
+    "cost_usd": null,
+    "output": null,
+    "error": "Atlas Cloud image generation failed: Atlas Cloud submission failed with HTTP 401: {\"code\":401,\"msg\":\"unauthorized\"}"
+  },
+  {
+    "id": "poster-3-cocos-v2-lens-fix",
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Fix one prop error in this image and change nothing else.\n\nBoaz (the boy) is inspecting through a magnifying glass. Right now the magnifying glass wrongly has TWO lens rings: one ring sits around his enlarged eye and a second, empty lens hangs below it on the same handle. Correct it so he holds ONE ordinary magnifying glass with a SINGLE round lens and a single handle, held directly in front of his eye, and through that one lens his eye appears comically enlarged. Remove the duplicate empty lens completely.\n\nKeep everything else in the image exactly the same: both characters, poses, faces, wardrobe, the shop, all signs and their text, the shopping bags, the jeep, the jungle, colours and lighting.",
+    "reference_images": [
+      "assets/images/poster-3-cocos.png (v1)"
+    ],
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/poster-3-cocos-v2.png",
+    "error": null
+  },
+  {
+    "id": "poster-3-cocos-v3-shirt-patch",
+    "model": "lokale compositing (PIL), geen generatie",
+    "prompt": "Gefeatherde patch van het intacte MEDIA JUNGLE-shirtlogo uit v1 over v2; v2's lens-fix behouden.",
+    "reference_images": [
+      "rejected/poster-3-cocos--v1-double-lens.png",
+      "rejected/poster-3-cocos--v2-shirt-text-corrupt.png"
+    ],
+    "success": true,
+    "cost_usd": 0.0,
+    "output": "assets/images/poster-3-cocos-v3.png",
+    "error": null
+  }
+]
