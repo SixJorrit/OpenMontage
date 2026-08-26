@@ -143,8 +143,10 @@ Jorrit vond `alibaba/wan-3.0/reference-to-video` op atlascloud.ai/collections/wa
 **Gemeten tarief: ~$0,08/s** — Atlas factureert Wan per videoseconde (`video: {seconds: N}` in model-usage, geen tokens), en de eerste 4s kostten $0,32 = het dúbbele van de geadverteerde $0,04/s. De catalogusles geldt dus ook hier. Nog altijd **~4,7x goedkoper dan seedance-2.5** ($0,373/s gemeten).
 
 **De twee vlaggen:**
-1. **Wan levert 30fps** (geen fps-parameter aangetroffen) — de film is 24fps. Mengen met seedance-shots betekent cadansconversie (de Kling-les); een volledig Wan-gegenereerde film op 30fps zou wel kunnen, maar dat is een aparte beslissing.
-2. Eén testronde is geen bewijs voor consistentie over 17+ shots; d-038 (seedance-2.5, geen mix) blijft het geldende besluit. Wan is de sterkste uitdager tot nu toe (spraak + prijs + logo-trouw) — heroverwegen kan bij de start van animatie 3/4, mét het 30fps-vraagstuk op tafel.
+1. **Wan levert 30fps** (geen fps-parameter aangetroffen) — de film is 24fps. Mengen met seedance-shots betekent cadansconversie (de Kling-les).
+2. Eén testronde is geen bewijs voor consistentie over 17+ shots.
+
+**EINDOORDEEL Jorrit (2026-08-26, na beluistering/bekijken): Wan afgewezen; seedance-2.5 blijft (d-038 ongewijzigd).** De redenen — en dit is de belangrijke les — zitten precies in wat de meter niet meet: de stem in het 2A-shot is **compleet out of sync**, de lipsync in het complexe shot klopt wel maar de **acting is vlak** ("totaal geen beleving"), en het **omgevingsgeluid ontbreekt** (Seedance genereert een rijke ambianceband mee). "Seedance was op een ander level." Praktijkregel voortaan: de meter bewaakt wóórden; sync, beleving en soundscape kan alleen een mens beoordelen — elke modelvergelijking eindigt dus bij het oor, nooit bij de scores.
 
 OpenRouter/DashScope zijn niet meer nodig; alles loopt via de bestaande Atlas-key. Ontbrekende last-frame-support is geen bezwaar (ons protocol gebruikt alleen first-frame-conditioning; eindframes trekken we zelf met ffmpeg).
 
