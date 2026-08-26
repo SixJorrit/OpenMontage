@@ -1,0 +1,82 @@
+[
+  {
+    "id": "geometry-hut-empty",
+    "kind": "reference_video",
+    "success": true,
+    "cost_usd": 0.67,
+    "prompt": "GLOBAL STYLE\nStylized 3D CG in the language of a modern animated feature film, matching the supplied image exactly in material, colour, layout and proportion. Deliberately not photorealistic. 16:9.\n\nSCENE\nA slow camera move through the empty jungle hut, filmed as a location reference so the geometry of the whole room is readable.\n\nLOCATION\nThe interior of the jungle hut in the supplied image: bamboo and plank walls, a teal woven couch with dented cushions, an old boxy television on a wooden crate with SNERTFLIX in red on the screen and a stalled loading circle, a paper lantern hanging above the couch, an amber blanket on the floor, a bowl of snacks, a remote on the couch arm, flip-flops by the doorway, a shallow puddle inside the door, big jungle leaves and heavy rain beyond the window and the open doorway.\n\nFIRST FRAME AND BLOCKING\nThe shot opens on exactly the framing of the supplied image: the television slightly left of centre, the couch on the right, the lantern top right.\n\nShot 1, one continuous shot with no cuts: the camera drifts slowly and steadily to the left and a little forward, revealing the wall behind the television, the corner beside it and the floor in front of the couch, then continues past the couch to show the doorway and the wall on the right. The move is smooth and even from the first frame to the last, like a dolly on rails.\n\nOPTICS / CAMERA\nOne fixed normal lens of 47 degrees diagonal field of view at couch height. No zoom, no focus pull, no handheld drift. The camera only translates.\n\nPHYSICS\nRain falls steadily outside and runs off the leaves. The lantern hangs still. Nothing inside the room moves.\n\nLIGHTING\nFlat silver-grey daylight through the window and the doorway as the main light, the paper lantern as a warm second light above the couch. Even exposure throughout, every surface legible.\n\nPOSITIVE LOCKS\nThe room is empty for the whole shot: every shape in the frame is furniture, wall, floor, plant or prop. Nobody enters. The layout, the props and their positions stay exactly as in the supplied image. SNERTFLIX stays red on the television screen.\n\nAUDIO\nNo music, no dialogue. Only the sound of rain outside and a faint creak of the roof.",
+    "error": null
+  },
+  {
+    "id": "location-island-aerial",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "Remake the floating jungle island in the first supplied image as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, keeping its exact silhouette, its layout and its landmarks: the stepped temple, the rock platforms, the tree clusters, the waterfall edges where the island ends in mid-air.\n\nVIEW: a high aerial three-quarter view of the whole island floating in the sky, clouds drifting below and around it.\n\nLIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; grey rain clouds around the island, the jungle canopy dark and wet, a few brighter breaks in the cloud.\n\nThe second supplied image sets the material and colour language: the same painted wood, bamboo and foliage treatment.\n\nFRAME: no text, no labels, no watermarks, no border, no people.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-eiland.jpg",
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png"
+    ],
+    "error": null
+  },
+  {
+    "id": "location-jungle-canopy-dive",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "A view looking down into a dense jungle canopy from just above the treetops, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination. Big sculpted banana and monstera leaves fill the frame, with a dark gap between them through which a bamboo roof is just visible far below.\n\nLIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; raindrops sit on the leaves and run off their tips.\n\nThe supplied images set the leaf shapes and the material and colour language.\n\nFRAME: no text, no labels, no watermarks, no border, no people.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-bomen.png",
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png"
+    ],
+    "error": null
+  },
+  {
+    "id": "location-hut-exterior-rain",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "The outside of the jungle hut from the supplied interior, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination: a small bamboo and plank hut on low stilts, a wooden porch and an open doorway, a corrugated roof edge dripping water, set in dense jungle.\n\nVIEW: a medium wide view from the jungle path looking at the hut, the open doorway dark and inviting, the warm glow of a paper lantern just visible inside.\n\nLIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; heavy rain streaks past, water sheets off the roof edge, puddles on the path.\n\nThe supplied images set the material and colour language: the same painted bamboo, plank walls and leaf shapes.\n\nFRAME: no text, no labels, no watermarks, no border, no people.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-bomen.png"
+    ],
+    "error": null
+  },
+  {
+    "id": "location-temple-mast-distant",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "Remake the stepped jungle temple in the first supplied image as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, keeping its exact stepped silhouette and stone character. On top of it stands a clearly readable transmission mast: a lattice steel tower with a satellite dish and two antennas, and a small red warning light near the top.\n\nVIEW: an extreme wide view from far away across the jungle, the temple and its mast rising above the treetops in the distance, two dark tree silhouettes framing the left and right foreground.\n\nLIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; the red light on the mast glows unevenly as if faulty.\n\nThe second supplied image sets the material and colour language.\n\nFRAME: no text, no labels, no watermarks, no border, no people.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-tempel.png",
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png"
+    ],
+    "error": null
+  },
+  {
+    "id": "location-jungle-path-day-rain",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "A narrow earth path winding through dense jungle, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination. Sculpted banana and monstera leaves crowd in from both sides, ferns and mossy stones along the edges, the path curving away into the green distance.\n\nVIEW: a medium wide view along the path at walking height, so two characters could walk towards the camera down the middle of it.\n\nLIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; wet leaves, shallow puddles in the ruts, a faint mist between the trunks.\n\nThe supplied images set the leaf shapes and the material and colour language.\n\nFRAME: no text, no labels, no watermarks, no border, no people.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-bomen.png",
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png"
+    ],
+    "error": null
+  },
+  {
+    "id": "prop-jeep-reward",
+    "kind": "location_plate",
+    "success": true,
+    "cost_usd": 0.08,
+    "prompt": "Remake the jeep in the first supplied image as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, keeping its exact shape, proportions and colours: the same body, the same wheels, the same trim.\n\nVIEW: a clean three-quarter front view of the whole jeep against a plain evenly lit neutral light-grey backdrop, as a prop plate for compositing.\n\nLIGHT: soft even studio light with a warm rim, so the vehicle reads clearly at any size.\n\nThe second supplied image sets the material and colour language.\n\nFRAME: no text, no labels, no watermarks, no border, no people, no background scenery.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/references/canon-jeep.png",
+      "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-hut-day-rain.png"
+    ],
+    "error": null
+  }
+]

@@ -1,0 +1,9 @@
+Remake the supplied interior as exactly the same room from exactly the same camera position, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, but on a dry overcast day with no rain at all.
+
+WEATHER: outside the window and the open doorway the sky is a flat pale grey overcast and the air is completely dry. No rain falls anywhere. The jungle leaves outside are dry and matte, not wet and not glossy. The floor inside the doorway is dry: no puddle, no wet boards, no water anywhere.
+
+LIGHT: soft even silver-grey daylight from the window and the doorway as the main light, with the paper lantern glowing warm above the couch as a second light. Every surface legible, no deep shadows.
+
+HOLD: identical layout, camera position and props to the supplied image — the teal woven couch with its dented cushions and yellow cushion, the boxy television on the wooden crate with SNERTFLIX in red and the stalled loading circle, the bamboo and plank walls, the amber blanket on the floor, the bowl of snacks, the remote on the couch arm, the flip-flops by the doorway, the paper lantern. Nobody is in the room; every shape in the frame is furniture, wall, floor, plant or prop.
+
+FRAME: no text other than SNERTFLIX on the screen, no labels, no watermarks, no border.

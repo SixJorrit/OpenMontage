@@ -1,0 +1,16 @@
+This is a local edit, not a redraw. Keep the supplied image EXACTLY as it is in every respect except the transmission mast: the same squat moss-green stepped temple with the same silhouette and the same stone stair, the same distance and camera position with the temple small and far away above the treetops, the same two dark tree silhouettes framing the left and right foreground, the same treeline, the same stylized 3D CG look with soft global illumination. Do not redesign the temple, do not move the camera closer, do not add carved stone detail or extra staircases, and do not change the rendering style to a flat painting.
+
+CHANGE ONLY THE MAST ON TOP OF THE TEMPLE. It must read as unmistakably BROKEN even from this distance:
+
+- The lattice steel tower BUCKLES about two thirds of the way up, so the whole top section leans over at a visible angle instead of standing straight.
+- The large satellite dish has come loose and hangs ASKEW, tilted face-down, held by only one twisted bracket.
+- One of the two thin antennas is SNAPPED OFF: a broken stub is left on the tower and the snapped piece lies across the temple roof below.
+- Several cables have torn loose and hang down the side of the tower in slack loops.
+- Two of the green equipment panels are cracked and dark, and one hangs by a corner.
+- THE RED WARNING LIGHT IS OFF. There is no red light anywhere in this image: no red glow, no red dot, no red halo, no pink halo, nothing lit on the mast at all. Where the supplied image has a glowing red lamp, this image has a dead grey unlit lamp housing. This is the single most important change after the buckled tower.
+
+No smoke, no fire, no sparks, nothing glowing. The damage is purely structural and the mast is simply dead.
+
+WEATHER: the downpour has just stopped. NO RAIN FALLS ANYWHERE in the frame and there are no rain streaks. The leaves are wet and glossy with fat droplets hanging from their tips, thin mist sits between the trunks, and the overcast sky is breaking up so the light is a little brighter than in the supplied image.
+
+FRAME: no text, no labels, no watermarks, no border, no people.

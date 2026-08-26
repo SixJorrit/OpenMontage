@@ -1,0 +1,9 @@
+Remake the stepped jungle temple in the first supplied image as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, keeping its exact stepped silhouette and stone character. On top of it stands a clearly readable transmission mast: a lattice steel tower with a satellite dish and two antennas, and a small red warning light near the top.
+
+VIEW: an extreme wide view from far away across the jungle, the temple and its mast rising above the treetops in the distance, two dark tree silhouettes framing the left and right foreground.
+
+LIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; the red light on the mast glows unevenly as if faulty.
+
+The second supplied image sets the material and colour language.
+
+FRAME: no text, no labels, no watermarks, no border, no people.

@@ -1,0 +1,9 @@
+Remake the jeep in the first supplied image as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, keeping its exact shape, proportions and colours: the same body, the same wheels, the same trim.
+
+VIEW: a clean three-quarter front view of the whole jeep against a plain evenly lit neutral light-grey backdrop, as a prop plate for compositing.
+
+LIGHT: soft even studio light with a warm rim, so the vehicle reads clearly at any size.
+
+The second supplied image sets the material and colour language.
+
+FRAME: no text, no labels, no watermarks, no border, no people, no background scenery.

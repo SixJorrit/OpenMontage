@@ -1,0 +1,92 @@
+[
+  {
+    "id": "boaz-body-front-headless",
+    "role": "boaz: totaalplaat frontaal, hoofd buiten kader",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nFRAMING: a single full-body plate, standing straight and facing the camera front-on, against a plain evenly lit neutral light-grey backdrop. The frame begins just below the chin, so the head is above the top edge of the frame and outside the picture. Body, wardrobe and shoes are fully visible from the neck down to the floor.\n\nWARDROBE: an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers, both wrists bare. Arms relaxed at the sides, hands empty and open.\n\nFRAME: no text, no labels, no watermarks, no border. One figure only. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-boaz-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/boaz-canon.png"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "9:16",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/boaz-body-front-headless.png",
+    "error": null
+  },
+  {
+    "id": "boaz-body-back",
+    "role": "boaz: totaalplaat op de rug",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nFRAMING: a single full-body plate seen from directly behind, standing straight with the back to the camera, against a plain evenly lit neutral light-grey backdrop. The whole figure is visible from the top of the head down to the floor.\n\nWARDROBE FROM BEHIND: an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers, both wrists bare, shown as it reads from the back — the back of the shirt, the back of the hair, the heels of the shoes. Arms relaxed at the sides.\n\nFRAME: no text, no labels, no watermarks, no border. One figure only. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-boaz-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/boaz-canon.png"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "9:16",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/boaz-body-back.png",
+    "error": null
+  },
+  {
+    "id": "boaz-face-neutral-smile",
+    "role": "boaz: gezichtsplaat, neutraal en lachend",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nLAYOUT: one wide plate showing the same head twice, large and sharp, against a plain evenly lit neutral light-grey backdrop. On the left a three-quarter head-and-shoulders view with a calm neutral expression and the mouth closed. On the right the same three-quarter head-and-shoulders view with a warm open smile showing the upper teeth.\n\nHEAD: a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes, rounded cheek line and a soft jaw. Both heads are the same person at the same age, lit the same way, and fill their half of the frame.\n\nFRAME: no text, no labels, no watermarks, no border. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-boaz-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/boaz-canon.png"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "16:9",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/boaz-face-neutral-smile.png",
+    "error": null
+  },
+  {
+    "id": "femke-body-front-headless",
+    "role": "femke: totaalplaat frontaal, hoofd buiten kader",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nFRAMING: a single full-body plate, standing straight and facing the camera front-on, against a plain evenly lit neutral light-grey backdrop. The frame begins just below the chin, so the head is above the top edge of the frame and outside the picture. Body, wardrobe and shoes are fully visible from the neck down to the floor.\n\nWARDROBE: a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. Arms relaxed at the sides, hands empty and open.\n\nFRAME: no text, no labels, no watermarks, no border. One figure only. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-femke-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/femke-canon.jpg"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "9:16",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/femke-body-front-headless.png",
+    "error": null
+  },
+  {
+    "id": "femke-body-back",
+    "role": "femke: totaalplaat op de rug",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nFRAMING: a single full-body plate seen from directly behind, standing straight with the back to the camera, against a plain evenly lit neutral light-grey backdrop. The whole figure is visible from the top of the head down to the floor.\n\nWARDROBE FROM BEHIND: a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist, shown as it reads from the back — the back of the shirt, the back of the hair, the heels of the shoes. Arms relaxed at the sides.\n\nFRAME: no text, no labels, no watermarks, no border. One figure only. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-femke-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/femke-canon.jpg"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "9:16",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/femke-body-back.png",
+    "error": null
+  },
+  {
+    "id": "femke-face-neutral-smile",
+    "role": "femke: gezichtsplaat, neutraal en lachend",
+    "prompt": "Remake the supplied character as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, shallow depth of field, matching the supplied character sheet exactly in material, colour and proportion.\n\nLAYOUT: one wide plate showing the same head twice, large and sharp, against a plain evenly lit neutral light-grey backdrop. On the left a three-quarter head-and-shoulders view with a calm neutral expression and the mouth closed. On the right the same three-quarter head-and-shoulders view with a warm open smile showing the upper teeth.\n\nHEAD: a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes of a natural believable size, freckles across her nose and cheeks. Both heads are the same person at the same age, lit the same way, and fill their half of the frame.\n\nFRAME: no text, no labels, no watermarks, no border. The backdrop stays plain and empty.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-animaties/assets/images/style-test/round-2/c2-femke-sheet-v2.png",
+      "projects/expeditie-mediajungle-animaties/assets/references/femke-canon.jpg"
+    ],
+    "model": "google/nano-banana-2/edit",
+    "aspect_ratio": "16:9",
+    "success": true,
+    "cost_usd": 0.08,
+    "output": "projects/expeditie-mediajungle-animaties/assets/images/style-bible/femke-face-neutral-smile.png",
+    "error": null
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "id": "location-temple-mast-broken",
+  "model": "google/nano-banana-2/edit",
+  "resolution": "2k",
+  "cost_usd_tracker": 0.08,
+  "cost_usd_real_est": 0.12,
+  "reference_images": [
+    "projects/expeditie-mediajungle-animaties/assets/images/style-bible/location-temple-mast-distant.png"
+  ],
+  "attempt": "attempt-2-local-edit-single-ref",
+  "reason": "punt 6: de mast moet stuk zijn. De bestaande plaat toont een intacte mast in bedrijf en verslaat als inputframe elke defect-instructie in de clipprompt (valkuil 5). Oude plaat blijft staan: de intacte mast is later in de reeks nodig.",
+  "weather": "after",
+  "supersedes_for": [
+    "shot_4B in animatie 2"
+  ]
+}

@@ -1,0 +1,7 @@
+Remake the supplied jungle path as exactly the same path from the same camera position, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, at the moment just after a downpour has stopped.
+
+WEATHER: no rain falls anywhere in the frame; the air is clear. The leaves are still wet and glossy with a few fat droplets hanging from their tips, and shallow puddles sit in the ruts of the path, reflecting the sky. Thin steam rises from the warm earth. The overcast sky is breaking up and a softer, brighter light is coming through.
+
+HOLD: identical path, identical plants, identical rocks and ferns and identical framing to the supplied image. Nobody is in the frame; every shape is plant, stone, earth or water.
+
+FRAME: no text, no labels, no watermarks, no border, no people.

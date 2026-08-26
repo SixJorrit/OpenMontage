@@ -1,0 +1,7 @@
+A view looking down into a dense jungle canopy from just above the treetops, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination. Big sculpted banana and monstera leaves fill the frame, with a dark gap between them through which a bamboo roof is just visible far below.
+
+LIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; raindrops sit on the leaves and run off their tips.
+
+The supplied images set the leaf shapes and the material and colour language.
+
+FRAME: no text, no labels, no watermarks, no border, no people.

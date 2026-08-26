@@ -1,0 +1,7 @@
+Remake the supplied floating jungle island as exactly the same island with the same silhouette, layout and landmarks, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, under a dry overcast sky with no rain.
+
+WEATHER: no rain anywhere in the frame. Soft pale grey cloud drifts below and around the island, with brighter breaks where light comes through. The canopy is green and dry.
+
+HOLD: identical island shape, the stepped temple, the rock platforms, the paths and buildings, the tree clusters, and the waterfall spilling off the edge into the cloud, all exactly as in the supplied image.
+
+FRAME: no text, no labels, no watermarks, no border, no people.

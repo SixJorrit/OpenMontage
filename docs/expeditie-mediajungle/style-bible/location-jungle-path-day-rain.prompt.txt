@@ -1,0 +1,9 @@
+A narrow earth path winding through dense jungle, rendered as stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination. Sculpted banana and monstera leaves crowd in from both sides, ferns and mossy stones along the edges, the path curving away into the green distance.
+
+VIEW: a medium wide view along the path at walking height, so two characters could walk towards the camera down the middle of it.
+
+LIGHT: overcast rainy daylight, flat silver-grey light, rain falling, wet glossy leaves; wet leaves, shallow puddles in the ruts, a faint mist between the trunks.
+
+The supplied images set the leaf shapes and the material and colour language.
+
+FRAME: no text, no labels, no watermarks, no border, no people.
