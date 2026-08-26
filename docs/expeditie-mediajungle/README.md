@@ -14,6 +14,13 @@ nooit naar upstream pushen.
 | `HANDOFF.md` | productiestaat van animatie 2 (de pilot) op het moment van afronden |
 | `decision_log.json` | het besluitenlog van de pilot, 39 entries, incl. d-034 t/m d-039 (de route voor de reeks) |
 | `scripts/` | de herbruikbare testscripts: modelvergelijking, beoordeling (meter + frames), en `atlascost.py` (echte Atlas-factuur uitlezen) |
+| `style-bible/` | **de gelockte referentieset** (karakter- en locatieplaten, geometrieclip, generatielogs) — identiek in alle vier films; wijzigt alleen na expliciete promotie |
+| `references/` | onvervangbaar eigen materiaal: canon-platen, MJ-logo en de complete vectorart-set (platforms, rewards, deco, gebouwstappen) |
+
+**Nieuwe assets aanleveren:** lokaal in
+`projects/expeditie-mediajungle-animaties/assets/references/` (de werkmap die de agent
+uitleest). Onvervangbare originelen daarna ook hierheen synchroniseren en committen —
+`projects/` is gitignored en bestaat alleen op de productiemachine.
 
 ## De route in vijf regels (details in de findings)
 
