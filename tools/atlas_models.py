@@ -150,6 +150,28 @@ for operation, suffix, media_style in (
     )
 
 
+# Wan 3.0 (Alibaba). Only the reference-to-video route is catalogued: its schema was
+# verified against the live model page (2026-08-26): refers-array payload (same shape
+# as MiniMax h3_refers, max 20 entries of {url, type: image/video/audio}), duration
+# -1 or 2-30, ratio adaptive default, boolean `audio`, optional file/link ingestion.
+# The text/image routes exist on Atlas but are unverified; add them against their own
+# model pages, not by analogy.
+VIDEO_MODELS["alibaba/wan-3.0/reference-to-video"] = _video_spec(
+    "alibaba/wan-3.0",
+    "reference_to_video",
+    0.04,
+    duration=(-1,) + tuple(range(2, 31)),
+    resolution=("480p", "720p", "1080p", "720p-esr", "1080p-esr", "1440p-esr", "4k-esr"),
+    default_resolution="1080p",
+    ratio_key="ratio",
+    ratios=("adaptive", "16:9", "4:3", "1:1", "3:4", "9:16"),
+    default_ratio="adaptive",
+    media_style="h3_refers",
+    optional_fields=("audio", "enable_thinking", "seed"),
+    media_limits={"refers": 20},
+)
+
+
 IMAGE_MODELS: dict[str, dict[str, Any]] = {
     "bytedance/seedream-v5.0-pro/text-to-image": {
         "family": "bytedance/seedream-v5.0-pro", "operation": "generate",

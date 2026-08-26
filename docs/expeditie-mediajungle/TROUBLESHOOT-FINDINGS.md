@@ -130,9 +130,23 @@ De seedance-2.5-kloon van de v3-stem haalt meter-90 met de volledige zin — pre
 
 14 requests op 2026-08-21 = 10 (fixronde 2) + 4 geslaagde testgeneraties; de 2 gemini-dev-weigeringen zijn niet gefactureerd (pre-generatie). Ronde: **$3,91** (dagbucket $15,39 − $11,48 fixronde 2; bucket nog partial bij afsluiting). Per-model-uitsplitsing geeft de API niet; seedance-2.5 is per token herleidbaar (~$1,49), de rest gezamenlijk ~$2,42. Saldo na de ronde: $23,62.
 
-### Nakandidaat: Wan 3.0 (geparkeerd, 2026-08-26)
+### Nakandidaat: Wan 3.0 — GETEST op 2026-08-26 (Atlas bleek hem al te hosten)
 
-Uitgebracht 24-08 (ná de testronde). Lijstprijs 720p $0,10/s — op papier ~3,7x goedkoper dan seedance-2.5, mét reference-gestuurde generatie, audio-invoer en 2–30s clips. Nog niet testbaar zonder frictie: Atlas heeft hem (nog) niet, OpenRouter geeft alleen tekst + first-frame door (geen referentieset, geen audio — ongeschikt voor ons protocol), en de native DashScope-route vraagt Alibaba-accountverificatie met btw-nummer. **Afspraak: bij de start van elke volgende productie de Atlas-catalogus checken; zodra Wan 3.0 daar staat, de klaarliggende testscripts draaien (~$1,50).** Ontbrekende last-frame-support (OpenRouter) is geen bezwaar: ons protocol gebruikt alleen first-frame-conditioning; eindframes trekken we zelf met ffmpeg.
+Jorrit vond `alibaba/wan-3.0/reference-to-video` op atlascloud.ai/collections/wan-3.0. De route is aan de tool-catalogus toegevoegd (`tools/atlas_models.py`; schema geverifieerd tegen de live modelpagina: `refers`-payload zoals MiniMax, max 20 entries beeld/video/audio, duur -1 of 2–30s, `ratio` adaptive, boolean `audio`). Beide protocol-shots gedraaid (2A 4s + complex two-shot 10s, 720p):
+
+| | wan-3.0-2A | wan-3.0-complex |
+|---|---|---|
+| stem-meter | **99** — volledige regel | **94** — volledige lange regel, niets laag (evenaart minimax) |
+| beeld | on-model | **sterk**: MEDIA JUNGLE-logo exact én leesbaar, beide personages on-model, regen + plassen, kadering dicht op de gevraagde knees-up |
+| levering | 1280x720, **30fps**, 4,0s | 1280x720, **30fps**, 10,0s |
+
+**Gemeten tarief: ~$0,08/s** — Atlas factureert Wan per videoseconde (`video: {seconds: N}` in model-usage, geen tokens), en de eerste 4s kostten $0,32 = het dúbbele van de geadverteerde $0,04/s. De catalogusles geldt dus ook hier. Nog altijd **~4,7x goedkoper dan seedance-2.5** ($0,373/s gemeten).
+
+**De twee vlaggen:**
+1. **Wan levert 30fps** (geen fps-parameter aangetroffen) — de film is 24fps. Mengen met seedance-shots betekent cadansconversie (de Kling-les); een volledig Wan-gegenereerde film op 30fps zou wel kunnen, maar dat is een aparte beslissing.
+2. Eén testronde is geen bewijs voor consistentie over 17+ shots; d-038 (seedance-2.5, geen mix) blijft het geldende besluit. Wan is de sterkste uitdager tot nu toe (spraak + prijs + logo-trouw) — heroverwegen kan bij de start van animatie 3/4, mét het 30fps-vraagstuk op tafel.
+
+OpenRouter/DashScope zijn niet meer nodig; alles loopt via de bestaande Atlas-key. Ontbrekende last-frame-support is geen bezwaar (ons protocol gebruikt alleen first-frame-conditioning; eindframes trekken we zelf met ffmpeg).
 
 ### Oorspronkelijk protocol (uitgevoerd zoals gepland)
 
