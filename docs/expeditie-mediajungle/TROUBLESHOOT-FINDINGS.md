@@ -130,6 +130,10 @@ De seedance-2.5-kloon van de v3-stem haalt meter-90 met de volledige zin — pre
 
 14 requests op 2026-08-21 = 10 (fixronde 2) + 4 geslaagde testgeneraties; de 2 gemini-dev-weigeringen zijn niet gefactureerd (pre-generatie). Ronde: **$3,91** (dagbucket $15,39 − $11,48 fixronde 2; bucket nog partial bij afsluiting). Per-model-uitsplitsing geeft de API niet; seedance-2.5 is per token herleidbaar (~$1,49), de rest gezamenlijk ~$2,42. Saldo na de ronde: $23,62.
 
+### Nakandidaat: Wan 3.0 (geparkeerd, 2026-08-26)
+
+Uitgebracht 24-08 (ná de testronde). Lijstprijs 720p $0,10/s — op papier ~3,7x goedkoper dan seedance-2.5, mét reference-gestuurde generatie, audio-invoer en 2–30s clips. Nog niet testbaar zonder frictie: Atlas heeft hem (nog) niet, OpenRouter geeft alleen tekst + first-frame door (geen referentieset, geen audio — ongeschikt voor ons protocol), en de native DashScope-route vraagt Alibaba-accountverificatie met btw-nummer. **Afspraak: bij de start van elke volgende productie de Atlas-catalogus checken; zodra Wan 3.0 daar staat, de klaarliggende testscripts draaien (~$1,50).** Ontbrekende last-frame-support (OpenRouter) is geen bezwaar: ons protocol gebruikt alleen first-frame-conditioning; eindframes trekken we zelf met ffmpeg.
+
 ### Oorspronkelijk protocol (uitgevoerd zoals gepland)
 
 ### Testprotocol (klaar om te draaien zodra er een plafond is)
