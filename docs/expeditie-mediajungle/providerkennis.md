@@ -285,3 +285,11 @@ mond/timing bleven wél intact). "Keep everything else the same" pint identiteit
 Route via Atlas: `google/gemini-omni-flash/video-edit` (video_path) en de generatie-varianten;
 de directe `gemini_omni_video`-tool (stateful editing via interaction_id) vergt een
 GEMINI_API_KEY en is EER-beperkt voor geüploade video's.
+
+### Geen licht-metaforen in acting-prompts
+
+Seedance rendert Engelse licht-metaforen voor emotie letterlijk: "a brief golden glow on both
+faces" gaf gloeiende ogen (g09), en "her eyes light up" is hetzelfde risico. Vermijd in prompts:
+eyes light up / face glows / beams / radiant / sparkle in her eyes. Gebruik fysieke acting-taal
+(grote ogen, brede grijns, veert op, gebaart levendig) en zet bij twijfel een EYES LOCK in de
+POSITIVE LOCKS ("both characters' eyes stay completely natural - no glow, no light emission").
