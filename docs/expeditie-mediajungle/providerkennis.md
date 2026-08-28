@@ -293,3 +293,13 @@ faces" gaf gloeiende ogen (g09), en "her eyes light up" is hetzelfde risico. Ver
 eyes light up / face glows / beams / radiant / sparkle in her eyes. Gebruik fysieke acting-taal
 (grote ogen, brede grijns, veert op, gebaart levendig) en zet bij twijfel een EYES LOCK in de
 POSITIVE LOCKS ("both characters' eyes stay completely natural - no glow, no light emission").
+
+### v3-takes driften in register — meet F0 tegen goedgekeurde takes
+
+Een eleven_v3-take kan per toeval fors onder het normale register van de stem zakken (gemeten:
+[excited]-take op ~193 Hz waar Ruths goedgekeurde takes 225-235 Hz zitten — klonk "zwaar/te
+laag"). De meter vangt dit niet (woordtrouw was 94). Goedkope gate bij takekeuze: mediane F0
+(autocorrelatie, numpy volstaat) vergelijken met eerder goedgekeurde takes van dezelfde stem;
+binnen ±10% blijven. Let ook op cumulatieve atempo: twee keer vertragen (referentie-prep x
+hertiming) stapelt tot hoorbaar loom — houd het totaal boven ~0,85 en normaliseer élke
+filmtake met dezelfde loudnorm (I=-16) als de rest van de mix.
