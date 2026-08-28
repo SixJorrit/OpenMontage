@@ -217,3 +217,49 @@ alleen `model-costs` telt) is het gelockte style-bible-model. Bij de postersessi
 - Nederlandse in-scene tekst (bordje, tassen, gevelnaam) genereert het model foutloos mee
   als de exacte string in de prompt staat; poster-slogans en het merk-logo horen als échte
   typografielaag bovenop (Baloo 2 staat lokaal geïnstalleerd; MJ-kleuren #F5C518/#4A2C17/#2FB8A8).
+
+## 6. Lessen uit de redo van animatie 2 (2026-08-26, project expeditie-mj-animatie2-v2)
+
+### Dialoogroute A2 (r-006, vervangt de elastische-audio-machinerie van d-039)
+
+1. v3-take genereren + meter (regel ≥90, woord ≥60).
+2. Zo nodig **vooraf** vertragen met `ffmpeg atempo` (~0,88–0,90) tot een natuurlijk-rustig tempo — die versie is meteen de filmaudio.
+3. **Exact die versie** als `reference_audios` meegeven: de mond volgt een trage referentie veel beter (gemeten +6% oprek i.p.v. +32% bij dezelfde regel met de snelle take).
+4. **Duurregel (r-009): dialoogshot-duur = audioduur + 0,5–1,0s, nooit ruimer.** Vrije ruimte nodigt het model uit tot trager articuleren; de clipduur werkt als fysiek plafond op de mondspan. Gemeten over 14 generaties: strak bemeten shots 4/4 binnen ±7%; de ene misser (+27%) had 1s extra ruimte.
+5. Acceptatie-gates per generatie: kloon-meter ≥93 én woordperfect, plus mondspan-ratio 0,86–1,16 (Azure word-timestamps). Fail = retake (~15% marge begroten).
+
+### eleven_v3: de speed-parameter doet vrijwel niets
+
+`speed` 0,8–0,85 leverde 2,89–2,96s waar ~3,4s verwacht werd (take van 2,77s). Takes variëren
+onderling wél fors — take-variantie en `ffmpeg atempo` op een schone take zijn de echte knoppen.
+Milde atempo (0,82–0,90) bleef meter-schoon (95–97) en werd door mensenoren goedgekeurd.
+
+### Fonetische prompt-gids: disciplineert wóórden, niet fonemen
+
+De regel + IPA in de prompt (bewuste uitzondering op de regeltekst-regel) stopte het weglaten van
+woorden door de kloon (meter 91→96, niets weggevallen) maar kreeg de uitspraak niet goed: "ga"
+bleef "ha", ook met expliciete harde-g-instructie. Prompttekst stuurt de audiodecoder-fonemen niet.
+Bruikbaar als tweede verdedigingslinie voor woorddiscipline; geen vervanging van route A2.
+
+### Atlas-operatie
+
+- **Referentiebeelden moeten ≥300px hoog zijn** (`InvalidParameter.HeightTooSmall`, 400 vóór
+  facturering — kost niets). Kleine canon-platen eerst 2x opschalen (lanczos).
+- Het **prediction-endpoint kan ~30 min lang 401 geven op álle polls** terwijl de public-API
+  (balance/usage) gewoon werkt. De generatie loopt server-side door; resultaat via de
+  prediction-id ophalen zodra het endpoint terug is. Nooit opnieuw submitten om een 401-poll.
+
+### Canon-vectorart: eerst promoveren, dan pas refereren
+
+Vector-assets (APNG-stills, rewards) direct als `reference_images` meegeven levert letterlijk
+geplakte platen op — stijlbreuk. Route: per asset één 3D-stijl-canonplaat maken met
+`google/nano-banana-2/edit` (input: vector-still + een style-bible-plaat als stijlanker,
+$0,12/beeld) en dié gebruiken. In brede establishing-shots met meerdere dominante
+locatieplaten (g01) integreert het model vectors soms wel goed; in krappe shots niet.
+
+### Seedance-clipaudio is goed — maar gemengd
+
+De gegenereerde ambiance/SFX is van hoge kwaliteit (Jorrit: behouden, r-004). Let op: (a) bij
+dialoogshots zit de kloonstem onscheidbaar in hetzelfde spoor (stemscheiding of bed-vervanging
+nodig), (b) het model verzint soms ongepaste achtergrondspraak (TV zei "bitch-ass") — altijd
+naluisteren, ook shots zonder dialoog.
