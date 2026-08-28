@@ -263,3 +263,25 @@ De gegenereerde ambiance/SFX is van hoge kwaliteit (Jorrit: behouden, r-004). Le
 dialoogshots zit de kloonstem onscheidbaar in hetzelfde spoor (stemscheiding of bed-vervanging
 nodig), (b) het model verzint soms ongepaste achtergrondspraak (TV zei "bitch-ass") — altijd
 naluisteren, ook shots zonder dialoog.
+
+### Gemini Omni Flash: inzetprofiel (2026-08-26, gemeten)
+
+**Niet voor eindbeeld in deze reeks** (d-038: geen modellenmix). Twee metingen onderbouwen dat:
+de modelvergelijking (beeld zachter, props uit referenties deels genegeerd, spraak vrijwel
+afwezig) en de video-edit-proef op g09 (herstijlt de héle clip: gelockte karakteridentiteit
+ging verloren — lichte huid, ander haar — terwijl de gevraagde gloed-fix niet eens lukte;
+mond/timing bleven wél intact). "Keep everything else the same" pint identiteit niet.
+
+**Waar Gemini wél past** (ook voor animatie 1/3/4):
+1. **Previz/animatics** — snelste en goedkoopste generator (76s per clip); staging, timing en
+   camerabewegingen testen vóór de dure seedance-generatie. Stijl/identiteit irrelevant.
+2. **Schermcontent** — SNERTFLIX-interfaces, glitch-inserts: tekst renderen is een
+   gedocumenteerde sterkte, en op een diëgetisch scherm mag de stijl licht afwijken.
+3. **Timecoded beats** — op tijdcode gestuurde gebeurtenissen voor overlay-planning.
+4. *Voorzichtig*: weer/licht-edits op sfeershots zonder personages — alleen met een
+   style-bible-vergelijking als gate; resultaat mag de film alleen in als de stijl naast de
+   seedance-shots niet verspringt.
+
+Route via Atlas: `google/gemini-omni-flash/video-edit` (video_path) en de generatie-varianten;
+de directe `gemini_omni_video`-tool (stateful editing via interaction_id) vergt een
+GEMINI_API_KEY en is EER-beperkt voor geüploade video's.
