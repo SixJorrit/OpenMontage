@@ -1,82 +1,59 @@
-# Handoff — Expeditie Mediajungle, animatie 2 (pilot)
+# HANDOFF — stand na de redo van animatie 2 (v2), 2026-08-28
 
-Opgeschoond 2026-08-21 na de troubleshoot-sessie. Dit bestand beschrijft **alleen de staat van
-deze productie**. De oude versie (370 regels, met interne correcties) staat in
-`archive/HANDOFF-2026-08-21-voor-opschoning.md`.
+Vervangt de pilot-handoff. **Animatie 2 is af en opgeleverd**:
+`projects/expeditie-mj-animatie2-v2/renders/expeditie-mediajungle-animatie-2-v2.mp4`
+(75,8s, 1280x720/24, met muziek). Echte factuur van de hele redo: **~$69** (nageteld via
+`model-costs`, 26–28 aug), tegenover $97,46 voor de pilot. Alle 39+14 besluiten in
+`projects/expeditie-mj-animatie2-v2/artifacts/decision_log.json` (r-001 t/m r-014 + geïmporteerde
+d-034 t/m d-039).
 
-Waar de rest staat:
+## Volgende sessies: animatie 1, 3 en 4
 
-| wat | waar |
-|---|---|
-| Providerkennis (tarieven, Seedance-gedrag, Kling, ElevenLabs, Azure-meter) | `skills/seedance-reference-audio-limits.md` |
-| De route- en stembesluiten voor animatie 1, 3 en 4 | `TROUBLESHOOT-FINDINGS.md` + `artifacts/decision_log.json` (d-034 t/m d-037) |
-| De briefing van de reeks | `BRIEFING-4-animaties.md` |
+**Jorrit levert eerst aangepaste scripts/storyboards aan** (aangekondigd 2026-08-28; komt in
+een nieuwe chat). Begin dus niet vanuit de oude shotlists — wacht op zijn materiaal en run
+daarna de gates gewoon opnieuw. Alles hieronder is het herbruikbare *proces*, niet de inhoud.
 
-**De film is af en beoordeeld. Er wordt niets meer gerepareerd aan animatie 2** (instructie
-Jorrit, troubleshoot-sessie). Animatie 1, 3 en 4 beginnen vers, op de nieuwe route.
+## De bewezen route (lees ook providerkennis.md, secties 6+)
 
----
+1. **Workspace**: nieuw project via `init_project` + `python -m backlot open`. Style bible
+   ongewijzigd hergebruiken; canon-vectorart eerst promoveren naar 3D-stijl via
+   `google/nano-banana-2/edit` (vector-still + style-bible-plaat als stijlanker, $0,12/beeld) —
+   nooit vectors direct als reference (stijlbreuk).
+2. **Stemmen (route A2, r-006/r-009)**: eleven_v3 + emotietag (casting: Hans Claesen/Ruth/Bram),
+   meter ≥90/woord ≥60, **F0-registergate** (±10% t.o.v. goedgekeurde takes van die stem),
+   loudnorm I=-16 op élke filmtake. Zo nodig vooraf atempo ~0,88-0,90 (die versie = filmaudio
+   én seedance-referentie); cumulatieve atempo boven ~0,85 houden.
+3. **Video**: seedance-2.5 via `atlas_video`, $0,373/s gemeten, 720p24.
+   **Duurregel: dialoogshot = audioduur + 0,5–1,0s, nooit ruimer.** Referentiebeelden ≥300px
+   hoog. Audio-entries 1,8–30,2s (korte regels padden). Regeltekst nooit in de prompt (assert).
+   Geen licht-metaforen in acting-prompts; EYES LOCK bij emotioneel acteren.
+4. **Gates per dialooggeneratie**: kloon-meter ≥93 woordperfect én mondspan-ratio — 0,95–1,05
+   voor close-ups, 0,86–1,16 voor medium/wide. Fail op ratio met goed beeld → **deterministisch
+   repareren** (per-segment audio op de mondpauzes; of per-segment beeld-hertiming — beide
+   bewezen en door Jorrit geaccepteerd), nooit opnieuw gokken. Alleen beeldfouten = retake.
+   Reken ~15% retakemarge.
+5. **Audio-architectuur (r-004/r-008)**: Seedance-clipaudio behouden in mensloze shots (goede
+   ambiance, wel naluisteren op verzonnen spraak - "bitch-ass"-incident); beds
+   (`music_gen`-ambience) onder dialoogshots; beds per scène doorlopend (cumulatieve
+   bron-offsets, zachte bed-koppen overslaan); alle audio-lassen in spreekpauzes met fades.
+   Muziek pas op het allerlaatst via `music_gen` + `musicEnvelope` in de compositie.
+6. **Compositie**: Remotion `ExpeditieMJ` (atelier), per-shot voorbewerkte MP4's in
+   `remotion-composer/public/<clipdir>/`, props met title/error/rewardWindow + envelope.
+   Drafts altijd met **shotnummers in beeld** (PNG-overlay-napass) — Jorrits reviewvorm.
+7. **Operatie**: generaties sequentieel op de achtergrond (100–740s praktijk); gestrande poll →
+   prediction-id (endpoint kan ~30 min 401 geven terwijl public-API werkt); calls natellen via
+   `model-costs`/`model-usage`; afgekeurde generaties archiveren in attempt-mappen met diagnose.
+8. **Gemini Omni**: alleen previz/schermcontent/timecoded beats — nooit eindbeeld of video-edit
+   op gelockte identiteit (herstijlt karakters, gemeten).
 
-## 1. Wat er ligt
+## Reviewritme met Jorrit (werkte goed)
 
-| bestand | wat |
-|---|---|
-| `renders/animatie-2-fixronde2.mp4` | **de definitieve film**, 66,5s, 1280x720, 24fps. Alle negen feedbackpunten geadresseerd |
-| `renders/animatie-2-fixronde1.mp4` | tussenversie met alleen de gratis fixes |
-| `renders/animatie-2-compleet.mp4` | de oorspronkelijk beoordeelde versie, 60,4s |
-| `assets/video/cut-v3/` | montageclips van de definitieve film + `assembly_report.json` |
-| `assets/video/shots/attempts/` | alle afgekeurde generaties met prompt en diagnose (bewaren) |
-| `assets/images/style-bible/` | de gelockte referentieset — **gaat ongewijzigd mee in alle vier films** |
-| `assets/audio/lines/v2/` | de regelbestanden van de pilotroute (historisch; nieuwe films genereren regels via ElevenLabs) |
-| `assets/audio/tts-test/` | de stemroute-tests van 2026-08-21 (v2/v3-vergelijking, casting, meterijking) |
-| `artifacts/` | script, scene_plan, asset_manifest, edit_decisions, render_report, final_review, decision_log (37 entries) |
-| `scripts-fixronde/` | de 25 sessiescripts, incl. `atlascost.py` (echte factuur uitlezen) |
-| `feat/expeditie-mj-atelier-composition` | compositiecode (`ExpeditieMJ.tsx`), commit `7fba96d`, gepusht naar `fork` |
+Draft → feedback per shotnummer → gerichte fixes (gratis waar het kan) → nieuwe draft.
+Budget per ronde vooraf laten accorderen (plafond-revisies in het decision_log). Previews
+altijd met de échte filmaudio (nooit kale kloonstem laten beoordelen) en met labels.
 
-Checkpoints: `assets` staat op `awaiting_human`, `compose` op `in_progress` (het contract laat
-compose niet sluiten zolang assets niet is goedgekeurd; het compose-werk is op verzoek van
-Jorrit vooruit gedaan). De gate hoeft voor deze afgeronde pilot niet alsnog gepasseerd te
-worden tenzij Jorrit dat wil.
+## Werkscripts (herbruikbaar, in projects/expeditie-mj-animatie2-v2/)
 
-## 2. Bekende, geaccepteerde afwijkingen in de definitieve film
-
-- `shot_4B` toont een andere tempel en een grijzere stijl dan de ankerplaat — met
-  vergelijkingsbeeld voorgelegd en bewust geaccepteerd door Jorrit.
-- `shot_3B`, `shot_4C`, `shot_6B` zijn hertimed aan de rand van de band (+13 tot +14,6%).
-- De vier Kling-lipsyncshots (2A, 2B, 2C, 5C) hebben 31–34% dubbelframes door de
-  30fps-omweg, en de gekloonde stem staat op -44 dB onder de mix. Beide zijn de aanleiding
-  geweest voor de nieuwe route (d-034/d-036); in deze film blijven ze zoals ze zijn.
-
-## 3. Budget (werkelijke factuurcijfers)
-
-| dag | Atlas werkelijk |
-|---|---|
-| 2026-08-19 (fase 0) | $3,06 |
-| 2026-08-20 (fase 1) | $82,92 |
-| 2026-08-21 (fixronde 1) | $0,00 |
-| 2026-08-21 (fixronde 2) | $11,48 |
-
-**Project totaal: $97,46** (waarvan ~$2,09 op het aparte project
-`expeditie-mediajungle-intro`). Kling loopt op een trial pack: 97,3 van 100 units over, nul
-cash. De troubleshoot-sessie van 2026-08-21 kostte $0 aan Atlas.
-
-De oude cost logs (`cost_log.json`, `cost_log_fase1.json`) tellen structureel te laag —
-alleen `cost_log_fixronde2.json` en de Atlas-API zelf zijn betrouwbaar. Reken nieuwe rondes
-met **$0,373/s** (720p24) en tel calls na via `model-usage`; zie de projectskill §1.
-
-## 4. Wat de volgende productiesessie moet weten
-
-1. **Stemroute** (d-034/d-035): alle regels via ElevenLabs `eleven_v3` + emotietag, per take
-   door de Azure-meter, retake onder drempel. Casting: Matanga = Hans Claesen, Femke = Ruth,
-   Boaz = Bram. Details en ijkcijfers in de projectskill §4.
-2. **SFX** (d-036): ambiance en effecten apart genereren via `music_gen` (`generate_sfx`);
-   clipaudio gaat niet meer de mix in.
-3. **Muziek** (d-037): pas op het allerlaatst; `music: null` in de props.
-4. **Dialoogshots met spreker in beeld** (d-039): **R1-plus** — mode B met de v3-regel als
-   referentie-audio, kloonstem weg, v3-regel als filmaudio; bij een ratio buiten 0,86–1,16
-   eerst een andere/versnelde v3-take (audio is elastisch) in plaats van beeld hertimen.
-   Spraakspannen meten met Azure word-timestamps, niet met whisper. R2 (kloonstem) is
-   verworpen na beluistering; Kling-lipsync is alleen nog een noodgreep.
-5. **Videomodel** (d-038): **seedance-2.5** voor de hele reeks, geen modellenmix. Testronde
-   2026-08-21 kostte $7,93 van plafond $15; uitslagen en clips in
-   `assets/video/model-tests/` en `TROUBLESHOOT-FINDINGS.md`, vraag 4.
+`generate_units.py` (batchgeneratie met asserts/logging/checkpoints), `ratio_check.py`
+(lipsync-gate), `compose_prep_v3.py` (per-shot bak: beds/VO/accenten/offsets),
+`retakes_round*.py` (retake-patronen), F0-meting: zie providerkennis §"v3-takes driften".
