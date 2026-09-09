@@ -10,6 +10,7 @@ Masters in `round-3/`; deze vervangen de ronde-2-versies van poster 2 en 3:
 | `p3-pakketbusje-final.png` | **nieuw concept**: Coco's Koopjes-pakketbusje, verwachting (gouden koptelefoon op Femke's telefoon) vs. werkelijkheid (karton-en-tape-namaak in het pakket), Boaz' vergrootglas op het verzendlabel i.p.v. voor zijn oog (oog-gag was te eng), koptelefoon-canon hersteld en onderband gevuld via crop-edits |
 | `p3-pakketbusje-tablet-loep-final.png` | variant: Boaz met tablet die de fop-webshop toont (letterloze layout: gouden koptelefoon, %-badge, sterren) én het vergrootglas op het scherm |
 | `p3-pakketbusje-tablet-final.png` | variant: idem maar zonder vergrootglas — tablet met beide handen vast |
+| `p3-pakketbusje-staand-final.png` | variant: Boaz stáát naast de doos, tablet in de rechterhand (letterloos scherm), blik omlaag op het pakket; Femke's telefoon-hand via masker uit het origineel behouden, schermtekst lokaal weggewerkt (per-kolom rood-band-vulling) |
 
 Script: `gen_posters_r3.py`. De crop-edit-route (uitsnede → herstel met referentie →
 gefeatherd terugplakken) was opnieuw de betrouwbare weg voor logotype, wardrobe-adds
