@@ -453,5 +453,75 @@
     "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-tablet-screen-fixed.png",
     "error": null,
     "note": "geneste crop-edit: schermtekst -> letterloze balkjes"
+  },
+  {
+    "id": "zone-p1a",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the top strip of a larger jungle poster artwork. Fix the framing for a logo zone and change nothing else: clear the UPPER-LEFT area — roughly the left two thirds of the strip — of all hanging leaves, vines and branches. In that area open up a calm, bright, softly hazy daylight sky with at most a few very soft distant canopy silhouettes along its lower edge. The upper-RIGHT part of the strip may keep some foliage, gradually increasing toward the right edge. Keep the lower edge of the strip and everything below it consistent with the original so it blends seamlessly: same colours, same lighting, same style. No words, no logos, no captions, no characters.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p1a-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p1a-fixed.png",
+    "error": null,
+    "note": "topstrip-edit: open logozone linksboven; gefeatherd terug in master(s)"
+  },
+  {
+    "id": "zone-p1b",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the top strip of a larger jungle poster artwork. Fix the framing for a logo zone and change nothing else: clear the UPPER-LEFT area — roughly the left two thirds of the strip — of all hanging leaves, vines and branches. In that area open up a calm, bright, softly hazy daylight sky with at most a few very soft distant canopy silhouettes along its lower edge. The upper-RIGHT part of the strip may keep some foliage, gradually increasing toward the right edge. Keep the lower edge of the strip and everything below it consistent with the original so it blends seamlessly: same colours, same lighting, same style. No words, no logos, no captions, no characters.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p1b-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p1b-fixed.png",
+    "error": null,
+    "note": "topstrip-edit: open logozone linksboven; gefeatherd terug in master(s)"
+  },
+  {
+    "id": "zone-p2",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the top strip of a larger night-time jungle poster artwork with a moon. Fix the framing for a logo zone and change nothing else: clear the UPPER-LEFT area — roughly the left two thirds of the strip — of intruding leaves and branches, leaving calm, even, dark night sky with soft clouds there. Keep the moon, the rain and the clouds; the upper-right may keep some foliage toward the right edge. Keep the lower edge of the strip consistent with the original so it blends seamlessly: same colours, same lighting, same style. No words, no logos, no captions, no characters.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p2-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p2-fixed.png",
+    "error": null,
+    "note": "topstrip-edit: open logozone linksboven; gefeatherd terug in master(s)"
+  },
+  {
+    "id": "zone-p3",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the top strip of a larger jungle poster artwork. Fix the framing for a logo zone and change nothing else: clear the UPPER-LEFT area — roughly the left two thirds of the strip — of all hanging leaves, vines and branches. In that area open up a calm, bright, softly hazy daylight sky with at most a few very soft distant canopy silhouettes along its lower edge. The upper-RIGHT part of the strip may keep some foliage, gradually increasing toward the right edge. Keep the lower edge of the strip and everything below it consistent with the original so it blends seamlessly: same colours, same lighting, same style. No words, no logos, no captions, no characters.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p3-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p3-fixed.png",
+    "error": null,
+    "note": "topstrip-edit: open logozone linksboven; gefeatherd terug in master(s)"
+  },
+  {
+    "id": "zone-p3-v2",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the top strip of a larger jungle poster artwork, with the teal roof of a delivery van at the bottom centre. Fix the framing for a logo zone and change nothing else: the TOP-LEFT CORNER and the entire upper-left two thirds of the strip must be COMPLETELY clear of foliage — remove every leaf, plant and branch there, including the large banana plant at the left edge. That whole area becomes calm, bright, softly hazy daylight sky, with only very soft distant canopy silhouettes far away along its lower edge. Foliage may remain only on the RIGHT third of the strip. Keep the van roof and the lower edge of the strip consistent with the original so it blends seamlessly: same colours, same lighting, same style. No words, no logos, no captions, no characters.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p3-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p3-fixed2.png",
+    "error": null,
+    "note": "retry: linkerbovenhoek volledig vrij"
   }
 ]

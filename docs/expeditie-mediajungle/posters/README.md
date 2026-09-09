@@ -1,5 +1,16 @@
 # Posters missie 1–3 (A4)
 
+## VASTE LAYOUTREGEL — logozone linksboven (2026-09-09, geldt ook voor alle toekomstige posters)
+
+Elke poster-master houdt **linksboven een open, rustige contrastzone van ruwweg 55% breed ×
+30% hoog**: open lucht (dag: licht/nevelig, nacht: egale donkere lucht), geen bladeren,
+lianen of belangrijke objecten. **Jorrit/het team plaatst daar zélf het Expeditie MJ-logo en
+de missietekst** — de agent bakt géén logo of tekst in de deliverables. Bij nieuwe
+generaties: neem het `POSTER_ZONES`-blok uit `gen_posters_r3.py` en vervang de top-regel
+door deze linksboven-eis (let op de les: nooit het woord "reserved" gebruiken — dat geeft
+platte kleurbanden; vraag om "calm open sky as full scenery"). Bestaande masters zijn
+bijgewerkt als `round-3/*-logozone.png` (topstrip-edits, 16:9, gefeatherd teruggeplakt).
+
 ## Ronde 3 — feedbackronde poster 2 en 3 (2026-09-09)
 
 Masters in `round-3/`; deze vervangen de ronde-2-versies van poster 2 en 3:
