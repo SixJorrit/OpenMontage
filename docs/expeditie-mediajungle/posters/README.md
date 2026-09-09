@@ -1,5 +1,18 @@
 # Posters missie 1–3 (A4)
 
+## Ronde 3 — feedbackronde poster 2 en 3 (2026-09-09)
+
+Masters in `round-3/`; deze vervangen de ronde-2-versies van poster 2 en 3:
+
+| bestand | wat er veranderde |
+|---|---|
+| `p2-tent-think-first-final.png` | Boaz' "HO!"-gebaar overdreven (grote open handpalm), oog-wezentjes uit de voorgrond naar de achtergrondstruiken, shirtlogo = officieel logo (crop-edit) |
+| `p3-pakketbusje-final.png` | **nieuw concept**: Coco's Koopjes-pakketbusje, verwachting (gouden koptelefoon op Femke's telefoon) vs. werkelijkheid (karton-en-tape-namaak in het pakket), Boaz' vergrootglas op het verzendlabel i.p.v. voor zijn oog (oog-gag was te eng), koptelefoon-canon hersteld en onderband gevuld via crop-edits |
+
+Script: `gen_posters_r3.py`. De crop-edit-route (uitsnede → herstel met referentie →
+gefeatherd terugplakken) was opnieuw de betrouwbare weg voor logotype, wardrobe-adds
+en bandvulling; full-frame edits alleen voor pose/compositie.
+
 ## Ronde 2 — tekstloos + inhoudelijk op de slogan (2026-09-09)
 
 Op verzoek: **geen opmaaklaag** (geen slogans, geen logo-band) — in-scene canon-tekst en

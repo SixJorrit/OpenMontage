@@ -306,5 +306,96 @@
     "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/p1b-topstrip-filled.png",
     "error": null,
     "note": "crop-edit 16:9; gefeatherd terug in 4k-master"
+  },
+  {
+    "id": "p2-gesture-eyes-edit",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Fix two things in this image and change nothing else.\n\n1. THE BOY'S GESTURE, clearer and more exaggerated: raise his right hand higher, up beside his head, as a big open 'STOP, hold on!' palm facing the viewer, fingers spread wide, eyebrows raised high and mouth slightly open as if saying 'ho!'. He still lies on his belly in the tent entrance looking at the girl's phone. Keep his face exactly the same person.\n\n2. THE GLOWING ANIMAL EYES: remove the dark creature shapes with eyes sitting in the FOREGROUND bushes at the bottom left and bottom right of the frame. Instead, keep only a few small pairs of colourful glowing cartoon eyes peeking out DEEP in the dark background bushes, half hidden, further away from the tent — curious, not scary.\n\nKeep everything else exactly the same: the girl with her phone and hovering finger, the thought bubble with the question mark, the tent with the lantern, the moon, the drizzle, the jungle, colours and lighting.",
+    "reference_images": [
+      "projects/expeditie-mediajungle-posters/assets/images/round-2/p2-tent-think-first.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-3/p2-tent-think-first-v2.png",
+    "error": null
+  },
+  {
+    "id": "p3-pakketbusje",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nA parcel delivery moment on a jungle clearing. A boxy toy-like DELIVERY VAN in the same sculpted vehicle language as the supplied jeep plate — but a different vehicle: a compact cream-coloured panel van with teal and red accents, matching the brand colours of the supplied shop plate, with \"COCO'S KOOPJES\" painted in playful red letters on its side. The van is parked at the left on the jungle road, rear doors open, a few plain brown cardboard parcels visible inside. No driver, nobody in the van — exactly two people in the whole image.\n\nSTORY IN THE IMAGE — expectation versus reality: in the middle Femke kneels or stands at a freshly opened brown cardboard parcel, torn open, packing straw spilling out. She holds up her smartphone with the screen toward the viewer: on the screen is a picture of gleaming GOLDEN luxury headphones, shiny and perfect — what she ordered. But in the opened parcel lies the delivered reality: a sad, flimsy FAKE version of those headphones, crooked cardboard-and-tape build, dull grey, one earpiece hanging loose. Femke's expression is baffled disappointment: eyebrows up, mouth open in a small 'huh?'. Boaz crouches on the other side of the parcel and holds ONE ordinary magnifying glass with a single round lens ABOVE THE PARCEL, inspecting the shipping label on the box, his face fully visible beside the glass with a sceptical, investigative frown — the glass is aimed at the label, not at his eye.\n\nA couple more unopened plain brown parcels sit stacked beside them.\n\nSETTING: dense jungle in the leaf language of the supplied jungle plate, warm daylight, mossy stones by the road.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple scenery (sky or soft canopy, no important detail). The bottom sixth of the frame is plain calm ground scenery with no important detail. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges. The artwork fills the entire frame edge to edge — no flat empty colour bands.\n\nFRAME: the only readable text in the image is \"COCO'S KOOPJES\" on the van's side and the MEDIA JUNGLE logo on the girl's shirt. The shipping label and the phone screen carry no readable letters. No other words, no captions, no title, no logo band. No watermarks, no border, exactly two people.",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "docs/expeditie-mediajungle/references/building--step4--mall.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-3/p3-pakketbusje.png",
+    "error": null
+  },
+  {
+    "id": "r3-p2-shirtlogo",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with an orange monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters with a dark outline.\n\nThe first image is a close-up of a girl in a dark navy T-shirt pointing at a smartphone. Fix one printing error and change nothing else: the print on her T-shirt is plain rainbow-coloured text instead of the logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, following the fabric folds naturally. Keep everything else exactly the same: her hands, the phone, the boy's yellow sleeve, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p2shirt.png",
+      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p2shirt-fixed.png",
+    "error": null,
+    "note": "crop-edit; gefeatherd terug in 4k-master"
+  },
+  {
+    "id": "r3-p3-shirtlogo",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with an orange monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters with a dark outline.\n\nThe first image is a close-up of a girl in a dark navy T-shirt holding up a smartphone showing golden headphones. Fix one printing error and change nothing else: the print on her T-shirt is a near-correct but off-model version of the logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled with the correct monkey head, following the fabric folds naturally. Keep everything else exactly the same: her arm, the smartwatch, the phone with the golden headphones on its screen, the van behind her, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3shirt.png",
+      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3shirt-fixed.png",
+    "error": null,
+    "note": "crop-edit; gefeatherd terug in 4k-master"
+  },
+  {
+    "id": "r3-p3-headphones",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "The second supplied image is the character's official wardrobe plate: an amber-yellow V-neck long-sleeve shirt with teal over-ear headphones resting around the neck.\n\nThe first image is a close-up of that boy crouching and looking down through a magnifying glass. Fix one wardrobe error and change nothing else: he is missing his teal over-ear headphones. Add the teal over-ear headphones from the second image resting around his neck, exactly as in the plate, fitting naturally around his bent neck and shoulders. Keep everything else exactly the same: his face, expression, hair, the magnifying glass, his shirt, the jungle behind him, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3neck.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3neck-fixed.png",
+    "error": null,
+    "note": "crop-edit; gefeatherd terug in 4k-master"
+  },
+  {
+    "id": "r3-p3-bottomband",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "This is the bottom strip of a larger jungle artwork. Fix one framing error and change nothing else: the flat empty pale-green band along the bottom of the strip. Remove it by continuing the scenery from above naturally downward — the muddy earth road, scattered packing straw, small puddles, ferns and foliage — until the artwork fills the strip edge to edge. Keep the upper part of the strip exactly as it is, same colours and lighting. No words, no logos, no captions.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3bottom.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3bottom-fixed.png",
+    "error": null,
+    "note": "crop-edit; gefeatherd terug in 4k-master"
   }
 ]
