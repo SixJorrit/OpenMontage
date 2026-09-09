@@ -397,5 +397,33 @@
     "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3bottom-fixed.png",
     "error": null,
     "note": "crop-edit; gefeatherd terug in 4k-master"
+  },
+  {
+    "id": "r3-boaz-tablet-loep",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "The image shows a boy crouching by a cardboard parcel, holding a magnifying glass in his right hand and the parcel's flap with the shipping label in his left hand.\n\nChange his props and nothing else: put a modern dark-grey TABLET in his left hand, held up in front of his chest so the screen faces him and is clearly visible to the viewer. He now inspects the tablet screen THROUGH the magnifying glass in his right hand — the glass hovers directly in front of the tablet screen, his eyes aimed at it. On the tablet screen is a webshop page WITHOUT any readable text: a red and teal online-shop layout showing the same gleaming golden headphones as a big product photo, a large red percent-symbol discount sticker and a row of small yellow star rating icons — no letters, no words, no numbers. The parcel flap simply rests against the box again.\n\nKeep everything else exactly the same: his face and sceptical frown, his hair, the teal headphones around his neck, his amber-yellow shirt, his crouching pose, the cardboard parcel below, the jungle behind him, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-boaz-tablet-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-boaz-tablet-loep.png",
+    "error": null,
+    "note": "crop-edit Boaz-tablet; gefeatherd terug in p3-pakketbusje-final"
+  },
+  {
+    "id": "r3-boaz-tablet-solo",
+    "round": 3,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "The image shows a boy crouching by a cardboard parcel, holding a magnifying glass in his right hand and the parcel's flap with the shipping label in his left hand.\n\nChange his props and nothing else: REMOVE the magnifying glass completely. He now holds a modern dark-grey TABLET up with both hands in front of his chest, screen facing him and clearly visible to the viewer, studying it with his sceptical frown. On the tablet screen is a webshop page WITHOUT any readable text: a red and teal online-shop layout showing the same gleaming golden headphones as a big product photo, a large red percent-symbol discount sticker and a row of small yellow star rating icons — no letters, no words, no numbers. The parcel flap simply rests against the box again.\n\nKeep everything else exactly the same: his face and sceptical frown, his hair, the teal headphones around his neck, his amber-yellow shirt, his crouching pose, the cardboard parcel below, the jungle behind him, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-boaz-tablet-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-boaz-tablet-solo.png",
+    "error": null,
+    "note": "crop-edit Boaz-tablet; gefeatherd terug in p3-pakketbusje-final"
   }
 ]
