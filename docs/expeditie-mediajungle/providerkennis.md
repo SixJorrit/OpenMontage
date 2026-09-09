@@ -303,3 +303,16 @@ laag"). De meter vangt dit niet (woordtrouw was 94). Goedkope gate bij takekeuze
 binnen ±10% blijven. Let ook op cumulatieve atempo: twee keer vertragen (referentie-prep x
 hertiming) stapelt tot hoorbaar loom — houd het totaal boven ~0,85 en normaliseer élke
 filmtake met dezelfde loudnorm (I=-16) als de rest van de mix.
+
+**Aanvulling postersessie ronde 2 (2026-09-09):**
+
+- Promptzinnen als "reserved for a title" maken van een rustige tekstzone een **letterlijke
+  platte kleurband** in het beeld. Vraag om "calm and simple scenery (sky/canopy/ground)"
+  zonder het woord reserved.
+- De betrouwbare logotype-route is de **crop-edit**: snijd het probleemgebied uit, laat
+  alléén die uitsnede herstellen (met `mj-logo-clean.png` als extra referentiebeeld) en plak
+  gefeatherd terug. Full-frame edits bleven het shirtlogo slopen, óók met het logobestand
+  als referentie; een 1:1-crop van het gebied lukte in één keer.
+- Aspect ratio's: `2:1` bestaat niet voor nano-banana-2 (error 1010002, executionTime 0,
+  niet gefactureerd); `16:9` en `1:1` wel. Crop-edits komen terug op 2k-tier-resolutie
+  (2048/2752 breed), dus terugschalen vóór het plakken.

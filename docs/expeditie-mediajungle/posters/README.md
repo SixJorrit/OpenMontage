@@ -1,4 +1,29 @@
-# Posters missie 1–3 (A4) — 2026-08-26
+# Posters missie 1–3 (A4)
+
+## Ronde 2 — tekstloos + inhoudelijk op de slogan (2026-09-09)
+
+Op verzoek: **geen opmaaklaag** (geen slogans, geen logo-band) — in-scene canon-tekst en
+-logo's blijven wél (Coco's-bord, tassen, MJ-logo op shirt/jeep-deur). Elke scène draagt nu
+zelf de boodschap; masters in `round-2/`:
+
+| bestand | missie / concept |
+|---|---|
+| `p1a-jeep-bubbles-v2.png` | 1: hart/duim/ster-bubbels rond de jeep, boze oogjes in doornstruiken erachter |
+| `p1b-jeep-phone-heart-final.png` | 1 (variant): Boaz toont telefoon met één groot hart |
+| `p2-tent-think-first.png` | 2: Femke's vinger boven de verzendknop, denkwolkje met vraagteken, Boaz gebaart "wacht" |
+| `p3-cocos-scale-fix-final.png` | 3: winkel op echte schaal, gouden fop-koopjes met %-stickers, vergrootglas-inspectie |
+
+Scripts: `gen_posters_r2.py` (generatie), `fix_r2.py` (defect-edits), `build_posters_r2.py`
+(tekstloze A4-build). Lessen van deze ronde (ook in providerkennis §6):
+
+- "Reserved for a title"-taal in een prompt levert **letterlijke platte kleurbanden** op —
+  vraag om "calm simple scenery", nooit om gereserveerde zones.
+- Full-frame edits blijven klein logotype slopen; de betrouwbare route is een **crop-edit**
+  (probleemgebied uitsnijden, alleen dat laten herstellen — met `mj-logo-clean.png` als
+  extra referentie voor logo's — en gefeatherd terugplakken). Aspect 2:1 bestaat niet bij
+  nano-banana; 16:9 wel (mislukte submits met executionTime 0 worden niet gefactureerd).
+
+## Ronde 1 — met typografielaag (2026-08-26)
 
 Drie campagneposters in de gelockte 3D-stijl van de animatiereeks. Goedgekeurde route:
 
