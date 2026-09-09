@@ -316,3 +316,6 @@ filmtake met dezelfde loudnorm (I=-16) als de rest van de mix.
 - Aspect ratio's: `2:1` bestaat niet voor nano-banana-2 (error 1010002, executionTime 0,
   niet gefactureerd); `16:9` en `1:1` wel. Crop-edits komen terug op 2k-tier-resolutie
   (2048/2752 breed), dus terugschalen vóór het plakken.
+- Gemeten tarieven nano-banana-2/edit (factuur 2026-09-09, 11 beelden = $1,68):
+  **4k-tier $0,16/beeld, 2k-tier $0,12/beeld** — de toolschatting van $0,08 geldt
+  alleen voor de 1k-tier. Mislukte submits (error 1010002) stonden níet op de factuur.
