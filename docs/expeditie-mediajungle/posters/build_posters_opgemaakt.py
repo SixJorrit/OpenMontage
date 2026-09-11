@@ -26,7 +26,7 @@ POSTERS = [
         "id": "poster-missie-1-def",
         "art": "p1a-jeep-bubbles-logozone.png",
         "color": BROWN,
-        "shadow": "0 0.5mm 1.6mm rgba(255,246,227,0.55)",
+        "shadow": "0 0 1.8mm rgba(255,246,227,0.95), 0 0 4mm rgba(255,246,227,0.85), 0 0 7mm rgba(255,246,227,0.6)",
         "par1": ["Houd het gezellig", "en sociaal online."],
         "par2": ["Dat is chill,", "dat is fijn!"],
     },
@@ -55,7 +55,8 @@ TEMPLATE = """<!DOCTYPE html>
   * {{ margin: 0; padding: 0; }}
   html, body {{ width: 216mm; height: 303mm; }}
   body {{ position: relative; overflow: hidden;
-         font-family: "Baloo 2 Medium", "Baloo 2", "Arial Rounded MT Bold", sans-serif; }}
+         font-family: "Simple Stamp", "Baloo 2", sans-serif;
+         font-variant-ligatures: none; font-feature-settings: "liga" 0, "clig" 0; }}
   .art {{ position: absolute; inset: 0; width: 216mm; height: 303mm;
          object-fit: cover; object-position: 50% 0%; }}
   .logo {{ position: absolute; top: 9mm; left: 9mm; width: 104mm; }}

@@ -13,9 +13,10 @@ daar is nog géén poster voor gemaakt.
 | 4 | `p3-staand-logozone.png` | pakketbusje; Boaz stáánd naast de doos met tablet (fop-webshop) in de rechterhand | "Laat je niet pushen, laat je niet foppen bij een potje online shoppen!" |
 
 **Opgemaakte variant** (logo + slogan als niet-destructieve laag over de kale master):
-`build_posters_opgemaakt.py` — E14-logo linksboven (104mm), tekst eronder in **Baloo 2
-Medium**, wit met dunne bruine contour (1,15mm stroke-laag) + zachte schaduw, géén
-missie-label. Output lokaal in `renders/opgemaakt/poster-missie-{1,2,4}-def.{pdf,png}`.
+`build_posters_opgemaakt.py` — E14-logo linksboven (104mm), tekst eronder in **Simple Stamp** (Oleg Stepanov, user-font in ~/Library/Fonts;
+ligaturen uitzetten — de fi-ligatuur spatieert kapot). Kleur per poster: bruin met
+witte gloed (missie 1), wit met donkere schaduw (missie 2), bruin met lichte glow
+(missie 4); géén missie-label. Output lokaal in `renders/opgemaakt/poster-missie-{1,2,4}-def.{pdf,png}`.
 
 De niet-gekozen varianten (1b telefoonhart; poster 3 knielend met/zonder vergrootglas)
 blijven in `round-3/` staan als alternatief, maar zijn géén deliverable. Print-klare
