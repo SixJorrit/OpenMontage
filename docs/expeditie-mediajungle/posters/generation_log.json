@@ -542,5 +542,62 @@
     "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p1c-balloon-sky.png",
     "error": null,
     "note": "vrije-hand opzet C: hero-lucht voor gecentreerde typografie"
+  },
+  {
+    "id": "p2c-moon-sky",
+    "round": 4,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide night hero shot: a cosy dark-green wedge camping tent from the supplied tent plate occupies only the LOWER QUARTER of the frame, on a small jungle clearing framed by big wet sculpted leaves in the bottom corners; a warm lantern glows on the tent. Femke and Boaz poke their heads out of the tent entrance side by side, looking up at the sky in wonder. In the dark bushes at the very bottom corners two or three pairs of small colourful cartoon animal eyes peek out, curious not scary.\n\nAbove them the jungle opens into a VAST, deep-blue night sky filling the upper three quarters of the frame: a big glowing moon low near the upper-right, soft sculpted clouds near the edges, gentle drizzle. Floating upward through the night sky drift a few glossy sculpted 3D shapes: one white thought bubble containing only a question mark, and two or three small paper planes gliding on a soft curved path, catching the moonlight — spread around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt, and the question mark in the thought bubble. No watermarks, no border, exactly two people.",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
+      "docs/expeditie-mediajungle/references/reward--2--tent.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p2c-moon-sky.png",
+    "error": null,
+    "note": "C-stijl hero-artwork (opmaak-eerst) voor missie 2/3/4"
+  },
+  {
+    "id": "p3c-hammock-sky",
+    "round": 4,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: the LOWER QUARTER of the frame shows a sunny jungle clearing framed by big sculpted leaves in the bottom corners. Femke lies happily relaxed in a colourful woven hammock strung between two palm trunks, hands behind her head, eyes closed with a content smile. Boaz stands beside the hammock doing a big joyful morning stretch, arms wide up in the air, grinning. On a flat mossy stone in front of them lie a smartphone and a tablet, both face-down and switched off. A water bottle and a football rest against the stone.\n\nAbove them the jungle opens into a VAST, calm pastel morning sky filling the upper three quarters of the frame: a soft warm gradient with a gentle low sun near the upper-right, a few small sculpted clouds near the edges and two or three tiny birds far away — the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt. No watermarks, no border, exactly two people.",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p3c-hammock-sky.png",
+    "error": null,
+    "note": "C-stijl hero-artwork (opmaak-eerst) voor missie 2/3/4"
+  },
+  {
+    "id": "p4c-parachute-sky",
+    "round": 4,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: the LOWER QUARTER of the frame shows a jungle road with the cream-coloured COCO'S KOOPJES delivery van (boxy toy-like panel van with teal roof and red accents, \"COCO'S KOOPJES\" in playful red letters on the side, no driver) parked small at the left, big sculpted leaves framing the bottom corners. Femke and Boaz stand on the road looking up: Femke points excitedly at the sky, Boaz looks up sceptically with his arms crossed.\n\nAbove them a VAST, warm, bright daylight sky fills the upper three quarters of the frame: soft golden-blue gradient with a few small sculpted clouds near the edges. Drifting DOWN through that sky hang four or five plain brown cardboard parcels, each dangling from its own small round striped parachute, in different sizes; two parcels carry a bright red sticker showing only a percent symbol. The parcels drift around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: the only readable text in the image is \"COCO'S KOOPJES\" on the van's side and the MEDIA JUNGLE logo on the girl's shirt, plus the percent symbols on the stickers. No other words, no captions, no title. No watermarks, no border, exactly two people.",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "docs/expeditie-mediajungle/references/building--step4--mall.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p4c-parachute-sky.png",
+    "error": null,
+    "note": "C-stijl hero-artwork (opmaak-eerst) voor missie 2/3/4"
   }
 ]
