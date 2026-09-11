@@ -2,11 +2,20 @@
 
 ## DEFINITIEVE KEUZES (vastgelegd 2026-09-11)
 
-| missie | definitieve master (in `round-3/`) | concept |
-|---|---|---|
-| 1 | `p1a-jeep-bubbles-logozone.png` | jeep met hart/duim/ster-bubbels, boze oogjes in de doornstruiken erachter |
-| 2 | `p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, denkwolkje, "HO!"-gebaar |
-| 3 | `p3-staand-logozone.png` | pakketbusje; Boaz stáánd naast de doos met tablet (fop-webshop) in de rechterhand |
+**Let op de hernummering (2026-09-11): online shoppen = missie 4.** Missie 3 = gezond
+schermgebruik ("Gebruik je scherm gezond bewust. Dat geeft je lichaam kracht én rust!") —
+daar is nog géén poster voor gemaakt.
+
+| missie | definitieve master (in `round-3/`) | concept | slogan |
+|---|---|---|---|
+| 1 | `p1a-jeep-bubbles-logozone.png` | jeep met hart/duim/ster-bubbels, boze oogjes in de doornstruiken erachter | "Houd het gezellig en sociaal online. Dat is chill, dat is fijn!" |
+| 2 | `p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, denkwolkje, "HO!"-gebaar | "Eerst denken, dan verzenden. Dat scheelt een hoop ellende!" |
+| 4 | `p3-staand-logozone.png` | pakketbusje; Boaz stáánd naast de doos met tablet (fop-webshop) in de rechterhand | "Laat je niet pushen, laat je niet foppen bij een potje online shoppen!" |
+
+**Opgemaakte variant** (logo + slogan als niet-destructieve laag over de kale master):
+`build_posters_opgemaakt.py` — E14-logo linksboven (104mm), tekst eronder in **Baloo 2
+Medium**, wit met dunne bruine contour (1,15mm stroke-laag) + zachte schaduw, géén
+missie-label. Output lokaal in `renders/opgemaakt/poster-missie-{1,2,4}-def.{pdf,png}`.
 
 De niet-gekozen varianten (1b telefoonhart; poster 3 knielend met/zonder vergrootglas)
 blijven in `round-3/` staan als alternatief, maar zijn géén deliverable. Print-klare
