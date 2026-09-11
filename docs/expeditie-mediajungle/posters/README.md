@@ -24,6 +24,13 @@ A4-uitsneden van de definitieve masters: lokale werkmap `renders/logozone/`
 (`poster-1a-bubbels-logozone`, `poster-2-tent-logozone`, `poster-3-staand-logozone`,
 PDF + 300dpi-PNG); regenereerbaar via `build_posters_r2.py`-patroon.
 
+**CMYK-drukroute (2026-09-11):** Chrome's print-PDF is altijd RGB. Voor een
+CMYK-drukbestand: PDF → `pdftoppm -r 300` → `sips -m "Generic CMYK Profile.icc"`
+(ColorSync) → PIL `save(..., resolution=300)` = DeviceCMYK-PDF op exact formaat.
+Kanttekening: generiek CMYK-profiel (geen FOGRA39 op deze machine) en tekst wordt
+mee-gerasterd op 300 dpi; als de drukker RGB accepteert of een eigen profiel heeft,
+kan diens conversie licht beter uitpakken. Zie `build_poster1_a2.py`.
+
 ## VASTE LAYOUTREGEL — logozone linksboven (2026-09-09, geldt ook voor alle toekomstige posters)
 
 Elke poster-master houdt **linksboven een open, rustige contrastzone van ruwweg 55% breed ×
