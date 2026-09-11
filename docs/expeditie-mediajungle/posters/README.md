@@ -1,5 +1,19 @@
 # Posters missie 1–3 (A4)
 
+## DEFINITIEVE KEUZES (vastgelegd 2026-09-11)
+
+| missie | definitieve master (in `round-3/`) | concept |
+|---|---|---|
+| 1 | `p1a-jeep-bubbles-logozone.png` | jeep met hart/duim/ster-bubbels, boze oogjes in de doornstruiken erachter |
+| 2 | `p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, denkwolkje, "HO!"-gebaar |
+| 3 | `p3-staand-logozone.png` | pakketbusje; Boaz stáánd naast de doos met tablet (fop-webshop) in de rechterhand |
+
+De niet-gekozen varianten (1b telefoonhart; poster 3 knielend met/zonder vergrootglas)
+blijven in `round-3/` staan als alternatief, maar zijn géén deliverable. Print-klare
+A4-uitsneden van de definitieve masters: lokale werkmap `renders/logozone/`
+(`poster-1a-bubbels-logozone`, `poster-2-tent-logozone`, `poster-3-staand-logozone`,
+PDF + 300dpi-PNG); regenereerbaar via `build_posters_r2.py`-patroon.
+
 ## VASTE LAYOUTREGEL — logozone linksboven (2026-09-09, geldt ook voor alle toekomstige posters)
 
 Elke poster-master houdt **linksboven een open, rustige contrastzone van ruwweg 55% breed ×
