@@ -523,5 +523,24 @@
     "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/zone-p3-fixed2.png",
     "error": null,
     "note": "retry: linkerbovenhoek volledig vrij"
+  },
+  {
+    "id": "p1c-balloon-sky",
+    "round": 4,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: Femke and Boaz with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, MEDIA JUNGLE logo on the door) occupy only the LOWER QUARTER of the frame, on a sunlit jungle trail with big sculpted leaves framing the bottom corners. Femke leans out of the side window laughing; Boaz stands on the hood, one arm raised high, joyfully releasing glossy sculpted 3D chat-bubble icons into the air.\n\nAbove them the jungle opens into a VAST, warm, bright morning sky that fills the upper three quarters of the frame: soft golden-blue gradient with a few small sculpted clouds near the edges. Floating upward through that sky, like escaping balloons, drift five or six glossy 3D chat-bubble icons in different sizes — one with a red heart, one with a thumbs-up, one with a yellow star, smaller ones fading into the distance — spread loosely around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt and the jeep's door, and the heart/thumb/star symbols inside the floating bubbles. No watermarks, no border, exactly two people.",
+    "reference_images": [
+      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+    ],
+    "success": true,
+    "cost_usd": 0.16,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p1c-balloon-sky.png",
+    "error": null,
+    "note": "vrije-hand opzet C: hero-lucht voor gecentreerde typografie"
   }
 ]
