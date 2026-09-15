@@ -12,7 +12,7 @@ vector-scherp. Build: `build_posters_a2.py`; CMYK-alternatiefroute staat verdero
 | 1 | `round-3/p1a-jeep-bubbles-logozone.png` | jeep + reactie-bubbels, boze oogjes in doornstruiken |
 | 2 | `round-3/p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, "HO!"-gebaar |
 | 3 | `round-4/p3c-hammock-sky-final.png` | hangmat + stretch, schermen omgekeerd op steen, voetbal (was American football — crop-edit-fix) |
-| 4 | nog open — feedbackronde loopt (kandidaten: `round-3/p3-staand-logozone.png` in stijl A, of `round-4/p4c-parachute-sky.png` in stijl C) |
+| 4 | `round-3/p3-staand-logozone.png` | pakketbusje; Boaz staand met tablet (fop-webshop) — stijl A, def 2026-09-15; A2-drukbestand nog niet gerenderd (op afroep via `build_posters_a2.py`) |
 
 Slogans: zie het canon-geheugen / `build_posters_a2.py`. Missie-nummering: online
 shoppen = missie 4; missie 3 = gezond schermgebruik. De eerdere A4-varianten

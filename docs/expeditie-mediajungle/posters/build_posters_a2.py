@@ -4,7 +4,7 @@ Pagina 426x600mm, RGB (drukwerkdeal converteert zelf naar CMYK; tekst blijft zo
 vector-scherp). Recept per poster: artwork full-bleed, E14-logo (4000px)
 rechtsboven, slogan als wit+geel chatballon-duo linksboven in Simple Stamp
 (ligaturen uit), witte ballon fit-content, iets lucht tussen staartje en gele
-ballon. Missie 4 volgt na feedback.
+ballon. Missie 4 = stijl A op de staande-Boaz-master (def 2026-09-15).
 """
 import subprocess
 from pathlib import Path
@@ -32,6 +32,9 @@ POSTERS = [
     {"id": "poster-missie-3-chatgesprek-A2", "art": R4 / "p3c-hammock-sky-final.png",
      "wit": "Gebruik je scherm<br>gezond bewust.", "geel": "Dat geeft je lichaam<br>kracht én rust!",
      "geel_nowrap": False},
+    {"id": "poster-missie-4-chatgesprek-A2", "art": R3 / "p3-staand-logozone.png",
+     "wit": "Laat je niet pushen,<br>laat je niet foppen", "geel": "bij een potje online shoppen!",
+     "geel_nowrap": True},
 ]
 
 HTML = """<!DOCTYPE html>
