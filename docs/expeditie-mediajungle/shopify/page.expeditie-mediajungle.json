@@ -1,0 +1,282 @@
+{
+  "sections": {
+    "bingo_slideshow_t34DFy": {
+      "type": "bingo-slideshow",
+      "blocks": {
+        "image_TPJYNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hero-expeditie-1920x730.jpg",
+            "alignment": "left",
+            "text_transform": "capitalize",
+            "title": "Expeditie Mediajungle",
+            "title_color": "#f5b53c",
+            "subheading": "Digitale geletterdheid als ontdekkingstocht voor de basisschool. Femke en Boaz nemen je klas mee in tien missies.",
+            "subheading_color": "#d5ebe5",
+            "btn_text": "Vraag een vrijblijvende demo aan",
+            "btn_link": "https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT",
+            "btn_text_transform": "capitalize",
+            "btn_two_text": "Bekijk het Educatieplatform",
+            "btn_two_link": "/products/mediajungle-educatieplatform",
+            "btn_two_text_transform": "capitalize",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TPJYNd"
+      ],
+      "custom_css": [
+        ".btnOrangeOutline {font-family: SimpleStamp, sans-serif !important; font-weight: 500 !important; font-size: 16px; padding: 8px 28px !important; border-radius: 14px !important; background: transparent !important; border: 2px solid #ef8a0b !important; color: #ffffff !important; margin-top: 10px;}",
+        ".btnOrangeOutline:hover {background: #ef8a0b !important;}"
+      ],
+      "settings": {
+        "navigation": false,
+        "pagination": false,
+        "autoplay": false,
+        "autoplay_speed": "8000",
+        "image_size": "1920x730"
+      }
+    },
+    "text_with_image_FYC4Gm": {
+      "type": "text-with-image",
+      "custom_css": [
+        ".row {display: flex !important; flex-wrap: wrap !important; gap: 2rem !important; flex-direction: row-reverse !important;}",
+        ".col-xs-12 {flex: 1 !important; min-width: 45% !important; max-width: 48% !important;}",
+        ".imageHolder img {width: 100%; height: auto;}",
+        "@media (max-width: 768px) {.row {flex-direction: column !important; } .col-xs-12 {min-width: 100% !important; max-width: 100% !important; } .imageHolder, .imageHolder img {width: 100% !important; }}"
+      ],
+      "name": "Wat is Expeditie Mediajungle",
+      "settings": {
+        "section_title": "Wat is Expeditie Mediajungle?",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "Een leerlijn digitale geletterdheid en mediawijsheid voor po, so en sbo, aansluitend op de SLO-kerndoelen. Samen met Femke en Boaz, de twee hoofdpersonen van de expeditie, gaat de klas op ontdekkingstocht door de digitale wereld.<br><br>\n<ul>\n<li><b>Tien missies per expeditie,</b> zelf te verdelen over het schooljaar</li>\n<li><b>Losse activiteiten per missie,</b> makkelijk over meerdere momenten te spreiden</li>\n<li><b>Voor de klas én voor thuis</b></li>\n<li><b>Extra opdrachten,</b> in te zetten als de leerkracht dat wil</li>\n</ul>",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/logo-expeditie-mj-1600.png",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_7CUe94": {
+      "type": "text-with-image",
+      "custom_css": [],
+      "name": "Zo werkt een missie",
+      "settings": {
+        "section_title": "Zo werkt een missie",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "<ul>\n<li><b>Kijk.</b> Een korte animatie introduceert het thema.</li>\n<li><b>Ontdek.</b> De klas verkent het thema: wat speelt er, wat weten we al?</li>\n<li><b>Doe.</b> Met activiteiten in de klas gaat het team zelf aan de slag.</li>\n<li><b>Verdien.</b> Lukt de missie, dan komt de expeditie een stap verder.</li>\n</ul>\n<br>\nThema's zijn onder meer: het online gezellig houden, samen afspraken maken, gezond schermgebruik, veilig online winkelen, AI, clickbait ontmaskeren, zelf video's maken, en hulp vragen als het online misgaat.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_g3ATW8": {
+      "type": "text-with-image",
+      "custom_css": [],
+      "name": "Voor de leerkracht",
+      "settings": {
+        "section_title": "Voor de leerkracht",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "<ul>\n<li><b>Minimale voorbereiding:</b> alles staat klaar in het Mediajungle Educatieplatform</li>\n<li><b>Digitale en fysieke werkvormen,</b> geschikt voor po, so en sbo</li>\n<li><b>Thuis doet mee:</b> praktische informatie, handreikingen en mini-missies die ouder en kind samen uitvoeren</li>\n<li><b>Sluit aan op de SLO-kerndoelen</b> digitale geletterdheid</li>\n</ul>\n<br>\nVanaf augustus 2027 zijn de kerndoelen digitale geletterdheid verplicht. We starten dit schooljaar met groep 7 en 8; de andere groepen volgen vanaf schooljaar 2027-2028.",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_GpBLfq": {
+      "type": "text-with-image",
+      "name": "Kom mee op expeditie",
+      "settings": {
+        "section_title": "Kom mee op expeditie",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "Wil je zien hoe een missie in jouw klas werkt? Vraag een demo aan.\n<br>\n<br>\nExpeditie Mediajungle zit in het Mediajungle Educatieplatform; met een abonnement heb je automatisch toegang. <a href=\"/products/mediajungle-educatieplatform\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk het Educatieplatform</a>.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "bingo_testimonials_8kFCyA": {
+      "type": "bingo-testimonials",
+      "blocks": {
+        "item_B7fDUV": {
+          "type": "item",
+          "settings": {
+            "title": "Anouk van Leeuwen (Zaan primair onderwijs)",
+            "profession": "i-coach",
+            "position": "1",
+            "review": "We zijn bij Zaan Primair erg blij met Mediajungle! Vooral de combinatie van het platform en het fysieke materiaal is fantastisch! Vanmorgen heb ik de praatplaten nog gebruikt om met ouders in gesprek te gaan. Het materiaal is op zoveel manieren in te zetten."
+          }
+        },
+        "item_xxNHAC": {
+          "type": "item",
+          "settings": {
+            "title": "Franka van Deursen (Stichting Prodas)",
+            "profession": "Projectleider digitale geletterdheid",
+            "position": "2",
+            "review": "We zijn ontwikkelpartner van het Mediajungle Educatieplatform geworden omdat Mediajungle meebeweegt met de razendsnelle online ontwikkelingen en trends. Daardoor kunnen we makkelijk inspelen op wat er nú speelt. Vooral de duidelijke link met de (concept)kerndoelen van SLO, het accent op media-empowerment en mediawelzijn, en de sterke combinatie van online en offline aanbod spreken ons aan. Ook vinden we het waardevol dat er aanvullend aanbod is om thuis met mediawijsheid aan de slag te gaan."
+          }
+        },
+        "item_HWekNb": {
+          "type": "item",
+          "settings": {
+            "title": "Angeline Zwiers (Ambiq)",
+            "profession": "Mediacoach",
+            "position": "3",
+            "review": "Aantrekkelijk, begrijpelijk, actueel en motiverend zijn voor ons relevante kernwoorden om kinderen, jongeren en ouders  mediawijs te maken. Daarom  hebben wij gekozen voor het platform Mediajungle. Het geeft ons de mogelijkheid om gebruik te maken van verschillende thema's en spelvormen die actueel zijn in de online wereld."
+          }
+        }
+      },
+      "block_order": [
+        "item_B7fDUV",
+        "item_xxNHAC",
+        "item_HWekNb"
+      ],
+      "settings": {
+        "title_color": "#f5b53c",
+        "text_color": "#04202c",
+        "cloud_color": "#f5b53c",
+        "shadow_color": "#04202c",
+        "customername_color": "#ffffff",
+        "title": "Testimonials",
+        "section_color": "secondary"
+      }
+    },
+    "section_partners_A6hfgQ": {
+      "type": "section-partners",
+      "blocks": {
+        "item_AiVfMz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AMBIQ_LOGO.png"
+          }
+        },
+        "item_ktVcFF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/61c5d19a0aef2-Logo_RENN4-250px.png"
+          }
+        },
+        "item_rndzkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/prodas_logo.png"
+          }
+        },
+        "item_zYyBth": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/logoZaanPrimair2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "item_AiVfMz",
+        "item_ktVcFF",
+        "item_rndzkz",
+        "item_zYyBth"
+      ],
+      "custom_css": [
+        ".container {padding-block: 60px;}"
+      ],
+      "settings": {
+        "section_title": "Onze trotse partners en afnemers",
+        "section_title_color": "#f5b53c",
+        "section_color": "none"
+      }
+    },
+    "bingo_newsletter_GrhFG3": {
+      "type": "bingo-newsletter",
+      "settings": {
+        "section_color": "none",
+        "textcolor": "#ffffff",
+        "title": "Blijf op de hoogte met onze nieuwsbrief",
+        "description": "",
+        "mailchimp": false,
+        "form_action": ""
+      }
+    },
+    "section_video_expeditie": {
+      "type": "section-video",
+      "name": "Animatie missie 1",
+      "settings": {
+        "section_title": "Bekijk de teaser van missie 1",
+        "section_title_color": "#f5b53c",
+        "shopify_video": "shopify://files/videos/animatie-missie1-teaser.mp4",
+        "video_poster": "shopify://shop_images/animatie-missie1-cover.jpg",
+        "video": "<!-- Shopify-video hierboven geselecteerd; dit veld moet gevuld blijven -->",
+        "section_color": "secondary"
+      }
+    },
+    "posters_expeditie": {
+      "type": "blocks-images-with-text",
+      "name": "Posters",
+      "blocks": {
+        "item_m1": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-1-a2-wand.jpg"
+          }
+        },
+        "item_m2": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-2-a2-wand.jpg"
+          }
+        },
+        "item_m4": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-4-a2-wand.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_m1",
+        "item_m2",
+        "item_m4"
+      ],
+      "settings": {
+        "section_title": "Elke missie een poster voor in de klas",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#193539",
+        "section_color": "none"
+      },
+      "custom_css": [
+        ".blockgrid .block img {height: auto !important; aspect-ratio: 3 / 4; object-fit: cover;}",
+        ".blockgrid .block .blockInformation {display: none;}"
+      ]
+    }
+  },
+  "order": [
+    "bingo_slideshow_t34DFy",
+    "text_with_image_FYC4Gm",
+    "text_with_image_7CUe94",
+    "section_video_expeditie",
+    "posters_expeditie",
+    "text_with_image_g3ATW8",
+    "text_with_image_GpBLfq",
+    "bingo_testimonials_8kFCyA",
+    "section_partners_A6hfgQ",
+    "bingo_newsletter_GrhFG3"
+  ]
+}

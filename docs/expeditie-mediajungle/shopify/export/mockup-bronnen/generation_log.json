@@ -1,0 +1,50 @@
+[
+  {
+    "id": "classroom-a",
+    "model": "google/nano-banana-2/text-to-image",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "prompt": "Photorealistic interior photograph of a bright, friendly Dutch primary school classroom, no people anywhere, no text or letters or numbers visible anywhere, no posters or drawings on the walls. Soft natural daylight from tall windows, warm light wood furniture, a few small school desks and colourful chairs in the lower third of the frame. Shot at eye level with a 35mm lens, straight-on to the wall, sharp focus, realistic colours, subtle depth. The centre of the frame is a large, completely empty, smooth wall in a soft off-white colour, wide enough to hang a big poster, with a low wooden cabinet below it holding a plant and some books. Windows on the left edge.",
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/mockups/classroom-a.png",
+    "error": null,
+    "provenance": null
+  },
+  {
+    "id": "classroom-b",
+    "model": "google/nano-banana-2/text-to-image",
+    "aspect_ratio": "16:9",
+    "resolution": "2k",
+    "prompt": "Photorealistic interior photograph of a bright, friendly Dutch primary school classroom, no people anywhere, no text or letters or numbers visible anywhere, no posters or drawings on the walls. Soft natural daylight from tall windows, warm light wood furniture, a few small school desks and colourful chairs in the lower third of the frame. Shot at eye level with a 35mm lens, straight-on to the wall, sharp focus, realistic colours, subtle depth. The centre of the frame is a completely empty light-green painted wall section between a window on the right and a wooden bookshelf on the far left, ready for a poster. A whiteboard is only partly visible at the far left edge and is blank.",
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/mockups/classroom-b.png",
+    "error": null,
+    "provenance": null
+  },
+  {
+    "id": "classroom-c",
+    "round": 2,
+    "model": "google/nano-banana-2/text-to-image",
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "prompt": "Photorealistic photograph, vertical portrait format, of one wall section in a lived-in, cosy Dutch primary school classroom, shot straight-on at eye level with a 35mm lens. No people anywhere. No readable text, letters or numbers anywhere. The centre of the wall is a completely empty, smooth painted area, large enough for a poster, with nothing on it. Around the edges of the frame the room feels used and warm: a cork pinboard at the left edge partly covered with colourful children's paintings (abstract splashes, no letters), a paper garland with colourful flags hanging near the top, a potted plant on a low wooden cabinet at the bottom with stacked exercise books and a jar of pencils, a small wooden chair with a child's jacket over it in the lower corner. Warm late-afternoon sunlight from a window off-frame to the right, soft long shadows, slightly worn wall paint in a warm off-white, wooden floor. Natural film-like colours, gentle grain.",
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/mockups/classroom-c.png",
+    "error": null
+  },
+  {
+    "id": "classroom-d",
+    "round": 2,
+    "model": "google/nano-banana-2/text-to-image",
+    "aspect_ratio": "3:4",
+    "resolution": "2k",
+    "prompt": "Photorealistic photograph, vertical portrait format, of one wall section in a lived-in, cosy Dutch primary school classroom, shot straight-on at eye level with a 35mm lens. No people anywhere. No readable text, letters or numbers anywhere. The centre of the wall is a completely empty, smooth painted area, large enough for a poster, with nothing on it. Around the edges of the frame the room feels used and warm: a wooden shelf at the top left with picture books and a small globe, a string of children's paper cut-out animals along the top, a radiator and a windowsill with three small plants and a stack of coloured paper at the bottom, a blue school chair in the lower right corner. The wall is painted a soft warm yellow-ochre with a slightly uneven, lived-in finish and a few faint tape marks. Warm morning light, soft shadows, wooden floor, natural film-like colours, gentle grain.",
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "projects/expeditie-mediajungle-posters/assets/images/mockups/classroom-d.png",
+    "error": null
+  }
+]

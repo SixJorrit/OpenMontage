@@ -1,0 +1,230 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "bingo_slideshow_t34DFy": {
+      "type": "bingo-slideshow",
+      "blocks": {
+        "image_TPJYNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/header_2x_3c43358d-7778-45de-a736-d6108481d78f.png",
+            "alignment": "left",
+            "text_transform": "capitalize",
+            "title": "Ontdek het Mediajungle  Educatieplatform tijdens een persoonlijke demo",
+            "title_color": "#f5b53c",
+            "subheading": "Ontdek wat Mediajungle allemaal voor jouw organisatie kan betekenen.",
+            "subheading_color": "#d5ebe5",
+            "btn_text": "Vraag een vrijblijvende demo aan",
+            "btn_link": "https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT",
+            "btn_text_transform": "capitalize",
+            "btn_two_text": "",
+            "btn_two_link": "",
+            "btn_two_text_transform": "capitalize",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TPJYNd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "navigation": false,
+        "pagination": false,
+        "autoplay": false,
+        "autoplay_speed": "8000",
+        "image_size": "1920x730"
+      }
+    },
+    "text_with_image_FYC4Gm": {
+      "type": "text-with-image",
+      "custom_css": [
+        ".row {display: flex !important; flex-wrap: wrap !important; gap: 2rem !important; flex-direction: row-reverse !important;}",
+        ".col-xs-12 {flex: 1 !important; min-width: 45% !important; max-width: 48% !important;}",
+        ".imageHolder img {width: 100%; height: auto;}",
+        "@media (max-width: 768px) {.row {flex-direction: column !important; } .col-xs-12 {min-width: 100% !important; max-width: 100% !important; } .imageHolder, .imageHolder img {width: 100% !important; }}"
+      ],
+      "name": "Van losse producten naar...",
+      "settings": {
+        "section_title": "Van losse producten naar één krachtig educatieplatform",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "Veel organisaties starten met een los spel, kaartenset of werkvorm. Logisch. Maar Mediajungle is meer dan een verzameling losse tools. Het Mediajungle Educatieplatform is ontwikkeld om structureel te ondersteunen bij het werken aan <b>mediawijsheid en digitale geletterdheid.</b><br><br>\nIn de demo laten we zien: <br><br>\n\n<ul>\n<li><b>hoe alle content samenkomt op één centrale plek</b></li>\n\n<li><b>hoe je eenvoudig wisselt tussen thema’s, doelgroepen en werkvormen</b></li>\n\n<li><b>hoe je met één abonnement altijd toegang hebt tot actuele content</b></li>\n</ul>\n<br>\nEen heldere rondleiding afgestemd op jouw organisatie.\n\n\n<br>\n<br>\n\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/platform-complete_3x_1.png",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_7CUe94": {
+      "type": "text-with-image",
+      "custom_css": [],
+      "name": "Wat kun je verwachten?",
+      "settings": {
+        "section_title": "Wat kun je verwachten in 15–20 minuten?",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "<ul>\n\n<li><b>hoe het platform professionals ondersteunt met concrete handvatten en materialen</b></li>\n\n\n<li><b>voorbeelden van toepassingen voor onderwijs, zorg, bibliotheken en BSO’s</b></li>\n<li><b>antwoorden op jouw specifieke vragen en situatie</b></li>\n</ul>\n<br>\n\nDe demo wordt gegeven door een collega van Mediajungle die dagelijks met het platform werkt en precies weet waar organisaties in de praktijk tegenaan lopen.\nDe demo is volledig vrijblijvend.\n\n\n<br>\n<br>\n\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_g3ATW8": {
+      "type": "text-with-image",
+      "custom_css": [
+        ".row {display: flex !important; flex-wrap: wrap !important; gap: 2rem !important;}",
+        ".col-xs-12 {flex: 1 !important; min-width: 45% !important; max-width: 48% !important;}",
+        ".imageHolder img {width: 100%; height: auto;}",
+        "@media (max-width: 768px) {.row {flex-direction: column !important; } .col-xs-12 {min-width: 100% !important; max-width: 100% !important; } .imageHolder, .imageHolder img {width: 100% !important; }}"
+      ],
+      "name": "Wat kun je verwachten?",
+      "settings": {
+        "section_title": "Complete leerlijn (SLO & digitale geletterdheid)",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "Inbegrepen in het Mediajungle Educatieplatform zit <b>Expeditie Mediajungle</b>. Een complete leerlijn voor scholen:<br><br>\n<ul>\n<li><b>Voldoet aan SLO kerndoelen</b></li>\n\n<li><b>Elke maand een uitdagende missie voor jouw klas</b></li>\n\n<li><b>Spelenderwijs digitaal geletterd worden </b></li>\n<li><b>Volledig ontzorgd</b></li>\n\n\n\n\n\n</ul>\n<br>\nExpeditie Mediajungle is beschikbaar vanaf augustus 2026.",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/Header_EM.jpg",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "text_with_image_GpBLfq": {
+      "type": "text-with-image",
+      "name": "Wat MJ kan betekenen",
+      "settings": {
+        "section_title": "Benieuwd wat Mediajungle voor jouw organisatie kan betekenen?",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "Binnen één werkdag nemen we contact met je  op om een geschikt moment te plannen.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "bingo_testimonials_8kFCyA": {
+      "type": "bingo-testimonials",
+      "blocks": {
+        "item_B7fDUV": {
+          "type": "item",
+          "settings": {
+            "title": "Anouk van Leeuwen (Zaan primair onderwijs)",
+            "profession": "i-coach",
+            "position": "1",
+            "review": "We zijn bij Zaan Primair erg blij met Mediajungle! Vooral de combinatie van het platform en het fysieke materiaal is fantastisch! Vanmorgen heb ik de praatplaten nog gebruikt om met ouders in gesprek te gaan. Het materiaal is op zoveel manieren in te zetten."
+          }
+        },
+        "item_xxNHAC": {
+          "type": "item",
+          "settings": {
+            "title": "Franka van Deursen (Stichting Prodas)",
+            "profession": "Projectleider digitale geletterdheid",
+            "position": "2",
+            "review": "We zijn ontwikkelpartner van het Mediajungle Educatieplatform geworden omdat Mediajungle meebeweegt met de razendsnelle online ontwikkelingen en trends. Daardoor kunnen we makkelijk inspelen op wat er nú speelt. Vooral de duidelijke link met de (concept)kerndoelen van SLO, het accent op media-empowerment en mediawelzijn, en de sterke combinatie van online en offline aanbod spreken ons aan. Ook vinden we het waardevol dat er aanvullend aanbod is om thuis met mediawijsheid aan de slag te gaan."
+          }
+        },
+        "item_HWekNb": {
+          "type": "item",
+          "settings": {
+            "title": "Angeline Zwiers (Ambiq)",
+            "profession": "Mediacoach",
+            "position": "3",
+            "review": "Aantrekkelijk, begrijpelijk, actueel en motiverend zijn voor ons relevante kernwoorden om kinderen, jongeren en ouders  mediawijs te maken. Daarom  hebben wij gekozen voor het platform Mediajungle. Het geeft ons de mogelijkheid om gebruik te maken van verschillende thema's en spelvormen die actueel zijn in de online wereld."
+          }
+        }
+      },
+      "block_order": [
+        "item_B7fDUV",
+        "item_xxNHAC",
+        "item_HWekNb"
+      ],
+      "settings": {
+        "title_color": "#f5b53c",
+        "text_color": "#04202c",
+        "cloud_color": "#f5b53c",
+        "shadow_color": "#04202c",
+        "customername_color": "#ffffff",
+        "title": "Testimonials",
+        "section_color": "secondary"
+      }
+    },
+    "section_partners_A6hfgQ": {
+      "type": "section-partners",
+      "blocks": {
+        "item_AiVfMz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AMBIQ_LOGO.png"
+          }
+        },
+        "item_ktVcFF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/61c5d19a0aef2-Logo_RENN4-250px.png"
+          }
+        },
+        "item_rndzkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/prodas_logo.png"
+          }
+        },
+        "item_zYyBth": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/logoZaanPrimair2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "item_AiVfMz",
+        "item_ktVcFF",
+        "item_rndzkz",
+        "item_zYyBth"
+      ],
+      "custom_css": [
+        ".container {padding-block: 60px;}"
+      ],
+      "settings": {
+        "section_title": "Onze trotse partners en afnemers",
+        "section_title_color": "#f5b53c",
+        "section_color": "none"
+      }
+    },
+    "bingo_newsletter_GrhFG3": {
+      "type": "bingo-newsletter",
+      "settings": {
+        "section_color": "none",
+        "textcolor": "#ffffff",
+        "title": "Blijf op de hoogte met onze nieuwsbrief",
+        "description": "",
+        "mailchimp": false,
+        "form_action": ""
+      }
+    }
+  },
+  "order": [
+    "bingo_slideshow_t34DFy",
+    "text_with_image_FYC4Gm",
+    "text_with_image_7CUe94",
+    "text_with_image_g3ATW8",
+    "text_with_image_GpBLfq",
+    "bingo_testimonials_8kFCyA",
+    "section_partners_A6hfgQ",
+    "bingo_newsletter_GrhFG3"
+  ]
+}
+
