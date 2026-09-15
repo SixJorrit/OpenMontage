@@ -1,35 +1,23 @@
-# Posters missie 1–3 (A4)
+# Posters missie 1–4 (definitief: A2, chatgesprek-stijl)
 
-## DEFINITIEVE KEUZES (vastgelegd 2026-09-11)
+## DEFINITIEVE KEUZES (herzien 2026-09-15)
 
-**Let op de hernummering (2026-09-11): online shoppen = missie 4.** Missie 3 = gezond
-schermgebruik ("Gebruik je scherm gezond bewust. Dat geeft je lichaam kracht én rust!") —
-daar is nog géén poster voor gemaakt.
+**Definitieve opmaakstijl: A — chatgesprek** (wit+geel chatballon-duo linksboven in
+Simple Stamp, E14-logo 4000px rechtsboven), **drukklaar op A2 + 3mm afloop (426×600mm)
+als RGB-PDF** — drukwerkdeal.nl converteert zelf naar CMYK, zo blijft de tekst
+vector-scherp. Build: `build_posters_a2.py`; CMYK-alternatiefroute staat verderop.
 
-| missie | definitieve master (in `round-3/`) | concept | slogan |
-|---|---|---|---|
-| 1 | `p1a-jeep-bubbles-logozone.png` | jeep met hart/duim/ster-bubbels, boze oogjes in de doornstruiken erachter | "Houd het gezellig en sociaal online. Dat is chill, dat is fijn!" |
-| 2 | `p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, denkwolkje, "HO!"-gebaar | "Eerst denken, dan verzenden. Dat scheelt een hoop ellende!" |
-| 4 | `p3-staand-logozone.png` | pakketbusje; Boaz stáánd naast de doos met tablet (fop-webshop) in de rechterhand | "Laat je niet pushen, laat je niet foppen bij een potje online shoppen!" |
+| missie | definitieve master | artwork |
+|---|---|---|
+| 1 | `round-3/p1a-jeep-bubbles-logozone.png` | jeep + reactie-bubbels, boze oogjes in doornstruiken |
+| 2 | `round-3/p2-tent-think-first-logozone.png` | tent bij nacht, vinger boven verzendknop, "HO!"-gebaar |
+| 3 | `round-4/p3c-hammock-sky-final.png` | hangmat + stretch, schermen omgekeerd op steen, voetbal (was American football — crop-edit-fix) |
+| 4 | nog open — feedbackronde loopt (kandidaten: `round-3/p3-staand-logozone.png` in stijl A, of `round-4/p4c-parachute-sky.png` in stijl C) |
 
-**Opgemaakte variant** (logo + slogan als niet-destructieve laag over de kale master):
-`build_posters_opgemaakt.py` — E14-logo linksboven (104mm), tekst eronder in **Simple Stamp** (Oleg Stepanov, user-font in ~/Library/Fonts;
-ligaturen uitzetten — de fi-ligatuur spatieert kapot). Kleur per poster: bruin met
-witte gloed (missie 1), wit met donkere schaduw (missie 2), bruin met lichte glow
-(missie 4); géén missie-label. Output lokaal in `renders/opgemaakt/poster-missie-{1,2,4}-def.{pdf,png}`.
-
-De niet-gekozen varianten (1b telefoonhart; poster 3 knielend met/zonder vergrootglas)
-blijven in `round-3/` staan als alternatief, maar zijn géén deliverable. Print-klare
-A4-uitsneden van de definitieve masters: lokale werkmap `renders/logozone/`
-(`poster-1a-bubbels-logozone`, `poster-2-tent-logozone`, `poster-3-staand-logozone`,
-PDF + 300dpi-PNG); regenereerbaar via `build_posters_r2.py`-patroon.
-
-**CMYK-drukroute (2026-09-11):** Chrome's print-PDF is altijd RGB. Voor een
-CMYK-drukbestand: PDF → `pdftoppm -r 300` → `sips -m "Generic CMYK Profile.icc"`
-(ColorSync) → PIL `save(..., resolution=300)` = DeviceCMYK-PDF op exact formaat.
-Kanttekening: generiek CMYK-profiel (geen FOGRA39 op deze machine) en tekst wordt
-mee-gerasterd op 300 dpi; als de drukker RGB accepteert of een eigen profiel heeft,
-kan diens conversie licht beter uitpakken. Zie `build_poster1_a2.py`.
+Slogans: zie het canon-geheugen / `build_posters_a2.py`. Missie-nummering: online
+shoppen = missie 4; missie 3 = gezond schermgebruik. De eerdere A4-varianten
+(logo-linksboven-opmaak, `build_posters_opgemaakt.py`) zijn vervangen door deze
+A2-chatgesprek-reeks maar blijven bruikbaar als A4-format nodig is.
 
 ## VASTE LAYOUTREGEL — logozone linksboven (2026-09-09, geldt ook voor alle toekomstige posters)
 

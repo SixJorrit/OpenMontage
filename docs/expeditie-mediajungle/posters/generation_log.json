@@ -599,5 +599,19 @@
     "output": "projects/expeditie-mediajungle-posters/assets/images/round-4/p4c-parachute-sky.png",
     "error": null,
     "note": "C-stijl hero-artwork (opmaak-eerst) voor missie 2/3/4"
+  },
+  {
+    "id": "p3c-soccerball-fix",
+    "round": 4,
+    "model": "google/nano-banana-2/edit",
+    "prompt": "A close-up of a jungle clearing with a mossy stone holding a smartphone and a tablet lying face-down, a water bottle, and a ball. Fix one prop error and change nothing else: the ball is an American football. Replace it with a classic black-and-white panelled SOCCER ball of the same size, in the same spot, same lighting, same stylized 3D CG look. Keep everything else exactly the same: the stone, the devices, the bottle, the plants, the boy's legs and sneakers, colours and lighting.",
+    "reference_images": [
+      "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-ball-src.png"
+    ],
+    "success": true,
+    "cost_usd": 0.12,
+    "output": "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-ball-fixed.png",
+    "error": null,
+    "note": "crop-edit: American football -> voetbal (missie 3 definitief)"
   }
 ]
