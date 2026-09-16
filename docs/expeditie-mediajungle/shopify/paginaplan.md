@@ -118,3 +118,8 @@ digitale/fysieke werkvormen, thuis-formulering, start groep 7-8 + rest vanaf 202
   nieuw blok "Nieuw: Expeditie Mediajungle" met jeep-still, en "Offerte aanvragen" → "Vraag een vrijblijvende demo aan" (ClickUp-formulier).
 - Galerij: poster 3 (hangmat) verwijderd op verzoek; drie kaarten (missie 1, 2, 4).
 - Menu: thema rendert geen geneste menu-items; bewust niet aangepast.
+
+## Ronde 7 (2026-09-16): trailer
+- Videosectie toont nu `expeditie-trailer-v3.mp4` (59 s; animatie 2 + LinkedIn-kaarttour + eindkaart "Gratis onderdeel van het
+  Mediajungle Educatieplatform"), kop "Bekijk de trailer". Bouw: `projects/expeditie-mediajungle-trailer/build_trailer.py`.
+  Kaartbron is 640p (LinkedIn); originele schermopname nog inwisselen als Jorrit die aanlevert.

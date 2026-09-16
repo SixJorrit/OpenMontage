@@ -208,9 +208,9 @@
       "type": "section-video",
       "name": "Animatie missie 1",
       "settings": {
-        "section_title": "Bekijk de teaser van missie 1",
+        "section_title": "Bekijk de trailer",
         "section_title_color": "#f5b53c",
-        "shopify_video": "shopify://files/videos/animatie-missie1-teaser.mp4",
+        "shopify_video": "shopify://files/videos/expeditie-trailer-v3.mp4",
         "video_poster": "shopify://shop_images/animatie-missie1-cover.jpg",
         "video": "<!-- Shopify-video hierboven geselecteerd; dit veld moet gevuld blijven -->",
         "section_color": "secondary"
