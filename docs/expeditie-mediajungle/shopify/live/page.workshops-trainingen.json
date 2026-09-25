@@ -1,0 +1,249 @@
+{
+  "sections": {
+    "bingo_slideshow_t34DFy": {
+      "type": "bingo-slideshow",
+      "blocks": {
+        "image_TPJYNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/workshops_headerV3.png",
+            "alignment": "left",
+            "text_transform": "capitalize",
+            "title": "Workshops, trainingen, ouderavonden & gastlessen",
+            "title_color": "#f5b53c",
+            "subheading": "Mediajungle heeft een compleet scholings- en traingingsaanbod. Op maat verzorgd voor jouw organisatie of school.<br><br>\n<ul>\n<li>Mediawijsheid en social media</li>\n<li>Digitale geletterdheid </li>\n<li>Gediplomeerde trainers en experts</li>\n</ul>\n<br>",
+            "subheading_color": "#d5ebe5",
+            "btn_text": "Aanvragen",
+            "btn_link": "shopify://pages/contact",
+            "btn_text_transform": "capitalize",
+            "btn_two_text": "",
+            "btn_two_link": "",
+            "btn_two_text_transform": "capitalize",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TPJYNd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "navigation": false,
+        "pagination": false,
+        "autoplay": false,
+        "autoplay_speed": "8000",
+        "image_size": "1920x730"
+      }
+    },
+    "blocks_images_with_text_3hTCpD": {
+      "type": "blocks-images-with-text",
+      "blocks": {
+        "item_EQX4Kj": {
+          "type": "item",
+          "settings": {
+            "title": "Opleiding Aandachtsfunctionaris Mediawijsheid in de zorgpraktijk",
+            "position": "3",
+            "description": "<b><i>Duur: 4 dagdelen<br>\nAantal trainers: 4 <br>\nDeelnemers: max. 15 personen<br>\nPrijs excl BTW: € 595 per deelnemer\n</i><br></b>\n\n<br>Een opleiding van vier dagdelen gegeven door een team van mediapedagogen en thema-experts.\n<br><br>\n\n<ul>\n<li>Dagdeel 1 <br><b>Online leefwereld en jouw rol als begeleider </b>\n</li>\n<li>Dagdeel 2 <br><b>Relaties en grenzen</b>\n</li> \n<li>Dagdeel 3 <br><b>Problematisch game- en schermgebruik </b>\n</li>\n<li>Dagdeel 4 <br><b>Werken met Mediajungle in de praktijk</b>\n</li>\n</ul> \n<br>\nNa het succesvol afronden van deze opleiding krijgen deelnemers een jaar lang toegang tot het Mediajungle Educatieplatform. Daarmee kun je ook direct starten met <a href=\"/pages/expeditie-mediajungle-zorg\" style=\"color:#f5b53c;text-decoration:underline\">Expeditie Mediajungle voor de zorg</a>. \n<br>\n<br>\nZowel in company als op inschrijving te volgen.\n<br>\n<br>\n<b>In company</b>\n<br>\n<a class=\"btn btnbingoOne\" style=\"margin-top:5px;\" href=\"/pages/contact\" tabindex=\"0\">Neem contact op</a>\n<br>\n<br>\n<b>Op inschrijving op de Mediajungle trainingslocatie</b>\n<br>\n<a class=\"btn btnbingoOne\" style=\"margin-top:5px;\" href=\"/products/opleiding-aandachtsfunctionaris-mediawijsheid-in-de-zorgpraktijk\" tabindex=\"0\">Inschrijven</a>",
+            "avatar": "shopify://shop_images/Trainingsdag.jpg"
+          }
+        },
+        "item_QcEmGp": {
+          "type": "item",
+          "settings": {
+            "title": "Training (L)VB en media",
+            "position": "3",
+            "description": "<b><i>Duur: 1 dagdeel<br>\nAantal trainers: 1<br>\nDeelnemers: max. 15 personen<br>\nPrijs excl BTW: € 949,-<br></i><br></b>\n\nDeze training is speciaal voor begeleiders, leerkrachten en opvoeders van mensen met een verstandelijke beperking. In deze interactieve sessie van 1 dagdeel (op locatie) is extra ruimte voor casuïstiek en dialoog.\n\n<br><br>\n\n<ul>\n<li>Vijf concrete aanbevelingen voor begeleiding van (L)VB bij mediagebruik</li>\n<li>Aandacht voor Wet Zorg en Dwang in relatie tot mediagebruik</li>\n<li>Werken met de Mediajungle tools: zelf aan de slag</li>\n</ul> \n<br>",
+            "avatar": "shopify://shop_images/Media_LVB.jpg"
+          }
+        },
+        "item_pdE8Ah": {
+          "type": "item",
+          "settings": {
+            "title": "Training Digitale Geletterdheid & Mediawijsheid",
+            "position": "1",
+            "description": "<b><i>Duur: 1 dagdeel<br>\nAantal trainers: 1 <br>\nDeelnemers: max. 15 personen<br>\nPrijs excl BTW: € 995,-<br></i><br></b>\n\nEen interactieve training (op locatie) van een dagdeel gegeven door een mediapedagoog of expert digitale geletterdheid\n<br><br>\n<ul>\n<li>Inzichten in trends, ontwikkelingen en wetgeving</li>\n<li>Aandacht voor Mediawijsheid competentiemodel en SLO kerndoelen Digitale Geletterdheid</li>\n<li>Concrete handvatten en tips voor effectieve mediaopvoeding</li>\n<li>Werken met de Mediajungle tools: zelf aan de slag\n</li>\n<li>Ruimte voor casuïstiek en dialoog</li>\n</ul>\n<br>",
+            "avatar": "shopify://shop_images/Wokrshop_2.jpg"
+          }
+        },
+        "item_GUQUR4": {
+          "type": "item",
+          "settings": {
+            "title": "Workshop Werken met Mediajungle",
+            "position": "3",
+            "description": "<b><i>Duur: 2 uur<br>\nAantal trainers: 1<br>\nDeelnemers: max. 20 personen<br>\nPrijs excl BTW: € 495,-<br></i><br></b>\n\nEen sessie van 2 uur (op locatie) met uitleg van de Mediajungle materialen en verkenning hoe deze het beste passen binnen de dagelijkse praktijk van jouw organisatie.\n<br><br>\n\n<ul>\n<li>Toelichting Mediajungle competentiemodel en aandacht voor SLO kerndoelen Digitale Geletterdheid</li>\n<li>Werken met de Mediajungle tools: zelf aan de slag</li>\n<li>Concreet plan van aanpak hoe jouw organisatie/team Mediajungle kan implementeren en inzetten</li>\n</ul>\n<br>",
+            "avatar": "shopify://shop_images/Workshop_1.jpg"
+          }
+        },
+        "item_TVRVYf": {
+          "type": "item",
+          "settings": {
+            "title": "Ouderavond",
+            "position": "1",
+            "description": "<b><i>Duur: max 2 uur<br>\nAantal trainers: 1<br>\nDeelnemers: onbeperkt<br>\nPrijs excl BTW: € 695,-<br></i><br></b>\n\nEen van onze gediplomeerde mediacoaches komt langs om opvoeders houvast te geven voor een gezonde mediaopvoeding thuis.\n<br><br>\n<ul>\n<li>Voor scholen, kinderdagopvang & zorg</li>\n<li>Concrete handvatten voor een gezonde mediaopvoeding thuis</li>\n<li>De laatste trends & ontwikkelingen</li>\n<li>Thema's zoals pesten, online seksualiteit, sociale media, gamen en nog veel meer</li>\n</ul>\n<br>",
+            "avatar": "shopify://shop_images/anke.jpg"
+          }
+        },
+        "item_XPKRJC": {
+          "type": "item",
+          "settings": {
+            "title": "Gastles",
+            "position": "3",
+            "description": "<b><i>Duur: 1,5 tot 2 uur<br>\nAantal trainers: 1<br>\nDeelnemers: max. 30 personen<br>\nPrijs excl BTW: € 325,-<br></i><br></b>\n\nEen gediplomeerde mediacoach komt langs voor een gastles. \n<br><br>\n<ul>\n<li>Super interactief</li>\n<li>Leren door te spelen/gamen</li>\n<li>Aansprekende voorbeelden die naadloos aansluiten bij de belevingswereld</li>\n<li>Thema's zoals pesten, online seksualiteit, sociale media, gamen, nepnieuws en nog veel meer</li>\n</ul>\n<br>",
+            "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00768_50623efa-f0e6-4eba-a0d9-79abee490960.jpg"
+          }
+        },
+        "item_Rh9PMM": {
+          "type": "item",
+          "settings": {
+            "title": "Gastles in 't Frysk",
+            "position": "",
+            "description": "<b><i>Duur: 1,5 tot 2 uur<br>\nAantal trainers: 1<br>\nDeelnemers: max. 30 personen<br>\nPrijs excl BTW: € 325,-<br></i><br></b>\n<br>\nEen leerzame, leuke Friese les of een gastles mediawijsheid?\nKiezen hoeft niet meer, want Mediajungle heeft nu de Mediajungle Fryske gastles. \n<br><br>\nAlles over schermtijd, gamen, online omgangsvormen, AI en nog veel meer.\n<br>\nGeschikt voor groep 5, 6, 7 en 8 en de onderbouw van het VO.\n<br><br>\nWat je krijgt:\n<ul>\n<li>Een gastles van maximaal 1.5 uur van niemand minder dan de Friese mediapedagoog Evelyn Verburgh!</li>\n<li>Samen in gesprek met de Mediajungle Fryske kletskaarten en we spelen de Fryske social mediaquiz: wie is de online baas van de klas?</li>\n<li>En natuurlijk een leuke opdracht voor mee naar huis.</li>\n</ul>\n<br><br>\nElke school ontvangt 3 doosjes Mediajungle Fryske kletskaarten en gratis toegang tot online materialen.",
+            "avatar": "shopify://shop_images/Mediajungle--kletskaarten--fries--1.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_EQX4Kj",
+        "item_QcEmGp",
+        "item_pdE8Ah",
+        "item_GUQUR4",
+        "item_TVRVYf",
+        "item_XPKRJC",
+        "item_Rh9PMM"
+      ],
+      "custom_css": [
+        ".container {margin-block: 90px;}"
+      ],
+      "settings": {
+        "section_title": "Het trainingsaanbod van Mediajungle",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#083d3f",
+        "section_color": "tertiary"
+      }
+    },
+    "text_with_image_dTYNTj": {
+      "type": "text-with-image",
+      "custom_css": [],
+      "settings": {
+        "section_title": "Interesse in een workshop, training, ouderavond of gastles?",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "Neem contact met ons voor meer informatie.<br><br>\n<i>Prijzen exclusief BTW en reiskosten.</i><br> \n<br>",
+        "section_description_color": "#ffffff",
+        "button_title": "Aanvragen",
+        "button_link": "https://mediajungle.eu/pages/contact",
+        "new_window": "current"
+      }
+    },
+    "bingo_testimonials_8kFCyA": {
+      "type": "bingo-testimonials",
+      "blocks": {
+        "item_9dTeXU": {
+          "type": "item",
+          "settings": {
+            "title": "Virgil Daniel",
+            "profession": "Programmamaker Stichting Studiezalen",
+            "position": "",
+            "review": "Wat een waardevolle workshop hebben wij mogen ontvangen van het team van Mediajungle.\n\nDankbaar voor de organisatie en vooral de manier waarop jullie de leerlingen meenemen in de trends van deze tijd, inclusief de mindere kanten die daar helaas ook bij komen kijken. \n\nSuper mooi om te zien hoe Mediajungle zich hier met zoveel betrokkenheid en expertise voor inzet. Jullie vermogen om écht te duiken in de leefwerelden van jongeren maakt indruk en zorgt voor gesprekken die ertoe doen."
+          }
+        },
+        "item_B7fDUV": {
+          "type": "item",
+          "settings": {
+            "title": "Rob van Dael (bs de Zonnewijzer)",
+            "profession": "Leraar BO & coördinator digitale geletterdheid",
+            "position": "1",
+            "review": "Scholen die nog zoekende zijn in een aanbod voor Mediawijsheid zou ik echt aanraden deze materialen te bekijken/aan te schaffen."
+          }
+        },
+        "item_xxNHAC": {
+          "type": "item",
+          "settings": {
+            "title": "Saskia van Dijk (Forta)",
+            "profession": "Mediacoach",
+            "position": "2",
+            "review": "Afgelopen vrijdag waren jullie bij ons op Forta. Wat een supergoede workshop. Erg inspirerend!"
+          }
+        }
+      },
+      "block_order": [
+        "item_9dTeXU",
+        "item_B7fDUV",
+        "item_xxNHAC"
+      ],
+      "settings": {
+        "title_color": "#f5b53c",
+        "text_color": "#04202c",
+        "cloud_color": "#f5b53c",
+        "shadow_color": "#04202c",
+        "customername_color": "#ffffff",
+        "title": "Testimonials",
+        "section_color": "secondary"
+      }
+    },
+    "section_partners_A6hfgQ": {
+      "type": "section-partners",
+      "blocks": {
+        "item_AiVfMz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AMBIQ_LOGO.png"
+          }
+        },
+        "item_ktVcFF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/61c5d19a0aef2-Logo_RENN4-250px.png"
+          }
+        },
+        "item_rndzkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/prodas_logo.png"
+          }
+        },
+        "item_zYyBth": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/logoZaanPrimair2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "item_AiVfMz",
+        "item_ktVcFF",
+        "item_rndzkz",
+        "item_zYyBth"
+      ],
+      "custom_css": [
+        ".container {padding-block: 60px;}"
+      ],
+      "settings": {
+        "section_title": "Onze trotse partners en afnemers",
+        "section_title_color": "#f5b53c",
+        "section_color": "none"
+      }
+    },
+    "bingo_newsletter_GrhFG3": {
+      "type": "bingo-newsletter",
+      "settings": {
+        "section_color": "none",
+        "textcolor": "#ffffff",
+        "title": "Blijf op de hoogte met onze nieuwsbrief",
+        "description": "",
+        "mailchimp": false,
+        "form_action": ""
+      }
+    }
+  },
+  "order": [
+    "bingo_slideshow_t34DFy",
+    "blocks_images_with_text_3hTCpD",
+    "text_with_image_dTYNTj",
+    "bingo_testimonials_8kFCyA",
+    "section_partners_A6hfgQ",
+    "bingo_newsletter_GrhFG3"
+  ]
+}

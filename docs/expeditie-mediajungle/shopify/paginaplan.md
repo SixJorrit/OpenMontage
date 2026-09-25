@@ -132,3 +132,7 @@ digitale/fysieke werkvormen, thuis-formulering, start groep 7-8 + rest vanaf 202
 - Demo: zelfde ClickUp-formulier (heeft Sector = Zorg). Beschikbaarheid 1 oktober niet in de hero (Jorrit).
 - Nog te doen na "ja, publiceer": pagina /pages/expeditie-mediajungle-zorg publiceren; links vanaf zorgblokken op home en platform,
   trainingenpagina (opleiding Aandachtsfunctionaris) en één regel op de onderwijspagina.
+- **Gepubliceerd 2026-09-25:** https://mediajungle.eu/pages/expeditie-mediajungle-zorg . Ingangen: kaart "Zorg en ondersteuning" op home
+  (settings_data, blok item_UbetjU) en platform (item_TVRVYf), opleiding Aandachtsfunctionaris op /pages/workshops-trainingen
+  ("Daarmee kun je ook direct starten met…"), slotblok onderwijspagina ("Werk je in de zorg?"). Back-ups in backup/, gepushte versies in live/.
+  Partnerkop: "Deze organisaties zijn al op expeditie" (alleen ASVZ tot Ambiq/De Lovie akkoord).

@@ -1,0 +1,346 @@
+{
+  "sections": {
+    "bingo_slideshow_t34DFy": {
+      "type": "bingo-slideshow",
+      "blocks": {
+        "image_TPJYNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/platform-header_2_095924df-f5cf-4ad3-b220-991ef4986af9.png",
+            "alignment": "left",
+            "text_transform": "capitalize",
+            "title": "Ontdek het Mediajungle Educatieplatform",
+            "title_color": "#f5b53c",
+            "subheading": "Jouw totaaloplossing voor:<h3>Mediawijsheid en digitale geletterdheid!</h3> <br>",
+            "subheading_color": "#d5ebe5",
+            "btn_text": "Gratis registreren",
+            "btn_link": "https://platform.mediajungle.eu/",
+            "btn_text_transform": "capitalize",
+            "btn_two_text": "",
+            "btn_two_link": "",
+            "btn_two_text_transform": "capitalize",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TPJYNd"
+      ],
+      "custom_css": [],
+      "settings": {
+        "navigation": false,
+        "pagination": false,
+        "autoplay": false,
+        "autoplay_speed": "8000",
+        "image_size": "1920x730"
+      }
+    },
+    "blocks_images_with_text_3hTCpD": {
+      "type": "blocks-images-with-text",
+      "blocks": {
+        "item_pdE8Ah": {
+          "type": "item",
+          "settings": {
+            "title": "Onderwijs",
+            "position": "1",
+            "description": "Voor leerlingen en docenten die willen werken aan digitale geletterdheid en mediawijsheid. \n<br>\nHet Mediajungle Educatieplatform is dé interactieve totaaloplossing voor leerlingen vanaf 8 jaar. Speels, begrijpelijk en helemaal passend bij het thema. \nAlle Mediajungle tools zijn gekoppeld aan de nieuwe SLO kerndoelen digitale geletterdheid en zijn geschikt voor het (S)BO, V(S)O en het praktijkonderwijs.",
+            "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00768_50623efa-f0e6-4eba-a0d9-79abee490960.jpg"
+          }
+        },
+        "item_TVRVYf": {
+          "type": "item",
+          "settings": {
+            "title": "Zorg en ondersteuning",
+            "position": "2",
+            "description": "Voor cliënten en hulpverleners bij het vergroten van online zelfredzaamheid en weerbaarheid in de gedigitaliseerde samenleving. Ga samen aan de slag met urgente thema's als online pesten, nepnieuws, online vriendschap, sexting en nog veel meer. Vergroot kansen en verklein de risico's.<br><br><a href=\"/pages/expeditie-mediajungle-zorg\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk Expeditie Mediajungle voor de zorg</a>",
+            "avatar": "shopify://shop_images/niels_Alex.jpg"
+          }
+        },
+        "item_XPKRJC": {
+          "type": "item",
+          "settings": {
+            "title": "Bibliotheken & BSO",
+            "position": "3",
+            "description": "Voor pedagogisch medewerkes, lees- en mediaconsulenten en mediacoaches die beslagen ten ijs willen komen. Ondersteun jij kinderen, scholen, ouders en opvoeders rondom digitale vaardigheden, mediaopvoeding en mediagebruik? Dan sluit ons Educatieplatform perfect aan bij jouw opdracht. Interactief, leerzaam, actueel en vooral ontzettend leuk!",
+            "avatar": "shopify://shop_images/Gezin.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_pdE8Ah",
+        "item_TVRVYf",
+        "item_XPKRJC"
+      ],
+      "custom_css": [
+        ".container {margin-block: 90px;}"
+      ],
+      "settings": {
+        "section_title": "Voor wie is het Mediajungle Educatieplatform?",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#083d3f",
+        "section_color": "tertiary"
+      }
+    },
+    "blocks_images_with_text_DULpjP": {
+      "type": "blocks-images-with-text",
+      "blocks": {
+        "item_hH4UbN": {
+          "type": "item",
+          "settings": {
+            "title": "Gratis",
+            "position": "1",
+            "description": "<i>€ 0,00 per leerkracht/begeleider </i>\n<br> <br>\n\n<b>Toegang tot:</b>\n<ul>\n<li>Beperkt aantal educatieve materialen</li>\n<li>Beperkt aantal masterclasses</li>\n</ul>\n\n\n\n<b>Binnenkort:</b>\n<ul>\n<li>Demo versies van de Mediajungle games</li>\n</ul>\n<b></b>\n<br>\n<p style=\"text-align:center;\">\n<a class=\"btn btnbingoOne\" href=\"https://platform.mediajungle.eu/register\">Registreer gratis</a></p>"
+          }
+        },
+        "item_WFfei3": {
+          "type": "item",
+          "settings": {
+            "title": "Basis",
+            "position": "2",
+            "description": "<i>€ 24,50 per leerkracht/begeleider p/m</i>\n<br><br>\n<b>Toegang tot:</b>\n<ul>\n<li>Alle Mediajungle games, inclusief alle vragensets\n</li>\n<li>Een groeiende bibliotheek met meer dan 50 educatieve materialen </li>\n<li>Elke maand nieuwe vragen, opdrachten en materialen\n</li>\n<li>Alle masterclasses </li>\n<li>Alle downloads, werkbladen en posters \n</li>\n<li>Expediție Mediajungle: een complete leerlijn voor digitale geletterdheid en mediawijsheid\n\n</li>\n</ul>\n\n\n<b>Extra voordelen</b>\n<ul>\n<li>Eigen beheer: zelf medewerkers toevoegen en verwijderen\n</li>\n<li>Service en ondersteuning\n</li>\n<li>Extra  korting op trainingen en workshops\n</li>\n<li>10% korting in onze webshop</li>\n\n</ul>\n\n<br>\n\n\n\n<p style=\"text-align:center;\">\n<a class=\"btn btnbingoOne\" href=\"https://mediajungle.eu/products/mediajungle-educatieplatform\">Abonneer</a></p>"
+          }
+        },
+        "item_pW7bek": {
+          "type": "item",
+          "settings": {
+            "title": "Plus",
+            "position": "3",
+            "description": "<i>Prijs per organisatie, op aanvraag</i>\n<br><br>\n<b> Geen gedoe over het aantal gebruikers maar gewoon een vaste prijs?</b> \n<br><br>\nMet het Abonnement Plus sluiten we organisatie aan met meer dan 50 medewerkers.\n<br><br>\n<b>Extra voordelen</b>\n<ul>\n<li> Alles uit het abonnement voor alle medewerkers\n</li>\n<li>Laagdrempelige toegang\n</li>\n<li>Integratie met ICT-landschap\n</li>\n<li> Mogelijkheid tot SSO\n</li>\n<li>Vaste prijs per jaar\n<br>\n<br>\n</li>\n</ul>\n\n\n<b>Neem contact met ons op</b>\n<br>We verkennen samen de mogelijkheden en maken een voorstel  op maat.\n<br>\n<br>\n\n\n<p style=\"text-align:center;\">\n<a class=\"btn btnbingoOne\" href=\"https://mediajungle.eu/pages/contact\">Neem contact op</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_hH4UbN",
+        "item_WFfei3",
+        "item_pW7bek"
+      ],
+      "custom_css": [
+        ".container {margin-block: 90px;}"
+      ],
+      "settings": {
+        "section_title": "Abonnementen",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#000000",
+        "section_color": "secondary"
+      }
+    },
+    "text_with_image_WXTVgB": {
+      "type": "text-with-image",
+      "settings": {
+        "section_title": "Alles komt samen op het Mediajungle Educatieplatform met:",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "<ul>\n<li><b>Toegang tot alle Mediajungle serious games!</b></li>\nSpeel onbeperkt alle versies van ons Mediajungle bordspel, de Super Fake Safari, Nep/Echt en King of the Jungle!<br><br>\n<li><b>Toegang to een groeiende bibliotheek met ruim 50 items</b></li>\nMaak gebruik van interactieve educatieve materialen gecategoriseerd op thema, tijdsduur, niveau en kerndoel.\n<br><br>\n<li><b>Masterclasses voor docenten en professionals</b></li>\nVergroot je eigen mediawijsheid en kennis met masterclasses en online trainingen.<br><br>\n<li><b>Expeditie Mediajungle</b></li>\nDe leerlijn digitale geletterdheid in tien missies met Femke en Boaz. <a href=\"/pages/expeditie-mediajungle\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk de expeditie</a>.\n</ul>\n<br>\nHet Mediajungle Educatieplatform wordt continu bijgewerkt en vernieuwd. Dit doen we in co-creatie met eindgebruikers, professionals en de wetenschap.<br>\nBenieuwd of het Mediajungle Educatieplatform past bij jouw organisatie? Vraag een vrijblijvende demo aan.\n\n\n\n<br>\n<br>\n\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/platform-complete.png",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    },
+    "blocks_images_with_text_ihFRHH": {
+      "type": "blocks-images-with-text",
+      "blocks": {
+        "item_nrJbX7": {
+          "type": "item",
+          "settings": {
+            "title": "Altijd actueel, interactief en leuk",
+            "position": "1",
+            "description": "De online wereld verandert continu en in een hoog tempo. Onze mediacoaches, experts en inhoudelijk ontwikkelaars zitten boven op de trends en ontwikkelingen, en zorgen ervoor dat onze games en tools altijd actueel zijn. Dat leren leuk kan zijn ontdek je met meer dan 50 interactieve games en tools. En goed nieuws; daar komen elke week nieuwe bij!",
+            "avatar": "shopify://shop_images/Van_en_met_elkaar_leren.jpg"
+          }
+        },
+        "item_n6rULq": {
+          "type": "item",
+          "settings": {
+            "title": "Digitale geletterdheid voor iedereen",
+            "position": "2",
+            "description": "Het Educatieplatform geeft een passende invulling aan digitale geletterdheid op een interactieve, aantrekkelijke en leuke manier.\nAlle materialen zijn gekoppeld aan de nieuwe SLO-kerndoelen en kunnen zonder veel voorbereiding worden ingezet. Door het begrijpelijke karakter van de materialen is het platform ook in het bijzonder geschikt voor kinderen en jongeren met beperkte cognitieve vaardigheden.",
+            "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00956_1bedf7ef-8f12-40a1-b752-0622f2da7a6d.jpg"
+          }
+        },
+        "item_X7UnDB": {
+          "type": "item",
+          "settings": {
+            "title": "Begrijpelijk en intuïtief",
+            "position": "3",
+            "description": "Met slimme filters en een zoekmachine vind je snel op elk thema de juiste tool. Met één druk op de knop start je vanaf het digibord, tablet of laptop een les, game, interactieve video, praatplaat of workshop. Voor het gebruik van ons Educatieplatform hoeft niets geïnstalleerd of gedownload te worden. Het platform werkt begrijpelijk en intuïtief en kan zowel vraag- als aanbodgericht worden ingezet.",
+            "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00800_b45a4b00-ab2b-4418-9467-d3f37ca9b509.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_nrJbX7",
+        "item_n6rULq",
+        "item_X7UnDB"
+      ],
+      "custom_css": [
+        ".container {margin-block: 90px;}"
+      ],
+      "settings": {
+        "section_title": "Ontdek het Mediajungle Educatieplatform!",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#000000",
+        "section_color": "tertiary"
+      }
+    },
+    "bingo_testimonials_8kFCyA": {
+      "type": "bingo-testimonials",
+      "blocks": {
+        "item_7WpXgQ": {
+          "type": "item",
+          "settings": {
+            "title": "Roselie Drost",
+            "profession": "Directeur",
+            "position": "Noorderkracht",
+            "review": "De materialen en spellen sluiten goed aan bij onze doelgroep, dus wij gaan als school graag hiermee aan de slag en kijken uit naar de samenwerking!"
+          }
+        },
+        "item_B7fDUV": {
+          "type": "item",
+          "settings": {
+            "title": "Anouk van Leeuwen (Zaan primair onderwijs)",
+            "profession": "i-coach",
+            "position": "1",
+            "review": "We zijn bij Zaan Primair erg blij met Mediajungle! Vooral de combinatie van het platform en het fysieke materiaal is fantastisch! Vanmorgen heb ik de praatplaten nog gebruikt om met ouders in gesprek te gaan. Het materiaal is op zoveel manieren in te zetten."
+          }
+        },
+        "item_xxNHAC": {
+          "type": "item",
+          "settings": {
+            "title": "Franka van Deursen (Stichting Prodas)",
+            "profession": "Projectleider digitale geletterdheid",
+            "position": "2",
+            "review": "We zijn ontwikkelpartner van het Mediajungle Educatieplatform geworden omdat Mediajungle meebeweegt met de razendsnelle online ontwikkelingen en trends. Daardoor kunnen we makkelijk inspelen op wat er nú speelt. Vooral de duidelijke link met de (concept)kerndoelen van SLO, het accent op media-empowerment en mediawelzijn, en de sterke combinatie van online en offline aanbod spreken ons aan. Ook vinden we het waardevol dat er aanvullend aanbod is om thuis met mediawijsheid aan de slag te gaan."
+          }
+        },
+        "item_HWekNb": {
+          "type": "item",
+          "settings": {
+            "title": "Angeline Zwiers (Ambiq)",
+            "profession": "Mediacoach",
+            "position": "3",
+            "review": "Aantrekkelijk, begrijpelijk, actueel en motiverend zijn voor ons relevante kernwoorden om kinderen, jongeren en ouders  mediawijs te maken. Daarom  hebben wij gekozen voor het platform Mediajungle. Het geeft ons de mogelijkheid om gebruik te maken van verschillende thema's en spelvormen die actueel zijn in de online wereld."
+          }
+        }
+      },
+      "block_order": [
+        "item_7WpXgQ",
+        "item_B7fDUV",
+        "item_xxNHAC",
+        "item_HWekNb"
+      ],
+      "settings": {
+        "title_color": "#f5b53c",
+        "text_color": "#04202c",
+        "cloud_color": "#f5b53c",
+        "shadow_color": "#04202c",
+        "customername_color": "#ffffff",
+        "title": "Testimonials",
+        "section_color": "secondary"
+      }
+    },
+    "section_video_nXK7UH": {
+      "type": "section-video",
+      "settings": {
+        "section_title": "Een virtuele tour? Check ons webinar",
+        "section_title_color": "#f5b53c",
+        "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/M4SJMZHpA0M?si=cqyj-nbYHDuOmI2w\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+        "section_color": "tertiary"
+      }
+    },
+    "section_partners_A6hfgQ": {
+      "type": "section-partners",
+      "blocks": {
+        "item_AiVfMz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/AMBIQ_LOGO.png"
+          }
+        },
+        "item_ktVcFF": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/61c5d19a0aef2-Logo_RENN4-250px.png"
+          }
+        },
+        "item_rndzkz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/prodas_logo.png"
+          }
+        },
+        "item_zYyBth": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/logoZaanPrimair2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "item_AiVfMz",
+        "item_ktVcFF",
+        "item_rndzkz",
+        "item_zYyBth"
+      ],
+      "custom_css": [
+        ".container {padding-block: 60px;}"
+      ],
+      "settings": {
+        "section_title": "Onze trotse partners en afnemers",
+        "section_title_color": "#f5b53c",
+        "section_color": "none"
+      }
+    },
+    "bingo_newsletter_GrhFG3": {
+      "type": "bingo-newsletter",
+      "settings": {
+        "section_color": "none",
+        "textcolor": "#ffffff",
+        "title": "Blijf op de hoogte met onze nieuwsbrief",
+        "description": "",
+        "mailchimp": false,
+        "form_action": ""
+      }
+    },
+    "text_with_image_expeditie": {
+      "type": "text-with-image",
+      "name": "Expeditie Mediajungle",
+      "custom_css": [
+        ".row {display: flex !important; flex-wrap: wrap !important; gap: 2rem !important; flex-direction: row-reverse !important;}",
+        ".col-xs-12 {flex: 1 !important; min-width: 45% !important; max-width: 48% !important;}",
+        ".imageHolder img {width: 100%; height: auto;}",
+        "@media (max-width: 768px) {.row {flex-direction: column !important; } .col-xs-12 {min-width: 100% !important; max-width: 100% !important; } .imageHolder, .imageHolder img {width: 100% !important; }}"
+      ],
+      "settings": {
+        "section_title": "Nieuw: Expeditie Mediajungle",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "Digitale geletterdheid als ontdekkingstocht voor de basisschool. Femke en Boaz nemen je klas mee in tien missies, met een animatie, activiteiten en een poster per missie. Inbegrepen in het Educatieplatform.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"/pages/expeditie-mediajungle\">Bekijk de expeditie</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/animatie-missie1-cover.jpg",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      }
+    }
+  },
+  "order": [
+    "bingo_slideshow_t34DFy",
+    "blocks_images_with_text_3hTCpD",
+    "blocks_images_with_text_DULpjP",
+    "text_with_image_WXTVgB",
+    "text_with_image_expeditie",
+    "blocks_images_with_text_ihFRHH",
+    "bingo_testimonials_8kFCyA",
+    "section_video_nXK7UH",
+    "section_partners_A6hfgQ",
+    "bingo_newsletter_GrhFG3"
+  ]
+}

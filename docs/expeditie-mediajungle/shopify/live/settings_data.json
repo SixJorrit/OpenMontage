@@ -1,0 +1,1010 @@
+{
+  "current": {
+    "bingo_color_primary": "#f5b53c",
+    "bingo_color_secondary": "#04202c",
+    "bingo_color_tertiary": "#193539",
+    "bingo_color_borders": "#61d1b4",
+    "bingo_color_background": "#04202c",
+    "text_color_primary": "#d5ebe5",
+    "text_color_secondary": "#f5b53c",
+    "text_color_banner": "#ffffff",
+    "button_one_bgcolor": "#ef8a0b",
+    "button_one_bordercolor": "#ef8a0b",
+    "button_one_txtcolor": "#ffffff",
+    "button_one_bgcolor_hover": "#61d1b4",
+    "button_one_bordercolor_hover": "#61d1b4",
+    "button_one_txtcolor_hover": "#ffffff",
+    "btnpro_bgcolor": "#61d1b4",
+    "btnpro_bordercolor": "#61d1b4",
+    "btnpro_txtcolor": "#ffffff",
+    "btnpro_bgcolor_hover": "#f5b53c",
+    "btnpro_bordercolor_hover": "#f5b53c",
+    "btnpro_txtcolor_hover": "#ffffff",
+    "addtocart_bgcolor": "#ef8a0b",
+    "addtocart_bordercolor": "#ef8a0b",
+    "addtocart_txtcolor": "#ffffff",
+    "addtocart_bgcolor_hover": "#f5b53c",
+    "addtocart_bordercolor_hover": "#f5b53c",
+    "addtocart_txtcolor_hover": "#ffffff",
+    "bingo_header_bgcolor": "#011a1d",
+    "bingo_header_txtcolor": "#d5ebe5",
+    "bingo_header_wishlist": "#f9f8f8",
+    "bingo_header_user": "#083d3f",
+    "bingo_header_cart": "#04423c",
+    "bingo_footer_bgcolor": "#252525",
+    "bingo_footer_titlecolor": "#f5b53c",
+    "bingo_footer_textcolor": "#acacac",
+    "bingomenu_bgcolor": "#083d3f",
+    "bingomenu_linkcolor": "#d5ebe5",
+    "bingomenu_linkcolor_hover": "#f5b53c",
+    "bingomenu_dropdown_bgcolor": "#083d3f",
+    "bingomenu_dropdown_linkcolor": "#d5ebe5",
+    "bingomenu_dropdown_linkcolor_hover": "#f5b53c",
+    "bingo_fontfamily_style": "google_fonts",
+    "bingo_fontfamily_link": "<link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap\" rel=\"stylesheet\">",
+    "bingo_fontfamily": "Open Sans",
+    "bingo_fontfamily_secondary_style": "google_fonts",
+    "bingo_fontfamily2_link": "<link href=\"https://fonts.googleapis.com/css?family=Open%20Sans\" rel=\"stylesheet\">",
+    "bingo_fontfamily_secondary": "Open Sans",
+    "bingo_fontfamily_tertiary_style": "google_fonts",
+    "bingo_fontfamily3_link": "<link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap\" rel=\"stylesheet\">",
+    "bingo_fontfamily_tertiary": "Open Sans",
+    "bingo_fontsize": 16,
+    "bingomenu_fontsize": 14,
+    "bingomenu_dropdown_fontsize": 14,
+    "favicon": "shopify://shop_images/favicon.png",
+    "social_twitter_link": "https://twitter.com/shopify",
+    "breadcrumb_bgcolor": "#011a1d",
+    "breadcrumb_titlecolor": "#f5b53c",
+    "breadcrumb_textcolor": "#61d1b4",
+    "breadcrumb_bgimage": false,
+    "header_float_enable": true,
+    "header_mobile_float": true,
+    "sidebar_filtercustag_multi": false,
+    "product_second_image": false,
+    "product_swatch": false,
+    "product_reviews_enable": false,
+    "quickview_enable": false,
+    "quickview_availability": true,
+    "quickview_vendor": true,
+    "quickview_protype": true,
+    "quickview_prosku": true,
+    "wishlist_enable": false,
+    "wishlist_page": "producten",
+    "gotop_enable": true,
+    "gotopmobile_enable": true,
+    "loading_enable": false,
+    "ajax_cart_method": "modal",
+    "bingo_panelconfig": true,
+    "bingo_panelconfig_blog": "news",
+    "bingo_panelconfig_contact": "contact-us",
+    "bingo_panelconfig_about": "about-us",
+    "bingo_panelconfig_faq": "faqs",
+    "bingo_newslettermodal_enable": false,
+    "bingo_newslettermodal_type": "two",
+    "bingo_newslettermodal_cookie": "60",
+    "bingo_newslettermodal_titile": "Newsletter",
+    "bingo_newslettermodal_description": "Sign up for emails to get our latest style news before everybody else",
+    "bingo_newslettermodal_bgimage": true,
+    "bingo_newslettermodal_mailchimp": false,
+    "newsletter_formmodal_action": "//bingotheme.us15.list-manage.com/subscribe/post?u=e9d96579760de5e5afcc9ba2d&amp;id=4cd6aa43b1",
+    "checkout_header_image": "shopify://shop_images/slideshow2.jpg",
+    "checkout_logo_image": "shopify://shop_images/mediajungle_logo--retina.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#193539",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_color": "#04202c",
+    "checkout_heading_font": "Source Sans Pro",
+    "checkout_body_font": "Source Sans Pro",
+    "checkout_accent_color": "#ed7a01",
+    "checkout_button_color": "#ed7a01",
+    "checkout_error_color": "#ff6d6d",
+    "bingo_footertop_bgcolor": "#f3f3f3",
+    "bingo_footercenter_bgcolor": "#f3f3f3",
+    "bingo_footercopy_bgcolor": "#f3f3f3",
+    "quickview_swatch_enable": true,
+    "bingo_newslettermodal_chk": "DON'T SHOW THIS POPUP AGAIN",
+    "bingo_topbar_bgcolor": "#ffffff",
+    "checkout_use_header_image": false,
+    "checkout_logo": "",
+    "checkout_use_body_background_image": false,
+    "checkout_use_sidebar_background_image": false,
+    "blogsidebar_recentarticles_enable": true,
+    "blogsidebar_recentarticles_title": "Recent articles",
+    "blogsidebar_recentarticles_limit": "6",
+    "blog_banner_enable": true,
+    "blog_banner_size": "270x270",
+    "blog_banner_link": "shopify://blogs/news",
+    "blog_sidebar_image": "",
+    "blogsidebar_tags_enable": true,
+    "blogsidebar_tags_title": "Filter by tags",
+    "blogsidebar_tags_limit": "10",
+    "googlemap_enable": false,
+    "googlemap_iframe": "",
+    "contact_details_enable": true,
+    "contact_details_title": "",
+    "contact_details_content": "",
+    "contact_working_enable": true,
+    "contact_working_title": "",
+    "contact_working_content": "",
+    "cart_notes_enable": true,
+    "cart_vendor_enable": false,
+    "product_swatch_enable": false,
+    "product_previewnext_enable": false,
+    "product_available_enable": true,
+    "product_type_enable": true,
+    "product_vendor_enable": true,
+    "product_short_description": "yes",
+    "product_tab_type": "propanel",
+    "product_tab1_enable": true,
+    "product_tab1_title": "Details",
+    "product_tab2_enable": false,
+    "product_tab2_title": "",
+    "product_tab2_content": "",
+    "product_tab3_enable": false,
+    "product_tab3_title": "",
+    "product_tab3_content": "",
+    "product_tab4_enable": true,
+    "product_tab4_title": "Reviews",
+    "product_social_enable": true,
+    "product_social_facebook_enable": true,
+    "product_social_twitter_enable": true,
+    "product_social_google_enable": true,
+    "product_social_linkedin_enable": true,
+    "product_social_pinterest_enable": true,
+    "product_related_enable": false,
+    "product_related_title": "",
+    "product_related_limit": "",
+    "collection_image": false,
+    "collection_product_columns": "3",
+    "collection_product_page": "12",
+    "topbar_toplinks_title": "",
+    "topbar_toplinks": "",
+    "logo_use_image": false,
+    "logo_max_width": "450px",
+    "color_text": "#3d4246",
+    "color_body_text": "#788188",
+    "color_sale_text": "#7796A8",
+    "color_borders": "#e8e9eb",
+    "color_button": "#7796A8",
+    "color_button_text": "#fff",
+    "color_small_button": "#fff",
+    "color_small_button_text": "#3d4246",
+    "color_text_field": "#fff",
+    "color_text_field_text": "#000",
+    "color_image_overlay_text": "#fff",
+    "color_image_overlay": "#3d4246",
+    "image_overlay_opacity": "0.25",
+    "color_body_bg": "#fff",
+    "type_header_family": "Google_Work+Sans_600_sans",
+    "type_header_base_size": "26px",
+    "type_base_family": "Google_Work+Sans_400_sans",
+    "type_base_size": "16px",
+    "type_bold_product_titles": false,
+    "share_facebook": true,
+    "share_twitter": true,
+    "share_pinterest": true,
+    "social_facebook_link": "",
+    "social_pinterest_link": "",
+    "social_instagram_link": "",
+    "social_tumblr_link": "",
+    "social_snapchat_link": "",
+    "social_youtube_link": "",
+    "social_vimeo_link": "",
+    "sections": {
+      "sidebartop": {
+        "type": "sidebartop",
+        "settings": {
+          "sidebar_categories_enable": false,
+          "sidebar_categories_title": "Categories",
+          "sidebar_categories_menu": "",
+          "sidebar_filtervendor_enable": false,
+          "sidebar_filtervendor_title": "Filter by vendor",
+          "sidebar_filtervendor_list": "Bingo,Bingotheme",
+          "sidebar_filtertype_enable": false,
+          "sidebar_filtertype_title": "Filter by Type",
+          "sidebar_filtertype_list": "Bingo,Bingotheme"
+        }
+      },
+      "sidebartag": {
+        "type": "sidebartag",
+        "blocks": {
+          "item_wfhird": {
+            "type": "item",
+            "settings": {
+              "title": ""
+            }
+          }
+        },
+        "block_order": [
+          "item_wfhird"
+        ],
+        "settings": {
+          "sidebar_filtercustag_enable": true,
+          "sidebar_filtercustag_title": "Type product",
+          "sidebar_filtercustag1_enable": true,
+          "sidebar_filtercustag1_title": "Alle producten",
+          "sidebar_filtercustag1_list": "Voordeelbundels, Educatieplatform, Bordspellen, Kletskaarten, Super Fake Safari, Gesprekskaarten",
+          "sidebar_filtercustag2_enable": false,
+          "sidebar_filtercustag2_title": "",
+          "sidebar_filtercustag2_list": "",
+          "sidebar_filtercustag3_enable": false,
+          "sidebar_filtercustag3_title": "By Color:"
+        }
+      },
+      "sidebarprice": {
+        "type": "sidebarprice",
+        "custom_css": [],
+        "settings": {
+          "sidebar_filterprice_enable": true,
+          "sidebar_filterprice_title": "Prijsklasse",
+          "sidebar_filterprice_btntext": "Filter",
+          "sidebar_filterprice_min": "0",
+          "sidebar_filterprice_max": "350",
+          "sidebar_filterprice_prefix": "€"
+        }
+      },
+      "sidebarbanner": {
+        "type": "sidebarbanner",
+        "settings": {
+          "sidebar_banner_enable": false,
+          "image_size": "270x",
+          "link": "#",
+          "effect": "effectOne",
+          "sidebar_product_enable": false,
+          "sidebar_product_title": "Featured Products",
+          "sidebar_product_collection": "baseball",
+          "sidebar_product_limit": "4"
+        }
+      },
+      "bingo-header": {
+        "type": "bingo-header",
+        "blocks": {
+          "text_WKEdLH": {
+            "type": "text",
+            "settings": {
+              "title": "Over Mediajungle",
+              "bingomenu_item": "Over Mediajungle",
+              "bingomenu_menu_enable": false,
+              "bingomenu_menu_col": "",
+              "bingomenu_menu_menucol": "",
+              "bingomenu_product_enable": false,
+              "bingomenu_product_col": "",
+              "bingomenu_product_title": "",
+              "bingomenu_product_collection": "",
+              "bingomenu_product_limit": "3",
+              "bingomenu_html_enable": false,
+              "bingomenu_html_col": "",
+              "bingomenu_html_title": "",
+              "bingomenu_html_content": "",
+              "bingomenu_banner_enable": false,
+              "bingomenu_banner_col": "",
+              "image_size": "255x300",
+              "bingomenu_banner_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "text_WKEdLH"
+        ],
+        "custom_css": [
+          ".img-responsive {max-height: 84px; text-align: center;}",
+          ".bingoHeader {border-radius: 0;}"
+        ],
+        "settings": {
+          "logo": "shopify://shop_images/mediajungle_logo.png",
+          "logo_retina": "shopify://shop_images/mediajungle_logo--retina.png",
+          "topbar_toplinks_title": "My Account",
+          "topbar_toplinks": "",
+          "bingomenu_enable": true,
+          "bingomenu_linklist": "main-menu",
+          "bingomenu_menumobile_title": "Menu Mobile"
+        }
+      },
+      "bingo-menu": {
+        "type": "bingo-menu",
+        "settings": {
+          "bingomenu_enable": true,
+          "bingomenu_linklist": "main-menu",
+          "bingomenu_menumobile_title": "Menu Mobile"
+        }
+      },
+      "bingo-footer": {
+        "type": "bingo-footer",
+        "custom_css": [
+          ".container {margin-top: 60px;}"
+        ],
+        "settings": {
+          "image": "shopify://shop_images/mediajungle_logo.png",
+          "menu_title1": "",
+          "footer_one_description": "Mediajungle helpt mensen van jong  tot oud(er) om van en met elkaar te  leren over (de invloed van) media en  (verantwoord) gebruik ervan.  Onze producten worden op meer dan 2000 plekken in Nederland en België  gebruikt in het onderwijs, de zorg en  gewoon thuis.",
+          "menu_handle1": "",
+          "menu_title2": "",
+          "menu_handle2": "footer",
+          "menu_title3": "",
+          "menu_title4": "Neem contact met ons op",
+          "menu_handle3": "",
+          "social_title": "",
+          "social_facebook": "https://www.facebook.com/Digimant",
+          "social_linkedin": "https://nl.linkedin.com/company/digimant",
+          "social_instagram": "https://www.instagram.com/demediajungle/",
+          "social_youtube": "https://www.youtube.com/@mediajungle7135",
+          "footer_logo": "shopify://shop_images/nm-logo-large.png",
+          "footer_logolink": "https://netwerkmediawijsheid.nl/",
+          "footer_copyright": "© 2026 Mediajungle"
+        }
+      },
+      "1486376427211": {
+        "type": "bingo-slideshow",
+        "blocks": {
+          "image_d7rpre": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/mediajungle--slide--3_73757e90-f7f5-4595-8982-485ba9072bbf.png",
+              "alignment": "left",
+              "text_transform": "capitalize",
+              "title": "Appen, gamen, chatten,  vloggen, cookies, hacken,  phishing, clickbaits, pop-ups, chatbots, memes…",
+              "title_color": "{{ shop.brand.colors.secondary[1].background }}",
+              "subheading": "De online wereld is net een jungle. De uitdaging is  om niet te verdwalen. Ontdekken wat er kan  en omgaan met risico’s en gevaren. Mediajungle neemt je spelenderwijs mee op deze ontdekkingstocht.",
+              "subheading_color": "{{ shop.brand.colors.primary[0].foreground }}",
+              "btn_text": "Webshop",
+              "btn_link": "shopify://collections/all",
+              "btn_text_transform": "capitalize",
+              "btn_two_text": "",
+              "btn_two_link": "",
+              "btn_two_text_transform": "lowercase",
+              "link": ""
+            }
+          },
+          "image_YHirbi": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "image": "shopify://shop_images/mediajungle--slide--3.png",
+              "alignment": "center",
+              "text_transform": "capitalize",
+              "title": "Ontdek Mediajungle!",
+              "title_color": "#f5b53c",
+              "subheading": "Totaaloplossing voor Digitale Geletterdheid en en Mediawijheid.<br><br>\n<ul>\n<li>\nLosse interactieve spellen<br>\n</li>\n<li>\nMediajungle Educatieplatform</li>\n<li>Ondersteuning met workshops en trainingen</li>\n</ul>\n<br>\nPlezier, samen en veilig voor een inclusieve online wereld!",
+              "subheading_color": "#f5b53c",
+              "btn_text": "",
+              "btn_link": "",
+              "btn_text_transform": "capitalize",
+              "btn_two_text": "",
+              "btn_two_link": "",
+              "btn_two_text_transform": "capitalize",
+              "link": ""
+            }
+          },
+          "image_expeditie": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/hero-expeditie-1920x730.jpg",
+              "alignment": "left",
+              "text_transform": "capitalize",
+              "title": "Nieuw: Expeditie Mediajungle",
+              "title_color": "#f5b53c",
+              "subheading": "Digitale geletterdheid als ontdekkingstocht voor de basisschool. Femke en Boaz nemen je klas mee in tien missies.",
+              "subheading_color": "#d5ebe5",
+              "btn_text": "Bekijk de expeditie",
+              "btn_link": "/pages/expeditie-mediajungle",
+              "btn_text_transform": "capitalize",
+              "btn_two_text": "",
+              "btn_two_link": "",
+              "btn_two_text_transform": "capitalize",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "image_expeditie",
+          "image_d7rpre",
+          "image_YHirbi"
+        ],
+        "custom_css": [
+          "h3 {margin-top: 0;}"
+        ],
+        "settings": {
+          "navigation": true,
+          "pagination": true,
+          "autoplay": true,
+          "autoplay_speed": "4000",
+          "image_size": "1920x710"
+        }
+      },
+      "1486459194339": {
+        "type": "bingo-newsletter",
+        "disabled": true,
+        "settings": {
+          "section_color": "secondary",
+          "textcolor": "{{ shop.brand.colors.primary[0].foreground }}",
+          "title": "Schrijf je in voor onze nieuwsbrief",
+          "description": "Lees de laatste ontwikkelingen over mediawijsheid en Mediajungle.",
+          "mailchimp": false,
+          "form_action": ""
+        }
+      },
+      "bingo-template-collections": {
+        "type": "bingo-template-collections",
+        "settings": {
+          "collection_image": false,
+          "collection_review": false,
+          "collection_product_columns": "3",
+          "collection_product_page": "12",
+          "image_size": "900x"
+        }
+      },
+      "bingo-template-product": {
+        "type": "bingo-template-product",
+        "settings": {
+          "product_available_enable": true,
+          "product_type_enable": true,
+          "product_vendor_enable": false,
+          "product_sku_enable": false,
+          "image_size": "800x",
+          "product_zoom_enable": false,
+          "product_collection_enable": true,
+          "product_collection_title": "Categorieën:",
+          "product_coll_limit": 6,
+          "product_tags_enable": true,
+          "product_tags_title": "Tags:",
+          "product_tags_limit": 6,
+          "product_short_description": "yes",
+          "product_tab_type": "protab",
+          "product_tab1_enable": true,
+          "product_tab1_title": "",
+          "product_tab2_enable": false,
+          "product_tab2_title": "Verdere info",
+          "product_tab2_content": "<div class=\"bingoSizeChart text-center\"><img class=\"img-responsive\" src=\"https://cdn.shopify.com/s/files/1/1192/3200/files/sizechart1.jpg?2248826045834309824\" alt=\"Size Chart\"></div>",
+          "product_tab3_enable": false,
+          "product_tab3_title": "Verzending & retourneren",
+          "product_tab3_content": "<p><strong>Retourbeleid</strong></p>\n<p>U kunt de meeste nieuwe, ongeopende items binnen 30 dagen na levering retourneren voor een volledige terugbetaling. We betalen ook de retourzending als het een gevolg is van onze fout (u heeft een onjuist of defect item ontvangen, enz.).</p>\n<p>U kunt verwachten dat u uw terugbetaling binnen vier weken ontvangt nadat u uw pakket aan de retourverzender heeft gegeven. In veel gevallen ontvangt u echter sneller een terugbetaling. Deze periode omvat de transitietijd voor het ontvangen van uw retour van de verzender (5 tot 10 werkdagen), de tijd die we nodig hebben om uw retour te verwerken nadat we het hebben ontvangen (3 tot 5 werkdagen), en de tijd die uw bank nodig heeft om onze terugbetalingsaanvraag te verwerken (5 tot 10 werkdagen).</p>\n<p>Als u een artikel wilt retourneren, log dan eenvoudig in op uw account, bekijk de bestelling via de link 'Voltooide bestellingen' onder het menu Mijn account en klik op de knop 'Artikel(en) retourneren'. We zullen u per e-mail op de hoogte stellen van uw terugbetaling zodra we het geretourneerde artikel hebben ontvangen en verwerkt.</p>\n<p><strong>Verzending</strong></p>\n<p>Wij kunnen naar bijna elk adres in Nederland en België verzenden. Let op: er zijn beperkingen voor sommige producten, en sommige producten kunnen niet naar internationale bestemmingen worden verzonden.</p>\n<p>Wanneer u een bestelling plaatst, zullen we de verzend- en leveringsdata voor u schatten op basis van de beschikbaarheid van uw items en de verzendopties die u kiest. Afhankelijk van de gekozen verzendprovider kunnen schattingen van verzenddata worden weergegeven op de pagina met verzendoffertes.</p>",
+          "product_tab4_enable": false,
+          "product_tab4_title": "Reviews",
+          "product_social_enable": false,
+          "product_social_title": "Share:",
+          "product_social_facebook_enable": false,
+          "product_social_twitter_enable": false,
+          "product_social_google_enable": false,
+          "product_social_linkedin_enable": false,
+          "product_social_pinterest_enable": false,
+          "product_related_enable": true,
+          "display_reviews": false,
+          "product_related_title": "Gerelateerde producten",
+          "product_related_limit": "2"
+        }
+      },
+      "blogsidebar": {
+        "type": "blogsidebar",
+        "settings": {
+          "blogsidebar_recentarticles_enable": true,
+          "blogsidebar_recentarticles_title": "Recent Articles",
+          "blogsidebar_recentarticles_limit": "6",
+          "blog_banner_enable": true,
+          "blog_banner_size": "270x333",
+          "blog_banner_link": "#",
+          "blog_sidebar_image": "",
+          "blogsidebar_tags_enable": true,
+          "blogsidebar_tags_title": "Popular Tags",
+          "blogsidebar_tags_limit": "10"
+        }
+      },
+      "bingo-template-blog": {
+        "type": "bingo-template-blog",
+        "settings": {
+          "blog_template": "bloggrid",
+          "post_columns": "2",
+          "sidebar_template": "sidebarleft",
+          "post_limit": "6",
+          "image_size": "1170x",
+          "blogsidebar_recentarticles_enable": true,
+          "blogsidebar_recentarticles_title": "Recent Articles",
+          "blogsidebar_recentarticles_limit": "6",
+          "blog_banner_enable": true,
+          "blog_banner_size": "270x",
+          "blog_banner_link": "#",
+          "blog_sidebar_image": "",
+          "blogsidebar_tags_enable": true,
+          "blogsidebar_tags_title": "Popular Tags",
+          "blogsidebar_tags_limit": "10"
+        }
+      },
+      "bingo-template-article": {
+        "type": "bingo-template-article",
+        "settings": {
+          "sidebar_template": "sidebarright",
+          "article_featuredimage": true,
+          "blogsidebar_recentarticles_enable": true,
+          "blogsidebar_recentarticles_title": "Recent Articles",
+          "blogsidebar_recentarticles_limit": "6",
+          "blog_banner_enable": true,
+          "blog_banner_size": "270x",
+          "blog_banner_link": "#",
+          "blogsidebar_tags_enable": true,
+          "blogsidebar_tags_title": "Articles Tags",
+          "blogsidebar_tags_limit": "10"
+        }
+      },
+      "bingo-template-aboutus": {
+        "type": "bingo-template-aboutus",
+        "blocks": {
+          "1486979007316": {
+            "type": "item",
+            "settings": {
+              "title": "Vin Nguyen",
+              "position": "Designer",
+              "facebook": "https://www.facebook.com/",
+              "twitter": "https://twitter.com/",
+              "instagram": "",
+              "pinterest": "",
+              "googleplus": "https://plus.google.com"
+            }
+          },
+          "1486979118125": {
+            "type": "item",
+            "settings": {
+              "title": "Kristyna Bohmova",
+              "position": "Founder",
+              "facebook": "https://www.facebook.com/",
+              "twitter": "https://twitter.com/",
+              "instagram": "",
+              "pinterest": "",
+              "googleplus": "https://plus.google.com"
+            }
+          },
+          "1486979165719": {
+            "type": "item",
+            "settings": {
+              "title": "Lukas Klima",
+              "position": "Co-founder",
+              "facebook": "https://www.facebook.com/",
+              "twitter": "https://twitter.com/",
+              "instagram": "",
+              "pinterest": "",
+              "googleplus": "https://plus.google.com"
+            }
+          },
+          "1486979215987": {
+            "type": "item",
+            "settings": {
+              "title": "Katka Sanderova",
+              "position": "Model",
+              "facebook": "https://www.facebook.com/",
+              "twitter": "https://twitter.com/",
+              "instagram": "",
+              "pinterest": "",
+              "googleplus": "https://plus.google.com"
+            }
+          }
+        },
+        "block_order": [
+          "1486979007316",
+          "1486979118125",
+          "1486979165719",
+          "1486979215987"
+        ],
+        "settings": {
+          "reviews": true,
+          "reviews_title": "Mediajungle Magazine",
+          "reviews_name": "",
+          "reviews_content": "Download hier ons Mediajungle Magazine",
+          "ourteams": true,
+          "ourteams_title": "Ons Team"
+        }
+      },
+      "bingo-template-contact": {
+        "type": "bingo-template-contact",
+        "settings": {
+          "googlemap_enable": false,
+          "googlemap_iframe": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2389.847897535244!2d5.800676300000001!3d53.202644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c91d07ab228e63%3A0x74a88ac2d98c82e1!2sMediajungle!5e0!3m2!1snl!2snl!4v1708341345903!5m2!1snl!2snl\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+          "contact_details_enable": true,
+          "details_title1": "Adres",
+          "details_content1": "Sixmastraat 15, 8932 PA Leeuwarden",
+          "details_title2": "Telefoonnummer",
+          "details_content2": "<p>06 41247054</p>",
+          "details_title3": "Email",
+          "details_content3": "<p>info@mediajungle.eu</p>"
+        }
+      },
+      "bingo-template-faq": {
+        "type": "bingo-template-faq",
+        "settings": {}
+      },
+      "bingo-password": {
+        "type": "bingo-password",
+        "settings": {
+          "textcolor": "#ffffff",
+          "logo_image_size": "master",
+          "header": "Coming Soon",
+          "newsletter_enable": true,
+          "newsletter_form_heading": "Be the first to know when we launch.",
+          "newsletter_placeholder": "Email address",
+          "newsletter_button_text": "Notify me",
+          "show_share_buttons": true,
+          "social_message": "Spread the word",
+          "share_facebook": true,
+          "share_facebook_text": "Share",
+          "share_twitter": true,
+          "share_twitter_text": "Tweet",
+          "share_pinterest": true,
+          "share_pinterest_text": "Pin it",
+          "password_coppyright": "© 2017 Wow Template - All Rights Reserved."
+        }
+      },
+      "bingo-template-404": {
+        "type": "bingo-template-404",
+        "settings": {
+          "image_size": "master",
+          "page404_title": "WOW!",
+          "page404_description": "<h3>Je hebt de 404-pagina gevonden</h3>\n<p>Je hebt mogelijk de URL verkeerd getypt. Of de pagina is verwijderd, heeft een andere naam gekregen of is tijdelijk niet beschikbaar. <br>Eigenlijk is er hier gewoon niets te zien...</p>",
+          "page404_btntext": "Back to homepage",
+          "page404_btnlink": "/"
+        }
+      },
+      "bingo-template-cart": {
+        "type": "bingo-template-cart",
+        "settings": {
+          "cart_notes_enable": false,
+          "cart_vendor_enable": false
+        }
+      },
+      "bingo-template-listcoll": {
+        "type": "bingo-template-listcoll",
+        "settings": {
+          "listcoll_type": "typeone",
+          "image_default": "",
+          "image_size": "370x",
+          "items_page": "12",
+          "items_propage": "3"
+        }
+      },
+      "bingo-header-menu": {
+        "type": "bingo-header-menu",
+        "blocks": {
+          "1508489039086": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon1.png",
+              "title": "Football",
+              "menuurl": "shopify://collections/football"
+            }
+          },
+          "1508489061541": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon2.png",
+              "title": "Super bowl",
+              "menuurl": "shopify://collections/super-bowl"
+            }
+          },
+          "1508489081749": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon3.png",
+              "title": "Baseball",
+              "menuurl": "shopify://collections/baseball"
+            }
+          },
+          "1508489102646": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon4.png",
+              "title": "Basket ball",
+              "menuurl": "shopify://collections/basket-ball"
+            }
+          },
+          "1508489120181": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon5.png",
+              "title": "Tennis",
+              "menuurl": "shopify://collections/tennis"
+            }
+          },
+          "1508489132390": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/menuIcon6.png",
+              "title": "Boxing",
+              "menuurl": "shopify://collections/boxing"
+            }
+          }
+        },
+        "block_order": [
+          "1508489039086",
+          "1508489061541",
+          "1508489081749",
+          "1508489102646",
+          "1508489120181",
+          "1508489132390"
+        ],
+        "settings": {
+          "title": "Menu Top",
+          "bingomenu_enable": true
+        }
+      },
+      "1509505474169": {
+        "type": "bingo-productlist",
+        "settings": {
+          "section_color": "tertiary",
+          "title": "Ontdek onze voordeelbundels",
+          "product_border_color": "{{ shop.brand.colors.secondary[0].foreground }}",
+          "title_color": "{{ shop.brand.colors.secondary[1].background }}",
+          "product_title_color": "{{ shop.brand.colors.secondary[1].background }}",
+          "collection_handle": "voordeelbundels",
+          "layout": "layout-default",
+          "display_reviews": false,
+          "image_size": "200x",
+          "button_title": "Bekijk ons aanbod",
+          "button_link": "/collections/all",
+          "column1": "3",
+          "column2": "3",
+          "column3": "3",
+          "column4": "2",
+          "column5": "2",
+          "row": "1",
+          "limit": "8",
+          "navigation": true,
+          "autoplay": false,
+          "autoplay_speed": "10000",
+          "speed": "300"
+        }
+      },
+      "blocks_images_with_text_NcD6wc": {
+        "type": "blocks-images-with-text",
+        "blocks": {
+          "item_GBXbph": {
+            "type": "item",
+            "settings": {
+              "title": "Plezier",
+              "position": "1",
+              "description": "Met leuke filmpjes, minigames, doe- en  discussieopdrachten neemt Mediajungle je  mee op ontdekkingstocht.<br><br>",
+              "avatar": "shopify://shop_images/Plezier_1.jpg"
+            }
+          },
+          "item_9FMWKD": {
+            "type": "item",
+            "settings": {
+              "title": "Iedereen mediawijs",
+              "position": "2",
+              "description": "Mediajungle is er voor iedereen van jong tot  oud(er), met begrijpelijke taal en  aansprekende visuele ondersteuning.<br><br>",
+              "avatar": "shopify://shop_images/niels_Alex.jpg"
+            }
+          },
+          "item_yKhyMf": {
+            "type": "item",
+            "settings": {
+              "title": "Van en met elkaar leren",
+              "position": "3",
+              "description": "Praten over wat je online meemaakt, weet en  zou willen weten. Als ontdekker én gids leer je  van anderen en leren anderen van jou.",
+              "avatar": "shopify://shop_images/In_de_klas_en_BSO.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "item_GBXbph",
+          "item_9FMWKD",
+          "item_yKhyMf"
+        ],
+        "custom_css": [
+          ".container {margin-block: 90px;}"
+        ],
+        "settings": {
+          "section_title": "",
+          "section_title_color": "{{ shop.brand.colors.primary[0].background }}",
+          "block_title_color": "#f5b53c",
+          "block_description_color": "#ffffff",
+          "block_border_color": "#393d0a",
+          "section_color": "secondary"
+        }
+      },
+      "section_video_QLFKYe": {
+        "type": "section-video",
+        "custom_css": [
+          "h3 {margin-top: 0; text-align: center;}",
+          ".container {margin-bottom: 90px;}"
+        ],
+        "settings": {
+          "section_title": "Mediajungle in het kort (Educatieplatform)",
+          "section_title_color": "#f5b53c",
+          "shopify_video": "shopify://files/videos/Educatieplatform.mp4",
+          "video_poster": "shopify://shop_images/thumb_educatieplatform.png",
+          "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Hf6fXkyIoWI?si=joN9tPiOTKbeNfs1&rel=0\" title=\"YouTube video player\" frameborder=\"0\" controls=0 allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; rel=0 web-share\" allowfullscreen></iframe>",
+          "section_color": "secondary"
+        }
+      },
+      "blocks_images_with_text_YPA7gp": {
+        "type": "blocks-images-with-text",
+        "blocks": {
+          "item_igQwJ7": {
+            "type": "item",
+            "settings": {
+              "title": "In de klas en BSO",
+              "position": "",
+              "description": "Voor leerlingen en docenten die willen werken  aan digitale geletterdheid en mediawijsheid.<br><br>",
+              "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00768_50623efa-f0e6-4eba-a0d9-79abee490960.jpg"
+            }
+          },
+          "item_UbetjU": {
+            "type": "item",
+            "settings": {
+              "title": "Zorg en ondersteuning",
+              "position": "2",
+              "description": "Voor cliënten en hulpverleners bij het  vergroten van de zelfredzaamheid en  weerbaarheid in de digitale samenleving.<br><br><a href=\"/pages/expeditie-mediajungle-zorg\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk Expeditie Mediajungle voor de zorg</a>",
+              "avatar": "shopify://shop_images/mj-plezier.jpg"
+            }
+          },
+          "item_4ygHje": {
+            "type": "item",
+            "settings": {
+              "title": "Thuis",
+              "position": "3",
+              "description": "Voor gezinnen die willen delen wat ze online  meemaken, weten en willen weten. Om van  en met elkaar te leren. En waar nodig samen  afspraken maken.",
+              "avatar": "shopify://shop_images/Gezin.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "item_igQwJ7",
+          "item_UbetjU",
+          "item_4ygHje"
+        ],
+        "custom_css": [
+          ".container {margin-block: 90px;}"
+        ],
+        "settings": {
+          "section_title": "Voor wie is Mediajungle?",
+          "section_title_color": "{{ shop.brand.colors.secondary[1].background }}",
+          "block_title_color": "#f5b53c",
+          "block_description_color": "#ffffff",
+          "block_border_color": "#000000",
+          "section_color": "secondary"
+        }
+      },
+      "section_partners_HyUnRg": {
+        "type": "section-partners",
+        "blocks": {
+          "item_7LVDfc": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/Ministerie_van_Binnenlandse_Zaken_en_Koninkrijksrelaties_Logo.jpg"
+            }
+          },
+          "item_6Ni6fk": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/sidn_fonds_logo.png"
+            }
+          },
+          "item_WnF6ym": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/prodas_logo.png"
+            }
+          },
+          "item_xTF9KA": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/61c5d19a0aef2-Logo_RENN4-250px.png"
+            }
+          },
+          "item_LHntfH": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/download_2.png"
+            }
+          },
+          "item_ypXcgb": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/amarant-logo.png"
+            }
+          },
+          "item_pQkAN7": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/windesheim_logo_vierkant.png"
+            }
+          },
+          "item_CwEL7a": {
+            "type": "item",
+            "settings": {
+              "image": "shopify://shop_images/AMBIQ_LOGO.png"
+            }
+          }
+        },
+        "block_order": [
+          "item_7LVDfc",
+          "item_6Ni6fk",
+          "item_WnF6ym",
+          "item_xTF9KA",
+          "item_LHntfH",
+          "item_ypXcgb",
+          "item_pQkAN7",
+          "item_CwEL7a"
+        ],
+        "custom_css": [
+          ".container {padding-block: 60px;}"
+        ],
+        "settings": {
+          "section_title": "Wij werken samen met onder andere:",
+          "section_title_color": "{{ shop.brand.colors.secondary[1].background }}",
+          "section_color": "secondary"
+        }
+      },
+      "section_video_Uk7CEb": {
+        "type": "section-video",
+        "custom_css": [
+          "h3 {margin-top: 0; text-align: center;}",
+          ".container {margin-block: 30px 50px;}"
+        ],
+        "settings": {
+          "section_title": "Het Mediajungle Bordspel uitgelicht!",
+          "section_title_color": "#f5b53c",
+          "shopify_video": "shopify://files/videos/Bordspel classic.mp4",
+          "video_poster": "shopify://shop_images/Screenshot_2026-04-15_at_13.58.54.png",
+          "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZJD-qUdMucY?si=DIqGnZAtKapLLNzd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
+          "section_color": "secondary"
+        }
+      },
+      "bingo_newsletter_UERdtr": {
+        "type": "bingo-newsletter",
+        "settings": {
+          "section_color": "none",
+          "textcolor": "#ffffff",
+          "title": "Schrijf je in voor de nieuwsbrief",
+          "description": "",
+          "mailchimp": false,
+          "form_action": ""
+        }
+      }
+    },
+    "content_for_index": [
+      "1486376427211",
+      "blocks_images_with_text_NcD6wc",
+      "section_video_QLFKYe",
+      "1509505474169",
+      "blocks_images_with_text_YPA7gp",
+      "section_video_Uk7CEb",
+      "1486459194339",
+      "section_partners_HyUnRg",
+      "bingo_newsletter_UERdtr"
+    ],
+    "blocks": {
+      "17530695623102652971": {
+        "type": "shopify://apps/exemptify/blocks/ExemptifyApp/53648040-92ea-472b-92a5-eb781e92b01b",
+        "disabled": false,
+        "settings": {
+          "additional_qs": "&"
+        }
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": false,
+        "settings": {
+          "greeting_message": "",
+          "button_color": "#f5b53c",
+          "button_icon": "chat_bubble",
+          "button_text": "chat_with_us",
+          "button_horizontal_position": "bottom_right",
+          "button_vertical_position": "lowest"
+        }
+      },
+      "2567389343055140935": {
+        "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "content_for_index": []
+    }
+  },
+  "platform_customizations": {
+    "custom_css": []
+  }
+}
