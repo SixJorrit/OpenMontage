@@ -47,7 +47,7 @@ Bron: Jonker, Schell-Kiehl & Yohannes (2026), *Innoveren, Implementeren en Impac
 3. Start met missie 1.
 
 ## Partners
-Kop: Mediajungle is al in gebruik bij
+Kop: Deze organisaties zijn al op expeditie
 Logo's: ASVZ, Ambiq, De Lovie (logos/ — van de eigen websites; toestemming nog vragen)
 
 ## Kom mee op expeditie

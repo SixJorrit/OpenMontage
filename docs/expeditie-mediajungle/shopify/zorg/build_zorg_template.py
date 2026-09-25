@@ -56,9 +56,9 @@ add('start_zorg',twi("Zo start je","Zo start je",
  "<ol>\n<li><b>Volg de e-learning</b> voor begeleiders; die zit in de expeditie. Heb je de "+lnk("opleiding Aandachtsfunctionaris Mediawijsheid in de zorgpraktijk",OPLEIDING)+" gevolgd? Dan kun je deze stap overslaan.</li>\n"
  "<li><b>Vraag een demo aan</b> of neem een abonnement op het Educatieplatform.</li>\n<li><b>Start met missie 1</b> met je cliënt of groep.</li>\n</ol>",BG1,css=[]))
 # 9 partners (alleen ASVZ)
-add('partners_zorg',{"type":"section-partners","name":"Mediajungle is al in gebruik bij","blocks":{"item_asvz":{"type":"item","settings":{"image":"shopify://shop_images/logo-asvz.png"}}},
+add('partners_zorg',{"type":"section-partners","name":"Deze organisaties zijn al op expeditie","blocks":{"item_asvz":{"type":"item","settings":{"image":"shopify://shop_images/logo-asvz.png"}}},
  "block_order":["item_asvz"],"custom_css":[".container {padding-block: 60px;}",".partnerHodler > .row {display:flex; justify-content:center;}",".partnerHodler .col-xs-6 {float:none;}"],
- "settings":{"section_title":"Mediajungle is al in gebruik bij","section_title_color":Y,"section_color":"none"}})
+ "settings":{"section_title":"Deze organisaties zijn al op expeditie","section_title_color":Y,"section_color":"none"}})
 # 10 CTA
 add('cta_zorg',twi("Kom mee op expeditie","Kom mee op expeditie",
  "Wil je zien wat de expeditie voor jouw locatie kan betekenen? Vraag een demo aan.\n<br>\n<br>\n"

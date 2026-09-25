@@ -187,7 +187,7 @@
     },
     "partners_zorg": {
       "type": "section-partners",
-      "name": "Mediajungle is al in gebruik bij",
+      "name": "Deze organisaties zijn al op expeditie",
       "blocks": {
         "item_asvz": {
           "type": "item",
@@ -205,7 +205,7 @@
         ".partnerHodler .col-xs-6 {float:none;}"
       ],
       "settings": {
-        "section_title": "Mediajungle is al in gebruik bij",
+        "section_title": "Deze organisaties zijn al op expeditie",
         "section_title_color": "#f5b53c",
         "section_color": "none"
       }
