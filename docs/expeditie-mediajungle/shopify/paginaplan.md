@@ -136,3 +136,4 @@ digitale/fysieke werkvormen, thuis-formulering, start groep 7-8 + rest vanaf 202
   (settings_data, blok item_UbetjU) en platform (item_TVRVYf), opleiding Aandachtsfunctionaris op /pages/workshops-trainingen
   ("Daarmee kun je ook direct starten met…"), slotblok onderwijspagina ("Werk je in de zorg?"). Back-ups in backup/, gepushte versies in live/.
   Partnerkop: "Deze organisaties zijn al op expeditie" (alleen ASVZ tot Ambiq/De Lovie akkoord).
+- 2026-09-25: kaart 'In de klas en BSO' (home, item_igQwJ7) en 'Onderwijs' (platform, item_pdE8Ah) linken naar /pages/expeditie-mediajungle.

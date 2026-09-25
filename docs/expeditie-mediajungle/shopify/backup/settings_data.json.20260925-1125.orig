@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "bingo_color_primary": "#f5b53c",
@@ -823,7 +832,7 @@
             "settings": {
               "title": "In de klas en BSO",
               "position": "",
-              "description": "Voor leerlingen en docenten die willen werken  aan digitale geletterdheid en mediawijsheid.<br><br><a href=\"/pages/expeditie-mediajungle\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk Expeditie Mediajungle voor het onderwijs</a>",
+              "description": "Voor leerlingen en docenten die willen werken  aan digitale geletterdheid en mediawijsheid.<br><br>",
               "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00768_50623efa-f0e6-4eba-a0d9-79abee490960.jpg"
             }
           },
@@ -1008,3 +1017,4 @@
     "custom_css": []
   }
 }
+

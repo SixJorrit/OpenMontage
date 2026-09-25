@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "bingo_slideshow_t34DFy": {
@@ -43,7 +52,7 @@
           "settings": {
             "title": "Onderwijs",
             "position": "1",
-            "description": "Voor leerlingen en docenten die willen werken aan digitale geletterdheid en mediawijsheid. \n<br>\nHet Mediajungle Educatieplatform is dé interactieve totaaloplossing voor leerlingen vanaf 8 jaar. Speels, begrijpelijk en helemaal passend bij het thema. \nAlle Mediajungle tools zijn gekoppeld aan de nieuwe SLO kerndoelen digitale geletterdheid en zijn geschikt voor het (S)BO, V(S)O en het praktijkonderwijs.<br><br><a href=\"/pages/expeditie-mediajungle\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk Expeditie Mediajungle voor het onderwijs</a>",
+            "description": "Voor leerlingen en docenten die willen werken aan digitale geletterdheid en mediawijsheid. \n<br>\nHet Mediajungle Educatieplatform is dé interactieve totaaloplossing voor leerlingen vanaf 8 jaar. Speels, begrijpelijk en helemaal passend bij het thema. \nAlle Mediajungle tools zijn gekoppeld aan de nieuwe SLO kerndoelen digitale geletterdheid en zijn geschikt voor het (S)BO, V(S)O en het praktijkonderwijs.",
             "avatar": "shopify://shop_images/20230622_DWS_Photoshoot_00768_50623efa-f0e6-4eba-a0d9-79abee490960.jpg"
           }
         },
