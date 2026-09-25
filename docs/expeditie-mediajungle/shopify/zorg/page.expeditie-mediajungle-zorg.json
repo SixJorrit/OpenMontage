@@ -1,0 +1,254 @@
+{
+  "sections": {
+    "hero_zorg": {
+      "type": "bingo-slideshow",
+      "blocks": {
+        "image_TPJYNd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/hero-expeditie-1920x730.jpg",
+            "alignment": "left",
+            "text_transform": "capitalize",
+            "title": "Expeditie Mediajungle voor de zorg",
+            "title_color": "#f5b53c",
+            "subheading": "Samen met je cliënten op ontdekkingstocht door de digitale wereld. Tien missies, in je eigen tempo.",
+            "subheading_color": "#d5ebe5",
+            "btn_text": "Vraag een vrijblijvende demo aan",
+            "btn_link": "https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT",
+            "btn_text_transform": "capitalize",
+            "btn_two_text": "Bekijk het Educatieplatform",
+            "btn_two_link": "/pages/platform",
+            "btn_two_text_transform": "capitalize",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TPJYNd"
+      ],
+      "custom_css": [
+        ".btnOrangeOutline {font-family: SimpleStamp, sans-serif !important; font-weight: 500 !important; font-size: 16px; padding: 8px 28px !important; border-radius: 14px !important; background: transparent !important; border: 2px solid #ef8a0b !important; color: #ffffff !important; margin-top: 10px;}",
+        ".btnOrangeOutline:hover {background: #ef8a0b !important;}"
+      ],
+      "settings": {
+        "navigation": false,
+        "pagination": false,
+        "autoplay": false,
+        "autoplay_speed": "8000",
+        "image_size": "1920x730"
+      }
+    },
+    "wat_is_zorg": {
+      "type": "text-with-image",
+      "name": "Wat is Expeditie Mediajungle voor de zorg",
+      "settings": {
+        "section_title": "Wat is Expeditie Mediajungle voor de zorg?",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "Een jaarprogramma mediawijsheid voor mensen met een licht verstandelijke beperking (LVB). Begeleider en cliënt gaan samen op pad, met een doorlopend verhaal. Geen verboden of waarschuwingen, wel samen praten, ontdekken en doen.<br><br>\n<ul>\n<li><b>Tien missies,</b> in je eigen tempo binnen een jaar</li>\n<li><b>Voor kinderen, jongeren en volwassenen</b> met een LVB</li>\n<li><b>Op de woonlocatie,</b> in de dagbesteding of ambulant</li>\n<li><b>Werkt aan mediawijsheid,</b> digitale zelfredzaamheid en digitaal welbevinden</li>\n</ul>",
+        "section_description_color": "#ffffff",
+        "image": "shopify://shop_images/logo-expeditie-mj-1600.png",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": [
+        ".row {display: flex !important; flex-wrap: wrap !important; gap: 2rem !important; flex-direction: row-reverse !important;}",
+        ".col-xs-12 {flex: 1 !important; min-width: 45% !important; max-width: 48% !important;}",
+        ".imageHolder img {width: 100%; height: auto;}",
+        "@media (max-width: 768px) {.row {flex-direction: column !important; } .col-xs-12 {min-width: 100% !important; max-width: 100% !important; } .imageHolder, .imageHolder img {width: 100% !important; }}"
+      ]
+    },
+    "missie_zorg": {
+      "type": "text-with-image",
+      "name": "Zo werkt een missie",
+      "settings": {
+        "section_title": "Zo werkt een missie",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "<ul>\n<li><b>Kijk.</b> Een korte animatie introduceert het thema.</li>\n<li><b>Ontdek.</b> Samen praten over eigen ervaringen: wat maak jij online mee?</li>\n<li><b>Doe.</b> Oefenen met vaardigheden voor het dagelijks leven.</li>\n<li><b>Verdien.</b> Samen herhalen wat je hebt geleerd en de missie afronden. Een beloning speelt de volgende missie vrij.</li>\n</ul>\n<br>\nThema's zijn onder meer: online winkelen, online pesten, nepnieuws, gezond schermgebruik, AI en romance scams.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": []
+    },
+    "video_zorg": {
+      "type": "section-video",
+      "name": "Animatie missie 1",
+      "settings": {
+        "section_title": "Bekijk de trailer",
+        "section_title_color": "#f5b53c",
+        "shopify_video": "shopify://files/videos/expeditie-trailer-v3.mp4",
+        "video_poster": "shopify://shop_images/animatie-missie1-cover.jpg",
+        "video": "<!-- Shopify-video hierboven geselecteerd; dit veld moet gevuld blijven -->",
+        "section_color": "secondary"
+      }
+    },
+    "posters_zorg": {
+      "type": "blocks-images-with-text",
+      "name": "Posters",
+      "blocks": {
+        "item_m1": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-1-a2-wand.jpg"
+          }
+        },
+        "item_m2": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-2-a2-wand.jpg"
+          }
+        },
+        "item_m4": {
+          "type": "item",
+          "settings": {
+            "title": "",
+            "position": "",
+            "description": "",
+            "avatar": "shopify://shop_images/mockup-missie-4-a2-wand.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "item_m1",
+        "item_m2",
+        "item_m4"
+      ],
+      "settings": {
+        "section_title": "Elke missie een poster voor op de groep",
+        "section_title_color": "#f5b53c",
+        "block_title_color": "#f5b53c",
+        "block_description_color": "#ffffff",
+        "block_border_color": "#193539",
+        "section_color": "none"
+      },
+      "custom_css": [
+        ".blockgrid .block img {height: auto !important; aspect-ratio: 3 / 4; object-fit: cover;}",
+        ".blockgrid .block .blockInformation {display: none;}"
+      ]
+    },
+    "getoetst_zorg": {
+      "type": "text-with-image",
+      "name": "Getoetst in de praktijk",
+      "settings": {
+        "section_title": "Getoetst in de praktijk",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "De Mediajungle-instrumenten in de missies zijn onderzocht door het Verwey-Jonker Instituut, samen met zorgorganisaties in de LVB-zorg.<br><br>\n<ul>\n<li><b>89%</b> van de cliënten voelde zich goed gehoord</li>\n<li><b>80%</b> voelde zich op zijn gemak in het gesprek</li>\n<li><b>78%</b> vond het leuk om te doen</li>\n<li>Begeleiders gaven de instrumenten gemiddeld een <b>7,5</b></li>\n</ul>\n<br>\n<a href=\"https://cdn.shopify.com/s/files/1/0724/1295/4955/files/handreiking-mediawijsheid-lvb-zorg.pdf?v=1790325866\" style=\"color:#f5b53c;text-decoration:underline\" target=\"_blank\" rel=\"noopener\">Download de handreiking (pdf)</a> &nbsp;·&nbsp; <a href=\"https://www.verwey-jonker.nl/publicatie/innoveren-implementeren-en-impact-maken/\" style=\"color:#f5b53c;text-decoration:underline\" target=\"_blank\" rel=\"noopener\">Lees het onderzoek bij het Verwey-Jonker Instituut</a>\n<br><br>\n<small>Bron: Jonker, Schell-Kiehl &amp; Yohannes (2026), <i>Innoveren, Implementeren en Impact maken</i>, Verwey-Jonker Instituut, gefinancierd door SIDN Fonds. Praktijkstudie met 33 cliënten en 19 zorgprofessionals.</small>",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": []
+    },
+    "begeleider_zorg": {
+      "type": "text-with-image",
+      "name": "Voor de begeleider",
+      "settings": {
+        "section_title": "Voor de begeleider",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "<ul>\n<li><b>Kant-en-klaar:</b> alles staat klaar in het Mediajungle Educatieplatform</li>\n<li><b>Ook voor jezelf:</b> een e-learning voor begeleiders, achtergrondkennis en handreikingen bij elke missie</li>\n<li><b>Voor wie:</b> woonbegeleiders, ambulant begeleiders, dagbestedingscoaches, gedragswetenschappers en orthopedagogen</li>\n</ul>",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": []
+    },
+    "start_zorg": {
+      "type": "text-with-image",
+      "name": "Zo start je",
+      "settings": {
+        "section_title": "Zo start je",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#193539",
+        "section_description": "<ol>\n<li><b>Volg de e-learning</b> voor begeleiders; die zit in de expeditie. Heb je de <a href=\"/products/opleiding-aandachtsfunctionaris-mediawijsheid-in-de-zorgpraktijk\" style=\"color:#f5b53c;text-decoration:underline\">opleiding Aandachtsfunctionaris Mediawijsheid in de zorgpraktijk</a> gevolgd? Dan kun je deze stap overslaan.</li>\n<li><b>Vraag een demo aan</b> of neem een abonnement op het Educatieplatform.</li>\n<li><b>Start met missie 1</b> met je cliënt of groep.</li>\n</ol>",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": []
+    },
+    "partners_zorg": {
+      "type": "section-partners",
+      "name": "We testen de expeditie met",
+      "blocks": {
+        "item_asvz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/logo-asvz.png"
+          }
+        }
+      },
+      "block_order": [
+        "item_asvz"
+      ],
+      "custom_css": [
+        ".container {padding-block: 60px;}",
+        ".partnerHodler > .row {display:flex; justify-content:center;}",
+        ".partnerHodler .col-xs-6 {float:none;}"
+      ],
+      "settings": {
+        "section_title": "We testen de expeditie met",
+        "section_title_color": "#f5b53c",
+        "section_color": "none"
+      }
+    },
+    "cta_zorg": {
+      "type": "text-with-image",
+      "name": "Kom mee op expeditie",
+      "settings": {
+        "section_title": "Kom mee op expeditie",
+        "section_title_color": "#f5b53c",
+        "section_background_color": "#04202c",
+        "section_description": "Wil je zien wat de expeditie voor jouw locatie kan betekenen? Vraag een demo aan.\n<br>\n<br>\nExpeditie Mediajungle voor de zorg zit in het Mediajungle Educatieplatform; met een abonnement heb je automatisch toegang. <a href=\"/pages/platform\" style=\"color:#f5b53c;text-decoration:underline\">Bekijk het Educatieplatform</a>. Liever eerst even bellen? <a href=\"/pages/contact\" style=\"color:#f5b53c;text-decoration:underline\">Neem contact op</a>.\n<br>\n<br>\n<a class=\"btn btnbingoOne\" href=\"https://forms.clickup.com/2525734/f/2d2h6-37912/HOJ8H6IC97XNV2IFPT\">Vraag een vrijblijvende demo aan</a>\n<br>\n<br>",
+        "section_description_color": "#ffffff",
+        "image": "",
+        "button_title": "",
+        "button_link": "",
+        "new_window": "current"
+      },
+      "custom_css": []
+    },
+    "newsletter_zorg": {
+      "type": "bingo-newsletter",
+      "settings": {
+        "section_color": "none",
+        "textcolor": "#ffffff",
+        "title": "Blijf op de hoogte met onze nieuwsbrief",
+        "description": "",
+        "mailchimp": false,
+        "form_action": ""
+      }
+    }
+  },
+  "order": [
+    "hero_zorg",
+    "wat_is_zorg",
+    "missie_zorg",
+    "video_zorg",
+    "posters_zorg",
+    "getoetst_zorg",
+    "begeleider_zorg",
+    "start_zorg",
+    "partners_zorg",
+    "cta_zorg",
+    "newsletter_zorg"
+  ]
+}

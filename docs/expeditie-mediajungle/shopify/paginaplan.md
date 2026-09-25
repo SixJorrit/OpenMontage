@@ -123,3 +123,12 @@ digitale/fysieke werkvormen, thuis-formulering, start groep 7-8 + rest vanaf 202
 - Videosectie toont nu `expeditie-trailer-v3.mp4` (59 s; animatie 2 + LinkedIn-kaarttour + eindkaart "Gratis onderdeel van het
   Mediajungle Educatieplatform"), kop "Bekijk de trailer". Bouw: `projects/expeditie-mediajungle-trailer/build_trailer.py`.
   Kaartbron is 640p (LinkedIn); originele schermopname nog inwisselen als Jorrit die aanlevert.
+
+## Zorgeditie (2026-09-25): preview gebouwd, nog niet gepubliceerd
+- Sjabloon `templates/page.expeditie-mediajungle-zorg.json` staat in het thema, nog aan geen pagina gekoppeld.
+  Preview: https://mediajungle.eu/pages/about-us?view=expeditie-mediajungle-zorg . Bron + builder: `zorg/`.
+- Hergebruikt: hero-still, logo, trailer v3 (bevat geen schoolzin, gecontroleerd via transcript), posters missie 1/2/4.
+- Nieuw in Shopify Files: `handreiking-mediawijsheid-lvb-zorg.pdf`, `logo-asvz.png`. Ambiq en De Lovie bewust nog niet getoond.
+- Demo: zelfde ClickUp-formulier (heeft Sector = Zorg). Beschikbaarheid 1 oktober niet in de hero (Jorrit).
+- Nog te doen na "ja, publiceer": pagina /pages/expeditie-mediajungle-zorg publiceren; links vanaf zorgblokken op home en platform,
+  trainingenpagina (opleiding Aandachtsfunctionaris) en één regel op de onderwijspagina.
