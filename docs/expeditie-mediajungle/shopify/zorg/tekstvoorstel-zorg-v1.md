@@ -13,7 +13,7 @@ Een jaarprogramma mediawijsheid voor mensen met een licht verstandelijke beperki
 - Tien missies, in je eigen tempo binnen een jaar
 - Voor kinderen, jongeren en volwassenen met een LVB
 - Op de woonlocatie, in de dagbesteding of ambulant
-- Werkt aan mediawijsheid, digitale zelfredzaamheid en digitaal welbevinden
+- Werken aan mediawijsheid, digitale zelfredzaamheid en digitaal welbevinden
 
 ## Zo werkt een missie
 - **Kijk.** Een korte animatie introduceert het thema.
@@ -47,7 +47,7 @@ Bron: Jonker, Schell-Kiehl & Yohannes (2026), *Innoveren, Implementeren en Impac
 3. Start met missie 1.
 
 ## Partners
-Kop: We testen de expeditie met
+Kop: Mediajungle is al in gebruik bij
 Logo's: ASVZ, Ambiq, De Lovie (logos/ — van de eigen websites; toestemming nog vragen)
 
 ## Kom mee op expeditie

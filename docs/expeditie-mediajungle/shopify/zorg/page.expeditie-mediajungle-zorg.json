@@ -45,7 +45,7 @@
         "section_title": "Wat is Expeditie Mediajungle voor de zorg?",
         "section_title_color": "#f5b53c",
         "section_background_color": "#193539",
-        "section_description": "Een jaarprogramma mediawijsheid voor mensen met een licht verstandelijke beperking (LVB). Begeleider en cliënt gaan samen op pad, met een doorlopend verhaal. Geen verboden of waarschuwingen, wel samen praten, ontdekken en doen.<br><br>\n<ul>\n<li><b>Tien missies,</b> in je eigen tempo binnen een jaar</li>\n<li><b>Voor kinderen, jongeren en volwassenen</b> met een LVB</li>\n<li><b>Op de woonlocatie,</b> in de dagbesteding of ambulant</li>\n<li><b>Werkt aan mediawijsheid,</b> digitale zelfredzaamheid en digitaal welbevinden</li>\n</ul>",
+        "section_description": "Een jaarprogramma mediawijsheid voor mensen met een licht verstandelijke beperking (LVB). Begeleider en cliënt gaan samen op pad, met een doorlopend verhaal. Geen verboden of waarschuwingen, wel samen praten, ontdekken en doen.<br><br>\n<ul>\n<li><b>Tien missies,</b> in je eigen tempo binnen een jaar</li>\n<li><b>Voor kinderen, jongeren en volwassenen</b> met een LVB</li>\n<li>Op de woonlocatie, in de dagbesteding of ambulant</li>\n<li>Werken aan mediawijsheid, digitale zelfredzaamheid en digitaal welbevinden</li>\n</ul>",
         "section_description_color": "#ffffff",
         "image": "shopify://shop_images/logo-expeditie-mj-1600.png",
         "button_title": "",
@@ -187,7 +187,7 @@
     },
     "partners_zorg": {
       "type": "section-partners",
-      "name": "We testen de expeditie met",
+      "name": "Mediajungle is al in gebruik bij",
       "blocks": {
         "item_asvz": {
           "type": "item",
@@ -205,7 +205,7 @@
         ".partnerHodler .col-xs-6 {float:none;}"
       ],
       "settings": {
-        "section_title": "We testen de expeditie met",
+        "section_title": "Mediajungle is al in gebruik bij",
         "section_title_color": "#f5b53c",
         "section_color": "none"
       }

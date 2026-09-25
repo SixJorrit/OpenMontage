@@ -28,7 +28,7 @@ add('wat_is_zorg',twi("Wat is Expeditie Mediajungle voor de zorg","Wat is Expedi
  "Een jaarprogramma mediawijsheid voor mensen met een licht verstandelijke beperking (LVB). Begeleider en cliënt gaan samen op pad, met een doorlopend verhaal. "
  "Geen verboden of waarschuwingen, wel samen praten, ontdekken en doen.<br><br>\n"+ul([
  "<b>Tien missies,</b> in je eigen tempo binnen een jaar","<b>Voor kinderen, jongeren en volwassenen</b> met een LVB",
- "<b>Op de woonlocatie,</b> in de dagbesteding of ambulant","<b>Werkt aan mediawijsheid,</b> digitale zelfredzaamheid en digitaal welbevinden"]),
+ "Op de woonlocatie, in de dagbesteding of ambulant","Werken aan mediawijsheid, digitale zelfredzaamheid en digitaal welbevinden"]),
  BG1,"shopify://shop_images/logo-expeditie-mj-1600.png",IMGCSS))
 # 3 missie
 add('missie_zorg',twi("Zo werkt een missie","Zo werkt een missie",ul([
@@ -56,9 +56,9 @@ add('start_zorg',twi("Zo start je","Zo start je",
  "<ol>\n<li><b>Volg de e-learning</b> voor begeleiders; die zit in de expeditie. Heb je de "+lnk("opleiding Aandachtsfunctionaris Mediawijsheid in de zorgpraktijk",OPLEIDING)+" gevolgd? Dan kun je deze stap overslaan.</li>\n"
  "<li><b>Vraag een demo aan</b> of neem een abonnement op het Educatieplatform.</li>\n<li><b>Start met missie 1</b> met je cliënt of groep.</li>\n</ol>",BG1,css=[]))
 # 9 partners (alleen ASVZ)
-add('partners_zorg',{"type":"section-partners","name":"We testen de expeditie met","blocks":{"item_asvz":{"type":"item","settings":{"image":"shopify://shop_images/logo-asvz.png"}}},
+add('partners_zorg',{"type":"section-partners","name":"Mediajungle is al in gebruik bij","blocks":{"item_asvz":{"type":"item","settings":{"image":"shopify://shop_images/logo-asvz.png"}}},
  "block_order":["item_asvz"],"custom_css":[".container {padding-block: 60px;}",".partnerHodler > .row {display:flex; justify-content:center;}",".partnerHodler .col-xs-6 {float:none;}"],
- "settings":{"section_title":"We testen de expeditie met","section_title_color":Y,"section_color":"none"}})
+ "settings":{"section_title":"Mediajungle is al in gebruik bij","section_title_color":Y,"section_color":"none"}})
 # 10 CTA
 add('cta_zorg',twi("Kom mee op expeditie","Kom mee op expeditie",
  "Wil je zien wat de expeditie voor jouw locatie kan betekenen? Vraag een demo aan.\n<br>\n<br>\n"
