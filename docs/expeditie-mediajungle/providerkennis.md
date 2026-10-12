@@ -319,3 +319,55 @@ filmtake met dezelfde loudnorm (I=-16) als de rest van de mix.
 - Gemeten tarieven nano-banana-2/edit (factuur 2026-09-09, 11 beelden = $1,68):
   **4k-tier $0,16/beeld, 2k-tier $0,12/beeld** — de toolschatting van $0,08 geldt
   alleen voor de 1k-tier. Mislukte submits (error 1010002) stonden níet op de factuur.
+
+## 7. Lessen uit animatie 3 (2026-09-02 t/m 2026-10-12, project expeditie-mj-animatie3)
+
+### Warpen van de video op de opname heeft een plafond
+Per woordgroep hertimen (`lipsync_warp.py`) kan pauzes niet ver genoeg oprekken (3AB: pauze 0,62 s in de opname vs. 0,19 s
+in de clip → factor 3,3, geclampt op 1,8) en Azure-woordtijden hebben ±0,05–0,10 s marge. Uitkomst blijft "ongeveer". Verlaten.
+
+### Lipsync-modellen (gemeten op gestileerde 3D-gezichten)
+- **Kling** (trial, verlopen): herrendert het héle beeld, levert 30 fps (cadansverlies) en verandert de ogen. Afgekeurd.
+- **Veed** (`veed/lipsync`, $0,013/s): drijft de mond echt uit de audio, maar tekent onderlip/kin zacht ("waas"). Jorrit: niet gebruiken.
+- **Sync 3** (`sync/lipsync-v3`, $0,22/s): scherp, 24 fps, behoudt ogen en achtergrond — maar is **conservatief**: werkt de
+  bestaande mondbeweging bij en maakt geen nieuwe. Mond na Sync 3 correleert 0,56–0,76 met de originele Seedance-mond.
+  Mond vooraf stilzetten → Sync 3 beweegt de mond nauwelijks (getest op 4B). Op een Veed-versie: kleiner en vlekkerig.
+- **Seedance-2.5 video-edit** als verfijning ("alleen kwaliteit, beweging behouden") verzint nieuwe mondvormen (correlatie 0,16)
+  en opgemaakte lippen. Niet bruikbaar voor lipsync.
+- Hele beeld naar het model → tweede gezicht beweegt mee (Sync 3 raakte Boaz' lippen). Daarom: **uitsnede van alleen de spreker**.
+
+### Uitsnede-lipsync: wat de waas veroorzaakte
+- Terugschalen met INTER_AREA kostte ~30% scherpte (laagdoorlaat); Lanczos heen en terug houdt 99%.
+- Klein ovaalmasker met zachte rand op de kin → twee kinnen half over elkaar ("half transparant"). Oplossing: *union*-masker =
+  alles wat het model ergens veranderde, vast en hoofd-relatief, zodat de overgang alleen valt waar origineel en uitvoer gelijk zijn.
+- 1024px-uitsnede geeft het model meer detail dan 512px (kin op origineel niveau zonder naslijpen).
+
+### Sync meten: op geluid, niet op beeld
+Mondopening-vs-stemvolume op beeld is te ruis-gevoelig (kalibratie op origineel + eigen kloonstem gaf r≈0,1–0,3 en wisselende
+offsets). Betrouwbaar: Sync 3 volgt het ritme van Seedance' kloonstem, dus **afwijking per woord = v4-woordtijd − kloonwoordtijd**
+(Demucs-vocals, Azure, difflib-koppeling). Draft 4: mediaan tot 0,53 s, max 0,98 s; na `retime_to_clone.py` mediaan 0,02–0,12 s.
+ffmpeg-valkuil: `adelay` na `atempo` in één filtergraph wordt genegeerd → stukken los renderen en in numpy plaatsen.
+
+### Seedance-clipaudio zonder kloonstem
+Demucs htdemucs_ft (lokaal, MPS, ~1 min/clip; zonder torchaudio via ffmpeg-I/O). Achtergrond = drums+bass+other; Azure herkent
+er geen woord meer in. Jorrit: het Seedance-geluid (ambiance/sfx) "past echt goed" — dit is de basislaag onder de dialoog.
+
+### Seedance 2.5 draftmodus
+`draft: true` op reference-to-video rendert 480p tegen het 480p-tarief ($0,134/s); `draft-complete` met de draft_id levert binnen
+7 dagen 1080p van exact hetzelfde shot ($0,263/s; zelfde frames, verschil met draft 2,5–4,4 grijswaarden). Eerst drafts laten
+goedkeuren, dan pas afmaken.
+
+### Staging: de jeep heeft een achterbank
+Beide jeep-referenties tonen door het tweede zijraam een achterbank; "één rij stoelen" in de prompt verliest van het beeld.
+Zijaanzicht van de bestuurderskant → Boaz verdwijnt achter Femke → Seedance zet hem achterin (2B twee keer). Driekwart-van-voren
+werd een zijaanzicht. **Frontaal door de voorruit werkte elke keer.** Bestuurderswissels (2C/2E/2F) ontstonden ondanks expliciete prompts.
+
+### Stemmen
+- Opname 2 was geen "nieuwe lage stem" maar een eleven_v3-dialoog met Ruth + Bram (geschiedenis 4 sept); studio-projecten zijn met
+  de API-sleutel niet leesbaar (geen projects_read), de spraakgeschiedenis wel (`/v1/history`, veld `dialogue`).
+- eleven_v4 (eind sept 2026, in de API): Jorrit "echt veel beter"; meter 95–100. v4-Bram klinkt 30–35% hoger in toonhoogte dan
+  v3-Bram (YIN) — Jorrit akkoord.
+
+### Overgangen
+Star Wars-wipes als knipoog; Jorrit: geel/gloeiend en een zwarte balk te opvallend → zachte schaduwrand (70 px, zwart 55% in het
+midden). Regel: nooit praten tijdens een overgang (compose regelt het automatisch).

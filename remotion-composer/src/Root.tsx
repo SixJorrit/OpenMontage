@@ -126,7 +126,7 @@ export function resolveTheme(props: Record<string, unknown>): ThemeConfig {
 const calculateExpeditieMetadata: CalculateMetadataFunction<ExpeditieProps> = async ({
   props,
 }) => {
-  const total = (props.shots ?? []).reduce((sum, s) => sum + (s.frames ?? 0), 0);
+  const total = (props.shots ?? []).reduce((sum, s, i) => sum + (s.frames ?? 0) - (i > 0 && s.transitionIn ? s.transitionIn.frames : 0), 0);
   // de eindkaart loopt achter het laatste shot door
   return { durationInFrames: Math.max(1, total + (props.outroFrames ?? 0)) };
 };

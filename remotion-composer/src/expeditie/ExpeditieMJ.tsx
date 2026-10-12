@@ -3,8 +3,20 @@ import {
   AbsoluteFill, Audio, Img, OffthreadVideo, Sequence, staticFile,
   interpolate, spring, useCurrentFrame, useVideoConfig,
 } from "remotion";
+import { TransitionSeries, linearTiming } from "@remotion/transitions";
+import { wipe } from "@remotion/transitions/wipe";
+import { clockWipe } from "@remotion/transitions/clock-wipe";
+import { iris } from "@remotion/transitions/iris";
+import { bandWipe } from "./bandWipes";
 
-export type ShotSpec = { id: string; frames: number };
+/** Overgang vóór dit shot (Star Wars-achtige wipes); het shot begint dan `frames` eerder en overlapt het vorige. */
+export type ShotTransition = {
+  type: "wipe" | "clock" | "iris" | "band" | "bandclock";
+  band?: number; color?: string; look?: "bar" | "line" | "shadow" | "none"; opacity?: number;
+  frames: number;
+  direction?: "from-left" | "from-right" | "from-top" | "from-bottom" | "from-top-left" | "from-top-right" | "from-bottom-left" | "from-bottom-right";
+};
+export type ShotSpec = { id: string; frames: number; transitionIn?: ShotTransition };
 export type ExpeditieProps = {
   shots: ShotSpec[];
   music?: string | null;
@@ -26,6 +38,12 @@ export type ExpeditieProps = {
   outroFrames?: number;
   /** frame waarop het logo begint op te komen; standaard net voor het beeld zwart is */
   endCardStart?: number;
+  /** tekst onder BELONING in de stralenkrans (animatie 2: De Jeep, animatie 3: De tent) */
+  rewardLabel?: string;
+  /** venster voor de 'bling bling'-sterretjes (animatie 3, shot 1A); [0,0] = uit */
+  blingWindow?: [number, number];
+  /** middelpunt van de stralenkrans als beeldfractie [x,y]; standaard het beeldmidden */
+  rewardCenter?: [number, number];
 };
 
 const MJ_YELLOW = "#F5C518";
@@ -43,7 +61,7 @@ const TitleLogo: React.FC = () => {
   return (
     <AbsoluteFill style={{ justifyContent: "flex-start", alignItems: "center", paddingTop: 54 }}>
       <Img
-        src={staticFile("expeditie-mj/mj-logo.png")}
+        src={staticFile("expeditie-mj/expeditie-mj-logo.png")}
         style={{
           width: 620, opacity: out,
           transform: `scale(${0.72 + pop * 0.28}) translateY(${(1 - pop) * -40}px)`,
@@ -83,7 +101,7 @@ const NoConnection: React.FC = () => {
 };
 
 /** Beloningsmoment: gouden stralenkrans plus label, game-achtig zoals afgesproken. */
-const RewardBurst: React.FC = () => {
+const RewardBurst: React.FC<{ label?: string; center?: [number, number] }> = ({ label: rewardText, center }) => {
   const frame = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const pop = spring({ frame, fps, config: { damping: 10, mass: 0.6 } });
@@ -94,7 +112,7 @@ const RewardBurst: React.FC = () => {
     <AbsoluteFill>
       <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
         <svg width={width} height={height} style={{ opacity: 0.55 * pop }}>
-          <g transform={`translate(${width / 2} ${height / 2}) rotate(${spin})`}>
+          <g transform={`translate(${width * (center?.[0] ?? 0.5)} ${height * (center?.[1] ?? 0.5)}) rotate(${spin})`}>
             {rays.map((_, i) => (
               <polygon key={i}
                 transform={`rotate(${(360 / rays.length) * i})`}
@@ -112,9 +130,43 @@ const RewardBurst: React.FC = () => {
           fontFamily: "system-ui, -apple-system, Helvetica, sans-serif", textAlign: "center",
         }}>
           <div style={{ fontSize: 21, fontWeight: 800, letterSpacing: 3.6, color: MJ_TEAL }}>BELONING</div>
-          <div style={{ fontSize: 54, fontWeight: 900, letterSpacing: -1, color: MJ_YELLOW, lineHeight: 1.02 }}>De Jeep</div>
+          <div style={{ fontSize: 54, fontWeight: 900, letterSpacing: -1, color: MJ_YELLOW, lineHeight: 1.02 }}>{rewardText ?? "De Jeep"}</div>
         </div>
       </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+/** 'Bling bling': een handvol twinkelende sterretjes over het midden-onder van het beeld (de jeep),
+ *  elk met eigen fase; niet gegenereerd omdat Seedance glans letterlijk rendert. */
+const Sparkles: React.FC = () => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const stars = [
+    [0.36, 0.62, 0.0], [0.44, 0.50, 0.25], [0.52, 0.70, 0.5], [0.40, 0.78, 0.75],
+    [0.58, 0.56, 0.15], [0.47, 0.64, 0.6], [0.33, 0.72, 0.4], [0.62, 0.74, 0.85],
+  ];
+  const env = interpolate(frame, [0, fps * 0.3, fps * 1.6, fps * 2.2], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      {stars.map(([x, y, ph], i) => {
+        const tw = 0.5 + 0.5 * Math.sin((frame / fps) * 7 + ph * Math.PI * 2);
+        const sc = 0.6 + 0.6 * tw;
+        return (
+          <div key={i} style={{
+            position: "absolute", left: `${x * 100}%`, top: `${y * 100}%`,
+            width: 34, height: 34, opacity: env * (0.55 + 0.45 * tw),
+            transform: `translate(-50%,-50%) scale(${sc}) rotate(${frame * 2 + i * 20}deg)`,
+            filter: "drop-shadow(0 0 8px rgba(255,236,150,.9))",
+          }}>
+            <svg viewBox="0 0 24 24" width="34" height="34">
+              <path d="M12 0 L14 10 L24 12 L14 14 L12 24 L10 14 L0 12 L10 10 Z" fill="#FFF3B0" />
+            </svg>
+          </div>
+        );
+      })}
     </AbsoluteFill>
   );
 };
@@ -131,7 +183,7 @@ const EndCard: React.FC<{ frames: number }> = ({ frames }) => {
   return (
     <AbsoluteFill style={{ justifyContent: "center", alignItems: "center" }}>
       <Img
-        src={staticFile("expeditie-mj/mj-logo.png")}
+        src={staticFile("expeditie-mj/expeditie-mj-logo.png")}
         style={{
           width: 560, opacity: pop * out,
           transform: `scale(${0.82 + pop * 0.18})`,
@@ -144,7 +196,7 @@ const EndCard: React.FC<{ frames: number }> = ({ frames }) => {
 
 export const ExpeditieMJ: React.FC<ExpeditieProps> = ({
   shots, music, musicVolume, musicEnvelope, clipDir, titleWindow, errorWindow, rewardWindow,
-  fadeStart, outroFrames, endCardStart,
+  fadeStart, outroFrames, endCardStart, rewardLabel, blingWindow, rewardCenter,
 }) => {
   const dir = clipDir ?? "expeditie-mj";
   const frame = useCurrentFrame();
@@ -154,7 +206,18 @@ export const ExpeditieMJ: React.FC<ExpeditieProps> = ({
     (p, i, all) => i === 0 || p[0] > all[i - 1][0],
   );
   let cursor = 0;
-  const placed = shots.map((s) => { const from = cursor; cursor += s.frames; return { ...s, from }; });
+  const placed = shots.map((s, i) => {
+    const overlap = i > 0 && s.transitionIn ? s.transitionIn.frames : 0;
+    const from = cursor - overlap; cursor = from + s.frames; return { ...s, from };
+  });
+  const hasTransitions = shots.some((s, i) => i > 0 && s.transitionIn);
+  const { width, height } = useVideoConfig();
+  const presentationOf = (t: ShotTransition) =>
+    t.type === "band" ? bandWipe({ kind: "linear", direction: (t.direction === "from-left" ? "from-left" : "from-right"), width, height, band: t.band, color: t.color, look: t.look, opacity: t.opacity })
+      : t.type === "bandclock" ? bandWipe({ kind: "clock", width, height, band: t.band, color: t.color, look: t.look, opacity: t.opacity })
+      : t.type === "clock" ? clockWipe({ width, height })
+      : t.type === "iris" ? iris({ width, height })
+      : wipe({ direction: t.direction ?? "from-right" });
   const outro = outroFrames ?? 0;
   const shotsEnd = cursor;
   const cardFrom = endCardStart ?? Math.max(0, shotsEnd - 12);
@@ -163,7 +226,25 @@ export const ExpeditieMJ: React.FC<ExpeditieProps> = ({
   });
   return (
     <AbsoluteFill style={{ backgroundColor: "#000000" }}>
-      {placed.map((s) => (
+      {hasTransitions ? (
+        <TransitionSeries>
+          {placed.flatMap((s, i) => {
+            const items: React.ReactNode[] = [];
+            if (i > 0 && s.transitionIn) {
+              items.push(
+                <TransitionSeries.Transition key={`t-${s.id}`} presentation={presentationOf(s.transitionIn) as any}
+                  timing={linearTiming({ durationInFrames: s.transitionIn.frames })} />,
+              );
+            }
+            items.push(
+              <TransitionSeries.Sequence key={s.id} durationInFrames={s.frames}>
+                <OffthreadVideo src={staticFile(`${dir}/${s.id}.mp4`)} style={{ width: "100%", height: "100%" }} />
+              </TransitionSeries.Sequence>,
+            );
+            return items;
+          })}
+        </TransitionSeries>
+      ) : placed.map((s) => (
         <Sequence key={s.id} from={s.from} durationInFrames={s.frames}>
           <OffthreadVideo src={staticFile(`${dir}/${s.id}.mp4`)} style={{ width: "100%", height: "100%" }} />
         </Sequence>
@@ -180,8 +261,15 @@ export const ExpeditieMJ: React.FC<ExpeditieProps> = ({
       ) : null}
 
       <Sequence from={titleWindow[0]} durationInFrames={titleWindow[1] - titleWindow[0]}><TitleLogo /></Sequence>
-      <Sequence from={errorWindow[0]} durationInFrames={errorWindow[1] - errorWindow[0]}><NoConnection /></Sequence>
-      <Sequence from={rewardWindow[0]} durationInFrames={rewardWindow[1] - rewardWindow[0]}><RewardBurst /></Sequence>
+      {errorWindow[1] > errorWindow[0] ? (
+        <Sequence from={errorWindow[0]} durationInFrames={errorWindow[1] - errorWindow[0]}><NoConnection /></Sequence>
+      ) : null}
+      {rewardWindow[1] > rewardWindow[0] ? (
+        <Sequence from={rewardWindow[0]} durationInFrames={rewardWindow[1] - rewardWindow[0]}><RewardBurst label={rewardLabel} center={rewardCenter} /></Sequence>
+      ) : null}
+      {blingWindow && blingWindow[1] > blingWindow[0] ? (
+        <Sequence from={blingWindow[0]} durationInFrames={blingWindow[1] - blingWindow[0]}><Sparkles /></Sequence>
+      ) : null}
 
       <AbsoluteFill style={{ backgroundColor: "#000000", opacity: fade, pointerEvents: "none" }} />
 
