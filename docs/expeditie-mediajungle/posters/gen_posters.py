@@ -8,7 +8,7 @@ scherpe typografielaag gecomposit. In-scene tekst (bordje, tassen) gaat wél mee
 import json
 import sys
 
-sys.path.insert(0, "/Users/jorrit/dev/OpenMontage")
+sys.path.insert(0, ".")
 from tools.tool_registry import registry  # noqa: E402
 
 registry.discover()

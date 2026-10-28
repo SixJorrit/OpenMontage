@@ -7,7 +7,7 @@ from pathlib import Path
 
 from PIL import Image
 
-ROOT = Path("/Users/jorrit/dev/OpenMontage")
+ROOT = Path(".")
 PROJ = ROOT / "projects/expeditie-mediajungle-posters"
 IMG = PROJ / "assets/images/round-2"
 OUT = PROJ / "renders/round-2"

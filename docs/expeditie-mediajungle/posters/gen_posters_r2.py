@@ -8,7 +8,7 @@ Model: google/nano-banana-2/edit (gelockt style-bible-model), 2:3, 4k.
 import json
 import sys
 
-sys.path.insert(0, "/Users/jorrit/dev/OpenMontage")
+sys.path.insert(0, ".")
 from tools.tool_registry import registry  # noqa: E402
 
 registry.discover()

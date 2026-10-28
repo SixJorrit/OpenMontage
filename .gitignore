@@ -28,6 +28,11 @@ tests/qa/output/
 # Project workspaces (generated assets, renders — all regenerable)
 projects/
 
+# Shared-drive links (per machine, see scripts/link_shared_drive.py).
+# A symlink is a file to git, so the trailing-slash rule above misses it.
+/projects
+/media
+
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even
 # though most corpora live under projects/ since agents sometimes

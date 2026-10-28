@@ -6,7 +6,7 @@ PIP = $(RUN_PYTHON) -m pip
 
 .DEFAULT_GOAL := setup
 
-.PHONY: setup install install-dev install-gpu test test-contracts lint clean preflight demo demo-list hyperframes-doctor hyperframes-warm venv ensure-venv
+.PHONY: setup install install-dev install-gpu test test-contracts lint clean preflight demo demo-list hyperframes-doctor hyperframes-warm venv ensure-venv shared-drive check-paths fix-paths
 
 # ---- Virtual environment ----
 
@@ -118,6 +118,17 @@ demo: ensure-venv
 
 demo-list: ensure-venv
 	$(RUN_PYTHON) render_demo.py --list
+
+# ---- Shared drive (final products live outside git) ----
+
+shared-drive:
+	$(BASE_PYTHON) scripts/link_shared_drive.py
+
+check-paths:
+	$(BASE_PYTHON) scripts/relativize_paths.py --check
+
+fix-paths:
+	$(BASE_PYTHON) scripts/relativize_paths.py
 
 lint: ensure-venv
 	$(RUN_PYTHON) -m py_compile tools/base_tool.py

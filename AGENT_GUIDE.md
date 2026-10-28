@@ -228,6 +228,12 @@ All tools and agents must write outputs to these paths — **always pass an expl
 
 **This applies to atelier and HyperFrames-skill runs too**: hand-authored compositions still write the canonical artifacts they have (script or beats-plan, scene_plan-equivalent, asset manifest) plus checkpoints into `projects/<project-id>/`. The board is runtime-agnostic; only runs that skip the artifacts get a degraded board.
 
+**Shared drive (this fork).** `projects/` and `media/` are symlinks to a shared Google Drive, set up per machine with `make shared-drive` (see [`docs/gedeelde-drive.md`](docs/gedeelde-drive.md)). Several people open the same project files, each with a different absolute path to the drive. Therefore:
+
+- Write **repo-relative paths** (`projects/<id>/...`, `media/...`) in artifacts, checkpoints, scripts and HTML; never `/Users/<name>/...`. Run scripts from the repo root.
+- Final products (renders, posters, exports, reference art) go under `projects/` or `media/`, **never into git** (not under `docs/` either).
+- Before handing a project to someone else, run `make check-paths`; `make fix-paths` rewrites what it can.
+
 ## Music Library
 
 Users can place royalty-free music tracks in `music_library/` (gitignored). The asset director will check this folder before falling back to API-based music generation.

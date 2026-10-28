@@ -1,6 +1,6 @@
 import os, json, urllib.request
 from dotenv import load_dotenv
-load_dotenv("/Users/jorrit/dev/OpenMontage/.env")
+load_dotenv(".env")
 key = os.environ.get("ATLASCLOUD_API_KEY") or os.environ.get("ATLAS_CLOUD_API_KEY")
 print("key aanwezig:", bool(key))
 def get(path):

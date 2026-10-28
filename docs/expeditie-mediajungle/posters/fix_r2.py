@@ -3,7 +3,7 @@ import json
 import sys
 import time
 
-sys.path.insert(0, "/Users/jorrit/dev/OpenMontage")
+sys.path.insert(0, ".")
 from tools.tool_registry import registry  # noqa: E402
 
 registry.discover()

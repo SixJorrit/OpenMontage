@@ -1,11 +1,11 @@
 """Trailer v1: animatie 2 (film) + LinkedIn-kaarttour (map) + eindkaart. 1280x720/24, ~49 s."""
 import subprocess, pathlib
 from PIL import Image, ImageDraw, ImageFont
-ROOT=pathlib.Path("/Users/jorrit/dev/OpenMontage"); P=ROOT/"projects/expeditie-mediajungle-trailer"
+ROOT=pathlib.Path("."); P=ROOT/"projects/expeditie-mediajungle-trailer"
 FILM=ROOT/"projects/expeditie-mj-animatie2-v2/renders/expeditie-mediajungle-animatie-2-v2.mp4"
 MAP=P/"src/linkedin-rondje.mp4"; MUSIC=ROOT/"remotion-composer/public/expeditie-mj/music-v2.mp3"
 LOGO=ROOT/"docs/expeditie-mediajungle/references/logo-expeditie-mj-2000.png"
-FONT="/Users/jorrit/Library/Fonts/Baloo2-ExtraBold.ttf"; FONT2="/Users/jorrit/Library/Fonts/Baloo2-SemiBold.ttf"
+FONT="media/fonts/Baloo2-ExtraBold.ttf"; FONT2="media/fonts/Baloo2-SemiBold.ttf"
 W,H,FPS=1280,720,24
 # (source, start, end, overlay-text or None)
 SEG=[("film",0.0,3.2,None),("film",6.3,12.4,None),("film",15.6,17.4,None),("film",39.1,44.6,None),

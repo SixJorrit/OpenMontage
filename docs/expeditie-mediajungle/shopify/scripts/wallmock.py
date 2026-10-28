@@ -21,5 +21,5 @@ def mock(poster_path,out):
     bg.alpha_composite(sh); bg.alpha_composite(sh2); bg.alpha_composite(P,(x,y))
     bg.convert('RGB').resize((1200,1600),Image.LANCZOS).save(out,quality=92)
 for n in (1,2,3,4):
-    mock(f"/Users/jorrit/dev/OpenMontage/docs/expeditie-mediajungle/shopify/export/poster-missie-{n}-a2.jpg", f"/Users/jorrit/dev/OpenMontage/docs/expeditie-mediajungle/shopify/export/mockup-missie-{n}-a2-wand.jpg")
+    mock(f"docs/expeditie-mediajungle/shopify/export/poster-missie-{n}-a2.jpg", f"docs/expeditie-mediajungle/shopify/export/mockup-missie-{n}-a2-wand.jpg")
 print('ok')

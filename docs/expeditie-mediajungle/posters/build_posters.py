@@ -7,7 +7,7 @@ Typografie: Baloo 2 (systeemfont), slogans boven, footerband met mj-logo-clean.p
 import subprocess
 from pathlib import Path
 
-ROOT = Path("/Users/jorrit/dev/OpenMontage")
+ROOT = Path(".")
 PROJ = ROOT / "projects/expeditie-mediajungle-posters"
 IMG = PROJ / "assets/images"
 OUT = PROJ / "renders"
