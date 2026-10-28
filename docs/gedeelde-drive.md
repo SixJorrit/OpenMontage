@@ -15,6 +15,10 @@ maak je zelf aan. Daarna verwijst alles naar dezelfde relatieve paden.
 
 ## Eenmalig instellen
 
+Nieuwe collega? Volg [`nieuwe-collega-setup.md`](nieuwe-collega-setup.md): daar
+staat een opdracht om in Claude Code te plakken en hoe je API-sleutels veilig
+invult. Hieronder dezelfde stappen met de hand.
+
 1. Installeer **Google Drive for desktop** en log in met je Mediajungle-account.
 2. Zet in Finder de map `OpenMontage` op **Beschikbaar offline** (rechtermuisknop).
    Anders haalt Drive bestanden pas op als een render ze nodig heeft; dat is traag
