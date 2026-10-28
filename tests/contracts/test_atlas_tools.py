@@ -109,8 +109,9 @@ class TestVideoRoutes:
         assert operations <= set(AtlasVideo.provider_matrix[family])
 
     def test_exact_live_catalog(self):
-        assert len(VIDEO_MODELS) == 16
+        assert len(VIDEO_MODELS) == 17
         assert "minimax/h3/reference-to-video" in VIDEO_MODELS
+        assert "alibaba/wan-3.0/reference-to-video" in VIDEO_MODELS
         assert "google/gemini-omni-flash/video-edit" in VIDEO_MODELS
 
     def test_seedance_25_payload(self):
