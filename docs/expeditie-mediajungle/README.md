@@ -12,6 +12,11 @@ referenties, logo's, posters, Shopify-exports) staan op de gedeelde drive onder
 `media/expeditie-mediajungle/`, met dezelfde mapindeling als hieronder. Teksten, logs en
 scripts blijven hier. Instellen: [`docs/gedeelde-drive.md`](../gedeelde-drive.md).
 
+`media/expeditie-mediajungle/bron/` is een momentopname (2026-10-28) van het oorspronkelijke
+materiaal uit de Klare Koek-Dropbox: het Remotion-project `03 - animaties/remotion expeditie MJ`
+(zonder `node_modules`, `.git` en `out/`), de storyline en de vervolgopdracht. De research-briefs
+van de projecten verwijzen daarheen.
+
 | bestand | wat |
 |---|---|
 | `TROUBLESHOOT-FINDINGS.md` | het volledige routedossier: alle zes vragen, metingen, besluiten en protocollen |
