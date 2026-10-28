@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Factsheet mediawijsheid in de LVB-zorg</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --j900:#04202c; --j800:#083d3f; --j700:#193539;
+    --gold:#f5b53c; --orange:#ef8a0b; --mint:#61d1b4; --mint100:#d5ebe5; --mint50:#eaf6f2;
+    --brown:#4e3416; --pink:#e0529c; --cream:#fbf5e6; --ink:#1d2b2b; --muted:#5a6866; --teal:#2fa58c;
+  }
+  @page{ size:210mm 297mm; margin:0 }
+  *{ box-sizing:border-box; margin:0; padding:0 }
+  body{ font-family:"Open Sans",Arial,sans-serif; color:var(--ink); background:#fff; font-size:8.3pt; line-height:1.4;
+        -webkit-print-color-adjust:exact; print-color-adjust:exact }
+  .page{ width:210mm; height:297mm; position:relative; overflow:hidden; background:#fffdf8; break-after:page }
+  .page:last-child{ break-after:auto }
+  h1,h2,h3,.num{ font-family:"Baloo 2","Arial Rounded MT Bold",sans-serif; line-height:1.05 }
+  b{ font-weight:700 }
+
+  .band{ background:radial-gradient(120% 140% at 80% 0%, #0b4d4c 0%, var(--j800) 45%, var(--j900) 100%);
+         color:var(--mint100); padding:7mm 12mm 6mm; display:grid; grid-template-columns:34mm 1fr; gap:6mm; align-items:center }
+  .band img{ width:34mm; display:block }
+  .kicker{ font-size:7.4pt; letter-spacing:.14em; text-transform:uppercase; color:var(--mint); font-weight:700 }
+  h1{ font-size:21pt; color:var(--gold); font-weight:800; margin:.8mm 0 1.2mm }
+  .band p{ font-size:8.8pt; line-height:1.4 }
+  .band.slim{ padding:5mm 12mm; grid-template-columns:22mm 1fr }
+  .band.slim img{ width:22mm }
+  .band.slim h1{ font-size:15pt; margin:0 }
+
+  .body{ padding:5mm 12mm 0 }
+  h2{ font-size:13pt; color:var(--j800); font-weight:800; margin:0 0 1.6mm; display:flex; align-items:center; gap:2.2mm }
+  h2 .tagn{ background:var(--gold); color:var(--brown); border-radius:1.6mm; font-size:9pt; padding:.9mm 2mm .3mm }
+  h2 small{ font-family:"Open Sans"; font-weight:600; font-size:7.2pt; color:var(--muted) }
+  h3{ font-size:9.6pt; color:var(--brown); font-weight:800; margin-bottom:.9mm }
+  p + p{ margin-top:1.3mm }
+  ul{ padding-left:4mm } li{ margin:.4mm 0 } li::marker{ color:var(--orange) }
+  .muted{ color:var(--muted) }
+  .sec{ margin-top:4mm }
+
+  .kort{ background:var(--cream); border-left:1.6mm solid var(--gold); border-radius:0 3mm 3mm 0; padding:3mm 4mm }
+  .kort ul{ columns:2; column-gap:7mm } .kort li{ break-inside:avoid }
+
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:5mm }
+
+  /* methode */
+  .method{ display:grid; grid-template-columns:repeat(6,1fr); gap:1.6mm; margin-top:1mm }
+  .m{ background:#fff; border:.35mm solid #e3dcc8; border-radius:2.4mm; padding:2mm 2.2mm; text-align:center; position:relative }
+  .m .num{ font-size:17pt; font-weight:800; color:var(--orange); display:block }
+  .m p{ font-size:6.9pt; line-height:1.25; margin-top:.4mm }
+  .m:not(:last-child)::after{ content:"›"; position:absolute; right:-1.9mm; top:34%; color:var(--gold); font-weight:800; font-size:12pt }
+
+  /* resultaten */
+  .res .row{ display:grid; grid-template-columns:1fr 26mm 8mm; gap:1.6mm; align-items:center; font-size:7.35pt; padding:.35mm 0; border-bottom:.2mm solid #eee6d3 }
+  .res .track{ height:2.4mm; border-radius:1.2mm; background:#efe8d6 }
+  .res .fill{ height:100%; border-radius:1.2mm; background:var(--teal) }
+  .res.b .fill{ background:var(--orange) }
+  .res .fill.low{ background:var(--pink) }
+  .res .pct{ font-weight:700; text-align:right }
+  .res h3 small{ font-family:"Open Sans"; font-weight:600; font-size:6.8pt; color:var(--muted); margin-left:1mm }
+
+  .ctx{ background:var(--mint50); border-radius:3mm; padding:2.8mm 3.4mm }
+  .ctx .facts{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:2mm; margin:1.4mm 0 1.6mm }
+  .ctx .facts div{ background:#fff; border-radius:2mm; padding:1.6mm 2mm; font-size:6.9pt; line-height:1.28 }
+  .ctx .facts .num{ font-size:14pt; font-weight:800; color:var(--j800); display:block }
+  .quote{ font-family:"Baloo 2"; font-weight:700; font-size:11pt; color:var(--j800); line-height:1.15; border-left:1.2mm solid var(--orange); padding-left:2.6mm; margin-top:2mm }
+  .quote small{ display:block; font-family:"Open Sans"; font-weight:600; font-size:6.8pt; color:var(--muted); margin-top:.5mm }
+
+  .toolpick{ display:grid; grid-template-columns:1fr 1fr; gap:2.4mm; margin-top:1mm }
+  .toolpick div{ border-radius:2.6mm; padding:2.2mm 2.8mm; font-size:7.4pt; line-height:1.34 }
+  .toolpick .g{ background:#fdebd3 } .toolpick .i{ background:var(--mint50) }
+  .toolpick h3{ font-size:9pt; margin-bottom:.6mm }
+
+  /* p2 */
+  .grid3{ display:grid; grid-template-columns:repeat(3,1fr); gap:2.4mm }
+  .f{ background:var(--cream); border-radius:2.6mm; padding:2.3mm 2.7mm; font-size:7.3pt; line-height:1.36; border-top:1.2mm solid var(--teal) }
+  .f h3{ font-size:9.2pt; margin-bottom:.6mm }
+  .f .n{ font-family:"Baloo 2"; font-weight:800; color:var(--teal); margin-right:1mm }
+
+  .rem .row{ display:grid; grid-template-columns:42mm 1fr; gap:3mm; padding:1.5mm 0; border-bottom:.25mm solid #eee6d3; font-size:7.5pt; line-height:1.36 }
+  .rem .row b.k{ color:var(--brown); font-family:"Baloo 2"; font-size:9pt; font-weight:800; line-height:1.1 }
+  .rem .row .fix::before{ content:"→ "; color:var(--orange); font-weight:800 }
+
+  .phases{ display:grid; grid-template-columns:repeat(5,1fr); gap:2mm; margin-top:1mm }
+  .ph{ background:var(--j800); color:var(--mint100); border-radius:2.6mm; padding:2.2mm 2.4mm; font-size:7pt; line-height:1.32; position:relative }
+  .ph .n{ font-family:"Baloo 2"; font-weight:800; font-size:13pt; color:var(--gold); line-height:1 }
+  .ph h3{ color:#fff; font-size:8.8pt; margin:.3mm 0 .6mm }
+  .ph:not(:last-child)::after{ content:"›"; position:absolute; right:-1.9mm; top:36%; color:var(--gold); font-weight:800; font-size:12pt }
+  .blocks{ display:flex; flex-wrap:wrap; gap:1.4mm; margin-top:2mm; align-items:center; font-size:7.2pt }
+  .blocks span.c{ background:var(--gold); color:var(--brown); font-weight:800; border-radius:5mm; padding:.6mm 2.6mm; font-size:7.2pt }
+
+  .roles{ display:grid; grid-template-columns:repeat(3,1fr); gap:2mm }
+  .role{ border:.35mm solid #e3dcc8; background:#fff; border-radius:2.4mm; padding:2mm 2.6mm; font-size:7.2pt; line-height:1.34 }
+  .role b{ display:block; font-family:"Baloo 2"; font-size:9pt; font-weight:800; color:var(--orange); margin-bottom:.3mm }
+
+  .foot{ position:absolute; left:0; right:0; bottom:0; padding:2.6mm 12mm 3.2mm; background:#f3ecdb; font-size:6.4pt; line-height:1.42; color:#4d5957 }
+  .foot b{ color:var(--brown) }
+  .more{ background:var(--cream); border-left:1.6mm solid var(--teal); border-radius:0 3mm 3mm 0; padding:3mm 4mm; width:128mm }
+  .tree{ position:absolute; right:12mm; bottom:16mm; width:40mm }
+  .pno{ position:absolute; right:12mm; bottom:3mm; font-family:"Baloo 2"; font-weight:800; color:var(--orange); font-size:9pt }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGINA 1 ================= -->
+<div class="page">
+  <div class="band">
+    <img src="assets/mj-logo-clean.png" alt="Mediajungle">
+    <div>
+      <div class="kicker">Factsheet · voor zorgorganisaties in de LVB-zorg</div>
+      <h1>Mediawijsheid een vaste plek in de zorg</h1>
+      <p>Wat is er nodig om de tools van Mediajungle structureel in te zetten? Het Verwey-Jonker Instituut onderzocht het samen met ASVZ en Ambiq, in opdracht van Mediajungle en met steun van het SIDN Fonds.</p>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="kort">
+      <h3>In het kort</h3>
+      <ul>
+        <li><b>De tools werken.</b> Begeleiders geven gemiddeld een <b>7,5</b>, en allemaal vinden ze dat de tool bijdroeg aan een goed gesprek over media.</li>
+        <li><b>Cliënten voelen zich gehoord en veilig:</b> 89% voelde dat er goed geluisterd werd, 91% dat er rekening werd gehouden met hun privacy.</li>
+        <li><b>Het knelpunt zit in de organisatie:</b> tijd, personeel, licenties en een concreet plan. Mediawijsheid komt vaak pas aan bod als het mis is gegaan.</li>
+        <li><b>Wat helpt:</b> een gedeelde visie, mediawijsheid in bestaande routines, taakhouders en een korte training.</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <h2><span class="tagn">1</span> Zo is het onderzocht <small>2025, in drie fasen: verkennen, verdiepen, valideren</small></h2>
+      <div class="method">
+        <div class="m"><span class="num">8</span><p>experts gesproken over sociale technologie, mediawijsheid en LVB</p></div>
+        <div class="m"><span class="num">2</span><p>zorginstellingen testten de tools: ASVZ en Ambiq</p></div>
+        <div class="m"><span class="num">19</span><p>begeleiders vulden 24 vragenlijsten in</p></div>
+        <div class="m"><span class="num">33</span><p>cliënten vulden 35 vragenlijsten in</p></div>
+        <div class="m"><span class="num">8</span><p>interviews met professionals, van begeleider tot regiodirecteur</p></div>
+        <div class="m"><span class="num">2</span><p>observaties bij een kinderdagcentrum</p></div>
+      </div>
+    </div>
+
+    <div class="sec two">
+      <div class="ctx">
+        <h3>Waarom dit ertoe doet</h3>
+        <div class="facts">
+          <div><span class="num">1,2 mln</span>mensen in Nederland hebben naar schatting een LVB</div>
+          <div><span class="num">2 uur</span>per dag zit een Nederlander gemiddeld online</div>
+          <div><span class="num">2000+</span>locaties in NL en België gebruiken het Mediajungle Bordspel</div>
+        </div>
+        <p>Mensen met een LVB zijn vaker slachtoffer van cyberpesten, misleiding, online (seksueel) misbruik en verslaving. Tegelijk biedt online contact, ontspanning en meedoen.</p>
+        <p>Veel begeleiders voelen zich onzeker: hoe bespreek je mediagebruik, en hoe ondersteun je zonder de autonomie te beperken? Online gedrag is bovendien grotendeels onzichtbaar voor hen.</p>
+        <p class="quote">"Het wordt vaak pas belangrijk als het mis is gegaan."<small>Expert mediawijsheid en LVB</small></p>
+      </div>
+      <div>
+        <h3>Welke tool wanneer?</h3>
+        <div class="toolpick">
+          <div class="g"><h3>In de groep, met tijd</h3>Mediajungle Bordspel of King of the Jungle. Werkt goed in een schoolse setting en bij wat jongere cliënten. Het spelelement motiveert.</div>
+          <div class="i"><h3>Individueel of ambulant</h3>Kletskaarten, praatplaten of een korte online module. Makkelijk mee te nemen en passend bij oudere, zelfstandigere cliënten.</div>
+        </div>
+        <p class="muted" style="margin-top:2mm">Fysieke spellen worden leuk gevonden, maar belanden ook sneller in de kast. Kleine en online tools zijn makkelijker tussendoor in te zetten.</p>
+        <h3 style="margin-top:2.4mm">Wat gebruikers nog missen</h3>
+        <ul>
+          <li>Meer filmpjes en plaatjes (22-24% van de gebruikers).</li>
+          <li>Meer niveau- en leeftijdsverschil: voor sommigen te makkelijk of te kinderachtig, voor anderen te talig.</li>
+          <li>Uitleg na een vraag, zoals hoe je herkent of een site betrouwbaar is.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2><span class="tagn">2</span> Wat vonden cliënten en begeleiders?</h2>
+      <div class="two">
+        <div class="res">
+          <h3>Cliënten <small>35-37 vragenlijsten</small></h3>
+          <div id="rc"></div>
+        </div>
+        <div class="res b">
+          <h3>Begeleiders <small>19-25 vragenlijsten</small></h3>
+          <div id="rb"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <b>Let op:</b> kleine groep deelnemers bij twee instellingen, niet representatief. Percentages zijn berekend per ingevulde vragenlijst; sommige deelnemers vulden er meer in, één per geteste tool. Het Mediajungle Bordspel is het vaakst getest, dus de uitkomsten zeggen vooral iets over het bordspel. Roze balken: aandachtspunt.
+  </div>
+  <span class="pno">1/2</span>
+</div>
+
+<!-- ================= PAGINA 2 ================= -->
+<div class="page">
+  <div class="band slim">
+    <img src="assets/mj-logo-clean.png" alt="Mediajungle">
+    <div><div class="kicker">Factsheet · mediawijsheid in de LVB-zorg</div><h1>Van losse test naar vaste werkwijze</h1></div>
+  </div>
+
+  <div class="body" style="padding-top:4mm">
+    <div class="sec" style="margin-top:0">
+      <h2><span class="tagn">3</span> Wat helpt bij invoeren</h2>
+      <div class="grid3">
+        <div class="f"><h3><span class="n">1</span>Bottom-up én organisatiebreed</h3>Het enthousiasme komt van begeleiders en gedragswetenschappers; leiding en bestuur dragen en faciliteren. Zet ervaringsdeskundigen en cliëntenraden in als ambassadeurs.</div>
+        <div class="f"><h3><span class="n">2</span>Laat de meerwaarde zien</h3>De tools nemen onzekerheid bij begeleiders weg en maken preventie mogelijk. Maak zichtbaar wat dat oplevert voor het werk én voor de zelfredzaamheid van cliënten.</div>
+        <div class="f"><h3><span class="n">3</span>Sluit aan bij de praktijk</h3>Neem media op in intakes, behandelplannen en studiedagen, en koppel het aan thema's als pesten, werk en geld. Posters en reminders houden het levend.</div>
+        <div class="f"><h3><span class="n">4</span>Train kort en praktisch</h3>Een korte knoppentraining is genoeg. Laat ook de minder bekende tools zien, en neem gedragswetenschappers en leidinggevenden mee.</div>
+        <div class="f"><h3><span class="n">5</span>Blijf doorontwikkelen</h3>Werk samen met cliënten en professionals aan nieuwe content en niveaus. Cliënten groeien door en willen uitgedaagd blijven.</div>
+        <div class="f"><h3><span class="n">6</span>Beleg het bij taakhouders</h3>Wijs meerdere taakhouders of een mediacoach aan, zodat het niet stopt bij personeelswisselingen, plus een eindverantwoordelijke.</div>
+      </div>
+    </div>
+
+    <div class="sec two" style="grid-template-columns:1.1fr 1fr">
+      <div class="rem">
+        <h2 style="font-size:12pt"><span class="tagn">4</span> Wat remt, en wat eraan te doen</h2>
+        <div class="row"><b class="k">Werkdruk en tijdgebrek</b><div>De grootste drempel. Preventieve gesprekken schieten er als eerste bij in.<div class="fix">Maak het geen extra taak: gebruik bestaande routines en maak de urgentie voelbaar.</div></div></div>
+        <div class="row"><b class="k">Afhankelijk van een begeleider</b><div>Cliënten gebruiken de tools zelden alleen.<div class="fix">Dat is ook de kracht: reflectie vraagt iemand die doorvraagt. Beleg het ook bij gedragswetenschappers en therapeuten.</div></div></div>
+        <div class="row"><b class="k">Licenties en inloggen</b><div>Licenties per persoon maken het lastig voor een heel team.<div class="fix">Regel toegang voor het hele team, samen met Mediajungle.</div></div></div>
+        <div class="row"><b class="k">Digitale vaardigheden</b><div>Niet elke professional voelt zich zeker met technologie.<div class="fix">Houd het eenvoudig en geef tijd om te wennen. 95% vond de tools niet te ingewikkeld.</div></div></div>
+      </div>
+      <div>
+        <h2 style="font-size:12pt"><span class="tagn">5</span> Wie doet wat?</h2>
+        <div class="roles" style="grid-template-columns:1fr 1fr">
+          <div class="role"><b>Begeleiders</b>Kiezen passende tools en houden mediagebruik regelmatig bespreekbaar.</div>
+          <div class="role"><b>Gedragswetenschappers</b>Raden tools aan binnen behandelingen, ook preventief.</div>
+          <div class="role"><b>Leidinggevenden</b>Zorgen voor toegang, apparaten, ruimte en training, en bespreken het in het team.</div>
+          <div class="role"><b>Bestuurders</b>Verankeren mediawijsheid in de strategie en wijzen eindverantwoordelijken aan.</div>
+          <div class="role"><b>Taakhouders</b>Bewaken doelen, signaleren kansen en problemen, en zijn contactpersoon voor Mediajungle.</div>
+          <div class="role"><b>Cliënten en naasten</b>Denken mee als ambassadeur; ouders leren het gesprek thuis voeren.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2><span class="tagn">6</span> Aanpak in vijf fasen <small>naar het vuurtorenmodel (Weevers &amp; Wolters, 2019)</small></h2>
+      <div class="phases">
+        <div class="ph"><span class="n">1</span><h3>Visie en strategie</h3>Breng de behoeften van cliënten, begeleiders en bestuur in kaart en kom tot een gedeelde visie.</div>
+        <div class="ph"><span class="n">2</span><h3>Planvorming</h3>Welke drempels zijn er, en hoe neem je ze weg? Zet kosten en baten op een rij.</div>
+        <div class="ph"><span class="n">3</span><h3>Ontwikkeling</h3>Maak doelen meetbaar: hoeveel cliënten en begeleiders, welke tools, wanneer en waar?</div>
+        <div class="ph"><span class="n">4</span><h3>Uitvoering en evaluatie</h3>Start klein, bijvoorbeeld in een proeftuin. Evalueer op de doelen en stuur bij.</div>
+        <div class="ph"><span class="n">5</span><h3>Opschaling</h3>Van proeftuin naar structurele uitrol, zodat alle cliënten toegang hebben.</div>
+      </div>
+      <div class="blocks"><b style="color:var(--brown)">Zes bouwstenen voor verandering (Lippitt-Knoster):</b>
+        <span class="c">visie</span><span class="c">draagvlak</span><span class="c">drijfveren</span><span class="c">vaardigheden</span><span class="c">middelen</span><span class="c">actieplan</span>
+      </div>
+      <p class="muted" style="margin-top:1.4mm">Bij de deelnemende instellingen was aan veel voorwaarden al (bijna) voldaan: de tools passen bij de doelgroep en professionals zijn gemotiveerd. Wat vooral ontbrak, was een organisatiebrede visie en een concreet actieplan.</p>
+    </div>
+
+    <div class="sec more">
+      <h3>Meer weten?</h3>
+      <p>Het volledige onderzoeksrapport en de handreiking <i>Mediawijsheid in de zorg en hulpverlening</i> zijn te downloaden via <b>verwey-jonker.nl</b>. Alle tools, van bordspel tot online modules, staan op het Mediajungle Platform: <b>mediajungle.eu</b>.</p>
+    </div>
+  </div>
+  <img class="tree" src="assets/deco--tree--cluster1.png" alt="">
+
+  <div class="foot">
+    <b>Bronnen:</b> R. Jonker, I. Schell-Kiehl &amp; R. Yohannes (2026). <i>Innoveren, Implementeren en Impact maken. Digitale zelfredzaamheid van mensen met LVB bevorderen.</i> Verwey-Jonker Instituut, in opdracht van Mediajungle, gefinancierd door het SIDN Fonds. ·
+    Verwey-Jonker Instituut, <i>Mediawijsheid in de zorg en hulpverlening voor mensen met een licht verstandelijke beperking</i> (handreiking). ·
+    Enquêteresultaten begeleiders en cliënten, ASVZ en Ambiq (aug.-okt. 2025). &nbsp;<b>mediajungle.eu</b>
+  </div>
+  <span class="pno">2/2</span>
+</div>
+
+<script>
+  const bars = (rows) => rows.map(([t,p,low]) =>
+    `<div class="row"><span>${t}</span><div class="track"><div class="fill${low?' low':''}" style="width:${p}%"></div></div><span class="pct">${p}%</span></div>`).join('');
+  document.getElementById('rc').innerHTML = bars([
+    ["Het was duidelijk wat ik moest doen",92],
+    ["Er werd rekening gehouden met mijn privacy",91],
+    ["Er werd goed naar mij geluisterd",89],
+    ["Ik kon goed mijn mening geven",86],
+    ["Ik gebruik het liefst samen met een begeleider",83],
+    ["De opdrachten waren precies goed",81],
+    ["Goed voor andere cliënten of bewoners",81],
+    ["Ik voelde me goed op mijn gemak",80],
+    ["Ik heb iets (of een beetje) nieuws gehoord",80],
+    ["Leuk om te doen",78],
+    ["Ik wil het vaker gebruiken (33% misschien)",56,1],
+    ["Ik heb veel geleerd van mijn begeleider",54,1],
+  ]);
+  document.getElementById('rb').innerHTML = bars([
+    ["De tool droeg bij aan een goed gesprek",100],
+    ["Ik vond het gesprek waardevol",96],
+    ["Mediajungle is niet te ingewikkeld voor mij",95],
+    ["Leuk of heel leuk om te doen",92],
+    ["Ik kon me goed openstellen voor de cliënt",92],
+    ["Ik kon rekening houden met de privacy",88],
+    ["Het was duidelijk hoe het werkte",84],
+    ["Geschikt voor mijn cliënten",79],
+    ["De tijd die het kostte was precies goed",76],
+    ["Ik heb iets geleerd van mijn cliënt(en)",75],
+    ["Genoeg tijd van de organisatie",58,1],
+    ["Genoeg personeel om het goed te gebruiken",53,1],
+  ]);
+</script>
+</body>
+</html>

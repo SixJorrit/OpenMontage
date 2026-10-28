@@ -5,12 +5,12 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz proudly pose with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, black roll cage and trim) on a jungle trail. The jeep stands in three-quarter front view. Femke sits behind the steering wheel with her head and one arm out of the open side window, laughing brightly at the camera. Boaz sits relaxed and confident on the hood of the jeep, his feet resting on the front bumper, arms loosely crossed, a proud grin at the camera. Both look straight into the camera radiating confidence — they are clearly thrilled with the jeep.\n\nSETTING: a lush dense jungle exactly in the leaf language of the supplied jungle plate: big sculpted banana and monstera leaves, ferns and mossy stones framing the scene left and right, a warm sunny break of golden daylight on the jeep and the kids, deep green jungle behind them.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text, no letters, no labels, no watermarks, no border, exactly two people.",
     "success": true,
@@ -24,11 +24,11 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/references/reward--2--tent.png",
-      "docs/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-day-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/references/reward--2--tent.png",
+      "media/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-day-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nNight in the jungle. A cosy dark-green wedge camping tent from the supplied tent plate stands on a small clearing. Femke and Boaz both poke their heads out of the open tent entrance side by side, lying on their bellies, each resting their chin on their hands with elbows propped on the ground, smiling calmly at the camera. Only their heads and hands are visible in the tent opening; a warm faint lantern glow comes from inside the tent.\n\nSETTING: it is dark; a big stylized moon glows between the clouds and a light drizzle of rain falls, leaving soft drips on the tent canvas. In the dark bushes around the clearing several pairs of colourful cartoon animal eyes peek out — pairs of glowing eyes in different colours, curious not scary. Big sculpted jungle leaves in the leaf language of the supplied jungle plates frame the scene, wet and glossy in the moonlight.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text, no letters, no labels, no watermarks, no border, exactly two people.",
     "success": true,
@@ -42,13 +42,13 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/references/building--step4--mall.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/references/building--step4--mall.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with a colourful printed jungle logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz stand in front of the jungle shop from the supplied shop plate: the same boxy shop with a red central tower, big teal glass windows and a cream sign band reading \"COCO'S KOOPJES\" in playful red letters, remade in the same stylized 3D CG language. Next to the shop entrance stands a small wooden sign that reads exactly: \"KOOP JE LOCO, ZO HELP JE COCO!\". Boaz stands closest to the shop, leaning forward and inspecting the shop through a large magnifying glass, one eye comically enlarged behind the lens, a sceptical investigative look on his face. Femke stands beside him beaming with joy, carrying two big overfull paper shopping bags with \"COCO'S KOOPJES\" printed on them, colourful gadgets and rolled-up goodies sticking out of the bags. In the background on the jungle road their chunky yellow expedition jeep from the supplied jeep plate is parked.\n\nSETTING: dense jungle surrounds the shop in the leaf language of the supplied jungle plate, warm daylight, a few mossy stones by the path.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title. The bottom sixth of the frame is simple ground with no important detail — reserved for a logo. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no text anywhere except the shop sign \"COCO'S KOOPJES\", the wooden sign \"KOOP JE LOCO, ZO HELP JE COCO!\" and the bag print \"COCO'S KOOPJES\". No watermarks, no border, exactly two people.",
     "success": true,
@@ -124,12 +124,12 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz proudly pose with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, black roll cage and trim, MEDIA JUNGLE logo on the door) on a jungle trail. The jeep stands in three-quarter front view. Femke sits behind the steering wheel with her head and one arm out of the open side window, laughing brightly at the camera. Boaz sits relaxed and confident on the hood, his feet resting on the front bumper, a proud grin at the camera.\n\nSTORY IN THE IMAGE: around the two kids float a few glossy sculpted 3D chat-bubble icons containing only symbols — a red heart in one, a thumbs-up in another, a small yellow star in a third. The bubbles are bright, rounded and friendly, like reactions drifting up around them. BEHIND the jeep the jungle they came from is darker and unfriendly: thorny vines, gnarled shadowy bushes and two or three pairs of narrow angry glowing eyes deep in the gloom. The kids and the jeep are bathed in warm golden light — they have clearly left the dark part behind them.\n\nSETTING: lush dense jungle in the leaf language of the supplied jungle plate: big sculpted banana and monstera leaves, ferns and mossy stones, a sunny break of daylight on the jeep and the kids.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title that will be added later. The bottom sixth of the frame is plain ground or scenery with no important detail — also reserved. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no words, no letters, no captions, no title, no logo band or banner anywhere — not at the top, not at the bottom. The only graphic marks allowed are the MEDIA JUNGLE logo as it appears on the girl's shirt and on the jeep's door in the supplied plates. No watermarks, no border, exactly two people. The chat bubbles contain only the heart, thumbs-up and star symbols — no letters.",
     "success": true,
@@ -144,12 +144,12 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz proudly pose with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, black roll cage and trim, MEDIA JUNGLE logo on the door) on a sunny jungle trail. The jeep stands in three-quarter front view. Femke sits behind the steering wheel with her head and one arm out of the open side window, laughing warmly. Boaz sits relaxed on the hood, his feet resting on the front bumper, and holds up a smartphone with the screen facing the camera: on the screen is one single large red heart symbol, nothing else. He grins proudly at the camera as if he just sent something kind. Femke looks at the phone and laughs with delight.\n\nSETTING: lush dense jungle in the leaf language of the supplied jungle plate: big sculpted banana and monstera leaves, ferns and mossy stones framing the scene, warm golden daylight on the jeep and the kids.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title that will be added later. The bottom sixth of the frame is plain ground or scenery with no important detail — also reserved. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no words, no letters, no captions, no title, no logo band or banner anywhere — not at the top, not at the bottom. The only graphic marks allowed are the MEDIA JUNGLE logo as it appears on the girl's shirt and on the jeep's door in the supplied plates. No watermarks, no border, exactly two people. The phone screen shows only the single large heart symbol — no letters, no interface text.",
     "success": true,
@@ -164,11 +164,11 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/references/reward--2--tent.png",
-      "docs/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-day-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/references/reward--2--tent.png",
+      "media/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-day-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nNight in the jungle. A cosy dark-green wedge camping tent from the supplied tent plate stands on a small clearing, a warm faint lantern glow from inside. Femke and Boaz both poke their heads and shoulders out of the open tent entrance side by side, lying on their bellies.\n\nSTORY IN THE IMAGE: Femke holds a smartphone in front of her, one index finger hovering hesitantly just above the screen, about to tap — but pausing. Above her head floats a small sculpted 3D thought bubble containing only a large question mark. Boaz looks at her phone and raises one hand in a gentle calm \"hold on, wait\" gesture, eyebrows raised. The moment reads clearly: think first before you send.\n\nSETTING: it is dark; a big stylized moon glows between the clouds and a light drizzle of rain falls, leaving soft drips on the tent canvas. In the dark bushes around the clearing several pairs of colourful cartoon animal eyes peek out — curious, not scary. Big sculpted jungle leaves in the leaf language of the supplied jungle plates frame the scene, wet and glossy in the moonlight.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title that will be added later. The bottom sixth of the frame is plain ground or scenery with no important detail — also reserved. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: no words, no letters, no captions, no title, no logo band or banner anywhere — not at the top, not at the bottom. The only graphic marks allowed are the MEDIA JUNGLE logo as it appears on the girl's shirt and on the jeep's door in the supplied plates. No watermarks, no border, exactly two people. The thought bubble contains only the question mark; the phone screen shows only a soft glow — no letters, no interface text.",
     "success": true,
@@ -183,13 +183,13 @@
     "aspect_ratio": "2:3",
     "resolution": "4k",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/references/building--step4--mall.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/references/building--step4--mall.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nFemke and Boaz stand in front of the jungle shop from the supplied shop plate, remade in the same stylized 3D CG language. SCALE LOCK: the shop is a full-size building exactly as proportioned in the supplied shop plate — its teal glass doorway is more than twice as tall as the characters, the cream sign band reading \"COCO'S KOOPJES\" in playful red letters sits high above their heads on the facade, and the red central tower rises far above that. The characters reach no higher than the bottom quarter of the building.\n\nSTORY IN THE IMAGE: Femke beams with joy, carrying two big overfull paper shopping bags with \"COCO'S KOOPJES\" printed on them; out of the bags stick shiny gold-glinting gadgets and trinkets that look too good to be true, a couple of them carrying small bright red discount stickers showing only a percent symbol. Boaz stands beside her leaning toward one of the shiny gadgets, inspecting the small dangling price tag on it through ONE ordinary magnifying glass with a SINGLE round lens and a single handle held in front of his eye — through the lens his eye appears comically enlarged — with a sceptical, investigative frown. Next to the shop entrance stands a small wooden sandwich-board sign that reads exactly: \"KOOP JE LOCO, ZO HELP JE COCO!\". In the background on the jungle road their chunky yellow expedition jeep from the supplied jeep plate is parked.\n\nSETTING: dense jungle surrounds the shop in the leaf language of the supplied jungle plate, warm daylight, mossy stones by the path.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple (sky or soft canopy, no important detail) — reserved for a title that will be added later. The bottom sixth of the frame is plain ground or scenery with no important detail — also reserved. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges.\n\nFRAME: the only readable text in the image is the facade sign \"COCO'S KOOPJES\", the wooden sign \"KOOP JE LOCO, ZO HELP JE COCO!\", the bag print \"COCO'S KOOPJES\", the percent symbols on the stickers, and the MEDIA JUNGLE logo on the girl's shirt. No other words, no captions, no title, no logo band at the top or bottom. No watermarks, no border, exactly two people.",
     "success": true,
@@ -243,7 +243,7 @@
     "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with a monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters.\n\nFix one printing error in the first image and change nothing else: the print on the girl's dark navy T-shirt is a garbled version of that logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, following the fabric folds naturally, partly tucked behind the paper bags as it is now.\n\nKeep everything else exactly the same: both characters, poses, faces, the magnifying glass with the enlarged eye, the bags with their COCO'S KOOPJES print, the percent stickers, the facade sign COCO'S KOOPJES, the wooden sign KOOP JE LOCO, ZO HELP JE COCO!, the jeep, the building, colours and lighting.",
     "reference_images": [
       "projects/expeditie-mediajungle-posters/assets/images/round-2/p3-cocos-scale-fix-v2.png",
-      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+      "media/expeditie-mediajungle/references/mj-logo-clean.png"
     ],
     "success": true,
     "cost_usd": null,
@@ -257,7 +257,7 @@
     "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with a monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters.\n\nFix three errors in the first image and change nothing else:\n1. The flat empty light-blue band at the very top of the frame: remove it by extending the sky and jungle canopy naturally upward so the artwork fills the frame edge to edge; keep that area calm and simple.\n2. The print on the girl's dark navy T-shirt is a garbled version of the logo: redraw it as exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, small on her chest.\n3. The decal on the jeep's yellow door is also a garbled version: redraw it as exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, as a clean decal.\n\nKeep everything else exactly the same: both characters, poses, faces, the phone with the single red heart on its screen, the boy's purple sneakers, the jeep, the jungle, the muddy ground, colours and lighting. No words or captions anywhere else.",
     "reference_images": [
       "projects/expeditie-mediajungle-posters/assets/images/round-2/p1b-jeep-phone-heart-v2.png",
-      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+      "media/expeditie-mediajungle/references/mj-logo-clean.png"
     ],
     "success": true,
     "cost_usd": null,
@@ -285,7 +285,7 @@
     "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with a monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters.\n\nThe first image is a close-up of a girl in a dark navy T-shirt holding paper shopping bags. Fix one printing error and change nothing else: the print on her T-shirt is a garbled version of that logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, following the fabric folds naturally, partly tucked behind the paper bags as it is now.\n\nKeep everything else exactly the same: the bags with their COCO'S KOOPJES print, the percent sticker, the golden items, colours and lighting.",
     "reference_images": [
       "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/p3-shirtcrop.png",
-      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+      "media/expeditie-mediajungle/references/mj-logo-clean.png"
     ],
     "success": true,
     "cost_usd": null,
@@ -326,13 +326,13 @@
     "model": "google/nano-banana-2/edit",
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles across her nose and cheeks; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans with rolled cuffs, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair carrying a pale zigzag highlight, a small stud in one ear, warm brown eyes; an amber-yellow V-neck long-sleeve shirt with a large 07 across the chest, teal over-ear headphones resting around the neck, teal-blue slim jeans, purple sneakers.\n\nA parcel delivery moment on a jungle clearing. A boxy toy-like DELIVERY VAN in the same sculpted vehicle language as the supplied jeep plate — but a different vehicle: a compact cream-coloured panel van with teal and red accents, matching the brand colours of the supplied shop plate, with \"COCO'S KOOPJES\" painted in playful red letters on its side. The van is parked at the left on the jungle road, rear doors open, a few plain brown cardboard parcels visible inside. No driver, nobody in the van — exactly two people in the whole image.\n\nSTORY IN THE IMAGE — expectation versus reality: in the middle Femke kneels or stands at a freshly opened brown cardboard parcel, torn open, packing straw spilling out. She holds up her smartphone with the screen toward the viewer: on the screen is a picture of gleaming GOLDEN luxury headphones, shiny and perfect — what she ordered. But in the opened parcel lies the delivered reality: a sad, flimsy FAKE version of those headphones, crooked cardboard-and-tape build, dull grey, one earpiece hanging loose. Femke's expression is baffled disappointment: eyebrows up, mouth open in a small 'huh?'. Boaz crouches on the other side of the parcel and holds ONE ordinary magnifying glass with a single round lens ABOVE THE PARCEL, inspecting the shipping label on the box, his face fully visible beside the glass with a sceptical, investigative frown — the glass is aimed at the label, not at his eye.\n\nA couple more unopened plain brown parcels sit stacked beside them.\n\nSETTING: dense jungle in the leaf language of the supplied jungle plate, warm daylight, mossy stones by the road.\n\nPOSTER LAYOUT: this is a vertical movie-poster frame. The top fifth of the frame is calm and simple scenery (sky or soft canopy, no important detail). The bottom sixth of the frame is plain calm ground scenery with no important detail. All characters and key action sit in the middle of the frame, fully visible, nothing important cropped by the edges. The artwork fills the entire frame edge to edge — no flat empty colour bands.\n\nFRAME: the only readable text in the image is \"COCO'S KOOPJES\" on the van's side and the MEDIA JUNGLE logo on the girl's shirt. The shipping label and the phone screen carry no readable letters. No other words, no captions, no title, no logo band. No watermarks, no border, exactly two people.",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/references/building--step4--mall.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/references/building--step4--mall.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "success": true,
     "cost_usd": 0.16,
@@ -346,7 +346,7 @@
     "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with an orange monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters with a dark outline.\n\nThe first image is a close-up of a girl in a dark navy T-shirt pointing at a smartphone. Fix one printing error and change nothing else: the print on her T-shirt is plain rainbow-coloured text instead of the logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled, following the fabric folds naturally. Keep everything else exactly the same: her hands, the phone, the boy's yellow sleeve, colours and lighting.",
     "reference_images": [
       "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p2shirt.png",
-      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+      "media/expeditie-mediajungle/references/mj-logo-clean.png"
     ],
     "success": true,
     "cost_usd": 0.12,
@@ -361,7 +361,7 @@
     "prompt": "The second supplied image is the official MEDIA JUNGLE logo: the word MEDIA in teal blocky letters with an orange monkey head on the left and a pink diamond on the right, above the word JUNGLE in chunky yellow letters with a dark outline.\n\nThe first image is a close-up of a girl in a dark navy T-shirt holding up a smartphone showing golden headphones. Fix one printing error and change nothing else: the print on her T-shirt is a near-correct but off-model version of the logo. Redraw the shirt print so it is exactly the official MEDIA JUNGLE logo from the second image, correctly spelled with the correct monkey head, following the fabric folds naturally. Keep everything else exactly the same: her arm, the smartwatch, the phone with the golden headphones on its screen, the van behind her, colours and lighting.",
     "reference_images": [
       "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3shirt.png",
-      "docs/expeditie-mediajungle/references/mj-logo-clean.png"
+      "media/expeditie-mediajungle/references/mj-logo-clean.png"
     ],
     "success": true,
     "cost_usd": 0.12,
@@ -376,7 +376,7 @@
     "prompt": "The second supplied image is the character's official wardrobe plate: an amber-yellow V-neck long-sleeve shirt with teal over-ear headphones resting around the neck.\n\nThe first image is a close-up of that boy crouching and looking down through a magnifying glass. Fix one wardrobe error and change nothing else: he is missing his teal over-ear headphones. Add the teal over-ear headphones from the second image resting around his neck, exactly as in the plate, fitting naturally around his bent neck and shoulders. Keep everything else exactly the same: his face, expression, hair, the magnifying glass, his shirt, the jungle behind him, colours and lighting.",
     "reference_images": [
       "/private/tmp/claude-501/-Users-jorrit-dev-OpenMontage/973391fc-5fa6-4755-9c38-70ea5bfb98aa/scratchpad/c-p3neck.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png"
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png"
     ],
     "success": true,
     "cost_usd": 0.12,
@@ -530,12 +530,12 @@
     "model": "google/nano-banana-2/edit",
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: Femke and Boaz with their chunky yellow expedition jeep from the supplied jeep plate (same body, wheels, MEDIA JUNGLE logo on the door) occupy only the LOWER QUARTER of the frame, on a sunlit jungle trail with big sculpted leaves framing the bottom corners. Femke leans out of the side window laughing; Boaz stands on the hood, one arm raised high, joyfully releasing glossy sculpted 3D chat-bubble icons into the air.\n\nAbove them the jungle opens into a VAST, warm, bright morning sky that fills the upper three quarters of the frame: soft golden-blue gradient with a few small sculpted clouds near the edges. Floating upward through that sky, like escaping balloons, drift five or six glossy 3D chat-bubble icons in different sizes — one with a red heart, one with a thumbs-up, one with a yellow star, smaller ones fading into the distance — spread loosely around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt and the jeep's door, and the heart/thumb/star symbols inside the floating bubbles. No watermarks, no border, exactly two people.",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "success": true,
     "cost_usd": 0.16,
@@ -549,12 +549,12 @@
     "model": "google/nano-banana-2/edit",
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide night hero shot: a cosy dark-green wedge camping tent from the supplied tent plate occupies only the LOWER QUARTER of the frame, on a small jungle clearing framed by big wet sculpted leaves in the bottom corners; a warm lantern glows on the tent. Femke and Boaz poke their heads out of the tent entrance side by side, looking up at the sky in wonder. In the dark bushes at the very bottom corners two or three pairs of small colourful cartoon animal eyes peek out, curious not scary.\n\nAbove them the jungle opens into a VAST, deep-blue night sky filling the upper three quarters of the frame: a big glowing moon low near the upper-right, soft sculpted clouds near the edges, gentle drizzle. Floating upward through the night sky drift a few glossy sculpted 3D shapes: one white thought bubble containing only a question mark, and two or three small paper planes gliding on a soft curved path, catching the moonlight — spread around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt, and the question mark in the thought bubble. No watermarks, no border, exactly two people.",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
-      "docs/expeditie-mediajungle/references/reward--2--tent.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/location-hut-exterior-rain.png",
+      "media/expeditie-mediajungle/references/reward--2--tent.png"
     ],
     "success": true,
     "cost_usd": 0.16,
@@ -568,11 +568,11 @@
     "model": "google/nano-banana-2/edit",
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: the LOWER QUARTER of the frame shows a sunny jungle clearing framed by big sculpted leaves in the bottom corners. Femke lies happily relaxed in a colourful woven hammock strung between two palm trunks, hands behind her head, eyes closed with a content smile. Boaz stands beside the hammock doing a big joyful morning stretch, arms wide up in the air, grinning. On a flat mossy stone in front of them lie a smartphone and a tablet, both face-down and switched off. A water bottle and a football rest against the stone.\n\nAbove them the jungle opens into a VAST, calm pastel morning sky filling the upper three quarters of the frame: a soft warm gradient with a gentle low sun near the upper-right, a few small sculpted clouds near the edges and two or three tiny birds far away — the CENTRE of the sky stays calm, open and empty.\n\nFRAME: no words, no letters, no captions, no title, no banner anywhere. The only graphic marks are the MEDIA JUNGLE logo on the girl's shirt. No watermarks, no border, exactly two people.",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "success": true,
     "cost_usd": 0.16,
@@ -586,13 +586,13 @@
     "model": "google/nano-banana-2/edit",
     "prompt": "Stylized 3D CG in the language of a modern animated feature film, deliberately NOT photorealistic: simplified sculpted forms, gently exaggerated proportions, hand-painted-feeling surface textures, clean readable silhouettes, soft global illumination, a warm cinematic key light with a cool rim, matching the supplied character plates exactly in face, material, colour and proportion.\n\nSCENE: FEMKE (exactly as in the supplied plates): a 15 to 16 year old girl with red-orange hair in a ponytail carrying one pale zigzag streak, turquoise rectangular glasses, green eyes, freckles; a dark navy T-shirt with the colourful printed MEDIA JUNGLE logo, teal cropped jeans, white high-top sneakers with purple laces, a dark purple smartwatch on the left wrist. BOAZ (exactly as in the supplied plates): a 15 year old boy with deep warm dark brown skin, black spiky hair with a pale zigzag highlight, a small stud in one ear; an amber-yellow V-neck long-sleeve shirt with a large 07, teal over-ear headphones around the neck, teal-blue slim jeans, purple sneakers.\n\nCOMPOSITION — a low, wide hero shot: the LOWER QUARTER of the frame shows a jungle road with the cream-coloured COCO'S KOOPJES delivery van (boxy toy-like panel van with teal roof and red accents, \"COCO'S KOOPJES\" in playful red letters on the side, no driver) parked small at the left, big sculpted leaves framing the bottom corners. Femke and Boaz stand on the road looking up: Femke points excitedly at the sky, Boaz looks up sceptically with his arms crossed.\n\nAbove them a VAST, warm, bright daylight sky fills the upper three quarters of the frame: soft golden-blue gradient with a few small sculpted clouds near the edges. Drifting DOWN through that sky hang four or five plain brown cardboard parcels, each dangling from its own small round striped parachute, in different sizes; two parcels carry a bright red sticker showing only a percent symbol. The parcels drift around the OUTER parts of the sky so the CENTRE of the sky stays calm, open and empty.\n\nFRAME: the only readable text in the image is \"COCO'S KOOPJES\" on the van's side and the MEDIA JUNGLE logo on the girl's shirt, plus the percent symbols on the stickers. No other words, no captions, no title. No watermarks, no border, exactly two people.",
     "reference_images": [
-      "docs/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
-      "docs/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
-      "docs/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
-      "docs/expeditie-mediajungle/references/building--step4--mall.png",
-      "docs/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
+      "media/expeditie-mediajungle/style-bible/femke-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/femke-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/boaz-face-neutral-smile.png",
+      "media/expeditie-mediajungle/style-bible/boaz-body-front-headless.png",
+      "media/expeditie-mediajungle/style-bible/prop-jeep-reward.png",
+      "media/expeditie-mediajungle/references/building--step4--mall.png",
+      "media/expeditie-mediajungle/style-bible/location-jungle-path-after-rain.png"
     ],
     "success": true,
     "cost_usd": 0.16,

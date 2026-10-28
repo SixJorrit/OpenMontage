@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Dia's LVB en sociale media</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .s1{ display:grid; grid-template-columns:78mm 1fr; gap:7mm; height:100% }
+  .s1 .bars{ --lab:56mm }
+  .s1 .bars .row{ margin:2.6mm 0 }
+
+  .s2{ display:grid; grid-template-columns:96mm minmax(0,1fr); gap:7mm; height:100% }
+  .versus .lab{ display:flex; justify-content:space-between; align-items:baseline; font-size:15pt; font-weight:700; margin-bottom:2mm }
+  .versus .lab .num{ font-size:44pt; color:var(--gold); font-weight:800 }
+  .versus .lvb .lab .num{ color:var(--orange) }
+  .versus .track{ height:10mm; border-radius:4mm; background:rgba(213,235,229,.12); overflow:hidden; margin-bottom:5mm }
+  .versus .fill{ height:100%; background:var(--mint) } .versus .lvb .fill{ background:var(--orange) }
+  .versus .note{ font-size:14pt; line-height:1.4 }
+  .nobody{ margin-top:5mm; background:var(--gold); color:var(--brown); border-radius:4mm; padding:4mm 5mm;
+           font-family:"Baloo 2"; font-weight:800; font-size:20pt; line-height:1.1 }
+  .msgs{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); grid-template-rows:1fr 1fr auto; gap:5mm }
+  .msg{ background:var(--cream); color:var(--j900); border-radius:5mm; padding:5.5mm 6mm }
+  .msg .tag{ float:right; font-size:8.5pt; font-weight:800; letter-spacing:.08em; background:var(--pink); color:#fff; border-radius:1.6mm; padding:.8mm 2mm }
+  .msg h3{ font-size:18pt; color:var(--brown); margin-bottom:2.4mm; line-height:1.05 }
+  .dots{ display:grid; grid-template-columns:19mm auto 7mm; gap:1.6mm; align-items:center; white-space:nowrap; font-size:12pt; font-weight:700; margin:1mm 0; color:#3b4a4a }
+  .dots span.d{ display:inline-block; width:3.5mm; height:3.5mm; border-radius:50%; margin-right:.55mm; background:#dfd6c0 }
+  .dots.lvb span.d.on{ background:var(--orange) } .dots.zon span.d.on{ background:var(--teal) }
+  .msg .why{ font-size:13pt; line-height:1.3; margin-top:1.8mm; color:#44524f }
+  .legend{ grid-column:1/-1; font-size:12pt; opacity:.85 }
+
+  .s3 .stats{ display:grid; grid-template-columns:repeat(4,1fr); gap:7mm; margin-bottom:10mm } .s3 .card{ height:100%; display:flex; flex-direction:column; justify-content:center; padding:8mm 9mm }
+  .s3 .stats .num{ font-size:64pt }
+  .s3 .stats p{ font-size:15pt; margin:2mm 0 0 }
+  .s3 .rows{ display:grid; grid-template-columns:1fr 1fr; column-gap:12mm }
+  .s3 .bars{ --lab:66mm } .s3 .bars .pct{ color:#fff }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">1</div><div><h2>Online risico's horen bij de praktijk</h2><div class="sub">Enquête onder 34 begeleiders van jongeren met een LVB, 2023</div></div></div>
+  <div class="content s1">
+    <div class="card big">
+      <span class="num">100%</span><p>van de begeleiders zegt: onze cliënten gebruiken sociale media.</p>
+      <span class="num o">94%</span><p>ziet dat sociale media cliënten ook schade doen.</p>
+    </div>
+    <div class="card cream bars nopct">
+      <h3>Welke schade zien begeleiders het vaakst?</h3>
+      <div class="row"><span>Pesten</span><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div class="row"><span>Sexting</span><div class="track"><div class="fill" style="width:100%"></div></div></div>
+      <div class="row"><span>Verslaving</span><div class="track"><div class="fill" style="width:87%"></div></div></div>
+      <div class="row"><span>Loverboys</span><div class="track"><div class="fill" style="width:71%"></div></div></div>
+      <div class="row"><span>Geldproblemen</span><div class="track"><div class="fill lo" style="width:58%"></div></div></div>
+      <div class="row"><span>Cybercrime</span><div class="track"><div class="fill lo" style="width:37%"></div></div></div>
+      <div class="row"><span>Mensenhandel</span><div class="track"><div class="fill lo" style="width:21%"></div></div></div>
+      <div class="row"><span>Desinformatie</span><div class="track"><div class="fill lo" style="width:21%"></div></div></div>
+      <p class="cap">Hoe vaak begeleiders elke vorm noemden (meerdere antwoorden mogelijk; langste balk ≈ 24 van 32).</p>
+    </div>
+  </div>
+  <div class="src"><b>Bron:</b> N. Lammerink (2023), <i>LVB jongeren en sociale media</i>, adviesrapport Saxion in opdracht van Mediajungle. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 2 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">2</div><div><h2>Echt of nep?</h2><div class="sub">16 berichten beoordeeld door 14 volwassenen met en 14 zonder LVB, 2022</div></div></div>
+  <div class="content s2">
+    <div class="card versus">
+      <div class="grp"><div class="lab"><span>Zonder LVB</span><span class="num">71%</span></div><div class="track"><div class="fill" style="width:71%"></div></div></div>
+      <div class="grp lvb"><div class="lab"><span>Met LVB</span><span class="num">59%</span></div><div class="track"><div class="fill" style="width:59%"></div></div></div>
+      <p class="note">goede antwoorden gemiddeld. De groep zonder LVB deed het bij <b>12 van de 16</b> berichten beter.</p>
+      <div class="nobody">Niemand had alles goed. Iedereen kan in nepnieuws trappen.</div>
+    </div>
+    <div class="msgs" id="msgs"></div>
+  </div>
+  <div class="src"><b>Bron:</b> M. Verberg &amp; T. Woordes (2022), <i>Desinformatie op sociale media</i>, adviesrapport Saxion. Percentages goed (71%/59%) berekend uit de antwoorden in het rapport. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 3 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">3</div><div><h2>Begeleiders twijfelen of ze mogen ingrijpen</h2><div class="sub">Enquête onder 34 begeleiders, 2023</div></div></div>
+  <div class="content s3">
+    <div class="card">
+      <div class="stats big">
+        <div><span class="num">1 op 4</span><p>kent de <b>Wet zorg en dwang</b> niet, of weet niet precies wat erin staat.</p></div>
+        <div><span class="num o">36%</span><p>kent het <b>stappenplan</b> niet dat hoort bij onvrijwillige zorg.</p></div>
+        <div><span class="num m">12%</span><p>zoekt eerst <b>alternatieven</b> bij ernstig nadeel. De rest blijft vooral praten.</p></div>
+        <div><span class="num p">21%</span><p>grijpt niet in <b>vanwege de privacy</b>, terwijl de wet daar ruimte voor biedt.</p></div>
+      </div>
+      <h3 style="color:#fff">Grootste knelpunten <span style="font-family:'Open Sans';font-size:12pt;font-weight:600;color:var(--mint)">32 begeleiders, meerdere antwoorden mogelijk</span></h3>
+      <div class="rows bars dark">
+        <div class="row"><span>Sociale media bijhouden</span><div class="track"><div class="fill g" style="width:43.8%"></div></div><span class="pct">44%</span></div>
+        <div class="row"><span>Weinig kennis sociale media</span><div class="track"><div class="fill g" style="width:40.6%"></div></div><span class="pct">41%</span></div>
+        <div class="row"><span>Te hoge werkdruk</span><div class="track"><div class="fill g" style="width:28.1%"></div></div><span class="pct">28%</span></div>
+        <div class="row"><span>Wetgeving is onduidelijk</span><div class="track"><div class="fill g" style="width:25%"></div></div><span class="pct">25%</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="src"><b>Bron:</b> N. Lammerink (2023), <i>LVB jongeren en sociale media</i>, adviesrapport Saxion in opdracht van Mediajungle. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 4 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">4</div><div><h2>Wat helpt</h2><div class="sub">Aanbevelingen uit beide onderzoeken</div></div></div>
+  <div class="content">
+    <div class="tips">
+      <div class="tip"><span class="n">1</span><h3>Pak het probleem aan, niet de telefoon</h3><p>Zet eerst een alternatief in: bewind bij geldproblemen, één app of site afschermen bij een verslaving.</p></div>
+      <div class="tip"><span class="n">2</span><h3>Privacy is geen reden om niets te doen</h3><p>Bij ernstig nadeel biedt de wet ruimte om in te grijpen, via het stappenplan van de Wzd.</p></div>
+      <div class="tip"><span class="n">3</span><h3>Maak het bespreekbaar</h3><p>Praat elke week even samen over berichten van die week: echt of nep, en waarom?</p></div>
+      <div class="tip"><span class="n">4</span><h3>Geef houvast</h3><p>52% van de begeleiders vraagt om handvatten, 42% om scholing. Mensen met een LVB hebben baat bij een simpele routekaart.</p></div>
+    </div>
+  </div>
+  <div class="src"><b>Bronnen:</b> N. Lammerink (2023), <i>LVB jongeren en sociale media</i>; M. Verberg &amp; T. Woordes (2022), <i>Desinformatie op sociale media</i>. Beide adviesrapporten Saxion.</div>
+</div>
+
+<script>
+  const M = [
+    ["Gefotoshopte Instagramfoto van een BN'er",13,6,"Het blauwe vinkje gaf de doorslag: dan moet het wel echt zijn."],
+    ["TikTok met explosie en Oekraïense vlag",9,5,"Geluid van een andere ramp onder een ander filmpje gezet."],
+    ["Deepfake-toespraak van oud-premier Rutte",3,1,"Rare uitspraken, toch geloofd omdat het de premier leek."],
+    ["Sms van 'de bank' met een link",2,0,"Redenering: logisch dat de bank sms't als je pas bijna verloopt."],
+  ];
+  const dots = n => Array.from({length:14},(_,i)=>`<span class="d${i<n?' on':''}"></span>`).join('');
+  document.getElementById('msgs').innerHTML = M.map(([t,b,a,w]) => `
+    <div class="msg"><span class="tag">NEP</span><h3>${t}</h3>
+      <div class="dots lvb"><span>met LVB</span><div>${dots(b)}</div><b>${b}</b></div>
+      <div class="dots zon"><span>zonder</span><div>${dots(a)}</div><b>${a}</b></div>
+      <p class="why">${w}</p></div>`).join('') +
+    `<div class="legend">Elke stip is één persoon die dit <b>nepbericht</b> voor <b>echt</b> aanzag (14 personen per groep).</div>`;
+</script>
+</body>
+</html>

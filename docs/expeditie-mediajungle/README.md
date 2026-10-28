@@ -2,10 +2,15 @@
 
 Repo-getrackte kopie van het kennisdossier voor de animatiereeks Expeditie Mediajungle,
 vastgesteld in de troubleshoot-sessie van 2026-08-21. De werkkopie leeft in
-`projects/expeditie-mediajungle-animaties/` (gitignored, alleen op de productiemachine);
+`projects/expeditie-mediajungle-animaties/` (op de gedeelde drive);
 **deze map is de duurzame kopie voor alle toekomstige animaties.** Bij wijzigingen in de
 werkkopie: hierheen synchroniseren en committen naar de fork (`SixJorrit/OpenMontage`) —
 nooit naar upstream pushen.
+
+**Beeld staat niet in git.** Alle png/jpg/svg/mp4/pdf van deze map (style-bible-platen,
+referenties, logo's, posters, Shopify-exports) staan op de gedeelde drive onder
+`media/expeditie-mediajungle/`, met dezelfde mapindeling als hieronder. Teksten, logs en
+scripts blijven hier. Instellen: [`docs/gedeelde-drive.md`](../gedeelde-drive.md).
 
 | bestand | wat |
 |---|---|
@@ -15,13 +20,13 @@ nooit naar upstream pushen.
 | `decision_log.json` | het besluitenlog van de pilot, 39 entries, incl. d-034 t/m d-039 (de route voor de reeks) |
 | `scripts/` | de herbruikbare testscripts: modelvergelijking, beoordeling (meter + frames), en `atlascost.py` (echte Atlas-factuur uitlezen) |
 | `style-bible/` | **de gelockte referentieset** (karakter- en locatieplaten, geometrieclip, generatielogs) — identiek in alle vier films; wijzigt alleen na expliciete promotie |
-| `references/` | onvervangbaar eigen materiaal: canon-platen, MJ-logo en de complete vectorart-set (platforms, rewards, deco, gebouwstappen) |
+| `references/` | onvervangbaar eigen materiaal: canon-platen, MJ-logo, het **Expeditie MJ-logo** (`logo-expeditie-mj.svg` master + PNG 2000/4000; bronnen `logo-mj-bron.svg`, `sfs-logo-bron.svg`, `expeditie-titel-rgba.png`; opbouw in `scripts/compose_expeditie_logo.py`, verkenning in `projects/expeditie-mediajungle-animaties/assets/images/logo-verkenning/`) en de complete vectorart-set (platforms, rewards, deco, gebouwstappen) |
 | `posters/` | de drie A4-campagneposters (missie 1–3): artwork-masters, generatielog en de herbruikbare generator-/opmaakscripts |
 
-**Nieuwe assets aanleveren:** lokaal in
+**Nieuwe assets aanleveren:** in
 `projects/expeditie-mediajungle-animaties/assets/references/` (de werkmap die de agent
-uitleest). Onvervangbare originelen daarna ook hierheen synchroniseren en committen —
-`projects/` is gitignored en bestaat alleen op de productiemachine.
+uitleest). Onvervangbare originelen daarna ook naar `media/expeditie-mediajungle/references/`
+kopiëren — niet committen.
 
 ## De route in vijf regels (details in de findings)
 

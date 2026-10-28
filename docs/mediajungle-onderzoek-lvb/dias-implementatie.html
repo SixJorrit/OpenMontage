@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<title>Dia's Mediajungle in de zorgpraktijk</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="slides.css">
+<style>
+  .s1{ display:grid; grid-template-columns:70mm minmax(0,1fr) minmax(0,1fr); gap:6mm; height:100% }
+  .s1 .big .num{ font-size:46pt } .s1 .big p{ font-size:12.5pt; margin-bottom:3.6mm }
+  .s1 .bars{ --lab:56mm } .s1 .bars .row{ font-size:13pt; margin:1.9mm 0; grid-template-columns:var(--lab) 1fr 13mm }
+  .s1 .bars .pct{ font-size:13pt } .s1 .bars .track{ height:6mm }
+
+  .donuts{ display:grid; grid-template-columns:repeat(6,1fr); gap:5mm }
+  .donut{ text-align:center }
+  .ring{ width:44mm; height:44mm; border-radius:50%; margin:0 auto 4mm; display:grid; place-items:center;
+         background:conic-gradient(var(--c, var(--gold)) calc(var(--p)*1%), rgba(213,235,229,.14) 0) }
+  .ring span{ width:32mm; height:32mm; border-radius:50%; background:#0a3436; display:grid; place-items:center;
+              font-family:"Baloo 2"; font-weight:800; font-size:26pt; color:#fff; padding-top:1.4mm }
+  .donut p{ font-size:13pt; line-height:1.32 }
+  .s2 .card{ height:100%; display:flex; flex-direction:column; justify-content:center; padding:8mm }
+  .quote{ margin-top:8mm; font-family:"Baloo 2"; font-weight:700; font-size:22pt; color:var(--gold); line-height:1.1; text-align:center }
+  .quote small{ display:block; font-family:"Open Sans"; font-weight:600; font-size:12pt; color:var(--mint); margin-top:1.4mm }
+
+  .s3{ display:grid; grid-template-columns:78mm minmax(0,1fr) minmax(0,1fr); gap:6mm; height:100% }
+  .grade{ background:var(--gold); color:var(--brown); border-radius:6mm; padding:6mm; text-align:center; display:flex; flex-direction:column; justify-content:center }
+  .grade .num{ font-size:96pt; font-weight:800 }
+  .grade p{ font-size:15pt; font-weight:700; line-height:1.25 }
+  .list h3{ color:#fff }
+  .list .it{ display:grid; grid-template-columns:30mm 1fr; gap:3mm; align-items:baseline; margin:3.2mm 0 }
+  .list .it .num{ font-size:32pt; font-weight:800; color:var(--mint) }
+  .list .it p{ font-size:13.5pt; line-height:1.3 }
+  .rv .it .num{ color:var(--orange) }
+  .rv .note{ font-size:12pt; opacity:.8; margin-top:3mm }
+</style>
+</head>
+<body>
+
+<!-- 1 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">1</div><div><h2>Online: risico's én kansen</h2><div class="sub">Wat begeleiders van ASVZ en Ambiq zien bij hun cliënten (25 vragenlijsten, 2025)</div></div></div>
+  <div class="content s1">
+    <div class="card big">
+      <span class="num">96%</span><p>vindt begeleiding bij internet en sociale media belangrijk.</p>
+      <span class="num o">40%</span><p>vond de aandacht daarvoor het afgelopen jaar onvoldoende of afwezig.</p>
+      <span class="num m">76%</span><p>ziet cliënten als kwetsbaar als slachtoffer én als dader.</p>
+    </div>
+    <div class="card cream bars">
+      <h3>Problemen die ze herkennen</h3>
+      <div class="row"><span>Schermtijd</span><div class="track"><div class="fill" style="width:92%"></div></div><span class="pct">92%</span></div>
+      <div class="row"><span>Moeilijk kunnen stoppen</span><div class="track"><div class="fill" style="width:80%"></div></div><span class="pct">80%</span></div>
+      <div class="row"><span>Verkeerde contacten</span><div class="track"><div class="fill" style="width:76%"></div></div><span class="pct">76%</span></div>
+      <div class="row"><span>Online pesten</span><div class="track"><div class="fill" style="width:72%"></div></div><span class="pct">72%</span></div>
+      <div class="row"><span>Ongeschikte content</span><div class="track"><div class="fill" style="width:68%"></div></div><span class="pct">68%</span></div>
+      <div class="row"><span>Zelfbeeld</span><div class="track"><div class="fill" style="width:68%"></div></div><span class="pct">68%</span></div>
+      <div class="row"><span>Problematisch gamen</span><div class="track"><div class="fill" style="width:52%"></div></div><span class="pct">52%</span></div>
+    </div>
+    <div class="card cream bars">
+      <h3>Kansen die ze zien</h3>
+      <div class="row"><span>Contact met anderen</span><div class="track"><div class="fill t" style="width:92%"></div></div><span class="pct">92%</span></div>
+      <div class="row"><span>Ontspanning</span><div class="track"><div class="fill t" style="width:80%"></div></div><span class="pct">80%</span></div>
+      <div class="row"><span>Plezier</span><div class="track"><div class="fill t" style="width:80%"></div></div><span class="pct">80%</span></div>
+      <div class="row"><span>Meedoen</span><div class="track"><div class="fill t" style="width:76%"></div></div><span class="pct">76%</span></div>
+      <div class="row"><span>Kennis, vaardigheden</span><div class="track"><div class="fill t" style="width:68%"></div></div><span class="pct">68%</span></div>
+      <div class="row"><span>Zelfredzaamheid</span><div class="track"><div class="fill t" style="width:56%"></div></div><span class="pct">56%</span></div>
+      <div class="row"><span>Minder eenzaam</span><div class="track"><div class="fill t" style="width:56%"></div></div><span class="pct">56%</span></div>
+    </div>
+  </div>
+  <div class="src"><b>Bron:</b> enquête onder begeleiders van ASVZ en Ambiq (aug.-okt. 2025), Verwey-Jonker Instituut. Meerdere antwoorden mogelijk. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 2 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">2</div><div><h2>Zo ervaren cliënten het gesprek</h2><div class="sub">33 cliënten van ASVZ en Ambiq, 35-36 vragenlijsten (2025)</div></div></div>
+  <div class="content s2">
+    <div class="card">
+      <div class="donuts">
+        <div class="donut"><div class="ring" style="--p:91;--c:var(--mint)"><span>91%</span></div><p>vond dat er goed rekening werd gehouden met hun <b>privacy</b></p></div>
+        <div class="donut"><div class="ring" style="--p:89;--c:var(--mint)"><span>89%</span></div><p>voelde dat er goed naar hen werd <b>geluisterd</b></p></div>
+        <div class="donut"><div class="ring" style="--p:80;--c:var(--gold)"><span>80%</span></div><p>voelde zich goed <b>op hun gemak</b></p></div>
+        <div class="donut"><div class="ring" style="--p:78;--c:var(--gold)"><span>78%</span></div><p>vond Mediajungle <b>leuk</b> om te doen</p></div>
+        <div class="donut"><div class="ring" style="--p:83;--c:var(--orange)"><span>83%</span></div><p>gebruikt het liefst <b>samen met een begeleider</b></p></div>
+        <div class="donut"><div class="ring" style="--p:54;--c:var(--pink)"><span>54%</span></div><p>leerde <b>veel over media</b> van hun begeleider</p></div>
+      </div>
+      <p class="quote">"Ze voelen zich er ook niet door gecontroleerd."<small>Gezinsouder, over het spelen van Mediajungle</small></p>
+    </div>
+  </div>
+  <div class="src"><b>Bron:</b> enquête onder cliënten van ASVZ en Ambiq (aug.-okt. 2025) en R. Jonker e.a. (2026), <i>Innoveren, Implementeren en Impact maken</i>, Verwey-Jonker Instituut. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 3 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">3</div><div><h2>Zo ervaren begeleiders het</h2><div class="sub">19 begeleiders van ASVZ en Ambiq, 19-25 vragenlijsten (2025)</div></div></div>
+  <div class="content s3">
+    <div class="grade"><span class="num">7,5</span><p>gemiddeld rapportcijfer voor de geteste tools</p></div>
+    <div class="card list">
+      <h3>De tools werken</h3>
+      <div class="it"><span class="num">100%</span><p>vindt dat de tool bijdroeg aan een <b>goed gesprek</b> over media</p></div>
+      <div class="it"><span class="num">96%</span><p>vond het gesprek <b>waardevol</b></p></div>
+      <div class="it"><span class="num">95%</span><p>vindt Mediajungle <b>niet te ingewikkeld</b></p></div>
+      <div class="it"><span class="num">79%</span><p>vindt het <b>geschikt</b> voor hun cliënten</p></div>
+    </div>
+    <div class="card list rv">
+      <h3>Maar de randvoorwaarden wringen</h3>
+      <div class="it"><span class="num">58%</span><p>krijgt <b>genoeg tijd</b> van de organisatie om het in te passen</p></div>
+      <div class="it"><span class="num">53%</span><p>vindt dat er <b>genoeg personeel</b> is om het goed te gebruiken</p></div>
+      <div class="it"><span class="num">24%</span><p>van de cliënten had nog <b>geen begeleiding</b> bij media</p></div>
+      <p class="note">Mediawijsheid komt nu vaak pas aan bod als het al mis is gegaan.</p>
+    </div>
+  </div>
+  <div class="src"><b>Bron:</b> enquêtes onder begeleiders en cliënten van ASVZ en Ambiq (aug.-okt. 2025) en R. Jonker e.a. (2026), <i>Innoveren, Implementeren en Impact maken</i>, Verwey-Jonker Instituut. Kleine groep: zie de cijfers als indicatie.</div>
+</div>
+
+<!-- 4 -->
+<div class="slide">
+  <img class="logo" src="assets/mj-logo-clean.png" alt="Mediajungle">
+  <div class="top"><div class="badge">4</div><div><h2>Van de kast naar een vaste plek</h2><div class="sub">Aanbevelingen uit het onderzoek en de handreiking</div></div></div>
+  <div class="content">
+    <div class="tips">
+      <div class="tip"><span class="n">1</span><h3>Maak het geen extra taak</h3><p>Neem mediawijsheid op in behandelplannen en intakes. Bijna elk behandeldoel heeft iets met media te maken.</p></div>
+      <div class="tip"><span class="n">2</span><h3>Kies de tool die past</h3><p>Een spel in de groep, als er tijd is en bij jongere cliënten. Kletskaarten, praatplaten of een online module individueel en ambulant.</p></div>
+      <div class="tip"><span class="n">3</span><h3>Beleg het in het team</h3><p>Stel meerdere taakhouders of een mediacoach aan. Leidinggevenden faciliteren, bestuurders verankeren het in de visie.</p></div>
+      <div class="tip"><span class="n">4</span><h3>Houd het zichtbaar</h3><p>Gebruik posters en reminders, geef een korte knoppentraining en evalueer regelmatig wat werkt.</p></div>
+    </div>
+  </div>
+  <div class="src"><b>Bronnen:</b> R. Jonker e.a. (2026), <i>Innoveren, Implementeren en Impact maken</i>, en de handreiking <i>Mediawijsheid in de zorg en hulpverlening</i>, Verwey-Jonker Instituut.</div>
+</div>
+</body>
+</html>

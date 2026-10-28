@@ -17,7 +17,7 @@ OUT = PROJ / "renders/a2"
 BUILD = PROJ / "build"
 OUT.mkdir(parents=True, exist_ok=True)
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-LOGO = (ROOT / "docs/expeditie-mediajungle/references/logo-expeditie-mj-4000.png").as_uri()
+LOGO = (ROOT / "media/expeditie-mediajungle/references/logo-expeditie-mj-4000.png").as_uri()
 ART = PROJ / "assets/images/round-3/p1a-jeep-bubbles-logozone.png"
 
 HTML = """<!DOCTYPE html>

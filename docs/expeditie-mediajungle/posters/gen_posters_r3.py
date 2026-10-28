@@ -10,8 +10,8 @@ from tools.tool_registry import registry  # noqa: E402
 registry.discover()
 tool = registry._tools["atlas_image"]
 
-SB = "docs/expeditie-mediajungle/style-bible"
-REF = "docs/expeditie-mediajungle/references"
+SB = "media/expeditie-mediajungle/style-bible"
+REF = "media/expeditie-mediajungle/references"
 D2 = "projects/expeditie-mediajungle-posters/assets/images/round-2"
 OUT = "projects/expeditie-mediajungle-posters/assets/images/round-3"
 pathlib.Path(OUT).mkdir(parents=True, exist_ok=True)

@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT=pathlib.Path("."); P=ROOT/"projects/expeditie-mediajungle-trailer"
 FILM=ROOT/"projects/expeditie-mj-animatie2-v2/renders/expeditie-mediajungle-animatie-2-v2.mp4"
 MAP=P/"src/linkedin-rondje.mp4"; MUSIC=ROOT/"remotion-composer/public/expeditie-mj/music-v2.mp3"
-LOGO=ROOT/"docs/expeditie-mediajungle/references/logo-expeditie-mj-2000.png"
+LOGO=ROOT/"media/expeditie-mediajungle/references/logo-expeditie-mj-2000.png"
 FONT="media/fonts/Baloo2-ExtraBold.ttf"; FONT2="media/fonts/Baloo2-SemiBold.ttf"
 W,H,FPS=1280,720,24
 # (source, start, end, overlay-text or None)

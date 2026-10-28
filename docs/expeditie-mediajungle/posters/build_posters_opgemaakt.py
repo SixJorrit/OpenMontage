@@ -16,7 +16,7 @@ OUT = PROJ / "renders/opgemaakt"
 BUILD = PROJ / "build"
 OUT.mkdir(parents=True, exist_ok=True)
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
-LOGO = (ROOT / "docs/expeditie-mediajungle/references/logo-expeditie-mj-2000.png").as_uri()
+LOGO = (ROOT / "media/expeditie-mediajungle/references/logo-expeditie-mj-2000.png").as_uri()
 
 BROWN = "#4A2C17"
 WHITE = "#FFFFFF"

@@ -1,0 +1,53 @@
+/* Gedeelde stijl voor de 16:9-dia's (13,333 x 7,5 inch, PowerPoint-standaard) */
+:root{
+  --j900:#04202c; --j800:#083d3f; --j700:#193539;
+  --gold:#f5b53c; --orange:#ef8a0b; --mint:#61d1b4; --mint100:#d5ebe5;
+  --brown:#4e3416; --pink:#e0529c; --cream:#fbf5e6; --teal:#2fa58c;
+}
+@page{ size:338.67mm 190.5mm; margin:0 }
+*{ box-sizing:border-box; margin:0; padding:0 }
+html,body{ background:var(--j900) }
+body{ font-family:"Open Sans",Arial,sans-serif; color:var(--mint100);
+      -webkit-print-color-adjust:exact; print-color-adjust:exact }
+h1,h2,h3,.num{ font-family:"Baloo 2","Arial Rounded MT Bold",sans-serif; line-height:1 }
+b{ font-weight:700 }
+
+.slide{ width:338.67mm; height:190.5mm; position:relative; overflow:hidden; break-after:page;
+        background:radial-gradient(110% 80% at 50% 0%, #0b4d4c 0%, var(--j800) 40%, var(--j900) 85%);
+        padding:13mm 17mm 0; display:flex; flex-direction:column }
+.slide:last-child{ break-after:auto }
+.top{ display:flex; align-items:center; gap:4.5mm; margin-bottom:8mm; padding-right:40mm }
+.badge{ width:13mm; height:13mm; border-radius:50%; background:var(--gold); color:var(--brown); flex:none;
+        font-family:"Baloo 2"; font-weight:800; font-size:21pt; display:grid; place-items:center; padding-top:1mm }
+.top h2{ font-size:30pt; font-weight:800; color:#fff }
+.top .sub{ font-size:11.5pt; color:var(--mint); font-weight:600; margin-top:1.4mm }
+.logo{ position:absolute; right:14mm; top:10mm; width:40mm }
+.content{ flex:1; min-height:0; padding-bottom:15mm }
+.src{ position:absolute; left:17mm; right:17mm; bottom:5.5mm; font-size:8pt; color:rgba(213,235,229,.62); line-height:1.35 }
+.src b{ color:var(--gold) }
+
+.card{ background:rgba(213,235,229,.07); border:.45mm solid rgba(97,209,180,.28); border-radius:6mm; padding:6mm 7mm }
+.cream{ background:var(--cream); color:var(--j900); border:none }
+.cream h3{ color:var(--brown) }
+h3{ font-size:19pt; font-weight:800; margin-bottom:4mm }
+.cap{ font-size:11pt; opacity:.78; margin-top:2.4mm; line-height:1.35 }
+
+.big .num{ font-size:68pt; font-weight:800; color:var(--gold); display:block }
+.big .num.o{ color:var(--orange) } .big .num.m{ color:var(--mint) } .big .num.p{ color:var(--pink) }
+.big p{ font-size:15pt; line-height:1.32; margin:1mm 0 7mm }
+.big p:last-child{ margin-bottom:0 }
+
+.bars .row{ display:grid; grid-template-columns:var(--lab,52mm) 1fr 16mm; gap:3mm; align-items:center; font-size:15pt; margin:2.2mm 0 }
+.bars .track{ height:7mm; border-radius:3.5mm; background:rgba(4,32,44,.10) }
+.bars.dark .track{ background:rgba(213,235,229,.13) }
+.bars .fill{ height:100%; border-radius:3.5mm; background:var(--orange) }
+.bars .fill.lo{ background:#e9b36b } .bars .fill.t{ background:var(--teal) } .bars .fill.g{ background:var(--gold) } .bars .fill.p{ background:var(--pink) }
+.bars .pct{ font-weight:800; text-align:right; font-size:15pt }
+.bars.nopct .row{ grid-template-columns:var(--lab,52mm) 1fr }
+
+.tips{ display:grid; grid-template-columns:repeat(4,1fr); gap:5mm; height:100% }
+.tip{ background:var(--cream); color:var(--j900); border-radius:5mm; padding:8mm 7.5mm; border-top:3mm solid var(--mint) }
+.tip:nth-child(2){ border-top-color:var(--gold) } .tip:nth-child(3){ border-top-color:var(--orange) } .tip:nth-child(4){ border-top-color:var(--pink) }
+.tip .n{ font-family:"Baloo 2"; font-weight:800; font-size:40pt; color:var(--orange); line-height:1 }
+.tip h3{ font-size:23pt; color:var(--brown); margin:2mm 0 3mm; line-height:1.05 }
+.tip p{ font-size:15.5pt; line-height:1.42 }

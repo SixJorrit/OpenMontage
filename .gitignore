@@ -33,6 +33,18 @@ projects/
 /projects
 /media
 
+# Final products and reference art go to media/ on the shared drive, not docs/
+docs/expeditie-mediajungle/**/*.png
+docs/expeditie-mediajungle/**/*.jpg
+docs/expeditie-mediajungle/**/*.jpeg
+docs/expeditie-mediajungle/**/*.svg
+docs/expeditie-mediajungle/**/*.mp4
+docs/expeditie-mediajungle/**/*.pdf
+docs/mediajungle-onderzoek-lvb/**/*.pdf
+docs/mediajungle-onderzoek-lvb/**/*.zip
+docs/mediajungle-onderzoek-lvb/*.png
+docs/mediajungle-onderzoek-lvb/definitief/
+
 # Corpus directories (downloaded stock clips, thumbnails, embeddings —
 # regenerable from source APIs via corpus_builder). Explicit rule even
 # though most corpora live under projects/ since agents sometimes

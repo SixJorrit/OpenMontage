@@ -12,7 +12,7 @@ PROJ = ROOT / "projects/expeditie-mediajungle-posters"
 IMG = PROJ / "assets/images"
 OUT = PROJ / "renders"
 OUT.mkdir(exist_ok=True)
-LOGO = (ROOT / "docs/expeditie-mediajungle/references/mj-logo-clean.png").as_uri()
+LOGO = (ROOT / "media/expeditie-mediajungle/references/mj-logo-clean.png").as_uri()
 
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
