@@ -19,6 +19,18 @@ from tools.video.hyperframes_compose import HyperFramesCompose
 from tools.video.video_compose import VideoCompose
 
 
+def _skip_below_local_floor(rc: dict[str, Any]) -> None:
+    """The npm/CLI checks only run once node >= floor, ffmpeg and npx pass."""
+    node = rc["node_major"]
+    if (
+        node is None
+        or node < HyperFramesCompose._NODE_FLOOR_MAJOR
+        or not rc["ffmpeg_available"]
+        or not rc["npx_available"]
+    ):
+        pytest.skip("Local runtime floor not met on this machine")
+
+
 # ------------------------------------------------------------------
 # Tool contract
 # ------------------------------------------------------------------
@@ -229,6 +241,7 @@ def test_runtime_check_fails_when_npm_package_unresolvable(monkeypatch):
         classmethod(lambda cls: {"error": "npm package `hyperframes` not found (404)"}),
     )
     rc = HyperFramesCompose()._runtime_check()
+    _skip_below_local_floor(rc)
     assert rc["runtime_available"] is False, (
         "Runtime must report NOT available when the npm package can't be "
         "resolved — even if node/ffmpeg/npx are all on PATH."
@@ -257,8 +270,7 @@ def test_runtime_check_succeeds_when_npm_resolves(monkeypatch):
     )
     rc = HyperFramesCompose()._runtime_check()
     # Local binaries must still pass for this to go green.
-    if rc["node_major"] is None or not rc["ffmpeg_available"] or not rc["npx_available"]:
-        pytest.skip("Local runtime floor not met on this machine")
+    _skip_below_local_floor(rc)
     assert rc["runtime_available"] is True
     assert rc["npm_package_version"] == "0.4.5"
     assert rc["reasons"] == []
@@ -282,8 +294,7 @@ def test_runtime_check_fails_when_published_cli_crashes(monkeypatch):
 
     rc = HyperFramesCompose()._runtime_check()
 
-    if rc["node_major"] is None or not rc["ffmpeg_available"] or not rc["npx_available"]:
-        pytest.skip("Local runtime floor not met on this machine")
+    _skip_below_local_floor(rc)
     assert rc["runtime_available"] is False
     assert rc["cli_probe_error"] is not None
     assert any("not executable" in reason for reason in rc["reasons"])
