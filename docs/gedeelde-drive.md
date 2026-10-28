@@ -25,6 +25,10 @@ maak je zelf aan. Daarna verwijst alles naar dezelfde relatieve paden.
    git clone --filter=blob:limit=1m https://github.com/SixJorrit/OpenMontage.git
    ```
 
+   Je krijgt dan de branch `mediajungle`: onze versie. Gebruik Node 22
+   (`nvm alias default 22`) en een volledige ffmpeg met ondertitels
+   (`brew install ffmpeg-full`).
+
 4. Maak de links, vanuit de repo-map:
 
    ```bash
@@ -55,3 +59,17 @@ maak je zelf aan. Daarna verwijst alles naar dezelfde relatieve paden.
   bronmateriaal buiten repo en drive (bijvoorbeeld een Dropbox) en moet je zelf
   naar `media/` verhuizen.
 - **Geen eindproducten in git.** Ook niet onder `docs/`.
+
+## Branches en updates van OpenMontage
+
+- **`mediajungle`** is onze versie en de standaardbranch van de fork. Hier werken
+  we; kleine dingen direct, grotere klussen op een eigen branch die je daarna
+  in `mediajungle` merget.
+- **`main`** is een kopie van het oorspronkelijke project
+  (`calesthio/OpenMontage`). Zet hier nooit eigen werk op; dan blijft de knop
+  "Sync fork" op GitHub veilig.
+- **Upstream-updates binnenhalen:** haal `origin/main` op, merge die in
+  `mediajungle` (niet rebasen), draai `make test` en push. Nooit naar `origin`
+  (upstream) pushen.
+- **Minder conflicten:** zet eigen werk zoveel mogelijk in eigen bestanden
+  (`docs/`, `scripts/`, eigen tools) in plaats van in bestanden van upstream.
